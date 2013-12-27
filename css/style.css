@@ -47,5 +47,4 @@ section.image {
         cursor: pointer; }
   .page-navigation #nav-trigger {
     z-index: 1;
-    background: #fff200;
-    display: block; }
+    background: #fff200 url("../images/menu-icon.png"); }
