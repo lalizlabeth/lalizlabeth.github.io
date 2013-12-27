@@ -1,0 +1,51 @@
+h1,
+h2 {
+  color: #222; }
+
+h1 {
+  font: 900 60px "Lato", "Helvetica", "Arial", sans-serif;
+  margin-bottom: 30px; }
+
+h2 {
+  font: 500 25px "Lato", "Helvetica", "Arial", sans-serif;
+  font-style: italic; }
+
+p {
+  font: 22px/1.8 "Droid Serif", "Times New Roman", serif;
+  color: #444;
+  margin-bottom: 22px; }
+
+section.text {
+  padding: 30px 20%; }
+section.image {
+  background-image: url("../images/dimension.png");
+  width: 100%;
+  height: 350px; }
+
+.page-navigation,
+.page-navigation.li {
+  left: 0;
+  top: 0; }
+
+.page-navigation {
+  position: fixed;
+  top: 30px; }
+  .page-navigation li {
+    width: 80px;
+    height: 80px;
+    background: black;
+    position: absolute;
+    -webkit-transition: top 1s ease-out;
+    -firefox-transition: top 1s ease-out;
+    -o-transition: top 1s ease-out;
+    transition: top 1s ease-out; }
+    .page-navigation li a {
+      height: 100%;
+      width: 100%;
+      display: block; }
+      .page-navigation li a:hover {
+        cursor: pointer; }
+  .page-navigation #nav-trigger {
+    z-index: 1;
+    background: #fff200;
+    display: block; }
