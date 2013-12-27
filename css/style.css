@@ -20,7 +20,7 @@ section.text {
 section.image {
   background-image: url("../images/dimension.png");
   width: 100%;
-  height: 350px; }
+  height: 300px; }
 
 .page-navigation,
 .page-navigation.li {
