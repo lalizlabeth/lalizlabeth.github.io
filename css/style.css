@@ -23,7 +23,7 @@ section.image {
   height: 300px; }
 
 .page-navigation,
-.page-navigation.li {
+.nav-item {
   left: 0;
   top: 0; }
 
@@ -33,7 +33,6 @@ section.image {
   .page-navigation li {
     width: 80px;
     height: 80px;
-    background: black;
     position: absolute;
     -webkit-transition: top 1s ease-out;
     -firefox-transition: top 1s ease-out;
@@ -45,6 +44,16 @@ section.image {
       display: block; }
       .page-navigation li a:hover {
         cursor: pointer; }
+  .page-navigation .nav-item {
+    background-color: #0d0d0d; }
+    .page-navigation .nav-item#home-nav {
+      background-image: url("../images/home-icon.png"); }
+    .page-navigation .nav-item#assignment-nav {
+      background-image: url("../images/assignments-icon.png"); }
+    .page-navigation .nav-item#behance-nav {
+      background-image: url("../images/behance-icon.png"); }
+    .page-navigation .nav-item:hover {
+      background-color: rgba(13, 13, 13, 0.8); }
   .page-navigation #nav-trigger {
     z-index: 1;
     background: #fff200 url("../images/menu-icon.png"); }
