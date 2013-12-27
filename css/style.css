@@ -1,3 +1,33 @@
+header {
+  width: 100%;
+  background: white;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  padding: 20px 0; }
+  header h1 {
+    color: #0d0d0d;
+    font: 300 30px "Open Sans", "Helvetica", "Arial", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.3em;
+    margin: 0; }
+
+.thumbnails {
+  width: 99%;
+  margin-left: 1%;
+  overflow: hidden; }
+
+.thumbnail a {
+  display: block;
+  background: #0d0d0d;
+  float: left;
+  width: 19%;
+  padding-bottom: 19%;
+  margin-right: 1%;
+  margin-top: 1%; }
+.thumbnail:hover {
+  cursor: pointer;
+  opacity: 0.5; }
+
 h1,
 h2 {
   color: #222; }
