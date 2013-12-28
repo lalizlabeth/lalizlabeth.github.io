@@ -16,7 +16,7 @@ body {
 
 .page-wrapper {
   min-height: 100%;
-  margin-bottom: -65px;
+  margin-bottom: -90px;
   overflow: hidden;
 }
 
@@ -26,20 +26,27 @@ body {
 }
 
 footer, .page-wrap:after {
-  height: 65px; 
+  height: 90px; 
 }
 
 footer {
   background: white;
+  a,
   .caption {
-    font: 400 14px "Open Sans", "Helvetica", "Arial", sans-serif;
+    font: 400 15px "Open Sans", "Helvetica", "Arial", sans-serif;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
     text-align: center;
-    padding: 20px 0;
+    padding: 35px 0;
+    text-decoration: none;
+    color: $black;
   }
   .yellow-divide {
     color: rgba(13, 13, 13, 0.4);
+  }
+
+  a:hover {
+    color: rgba(13, 13, 13, 0.7)
   }
 }
 
@@ -122,11 +129,11 @@ header {
 
   .lesson-number {
     position: relative;
-    font-family: "Oswald";
+    font-family: "Oswald", "Helvetica", "Arial", sans-serif;
     display: inline-block;
     font-weight: 700;
     line-height: 1.5;
-    color: hsla(0, 0%, 0%, 0.8);
+    color: hsla(0, 0%, 0%, 0.9);
     z-index: 1;
   }
 
@@ -222,6 +229,9 @@ section {
 
 /* Example for media query: change number of items per row */
 @media screen and (max-width: 1190px) {
+  .page-wrapper {
+    margin-bottom: 0;
+  }
   .thumbnails a {
     width: 20%;
     /* Fallback */
@@ -258,6 +268,13 @@ section {
   .page-wrapper {
     margin-bottom: 0;
   }
+  .global-nav {
+    width: 215px;
+  }
+  .global-nav li {
+    float: none;
+    margin: 0 auto;
+  }
   .thumbnails a {
     width: 50%;
     /* Fallback */
@@ -267,6 +284,13 @@ section {
 }
 
 @media screen and (max-width: 340px) {
+  .global-nav {
+    width: 215px;
+  }
+  .global-nav li {
+    float: none;
+    margin: 0 auto;
+  }
   .page-wrapper {
     margin-bottom: 0;
   }
