@@ -19,14 +19,19 @@ footer, .page-wrap:after {
 
 footer {
   background: white; }
+  footer a,
   footer .caption {
-    font: 400 14px "Open Sans", "Helvetica", "Arial", sans-serif;
+    font: 400 15px "Open Sans", "Helvetica", "Arial", sans-serif;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
     text-align: center;
-    padding: 35px 0; }
+    padding: 35px 0;
+    text-decoration: none;
+    color: #0d0d0d; }
   footer .yellow-divide {
     color: rgba(13, 13, 13, 0.4); }
+  footer a:hover {
+    color: rgba(13, 13, 13, 0.7); }
 
 header {
   width: 100%;
@@ -89,11 +94,11 @@ header {
     background: rgba(255, 242, 0, 0.25); }
   .thumbnail a .lesson-number {
     position: relative;
-    font-family: "Oswald";
+    font-family: "Oswald", "Helvetica", "Arial", sans-serif;
     display: inline-block;
     font-weight: 700;
     line-height: 1.5;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.9);
     z-index: 1; }
   .thumbnail a:hover {
     cursor: pointer;
