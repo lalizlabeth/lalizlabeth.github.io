@@ -7,7 +7,7 @@ body {
 
 .page-wrapper {
   min-height: 100%;
-  margin-bottom: -65px;
+  margin-bottom: -90px;
   overflow: hidden; }
 
 .page-wrap:after {
@@ -15,7 +15,7 @@ body {
   display: block; }
 
 footer, .page-wrap:after {
-  height: 65px; }
+  height: 90px; }
 
 footer {
   background: white; }
@@ -24,7 +24,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     text-align: center;
-    padding: 20px 0; }
+    padding: 35px 0; }
   footer .yellow-divide {
     color: rgba(13, 13, 13, 0.4); }
 
@@ -161,6 +161,9 @@ section.image {
 
 /* Example for media query: change number of items per row */
 @media screen and (max-width: 1190px) {
+  .page-wrapper {
+    margin-bottom: 0; }
+
   .thumbnails a {
     width: 20%;
     /* Fallback */
