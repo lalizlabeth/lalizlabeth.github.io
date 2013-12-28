@@ -196,12 +196,26 @@ section.image {
   .page-wrapper {
     margin-bottom: 0; }
 
+  .global-nav {
+    width: 215px; }
+
+  .global-nav li {
+    float: none;
+    margin: 0 auto; }
+
   .thumbnails a {
     width: 50%;
     /* Fallback */
     width: -webkit-calc(100% / 2);
     width: calc(100% / 2); } }
 @media screen and (max-width: 340px) {
+  .global-nav {
+    width: 215px; }
+
+  .global-nav li {
+    float: none;
+    margin: 0 auto; }
+
   .page-wrapper {
     margin-bottom: 0; }
 
