@@ -1,15 +1,36 @@
 header {
   width: 100%;
   background: white;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-  padding: 20px 0; }
+  padding: 40px 0 20px 0;
+  z-index: 1;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); }
   header h1 {
     color: #0d0d0d;
-    font: 300 30px "Open Sans", "Helvetica", "Arial", sans-serif;
+    font: 700 35px "Open Sans", "Helvetica", "Arial", sans-serif;
     text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.15em;
     margin: 0; }
+  header nav ul {
+    margin: 20px auto;
+    width: 645px; }
+  header nav li {
+    display: block;
+    float: left;
+    padding: 5px 20px 10px 20px;
+    width: 175px; }
+    header nav li a {
+      font: 400 15px "Open Sans", "Helvetica", "Arial", sans-serif;
+      letter-spacing: 0.2em;
+      color: #0d0d0d;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center; }
+    header nav li.active {
+      border-bottom: 2px solid #fff200; }
+    header nav li:hover a {
+      color: rgba(13, 13, 13, 0.7); }
 
 .thumbnails {
   margin: 0;
@@ -22,7 +43,6 @@ header {
   position: relative;
   float: left;
   font-size: 12em;
-  line-height: 1.5;
   max-height: 290px;
   text-align: center;
   width: 16.6666667%;
@@ -38,18 +58,12 @@ header {
   .thumbnail a.shade4 {
     background: rgba(255, 242, 0, 0.25); }
   .thumbnail a .lesson-number {
+    position: relative;
     font-family: "Oswald";
     display: inline-block;
-    font-weight: 900;
-    line-height: 1;
-    position: relative;
+    font-weight: 700;
+    line-height: 1.5;
     color: rgba(0, 0, 0, 0.8);
-    -webkit-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-perspective: 550px;
-    -ms-perspective: 550px;
-    perspective: 550px;
     z-index: 1; }
   .thumbnail a:hover {
     cursor: pointer;
