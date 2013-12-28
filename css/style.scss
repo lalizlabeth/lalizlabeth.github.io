@@ -1,4 +1,143 @@
-$yellow: rgba(255, 242, 0, 1.0);
+$yellow1: rgba(255, 242, 0, 1.0);
+$yellow2: rgba(255, 242, 0, 0.75);
+$yellow3: rgba(255, 242, 0, 0.5);
+$yellow4: rgba(255, 242, 0, 0.25);
+$black: rgba(13, 13, 13, 1.0);
+
+// Settings for sticky footer
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.page-wrapper {
+  min-height: 100%;
+  margin-bottom: -65px;
+  overflow: hidden;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+footer, .page-wrap:after {
+  height: 65px; 
+}
+
+footer {
+  background: white;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  .caption {
+    font: 400 14px "Open Sans", "Helvetica", "Arial", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .yellow-divide {
+    color: rgba(13, 13, 13, 0.4);
+  }
+}
+
+// Home Page
+header {
+  width: 100%;
+  background: white; 
+  padding: 40px 0 20px 0; 
+  z-index: 1;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  h1 {
+    color: $black;
+    font: 700 35px "Open Sans", "Helvetica", "Arial", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin: 0;
+  }
+  nav {
+    ul {
+      margin: 20px auto;
+      width: 645px;
+    }
+    li {
+      display: block;
+      float: left;
+      padding: 5px 20px 10px 20px;
+      width: 175px;
+      a {
+        font: 400 15px "Open Sans", "Helvetica", "Arial", sans-serif;
+        letter-spacing: 0.2em;
+        color: $black;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      &.active {
+        border-bottom: 2px solid $yellow1;
+      }
+      &:hover a {
+        color: rgba(13, 13, 13, 0.7);
+      }
+    }
+  }
+}
+
+.thumbnails {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.thumbnail a {
+  position: relative;
+  float: left;
+  font-size: 12em;
+  max-height: 290px; 
+  text-align: center;
+  width: 16.6666667%;  
+
+  /* Fallback */
+  width: -webkit-calc(100% / 6);
+  width: calc(100% / 6);
+
+  &.shade1 {
+    background: $yellow1;
+  }
+  &.shade2 {
+    background: $yellow2;
+  }
+  &.shade3 {
+    background: $yellow3;
+  }
+  &.shade4 {
+    background: $yellow4;
+  }
+
+  .lesson-number {
+    position: relative;
+    font-family: "Oswald";
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.5;
+    color: hsla(0, 0%, 0%, 0.8);
+    z-index: 1;
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+// Articles
 
 h1,
 h2 {
@@ -71,13 +210,68 @@ section {
     &:hover {
       background-color: rgba(13, 13, 13, 0.8);
     }
-    background-color: rgba(13, 13, 13, 1.0);
+    background-color: $black;
   }
 
   #nav-trigger {
     z-index: 1;
-    background: $yellow url("../images/menu-icon.png");
+    background: $yellow1 url("../images/menu-icon.png");
     &:hover {
     }
+  }
+}
+
+/* Example for media query: change number of items per row */
+@media screen and (max-width: 1190px) {
+  .thumbnails a {
+    width: 20%;
+    /* Fallback */
+    width: -webkit-calc(100% / 5);
+    width: calc(100% / 5);
+  }
+}
+
+@media screen and (max-width: 945px) {
+  .page-wrapper {
+    margin-bottom: 0;
+  }
+  .thumbnails a {
+    width: 25%;
+    /* Fallback */
+    width: -webkit-calc(100% / 4);
+    width: calc(100% / 4);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .page-wrapper {
+    margin-bottom: 0;
+  }
+  .thumbnails a {
+    width: 33.3333333%;
+    /* Fallback */
+    width: -webkit-calc(100% / 3);
+    width: calc(100% / 3);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .page-wrapper {
+    margin-bottom: 0;
+  }
+  .thumbnails a {
+    width: 50%;
+    /* Fallback */
+    width: -webkit-calc(100% / 2);
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .page-wrapper {
+    margin-bottom: 0;
+  }
+  .thumbnails a {
+    width: 100%;
   }
 }
