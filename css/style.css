@@ -18,8 +18,7 @@ footer, .page-wrap:after {
   height: 65px; }
 
 footer {
-  background: white;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); }
+  background: white; }
   footer .caption {
     font: 400 14px "Open Sans", "Helvetica", "Arial", sans-serif;
     text-transform: uppercase;
