@@ -1,7 +1,7 @@
 header {
   width: 100%;
   background: white;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   padding: 20px 0; }
   header h1 {
     color: #0d0d0d;
@@ -12,21 +12,48 @@ header {
     margin: 0; }
 
 .thumbnails {
-  width: 99%;
-  margin-left: 1%;
-  overflow: hidden; }
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  width: 100%; }
 
 .thumbnail a {
-  display: block;
-  background: #0d0d0d;
+  position: relative;
   float: left;
-  width: 19%;
-  padding-bottom: 19%;
-  margin-right: 1%;
-  margin-top: 1%; }
-.thumbnail:hover {
-  cursor: pointer;
-  opacity: 0.5; }
+  font-size: 12em;
+  line-height: 1.5;
+  max-height: 290px;
+  text-align: center;
+  width: 16.6666667%;
+  /* Fallback */
+  width: -webkit-calc(100% / 6);
+  width: calc(100% / 6); }
+  .thumbnail a.shade1 {
+    background: #fff200; }
+  .thumbnail a.shade2 {
+    background: rgba(255, 242, 0, 0.75); }
+  .thumbnail a.shade3 {
+    background: rgba(255, 242, 0, 0.5); }
+  .thumbnail a.shade4 {
+    background: rgba(255, 242, 0, 0.25); }
+  .thumbnail a .lesson-number {
+    font-family: "Oswald";
+    display: inline-block;
+    font-weight: 900;
+    line-height: 1;
+    position: relative;
+    color: rgba(0, 0, 0, 0.8);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 550px;
+    -ms-perspective: 550px;
+    perspective: 550px;
+    z-index: 1; }
+  .thumbnail a:hover {
+    cursor: pointer;
+    opacity: 0.8; }
 
 h1,
 h2 {
@@ -87,3 +114,32 @@ section.image {
   .page-navigation #nav-trigger {
     z-index: 1;
     background: #fff200 url("../images/menu-icon.png"); }
+
+/* Example for media query: change number of items per row */
+@media screen and (max-width: 1190px) {
+  .thumbnails a {
+    width: 20%;
+    /* Fallback */
+    width: -webkit-calc(100% / 5);
+    width: calc(100% / 5); } }
+@media screen and (max-width: 945px) {
+  .thumbnails a {
+    width: 25%;
+    /* Fallback */
+    width: -webkit-calc(100% / 4);
+    width: calc(100% / 4); } }
+@media screen and (max-width: 760px) {
+  .thumbnails a {
+    width: 33.3333333%;
+    /* Fallback */
+    width: -webkit-calc(100% / 3);
+    width: calc(100% / 3); } }
+@media screen and (max-width: 560px) {
+  .thumbnails a {
+    width: 50%;
+    /* Fallback */
+    width: -webkit-calc(100% / 2);
+    width: calc(100% / 2); } }
+@media screen and (max-width: 340px) {
+  .thumbnails a {
+    width: 100%; } }
