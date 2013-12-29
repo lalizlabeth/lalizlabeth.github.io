@@ -92,8 +92,7 @@ body {
 
 .introduction {
   width: 100%;
-  height: 500px;
-  display: table; }
+  height: 500px; }
 
 .intro-text {
   margin: 0 5%;
