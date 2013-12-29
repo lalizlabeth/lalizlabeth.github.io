@@ -130,7 +130,8 @@ body {
 
   .topbar {
     height: auto;
-    background: #e83887; }
+    background: #e83887;
+    position: static; }
     .topbar li {
       float: none; }
     .topbar .logo {
@@ -144,4 +145,7 @@ body {
       padding: 20px 0;
       border-bottom: 1px rgba(255, 255, 255, 0.2) solid; }
       .topbar .topbar-item.active, .topbar .topbar-item:hover {
-        background: rgba(33, 31, 32, 0.9); } }
+        background: rgba(33, 31, 32, 0.9); }
+
+  #content {
+    margin-top: 0; } }
