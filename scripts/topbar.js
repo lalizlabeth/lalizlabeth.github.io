@@ -10,12 +10,14 @@ $(document).ready(function() {
         topHeight = 70 * (index + 1);
         $(this).css({
           'top': topHeight,
+          'box-shadow': "0 0 6px rgba(0, 0, 0, 0.6)",
         });
       });
       nav_opened = true;
     } else {
       $('.case-study-menu-item').css({
         'top': 0,
+        'box-shadow': "none",
       });
       nav_opened = false;
     }

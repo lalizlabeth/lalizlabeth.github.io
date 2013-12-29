@@ -66,8 +66,7 @@ body {
     margin: 0;
     position: absolute;
     top: 0;
-    left: 0;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6); }
+    left: 0; }
     .topbar.case-study li:hover {
       background-color: #a32a69;
       cursor: pointer; }
@@ -76,7 +75,8 @@ body {
     height: 100%;
     display: block; }
   .topbar.case-study .logo {
-    z-index: 3; }
+    z-index: 3;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6); }
   .topbar .case-study-menu-item {
     background: #e83887;
     -webkit-transition: top 1s ease-out;

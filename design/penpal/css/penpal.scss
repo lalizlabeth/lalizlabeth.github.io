@@ -1,8 +1,64 @@
-$black1: rgba(33, 31, 32, 1.0);
-$pink: #e83887;
-$dark-pink: #a32a69;
-$topbarHeight: 70px;
+$penpal_blue: #4eb6e2;
+$tan: #fff;
 
+// Mixins
+@mixin box-shadow {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+@mixin text-shadow {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+html,
 body {
-  background: $black1;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: white;
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+}
+
+article {
+  @include box-shadow;
+  padding: 0 10%;
+  width: 80%;
+  position: relative;
+  min-height: 100%;
+}
+
+.article-heading {
+  font: 100 25px/36px "Open Sans", "Helvetica", "Arial", sans-serif;
+  letter-spacing: 0.2em;
+}
+
+#brainstorming {
+  z-index: -1;
+}
+
+#intro {
+  background: $penpal_blue;
+  color: $tan;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.pen-pal,
+.caption {
+  @include text-shadow;
+}
+
+.pen-pal {
+  font: 70px "Pacifico", script;
+}
+
+.caption {
+  font: 100 25px/36px "Open Sans", "Helvetica", "Arial", sans-serif;
+  width: 700px;
+  margin: 0 auto;
 }

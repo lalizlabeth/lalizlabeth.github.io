@@ -1,2 +1,44 @@
+html,
 body {
-  background: #211f20; }
+  width: 100%;
+  height: 100%; }
+
+body {
+  background: white; }
+
+#content {
+  width: 100%;
+  height: 100%; }
+
+article {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  padding: 0 10%;
+  width: 80%;
+  position: relative;
+  min-height: 100%; }
+
+.article-heading {
+  font: 100 25px/36px "Open Sans", "Helvetica", "Arial", sans-serif;
+  letter-spacing: 0.2em; }
+
+#brainstorming {
+  z-index: -1; }
+
+#intro {
+  background: #4eb6e2;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center; }
+
+.pen-pal,
+.caption {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+
+.pen-pal {
+  font: 70px "Pacifico", script; }
+
+.caption {
+  font: 100 25px/36px "Open Sans", "Helvetica", "Arial", sans-serif;
+  width: 700px;
+  margin: 0 auto; }

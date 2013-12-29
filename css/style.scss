@@ -86,7 +86,6 @@ body {
       position: absolute;
       top: 0;
       left: 0;
-      box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
       &:hover {
         background-color: $dark-pink;
         cursor: pointer;
@@ -99,6 +98,7 @@ body {
     }
     .logo {
       z-index: 3;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
     }
   }
   .case-study-menu-item {
