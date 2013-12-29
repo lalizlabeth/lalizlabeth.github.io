@@ -1,5 +1,7 @@
 body {
   background: #e83887; }
+  body.dark {
+    background: #211f20; }
 
 #content {
   margin-top: 70px; }
@@ -62,18 +64,31 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6); }
 
 .thumbnail a {
   position: relative;
   float: left;
-  font-size: 12em;
   height: 300px;
   text-align: center;
   width: 33.333%;
   /* Fallback */
   width: -webkit-calc(100% / 3);
   width: calc(100% / 3); }
+  .thumbnail a.penpal {
+    background: center url(../images/thumb-penpal-bw.png); }
+    .thumbnail a.penpal:hover {
+      background: center url(../images/thumb-penpal.png); }
+  .thumbnail a.davinci {
+    background: center url(../images/thumb-davinci-bw.png); }
+    .thumbnail a.davinci:hover {
+      background: center url(../images/thumb-davinci.png); }
+  .thumbnail a.fungi {
+    background: center url(../images/thumb-fungi-bw.png); }
+    .thumbnail a.fungi:hover {
+      background: center url(../images/thumb-fungi.png); }
   .thumbnail a.shade1 {
     background: #eee; }
   .thumbnail a.shade2 {
@@ -83,8 +98,20 @@ body {
   .thumbnail a.shade4 {
     background: #777; }
   .thumbnail a:hover {
-    cursor: pointer;
-    opacity: 0.8; }
+    cursor: pointer; }
+  .thumbnail a .thumbnail-content {
+    position: absolute;
+    width: 100%;
+    bottom: 0; }
+  .thumbnail a h3 {
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    color: black;
+    font: 300 18px "Open Sans", "Helvetica", "Arial", sans-serif;
+    letter-spacing: 0.25em;
+    text-decoration: none;
+    text-transform: uppercase; }
 
 @media screen and (max-width: 805px) {
   .topbar .topbar-item {
