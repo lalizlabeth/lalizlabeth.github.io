@@ -9,6 +9,7 @@ body {
 
 #content {
   margin-top: $topbarHeight;
+  display: table;
 }
 
 .topbar {
@@ -79,7 +80,7 @@ body {
       position: relative;
     }
     li {
-      float: none;
+      floast: none;
       width: $topbarHeight;
       height: $topbarHeight;
       margin: 0;
@@ -120,9 +121,15 @@ body {
 }
 
 // Home specific
+.introduction {
+  width: 100%;
+  height: 500px;
+}
 .intro-text {
   margin: 0 5%;
   text-align: center;
+  display: table-cell;
+  vertical-align: middle;
   h1 {
     color: white;
     font: 150px bebas-neue, "Bebas Neue", "Helvetica", "Arial", sans-serif;
