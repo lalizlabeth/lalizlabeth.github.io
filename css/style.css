@@ -49,11 +49,49 @@ body {
     width: 70px; }
 
 .intro-text {
-  margin: 0 5%; }
+  margin: 0 5%;
+  text-align: center; }
   .intro-text h1 {
     color: white;
-    font: 15em bebas-neue, "Bebas Neue", "Helvetica", "Arial", sans-serif;
+    font: 150px bebas-neue, "Bebas Neue", "Helvetica", "Arial", sans-serif;
     text-transform: uppercase; }
+
+.thumbnails {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%; }
+
+.thumbnail a {
+  position: relative;
+  float: left;
+  font-size: 12em;
+  max-height: 290px;
+  text-align: center;
+  width: 33.333%;
+  /* Fallback */
+  width: -webkit-calc(100% / 3);
+  width: calc(100% / 3); }
+  .thumbnail a.shade1 {
+    background: #eee; }
+  .thumbnail a.shade2 {
+    background: #ccc; }
+  .thumbnail a.shade3 {
+    background: #aaa; }
+  .thumbnail a.shade4 {
+    background: #777; }
+  .thumbnail a .lesson-number {
+    position: relative;
+    font-family: "Oswald", "Helvetica", "Arial", sans-serif;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.9);
+    z-index: 1; }
+  .thumbnail a:hover {
+    cursor: pointer;
+    opacity: 0.8; }
 
 @media screen and (max-width: 805px) {
   .topbar .topbar-item {

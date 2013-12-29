@@ -2,9 +2,21 @@ $black1: rgba(33, 31, 32, 1.0);
 $pink: #e83887;
 $topbarHeight: 70px;
 
+body {
+  background: $pink;
+}
+
+#content {
+  margin-top: $topbarHeight;
+}
+
 .topbar {
   background: $black1;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
   height: $topbarHeight;
+  position: fixed;
+  top: 0;
+  right: 0;
   width: 100%;
   ul,
   li {
@@ -52,12 +64,68 @@ $topbarHeight: 70px;
   }
 }
 
-// Media Queries
-
-@media screen and (max-width: 930px) {
-  .topbar .topbar-item {
+// Home specific
+.intro-text {
+  margin: 0 5%;
+  text-align: center;
+  h1 {
+    color: white;
+    font: 150px bebas-neue, "Bebas Neue", "Helvetica", "Arial", sans-serif;
+    text-transform: uppercase;   
   }
 }
+
+// Thumbnails 
+.thumbnails {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.thumbnail a {
+  position: relative;
+  float: left;
+  font-size: 12em;
+  max-height: 290px; 
+  text-align: center;
+  width: 33.333%;  
+
+  /* Fallback */
+  width: -webkit-calc(100% / 3);
+  width: calc(100% / 3);
+
+  &.shade1 {
+    background: #eee;
+  }
+  &.shade2 {
+    background: #ccc;
+  }
+  &.shade3 {
+    background: #aaa;
+  }
+  &.shade4 {
+    background: #777;
+  }
+
+  .lesson-number {
+    position: relative;
+    font-family: "Oswald", "Helvetica", "Arial", sans-serif;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.5;
+    color: hsla(0, 0%, 0%, 0.9);
+    z-index: 1;
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+} 
+
+// Media Queries
 
 @media screen and (max-width: 805px) {
   .topbar .topbar-item {
