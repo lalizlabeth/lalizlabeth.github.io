@@ -1,0 +1,108 @@
+$black1: rgba(33, 31, 32, 1.0);
+$pink: #e83887;
+$topbarHeight: 70px;
+
+.topbar {
+  background: $black1;
+  height: $topbarHeight;
+  width: 100%;
+  ul,
+  li {
+    height: 100%;
+  }
+  ul {
+    overflow: hidden;
+  }
+  li {
+    float: left;
+  }
+  .topbar-item {
+    float: left;
+    margin: 0 10px;
+    padding: 23px 2% 0 2%;
+    text-align: center;
+    &.active {
+      border-bottom: 4px solid $pink;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      &:hover,
+      a:hover, {
+        background: $black1;
+        cursor: default;
+      }
+    }
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+    }
+    a {
+      color: #fff;
+      display: block;
+      font: 300 18px "Open Sans", "Helvetica", "Arial", sans-serif;
+      letter-spacing: 0.25em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+  .logo {
+    background: $pink url(../images/logo-70px.png);
+    margin-right: 10px;
+    width: $topbarHeight;
+  }
+}
+
+// Media Queries
+
+@media screen and (max-width: 930px) {
+  .topbar .topbar-item {
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .topbar .topbar-item {
+    padding-top: 25px;
+    a {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .topbar .topbar-item {
+    padding: 25px 1.5% 0 1.5%;
+    a {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 590px) {
+  body,
+  html {
+    width: 100%;
+  }
+  .topbar {
+    height: auto;
+    background: $pink;
+    li {
+      float: none;
+    }
+    .logo {
+      display: block;
+      width: $topbarHeight;
+      height: $topbarHeight;
+    }
+    .topbar-item {
+      width: 100%;
+      background: $black1;
+      margin: 0;
+      padding: 20px 0;
+      border-bottom: 1px rgba(255, 255, 255, 0.2) solid;
+      &.active,
+      &:hover {
+        background: rgba(33, 31, 32, 0.9);
+      }
+    }
+  }
+}
