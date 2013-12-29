@@ -11,7 +11,8 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
   .topbar ul,
   .topbar li {
     height: 100%; }
@@ -67,7 +68,7 @@ body {
   position: relative;
   float: left;
   font-size: 12em;
-  max-height: 290px;
+  height: 300px;
   text-align: center;
   width: 33.333%;
   /* Fallback */
@@ -81,14 +82,6 @@ body {
     background: #aaa; }
   .thumbnail a.shade4 {
     background: #777; }
-  .thumbnail a .lesson-number {
-    position: relative;
-    font-family: "Oswald", "Helvetica", "Arial", sans-serif;
-    display: inline-block;
-    font-weight: 700;
-    line-height: 1.5;
-    color: rgba(0, 0, 0, 0.9);
-    z-index: 1; }
   .thumbnail a:hover {
     cursor: pointer;
     opacity: 0.8; }
