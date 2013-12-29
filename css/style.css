@@ -1,7 +1,5 @@
 body {
   background: #e83887; }
-  body.dark {
-    background: #211f20; }
 
 #content {
   margin-top: 70px; }
@@ -50,6 +48,47 @@ body {
     background: #e83887 url(../images/logo-70px.png);
     margin-right: 10px;
     width: 70px; }
+  .topbar .case-study-title {
+    color: #fff;
+    margin: 23px 0 0 93px;
+    font: 300 18px "Open Sans", "Helvetica", "Arial", sans-serif;
+    letter-spacing: 0.25em;
+    text-transform: uppercase; }
+  .topbar.case-study ul {
+    overflow: visible;
+    background: none;
+    height: auto;
+    position: relative; }
+  .topbar.case-study li {
+    float: none;
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6); }
+    .topbar.case-study li:hover {
+      background-color: #a32a69;
+      cursor: pointer; }
+  .topbar.case-study a {
+    width: 100%;
+    height: 100%;
+    display: block; }
+  .topbar.case-study .logo {
+    z-index: 3; }
+  .topbar .case-study-menu-item {
+    background: #e83887;
+    -webkit-transition: top 1s ease-out;
+    -firefox-transition: top 1s ease-out;
+    -o-transition: top 1s ease-out;
+    transition: top 1s ease-out; }
+    .topbar .case-study-menu-item.home {
+      background-image: url(../images/home.png);
+      z-index: 2; }
+    .topbar .case-study-menu-item.back {
+      background-image: url(../images/back.png);
+      z-index: 1; }
 
 .intro-text {
   margin: 0 5%;
@@ -112,6 +151,15 @@ body {
     letter-spacing: 0.25em;
     text-decoration: none;
     text-transform: uppercase; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #211f20;
+  height: 300px;
+  width: 100%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6); }
 
 @media screen and (max-width: 805px) {
   .topbar .topbar-item {
