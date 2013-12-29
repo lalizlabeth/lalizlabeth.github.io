@@ -9,7 +9,6 @@ body {
 
 #content {
   margin-top: $topbarHeight;
-  display: table;
 }
 
 .topbar {
@@ -124,6 +123,7 @@ body {
 .introduction {
   width: 100%;
   height: 500px;
+  display: table;
 }
 .intro-text {
   margin: 0 5%;
