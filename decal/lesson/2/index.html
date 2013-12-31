@@ -64,10 +64,13 @@
         }
       });
 
-      $(window).resize( function() {
-        console.log("window resized");
-        var video_width = $('.video').width(),
+      var video_width = $('.video').width(),
           new_height = video_width * 0.624;
+      $('.video').height(new_height);
+
+      $(window).resize( function() {
+        video_width = $('.video').width(),
+        new_height = video_width * 0.624;
         $('.video').height(new_height);
       });      
     });
