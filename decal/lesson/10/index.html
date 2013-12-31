@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-type" content="text/html" charset="utf-8">
+    <title>Graphic Design Principles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Elizabeth Lin">
+
+    <link href="../../css/reset.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Droid+Serif' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <nav class="page-navigation">
+      <ul>
+        <li id="nav-trigger">
+          <a href="javascript:void(0)"></a>
+        </li>
+        <li class="nav-item" id="home-nav"><a href="javascript:void(0)"></a></li>
+        <li class="nav-item" id="assignment-nav"><a href="javascript:void(0)"></a></li>
+        <li class="nav-item" id="behance-nav"><a href="javascript:void(0)"></a></li>
+      </ul>
+    </nav>
+    <article>
+      <section class="image"></section>
+      <section class="text">
+        <h2>Lesson 10</h2>
+        <h1>Portfolio &amp; Resume Building</h1>
+        <p>Keytar synth American Apparel, trust fund qui bicycle rights placeat slow-carb cray fingerstache Austin delectus XOXO. Echo Park gastropub deep v tousled, nostrud gluten-free letterpress cupidatat freegan mlkshk esse Schlitz pop-up. Skateboard jean shorts brunch pork belly ea retro. Chia cred occaecat, officia try-hard readymade Pinterest hella. Whatever stumptown Echo Park actually keytar photo booth. Kale chips art party placeat, vero ullamco Williamsburg vinyl nisi Shoreditch fixie. YOLO commodo iPhone whatever gentrify eiusmod swag leggings voluptate blog retro bicycle rights, master cleanse Marfa.</p>
+
+        <p>Excepteur nostrud art party, aesthetic proident gastropub seitan ad vinyl non magna fap trust fund hella. Et esse sunt asymmetrical, drinking vinegar in 90's incididunt Truffaut aliqua deep v roof party pork belly culpa laborum. Mustache Tumblr Echo Park YOLO blog. Blog cray vinyl dolor nostrud tote bag meggings, tousled bicycle rights selfies dreamcatcher Intelligentsia pickled literally eu. Non voluptate gastropub, fingerstache leggings elit banh mi laboris squid dreamcatcher nihil ugh farm-to-table Neutra. In assumenda skateboard 3 wolf moon pop-up single-origin coffee. Farm-to-table iPhone reprehenderit, Schlitz actually viral Thundercats pariatur et vegan kale chips sed mixtape.</p>
+
+        <p>Nesciunt esse biodiesel ex skateboard sint. Salvia Schlitz letterpress Tonx ex semiotics, next level lo-fi lomo est stumptown gentrify ad art party Tumblr. You probably haven't heard of them tousled street art, iPhone selvage 90's consequat ethnic mlkshk jean shorts authentic qui vero. Bushwick leggings exercitation sed. Brooklyn Terry Richardson odio ex. Roof party Terry Richardson lomo Thundercats. Next level raw denim gluten-free, whatever Williamsburg magna organic placeat tattooed Brooklyn mumblecore.</p>
+
+        <p>Eiusmod cray semiotics, bespoke you probably haven't heard of them kogi VHS sapiente enim Tonx cornhole Terry Richardson yr direct trade esse. Reprehenderit you probably haven't heard of them sartorial, mumblecore nesciunt voluptate keffiyeh sapiente sustainable dolore assumenda. Ullamco art party hoodie DIY cupidatat aliquip. Sapiente est Williamsburg four loko post-ironic Bushwick, aliquip church-key hoodie. Kogi you probably haven't heard of them sartorial wolf, sriracha DIY Brooklyn paleo beard. PBR raw denim four loko Shoreditch, synth art party retro aliqua fingerstache in McSweeney's before they sold out. Echo Park pop-up keytar culpa.</p>
+      </section>
+    </article>
+
+  <!-- Javascript -->
+  <script src="../../scripts/jquery-1.7.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+
+      var nav_opened = false;
+
+      // Controls navigation
+      $('#nav-trigger').click(function(evt) {
+        var topHeight;
+        if (nav_opened === false) {
+          $('.nav-item').each(function(index){
+            topHeight = 80 * (index + 1);
+            $(this).css({
+              'top': topHeight,
+            });
+          });
+          nav_opened = true;
+        } else {
+          $('.nav-item').css({
+            'top': 0,
+          });
+          nav_opened = false;
+        }
+      });
+
+    });
+  </script>
+  <!-- End Javascript -->
+
+  </body>
+</html>
