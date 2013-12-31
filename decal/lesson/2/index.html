@@ -64,9 +64,11 @@
         }
       });
 
-      var video_width = $('.video').width(),
+      $(window).resize(function(){
+        var video_width = $('.video').width(),
           new_height = video_width * 0.624;
-      $('.video').height(new_height);
+        $('.video').height(new_height);
+      });      
     });
   </script>
   <!-- End Javascript -->
