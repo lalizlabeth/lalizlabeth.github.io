@@ -34,7 +34,7 @@
         <p>Keytar synth American Apparel, trust fund qui bicycle rights placeat slow-carb cray fingerstache Austin delectus XOXO. Echo Park gastropub deep v tousled, nostrud gluten-free letterpress cupidatat freegan mlkshk esse Schlitz pop-up. Skateboard jean shorts brunch pork belly ea retro. Chia cred occaecat, officia try-hard readymade Pinterest hella. Whatever stumptown Echo Park actually keytar photo booth. Kale chips art party placeat, vero ullamco Williamsburg vinyl nisi Shoreditch fixie. YOLO commodo iPhone whatever gentrify eiusmod swag leggings voluptate blog retro bicycle rights, master cleanse Marfa.</p>
 
         <h3>Case Study: USA Today Redesign</h3>
-        <iframe class="video" src="//player.vimeo.com/video/62878476" width="500" height="312" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe class="video" src="//player.vimeo.com/video/62878476" width="100%" height="312" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </section>
     </article>
 
@@ -64,6 +64,9 @@
         }
       });
 
+      var video_width = $('.video').width(),
+          new_height = video_width * 0.624;
+      $('.video').height(new_height);
     });
   </script>
   <!-- End Javascript -->
