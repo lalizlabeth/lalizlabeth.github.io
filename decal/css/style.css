@@ -116,10 +116,22 @@ h2 {
   font: 500 25px "Lato", "Helvetica", "Arial", sans-serif;
   font-style: italic; }
 
+h3 {
+  font: 300 28px/38px "Lato", "Helvetica", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 15px;
+  border-left: 28px #fff200 solid;
+  padding-left: 20px; }
+
 p {
   font: 22px/1.8 "Droid Serif", "Times New Roman", serif;
   color: #444;
   margin-bottom: 22px; }
+
+.video {
+  margin: 0 auto;
+  width: 500px; }
 
 section.text {
   padding: 30px 20%; }
