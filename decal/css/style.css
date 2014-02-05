@@ -115,6 +115,8 @@ h1 {
 h2 {
   font: 500 25px "Lato", "Helvetica", "Arial", sans-serif;
   font-style: italic; }
+  h2 strong {
+    font-weight: 900; }
 
 h3 {
   font: 300 28px/38px "Lato", "Helvetica", "Arial", sans-serif;
@@ -126,6 +128,10 @@ p {
   font: 22px/1.8 "Droid Serif", "Times New Roman", serif;
   color: #444;
   margin-bottom: 22px; }
+  p.small {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #777; }
 
 q {
   font: italic 22px/1.5 "Droid Serif", "Times New Roman", serif;
