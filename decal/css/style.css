@@ -132,6 +132,9 @@ p {
     font-size: 18px;
     margin-top: 5px;
     color: #777; }
+  p em {
+    font-style: italic;
+    color: #aaa; }
 
 q {
   font: italic 22px/1.5 "Droid Serif", "Times New Roman", serif;
