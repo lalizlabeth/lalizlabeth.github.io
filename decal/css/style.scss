@@ -187,6 +187,16 @@ p {
 
 img {
   margin-bottom: 30px;
+  &.left-image {
+    float: left;
+    height: 300px;
+    margin-right: 10px;
+  }
+}
+
+.images {
+  overflow: hidden;
+  display: block;
 }
 
 q {
