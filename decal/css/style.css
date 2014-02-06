@@ -149,6 +149,21 @@ q {
   text-align: center;
   padding: 10px 40px; }
 
+.btn-download {
+  font: 20px bebas-neue, "Bebas Neue", "Helvetica", "Arial";
+  margin-bottom: 30px;
+  display: block;
+  text-decoration: none;
+  background: #fff200;
+  padding: 10px 20px;
+  color: #0d0d0d;
+  width: 200px;
+  text-align: center;
+  border-bottom: #d7cd00 5px solid;
+  border-radius: 10px; }
+  .btn-download:hover, .btn-download:active {
+    border-bottom: #d7cd00 2px solid; }
+
 section.text {
   padding: 30px 20%; }
 section.image {
