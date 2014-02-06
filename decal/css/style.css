@@ -138,6 +138,14 @@ p {
 
 img {
   margin-bottom: 30px; }
+  img.left-image {
+    float: left;
+    height: 300px;
+    margin-right: 10px; }
+
+.images {
+  overflow: hidden;
+  display: block; }
 
 q {
   font: italic 22px/1.5 "Droid Serif", "Times New Roman", serif;
