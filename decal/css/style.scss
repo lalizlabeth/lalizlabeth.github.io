@@ -15,7 +15,7 @@ body {
 }
 
 .page-wrapper {
-  min-height: 100%;
+  min-height: 102%;
   margin-bottom: -90px;
   overflow: hidden;
 }
@@ -129,7 +129,7 @@ header {
 
   .lesson-number {
     position: relative;
-    font-family: "Oswald", "Helvetica", "Arial", sans-serif;
+    font-family: bebas-neue, "Bebas Neue", "Helvetica", "Arial", sans-serif;
     display: inline-block;
     font-weight: 700;
     line-height: 1.5;
@@ -158,6 +158,9 @@ h1 {
 h2 {
   font: 500 25px "Lato", "Helvetica", "Arial", sans-serif;
   font-style: italic;
+  strong {
+    font-weight: 900;
+  }
 }
 
 h3 {
@@ -165,14 +168,58 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   margin-bottom: 15px;
-  border-left: 28px $yellow1 solid;
-  padding-left: 20px;
 }
 
 p {
   font: 22px/1.8 "Droid Serif", "Times New Roman", serif;
   color: #444;
   margin-bottom: 22px;
+  &.small {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #777;
+  }
+  em {
+    font-style: italic;
+    color: #aaa;
+  }
+}
+
+img {
+  margin-bottom: 30px;
+}
+
+q {
+  font: italic 22px/1.5 "Droid Serif", "Times New Roman", serif;
+  color: #777;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  margin: 5px 0 27px 0;
+  display: block;
+  text-align: center;
+  padding: 10px 40px;
+}
+
+.btn-download {
+  font: 20px bebas-neue, "Bebas Neue", "Helvetica", "Arial";
+  display: block;
+  text-decoration: none;
+  background: $yellow1;
+  padding: 10px 20px;
+  color: $black;
+  width: 200px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-bottom: #d7cd00 5px solid;
+  border-radius: 10px;
+  &:hover,
+  &:active {
+    border-bottom: #d7cd00 2px solid;
+  }
+  &.large {
+    width: 300px;
+    margin-bottom: 30px;
+  }
 }
 
 section {
