@@ -128,17 +128,17 @@ h3 {
     h3 a:hover {
       opacity: 0.5; }
 
-li,
+.text li,
 p {
   font: 22px/1.8 "Droid Serif", "Times New Roman", serif;
   color: #444;
   margin-bottom: 22px; }
-  li.small,
+  .text li.small,
   p.small {
     font-size: 18px;
     margin-top: 5px;
     color: #777; }
-  li em,
+  .text li em,
   p em {
     font-style: italic;
     color: #aaa; }
