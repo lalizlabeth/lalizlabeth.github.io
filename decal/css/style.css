@@ -15,7 +15,8 @@ body {
   display: block; }
 
 footer, .page-wrap:after {
-  height: 90px; }
+  height: 90px;
+  margin-top: 30px; }
 
 footer {
   background: white; }
@@ -32,6 +33,9 @@ footer {
     color: rgba(13, 13, 13, 0.4); }
   footer a:hover {
     color: rgba(13, 13, 13, 0.7); }
+
+hr {
+  margin-bottom: 30px; }
 
 header {
   width: 100%;
@@ -122,7 +126,8 @@ h3 {
   font: 300 28px/38px "Lato", "Helvetica", "Arial", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  margin-top: 20px; }
   h3 a {
     color: #45D9FF; }
     h3 a:hover {
@@ -142,6 +147,14 @@ p {
   p em {
     font-style: italic;
     color: #aaa; }
+
+.text li {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  font: 18px/1.5 "Droid Serif", "Times New Roman", serif;
+  color: #555; }
+  .text li strong {
+    font-weight: bold; }
 
 img {
   margin-bottom: 30px; }
