@@ -123,18 +123,30 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   margin-bottom: 15px; }
+  h3 a {
+    color: #45D9FF; }
+    h3 a:hover {
+      opacity: 0.5; }
 
+li,
 p {
   font: 22px/1.8 "Droid Serif", "Times New Roman", serif;
   color: #444;
   margin-bottom: 22px; }
+  li.small,
   p.small {
     font-size: 18px;
     margin-top: 5px;
     color: #777; }
+  li em,
   p em {
     font-style: italic;
     color: #aaa; }
+
+li {
+  margin-left: 30px; }
+  li strong {
+    font-weight: bold; }
 
 img {
   margin-bottom: 30px; }
@@ -146,6 +158,9 @@ img {
 .images {
   overflow: hidden;
   display: block; }
+
+.video {
+  margin-bottom: 30px; }
 
 q {
   font: italic 22px/1.5 "Droid Serif", "Times New Roman", serif;
