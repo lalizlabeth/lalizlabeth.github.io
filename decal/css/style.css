@@ -143,11 +143,6 @@ p {
     font-style: italic;
     color: #aaa; }
 
-li {
-  margin-left: 30px; }
-  li strong {
-    font-weight: bold; }
-
 img {
   margin-bottom: 30px; }
   img.left-image {
