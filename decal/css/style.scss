@@ -27,6 +27,7 @@ body {
 
 footer, .page-wrap:after {
   height: 90px; 
+  margin-top: 30px;
 }
 
 footer {
@@ -48,6 +49,10 @@ footer {
   a:hover {
     color: rgba(13, 13, 13, 0.7)
   }
+}
+
+hr {
+  margin-bottom: 30px;
 }
 
 // Home Page
@@ -161,6 +166,12 @@ h2 {
   strong {
     font-weight: 900;
   }
+  a {
+    color: #0FBEEB;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
 }
 
 h3 {
@@ -168,15 +179,16 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   margin-bottom: 15px;
+  margin-top: 20px;
   a {
-    color: #45D9FF;
+    color: #0FBEEB;
     &:hover {
       opacity: 0.5;
     }
   }
 }
 
-li,
+.text li,
 p {
   font: 22px/1.8 "Droid Serif", "Times New Roman", serif;
   color: #444;
@@ -192,8 +204,11 @@ p {
   }
 }
 
-li {
+.text li {
   margin-left: 30px;
+  margin-bottom: 10px;
+  font: 18px/1.5 "Droid Serif", "Times New Roman", serif;
+  color: #555;
   strong {
     font-weight: bold;
   }
