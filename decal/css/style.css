@@ -126,16 +126,23 @@ h2 {
     h2 a:hover {
       opacity: 0.5; }
 
+h4,
 h3 {
   font: 300 28px/38px "Lato", "Helvetica", "Arial", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   margin-bottom: 15px;
   margin-top: 20px; }
+  h4 a,
   h3 a {
     color: #0FBEEB; }
+    h4 a:hover,
     h3 a:hover {
       opacity: 0.5; }
+
+h4 {
+  font-weight: bold;
+  font-size: 24px; }
 
 .text li,
 p {
