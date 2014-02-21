@@ -140,8 +140,9 @@ h3 {
     h3 a:hover {
       opacity: 0.5; }
 
-h4 {
-  font-weight: bold; }
+h4.special {
+  font-weight: bold;
+  font-size: 20px; }
 
 .text li,
 p {
