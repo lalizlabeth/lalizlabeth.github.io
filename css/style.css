@@ -30,9 +30,9 @@ body {
     position: relative;
     background: #fff;
     margin-left: 0;
-    -moz-transition: margin-left 2s;
-    -webkit-transition: margin-left 2s;
-    transition: margin-left 2s; }
+    -moz-transition: margin-left 2s, background 1s, color 1s;
+    -webkit-transition: margin-left 2s, background 1s, color 1s;
+    transition: margin-left 2s, background 1s, color 1s; }
     .general-navigation .general-navigation-item.first {
       margin-left: 65px; }
     .general-navigation .general-navigation-item a {
@@ -44,7 +44,9 @@ body {
       text-decoration: none; }
     .general-navigation .general-navigation-item:hover {
       cursor: pointer;
-      background: #fcdce4; }
+      background: #ee478d; }
+      .general-navigation .general-navigation-item:hover a {
+        color: white; }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6, p {
@@ -157,9 +159,9 @@ h4 {
   -webkit-box-sizing: border-box;
   height: 400px;
   padding: 25px;
-  -webkit-transition: background 1s;
-  -moz-transition: background 1s;
-  transition: background 1s; }
+  -webkit-transition: background 0.75s, color 0.75s;
+  -moz-transition: background 0.75s, color 0.75s;
+  transition: background 0.75s, color 0.75s; }
   .column.column-1 {
     width: 20%; }
   .column.column-1.group, .column.column-3.group {
