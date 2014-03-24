@@ -20,6 +20,8 @@ body {
     background: #ee478d url("../images/menu-icon.png");
     background-size: contain;
     z-index: 2; }
+    .general-navigation #logo a {
+      display: block; }
     .general-navigation #logo:hover {
       cursor: pointer; }
   .general-navigation .general-navigation-item {

@@ -20,13 +20,14 @@
 
     <!-- Scripts -->
     <script src="scripts/jquery-1.7.1.min.js"></script>
+    <script src="scripts/scripts.js"></script>
   </head>
   <body>
 
     <div id="wrapper">
       <nav class="general-navigation">
         <ul>
-          <li id="logo"><a href="javascript:void(0)"></a></li>
+          <li id="logo" class="open"><a href="javascript:void(0)"></a></li>
           <li class="general-navigation-item first"><a href="#">Home</a></li>
           <li class="general-navigation-item"><a href="#">About</a></li>
           <li class="general-navigation-item"><a href="#">Design</a></li>
@@ -43,28 +44,5 @@
 
       <div class="column column-3"></div>
     </div>
-  <script>
-    $(document).ready(function() {
-
-      $(window).scroll(function() {
-        var width,
-            scrollHeight = $(document).scrollTop();
-
-        $(".general-navigation-item").each(function(index) {
-          if (scrollHeight === 0) {
-            $(this).css("margin-left", 0);
-            if (index === 0) {
-              $(this).css("margin-left", 65);
-            }
-          } else {
-            width = $(this).width();
-            $(this).css("margin-left", -width);
-          }
-        });
-
-      });
-
-    });
-  </script>
   </body>
 </html>

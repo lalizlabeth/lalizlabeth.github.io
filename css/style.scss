@@ -1,276 +1,90 @@
-$black1: rgba(33, 31, 32, 1.0);
-$pink: #e83887;
-$dark-pink: #a32a69;
-$topbarHeight: 70px;
+$pink: #ee478d;
+$blue: #00bcdd;
+$yellow: #ffe100;
+$gray: #42393c;
+
+$light_gray: #e4e1e2;
+$light_pink: #fcdce4;
 
 body {
-  background: $pink;
+  background: $light_gray;
 }
 
-#content {
-  margin-top: $topbarHeight;
+#wrapper {
+  overflow: hidden;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.topbar {
-  background: $black1;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
-  height: $topbarHeight;
+/* Navigation */
+.general-navigation {
   position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  z-index: 1;
-  ul,
-  li {
-    height: 100%;
-  }
   ul {
     overflow: hidden;
   }
   li {
-    float: left;
+    height: 65px;
   }
-  .topbar-item {
-    float: left;
-    margin: 0 10px;
-    padding: 23px 2% 0 2%;
-    text-align: center;
-    &.active {
-      border-bottom: 4px solid $pink;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      &:hover,
-      a:hover, {
-        background: $black1;
-        cursor: default;
-      }
+  #logo {
+    position: fixed;
+    width: 65px;
+    background: $pink url("../images/menu-icon.png");
+    background-size: contain;
+    z-index: 2;
+    a {
+      display: block;
     }
     &:hover {
-      background: rgba(255, 255, 255, 0.1);
       cursor: pointer;
     }
+  }
+  .general-navigation-item {
+    float: left;
+    position: relative;
+    background: #fff;
+    margin-left: 0;
+
+    -webkit-transition: margin-left 2s;
+    transition: margin-left 2s;
+
+    &.first {
+      margin-left: 65px;
+    }
+
     a {
-      color: #fff;
       display: block;
-      font: 300 18px "Open Sans", "Helvetica", "Arial", sans-serif;
-      letter-spacing: 0.25em;
+      padding: 0 40px;
+      font: 500 18px/20px "Alegreya Sans", "Helvetica", "Arial", sans-serif;
+      margin-top: 22px;
+      color: $pink;
       text-decoration: none;
-      text-transform: uppercase;
     }
-  }
-  .logo {
-    background: $pink url(../images/logo-70px.png);
-    margin-right: 10px;
-    width: $topbarHeight;
-  }
-  .case-study-title {
-    color: #fff;
-    margin: 23px 0 0 93px;
-    font: 300 18px "Open Sans", "Helvetica", "Arial", sans-serif;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-  }
-  &.case-study {
-    ul {
-      overflow: visible;
-      background: none;
-      height: auto;
-      position: relative;
-    }
-    li {
-      floast: none;
-      width: $topbarHeight;
-      height: $topbarHeight;
-      margin: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      &:hover {
-        background-color: $dark-pink;
-        cursor: pointer;
-      }
-    }
-    a {
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
-    .logo {
-      z-index: 3;
-      box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
-    }
-  }
-  .case-study-menu-item {
-    background: $pink;
-    -webkit-transition: top 1s ease-out;
-    -firefox-transition: top 1s ease-out;
-    -o-transition: top 1s ease-out;
-    transition: top 1s ease-out; 
-
-    &.home {
-      background-image: url(../images/home.png);
-      z-index: 2;
-    }
-    &.back {
-      background-image: url(../images/back.png);
-      z-index: 1;
+    &:hover {
+      cursor: pointer;
+      background: $light_pink;
     }
   }
 }
 
-// Home specific
-.introduction {
-  width: 100%;
-  height: 500px;
-  display: table;
-}
-.intro-text {
-  margin: 0 5%;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  h1 {
-    color: white;
-    font: 150px bebas-neue, "Bebas Neue", "Helvetica", "Arial", sans-serif;
-    text-transform: uppercase;   
-  }
-}
-
-// Thumbnails 
-.thumbnails {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  width: 100%;
-  overflow: hidden;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
-}
-
-.thumbnail a {
-  position: relative;
+/* Responsive Columns */
+.column {
   float: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   height: 300px;
-  text-align: center;
-  width: 33.333%;  
 
-  /* Fallback */
-  width: -webkit-calc(100% / 3);
-  width: calc(100% / 3);
-
-  &.penpal {
-    background: center url(../images/thumb-penpal-bw.png);
-    &:hover {
-      background: center url(../images/thumb-penpal.png);
-    }
+  &.column-1 {
+    width: 33.333%;
+    background: $blue;
   }
-  &.davinci {
-    background: center url(../images/thumb-davinci-bw.png);
-    &:hover {
-      background: center url(../images/thumb-davinci.png);
-    }
-  }
-  &.fungi {
-    background: center url(../images/thumb-fungi-bw.png);
-    &:hover {
-      background: center url(../images/thumb-fungi.png);
-    }
-  }
-  &.shade1 {
-    background: #eee;
-  }
-  &.shade2 {
-    background: #ccc;
-  }
-  &.shade3 {
-    background: #aaa;
-  }
-  &.shade4 {
-    background: #777;
-  }
-
-  &:hover {
-    cursor: pointer;
-  }
-  .thumbnail-content {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-  }
-  h3 {
-    padding: 20px 0;
-    background: rgba(255, 255, 255, 0.9);
-    text-decoration: none;
-    color: black;
-
-    font: 300 18px "Open Sans", "Helvetica", "Arial", sans-serif;
-    letter-spacing: 0.25em;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-} 
-
-footer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background: $black1;
-  height: 300px;
-  width:  100%;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
-}
-
-// Media Queries
-
-@media screen and (max-width: 805px) {
-  .topbar .topbar-item {
-    padding-top: 25px;
-    a {
-      font-size: 14px;
-    }
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .topbar .topbar-item {
-    padding: 25px 1.5% 0 1.5%;
-    a {
-      font-size: 14px;
-    }
-  }
-}
-
-@media screen and (max-width: 590px) {
-  body,
-  html {
-    width: 100%;
-  }
-  .topbar {
-    height: auto;
+  &.column-2 {
+    width: 66.666%;
     background: $pink;
-    position: static;
-    li {
-      float: none;
-    }
-    .logo {
-      display: block;
-      width: $topbarHeight;
-      height: $topbarHeight;
-    }
-    .topbar-item {
-      width: 100%;
-      background: $black1;
-      margin: 0;
-      padding: 20px 0;
-      border-bottom: 1px rgba(255, 255, 255, 0.2) solid;
-      &.active,
-      &:hover {
-        background: rgba(33, 31, 32, 0.9);
-      }
-    }
   }
-  #content {
-    margin-top: 0;
+  &.column-3 {
+    width: 100%;
+    background: $gray;
   }
 }
