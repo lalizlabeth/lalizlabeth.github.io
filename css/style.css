@@ -58,6 +58,8 @@ h1, h2, h3, h4, h5, h6, p {
       background: #ffcf01; }
     h1.section-heading.blue, h2.section-heading.blue, h3.section-heading.blue, h4.section-heading.blue, h5.section-heading.blue, h6.section-heading.blue, p.section-heading.blue {
       background: #00bcdd; }
+    h1.section-heading.gray, h2.section-heading.gray, h3.section-heading.gray, h4.section-heading.gray, h5.section-heading.gray, h6.section-heading.gray, p.section-heading.gray {
+      background: #42393c; }
 
 h1 {
   font-weight: 700;
@@ -101,10 +103,11 @@ h4 {
 #decal {
   background: #42393c; }
 
+.text.short {
+  width: 200px; }
+
 #penpal {
   background: #ee478d; }
-  #penpal .text {
-    width: 200px; }
 
 #info {
   background: #42393c; }
@@ -147,11 +150,11 @@ h4 {
   transition: background 1s; }
   .column.column-1 {
     width: 20%; }
-    .column.column-1.group {
-      padding: 0; }
-    .column.column-1.half-height, .column.column-1.third-height {
-      padding: 25px;
-      width: 100%; }
+  .column.column-1.group, .column.column-3.group {
+    padding: 0; }
+  .column.column-1.half-height, .column.column-1.third-height, .column.column-3.half-height, .column.column-3.third-height {
+    padding: 25px;
+    width: 100%; }
   .column.column-2 {
     width: 40%; }
   .column.column-3 {
