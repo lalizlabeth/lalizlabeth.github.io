@@ -141,7 +141,7 @@ h4 {
 }
 
 #decal {
-  background: $gray;
+  background: $yellow;
 }
 
 .text.short {
@@ -150,6 +150,20 @@ h4 {
 
 #penpal {
   background: $pink;
+}
+
+#posters {
+  background: url("../images/home/posters.jpg");
+}
+
+#design-minor {
+  background: url("../images/home/design-minor.png");
+  background-position:center;
+}
+
+#jamnbread {
+  background: url("../images/home/jam-n-bread.gif");
+  background-position: center;
 }
 
 #info {

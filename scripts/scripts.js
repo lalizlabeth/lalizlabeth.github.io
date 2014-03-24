@@ -24,14 +24,18 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     var scrollHeight = $(document).scrollTop();
-    if (scrollHeight === 0) {
-      toggleNavigation("closed");
-      firstScroll = false;
-    } else {
-      if (firstScroll === false) {
-        toggleNavigation("open");
-        firstScroll = true;
-      }
+    if (firstScroll === false) {
+      toggleNavigation("open");
+      firstScroll = true;
     }
+    // if (scrollHeight === 0) {
+    //   toggleNavigation("closed");
+    //   firstScroll = false;
+    // } else {
+    //   if (firstScroll === false) {
+    //     toggleNavigation("open");
+    //     firstScroll = true;
+    //   }
+    // }
   });
 });

@@ -101,13 +101,24 @@ h4 {
   padding-top: 80px; }
 
 #decal {
-  background: #42393c; }
+  background: #ffcf01; }
 
 .text.short {
   width: 200px; }
 
 #penpal {
   background: #ee478d; }
+
+#posters {
+  background: url("../images/home/posters.jpg"); }
+
+#design-minor {
+  background: url("../images/home/design-minor.png");
+  background-position: center; }
+
+#jamnbread {
+  background: url("../images/home/jam-n-bread.gif");
+  background-position: center; }
 
 #info {
   background: #42393c; }
