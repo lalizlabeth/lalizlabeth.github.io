@@ -47,9 +47,9 @@ body {
     background: #fff;
     margin-left: 0;
 
-    -moz-transition: margin-left 2s;
-    -webkit-transition: margin-left 2s;
-    transition: margin-left 2s;
+    -moz-transition: margin-left 2s, background 1s, color 1s;
+    -webkit-transition: margin-left 2s, background 1s, color 1s;
+    transition: margin-left 2s, background 1s, color 1s;
 
     &.first {
       margin-left: 65px;
@@ -65,7 +65,10 @@ body {
     }
     &:hover {
       cursor: pointer;
-      background: $light_pink;
+      background: $pink;
+      a {
+        color: white;
+      }
     }
   }
 }
@@ -141,7 +144,6 @@ h4 {
 }
 
 #decal {
-  background: $yellow;
 }
 
 .text.short {
@@ -149,7 +151,7 @@ h4 {
 }
 
 #penpal {
-  background: $pink;
+  background: url("../images/home/penpal.jpg");
 }
 
 #posters {
@@ -164,6 +166,26 @@ h4 {
 #jamnbread {
   background: url("../images/home/jam-n-bread.gif");
   background-position: center;
+}
+
+#spotify {
+  background: url("../images/home/spotify.jpg");
+  background-position: center;
+}
+
+#lostplayground {
+  background: url("../images/home/nostalgia.jpg");
+  background-position: center;
+}
+
+#bare {
+  background: url("../images/home/bare.jpg");
+  background-position: center;
+}
+
+#motivateme {
+  background: url("../images/home/motivateme.gif");
+  background-position: 0px -75px;
 }
 
 #info {
@@ -207,9 +229,9 @@ $box_height: 400px;
   height: $box_height;
   padding: 25px;
 
-  -webkit-transition: background 1s;
-  -moz-transition: background 1s;
-  transition: background 1s;
+  -webkit-transition: background 0.75s, color 0.75s;
+  -moz-transition: background 0.75s, color 0.75s;
+  transition: background 0.75s, color 0.75s;
 
   &.column-1 {
     width: 20%;
