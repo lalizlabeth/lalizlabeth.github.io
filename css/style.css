@@ -96,14 +96,16 @@ h4 {
   bottom: 25px;
   right: 25px;
   text-align: right; }
+  .text.short {
+    width: 200px; }
 
 /* Sections */
 #about-me {
   background: #00bcdd url("../images/portrait.jpg");
   padding-top: 80px; }
 
-.text.short {
-  width: 200px; }
+#decal {
+  background: url("../images/home/decal.png"); }
 
 #penpal {
   background: url("../images/home/penpal.jpg"); }

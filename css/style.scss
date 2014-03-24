@@ -135,6 +135,9 @@ h4 {
   bottom: 25px;
   right: 25px;
   text-align: right;
+  &.short {
+    width: 200px;
+  }
 }
 
 /* Sections */
@@ -144,10 +147,7 @@ h4 {
 }
 
 #decal {
-}
-
-.text.short {
-  width: 200px;
+  background: url("../images/home/decal.png");
 }
 
 #penpal {
@@ -179,7 +179,7 @@ h4 {
 }
 
 #bare {
-  background: url("../images/home/bare.jpg");
+  background: url("../images/home/BARE.jpg");
   background-position: center;
 }
 
