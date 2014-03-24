@@ -106,30 +106,32 @@ h4 {
   #penpal .text {
     width: 200px; }
 
-#info a {
-  width: 100%;
-  height: 100%;
-  display: block;
-  text-decoration: none;
-  font: 500 25px "Alegreya Sans", "Helvetica", "Arial";
-  color: white;
-  height: 25px;
-  text-align: center;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0; }
-#info .column:hover {
-  cursor: pointer;
-  background: #fff; }
-  #info .column:hover.blue a {
-    color: #00bcdd; }
-  #info .column:hover.gray a {
-    color: #42393c; }
-  #info .column:hover.pink a {
-    color: #ee478d; }
+#info {
+  background: #42393c; }
+  #info a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    font: 500 25px "Alegreya Sans", "Helvetica", "Arial";
+    color: white;
+    height: 25px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+  #info .column:hover {
+    cursor: pointer;
+    background: #fff; }
+    #info .column:hover.blue a {
+      color: #00bcdd; }
+    #info .column:hover.gray a {
+      color: #42393c; }
+    #info .column:hover.pink a {
+      color: #ee478d; }
 
 /* Responsive Columns */
 .column {
