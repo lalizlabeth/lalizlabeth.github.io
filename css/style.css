@@ -127,6 +127,10 @@ h4 {
   background: url("../images/home/nostalgia.jpg");
   background-position: center; }
 
+#bare {
+  background: url("../images/home/bare.jpg");
+  background-size: center; }
+
 #info {
   background: #42393c; }
   #info a {
