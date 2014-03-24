@@ -129,7 +129,11 @@ h4 {
 
 #bare {
   background: url("../images/home/bare.jpg");
-  background-size: center; }
+  background-position: center; }
+
+#motivateme {
+  background: url("../images/home/motivateme.gif");
+  background-position: 0px -75px; }
 
 #info {
   background: #42393c; }
