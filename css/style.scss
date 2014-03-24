@@ -20,6 +20,7 @@ body {
 /* Navigation */
 .general-navigation {
   position: fixed;
+  z-index: 3;
   ul {
     overflow: hidden;
   }
@@ -67,24 +68,66 @@ body {
   }
 }
 
+/* Typography */
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Alegreya Sans", "Helvetica", "Arial";
+  color: white;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+h3 {
+  font-weight: 100;
+  font-size: 20px;
+}
+
+/* Sections */
+#about-me {
+  background: $blue url("../images/portrait.jpg");
+  padding-top: 80px;
+  text-align: right;
+  position: relative;
+  h1, h3 {
+    color: $gray;
+  }
+  .text {
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+  }
+}
+
 /* Responsive Columns */
 .column {
   float: left;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  height: 300px;
+  height: 400px;
+  padding: 25px;
 
   &.column-1 {
-    width: 33.333%;
-    background: $blue;
-  }
-  &.column-2 {
-    width: 66.666%;
+    width: 20%;
     background: $pink;
   }
+  &.column-2 {
+    width: 40%;
+    background: $blue;
+  }
   &.column-3 {
-    width: 100%;
+    width: 60%;
+    background: $blue;
+  }
+  &.column-4 {
+    width: 80%;
     background: $gray;
+  }
+  &.column-5 {
+    width: 100%;
+    background: red;
   }
 }
