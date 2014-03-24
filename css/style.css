@@ -56,7 +56,8 @@ h1 {
 
 h3 {
   font-weight: 100;
-  font-size: 20px; }
+  font-size: 20px;
+  line-height: 30px; }
 
 /* Sections */
 #about-me {
@@ -64,9 +65,14 @@ h3 {
   padding-top: 80px;
   text-align: right;
   position: relative; }
-  #about-me h1, #about-me h3 {
-    color: #42393c; }
+  #about-me h1,
+  #about-me h3 {
+    height: auto;
+    float: right;
+    padding: 4px 16px;
+    background: #ee478d; }
   #about-me .text {
+    width: 300px;
     display: block;
     position: absolute;
     bottom: 25px;

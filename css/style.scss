@@ -82,6 +82,7 @@ h1 {
 h3 {
   font-weight: 100;
   font-size: 20px;
+  line-height: 30px;
 }
 
 /* Sections */
@@ -90,10 +91,17 @@ h3 {
   padding-top: 80px;
   text-align: right;
   position: relative;
-  h1, h3 {
-    color: $gray;
+
+  h1,
+  h3 {
+    height: auto;
+    float: right;
+    padding: 4px 16px;
+    background: $pink;
   }
+
   .text {
+    width: 300px;
     display: block;
     position: absolute;
     bottom: 25px;
