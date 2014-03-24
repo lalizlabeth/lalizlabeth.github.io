@@ -151,17 +151,13 @@ h4 {
       padding: 25px;
       width: 100%; }
   .column.column-2 {
-    width: 40%;
-    background: #42393c; }
+    width: 40%; }
   .column.column-3 {
-    width: 60%;
-    background: #00bcdd; }
+    width: 60%; }
   .column.column-4 {
-    width: 80%;
-    background: #42393c; }
+    width: 80%; }
   .column.column-5 {
-    width: 100%;
-    background: red; }
+    width: 100%; }
   .column.half-height {
     height: 200px; }
   .column.third-height {
