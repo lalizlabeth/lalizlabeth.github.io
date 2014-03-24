@@ -16,26 +16,55 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,700' rel='stylesheet' type='text/css'>
-    <script src="//use.edgefonts.net/bebas-neue.js"></script> 
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700' rel='stylesheet' type='text/css'>
+
+    <!-- Scripts -->
+    <script src="scripts/jquery-1.7.1.min.js"></script>
   </head>
   <body>
-    <nav class="topbar">
-      <ul>
-        <li class="logo"><a href="#"></a></li>
-        <li class="active topbar-item"><a href="#">Home</a></li>
-        <li class="topbar-item"><a href="design">Design</a></li>
-        <li class="topbar-item"><a href="hack">Hack</a></li>
-        <li class="topbar-item"><a href="teach">Teach</a></li>
-        <li class="topbar-item"><a href="contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div id="content" class="introduction">
-      <div class="intro-text">
-        <h1>Elizabeth Lin</h1>
-      </div>
 
-      <footer></footer>
+    <div id="wrapper">
+      <nav class="general-navigation">
+        <ul>
+          <li id="logo"><a href="javascript:void(0)"></a></li>
+          <li class="general-navigation-item first"><a href="#">Home</a></li>
+          <li class="general-navigation-item"><a href="#">About</a></li>
+          <li class="general-navigation-item"><a href="#">Design</a></li>
+          <li class="general-navigation-item"><a href="#">Web Dev</a></li>
+          <li class="general-navigation-item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="column column-1"></div>
+      <div class="column column-1"></div>
+      <div class="column column-1"></div>
+
+      <div class="column column-2"></div><div class="column column-1"></div>
+
+      <div class="column column-3"></div>
     </div>
+  <script>
+    $(document).ready(function() {
+
+      $(window).scroll(function() {
+        var width,
+            scrollHeight = $(document).scrollTop();
+
+        $(".general-navigation-item").each(function(index) {
+          if (scrollHeight === 0) {
+            $(this).css("margin-left", 0);
+            if (index === 0) {
+              $(this).css("margin-left", 65);
+            }
+          } else {
+            width = $(this).width();
+            $(this).css("margin-left", -width);
+          }
+        });
+
+      });
+
+    });
+  </script>
   </body>
 </html>
