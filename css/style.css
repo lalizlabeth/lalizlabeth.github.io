@@ -70,6 +70,8 @@ h1, h2, h3, h4, h5, h6, p {
 h1 {
   font-weight: 700;
   font-size: 45px; }
+  h1.special {
+    font-size: 8em; }
   h1.section-heading {
     padding: 4px 16px; }
 
@@ -192,6 +194,10 @@ h6 {
       color: #ee478d; }
 
 /* About Me */
+/* Design */
+#design-heading .text {
+  left: 25px; }
+
 /* Responsive Columns */
 .column {
   position: relative;
