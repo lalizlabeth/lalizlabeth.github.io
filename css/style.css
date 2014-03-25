@@ -42,10 +42,10 @@ body {
       margin-top: 22px;
       color: #ee478d;
       text-decoration: none; }
-    .general-navigation .general-navigation-item:hover {
+    .general-navigation .general-navigation-item.active, .general-navigation .general-navigation-item:hover {
       cursor: pointer;
       background: #ee478d; }
-      .general-navigation .general-navigation-item:hover a {
+      .general-navigation .general-navigation-item.active a, .general-navigation .general-navigation-item:hover a {
         color: white; }
 
 /* Typography */
@@ -165,6 +165,7 @@ h4 {
     #info .column:hover.pink a {
       color: #ee478d; }
 
+/* About Me */
 /* Responsive Columns */
 .column {
   position: relative;
@@ -180,6 +181,9 @@ h4 {
   .column:hover {
     opacity: 0.8;
     cursor: pointer; }
+  .column.no-link {
+    opacity: 1.0;
+    cursor: default; }
   .column .column-href {
     display: block;
     width: 100%;
