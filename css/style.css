@@ -178,7 +178,7 @@ h4 {
   -moz-transition: background 0.75s, color 0.75s;
   transition: background 0.75s, color 0.75s; }
   .column:hover {
-    opacity: 0.7;
+    opacity: 0.8;
     cursor: pointer; }
   .column .column-href {
     display: block;
