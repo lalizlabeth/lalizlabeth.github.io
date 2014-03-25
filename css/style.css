@@ -110,6 +110,13 @@ h5 {
     font-style: italic;
     font-weight: 400; }
 
+h6 {
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 17px;
+  font-style: italic;
+  margin-bottom: 10px; }
+
 .solo-text {
   position: absolute;
   bottom: 25px;
@@ -209,9 +216,9 @@ h5 {
     height: 100%; }
   .column.column-1 {
     width: 20%; }
-  .column.column-1.group, .column.column-3.group {
+  .column.column-1.group, .column.column-2.group, .column.column-3.group {
     padding: 0; }
-  .column.column-1.half-height, .column.column-1.third-height, .column.column-3.half-height, .column.column-3.third-height {
+  .column.column-1.half-height, .column.column-1.third-height, .column.column-2.half-height, .column.column-2.third-height, .column.column-3.half-height, .column.column-3.third-height {
     padding: 25px;
     width: 100%; }
   .column.column-2 {
@@ -234,6 +241,8 @@ h5 {
     background: #ffcf01; }
   .column.gray {
     background: #42393c; }
+  .column.white {
+    background: #fff; }
 
 @media screen and (max-width: 500px) {
   #wrapper {
@@ -241,3 +250,6 @@ h5 {
 
   .column.column-1, .column.column-2, .column.column-3, .column.column-4, .column.column-5 {
     width: 100%; } }
+@media screen and (max-width: 1200px) {
+  h5 {
+    font-size: 35px; } }
