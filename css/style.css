@@ -47,6 +47,10 @@ body {
       background: #ee478d; }
       .general-navigation .general-navigation-item.active a, .general-navigation .general-navigation-item:hover a {
         color: white; }
+    .general-navigation .general-navigation-item.active:hover {
+      cursor: default; }
+      .general-navigation .general-navigation-item.active:hover a {
+        cursor: default; }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6, p {
@@ -98,6 +102,21 @@ h4 {
   text-align: right; }
   .text.short {
     width: 200px; }
+
+h5 {
+  font-weight: 100;
+  font-size: 40px; }
+  h5 em {
+    font-style: italic;
+    font-weight: 400; }
+
+.solo-text {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  left: 25px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 /* Sections */
 #about-me {
