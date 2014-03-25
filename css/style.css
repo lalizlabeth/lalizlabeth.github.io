@@ -212,6 +212,10 @@ h6 {
   -webkit-transition: background 0.75s, color 0.75s;
   -moz-transition: background 0.75s, color 0.75s;
   transition: background 0.75s, color 0.75s; }
+  .column.headline {
+    height: auto; }
+    .column.headline h1 {
+      color: #42393c; }
   .column:hover {
     opacity: 0.8;
     cursor: pointer; }
@@ -249,13 +253,16 @@ h6 {
     background: #ffcf01; }
   .column.gray {
     background: #42393c; }
+  .column.white {
+    background: #fff; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 731px) {
   #wrapper {
     width: 100%; }
 
   .column.column-1, .column.column-2, .column.column-3, .column.column-4, .column.column-5 {
-    width: 100%; } }
+    width: 100%;
+    background-size: cover; } }
 @media screen and (max-width: 1200px) {
   h5 {
     font-size: 35px; } }
