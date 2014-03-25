@@ -197,6 +197,8 @@ h6 {
 /* Design */
 #design-heading .text {
   left: 25px; }
+#design-heading .section-heading {
+  float: none; }
 
 /* Responsive Columns */
 .column {
