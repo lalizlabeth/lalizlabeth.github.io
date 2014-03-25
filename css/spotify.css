@@ -1,5 +1,7 @@
 #spotify-intro {
-  background: url("../images/spotify/intro.jpg");
+  height: 600px;
+  background: #fff url("../images/spotify/intro.jpg") no-repeat 0 100px;
+  background-position: center;
 }
 
 .column.green,
@@ -7,9 +9,28 @@
   background: #8dc73f;
 }
 
+.description {
+  height: auto;
+}
+
+.auto-height {
+  height: auto;
+}
+
+.row {
+  overflow: hidden;
+  background: #42393c;
+  float: left;
+}
+
 h5.answer {
   font-size: 35px;
-  line-height: 40px;
+  line-height: 45px;
+}
+
+hr {
+  border: 1px solid white;
+  margin: 15px 0;
 }
 
 .column-4 {
@@ -18,42 +39,42 @@ h5.answer {
 
 #design-1 {
   background: url("../images/spotify/1.png");
-  background-size: cover;
+  background-size: contain;
 }
 
 #design-2 {
   background: url("../images/spotify/2.png");
-  background-size: cover;
+  background-size: contain;
 }
 
 #design-3 {
   background: url("../images/spotify/3.png");
-  background-size: cover;
+  background-size: contain;
 }
 
 #design-4 {
   background: url("../images/spotify/4.png");
-  background-size: cover;
+  background-size: contain;
 }
 
 #design-5 {
   background: url("../images/spotify/5.png");
-  background-size: cover;
+  background-size: contain;
 }
 
 #design-6 {
   background: url("../images/spotify/6.png");
-  background-size: cover;
+  background-size: contain;
 }
 
 #design-7 {
   background: url("../images/spotify/7.png");
-  background-size: cover;
+  background-size: contain;
 }
 
 #design-8 {
   background: url("../images/spotify/8.png");
-  background-size: cover;
+  background-size: contain;
 }
 
 
