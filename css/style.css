@@ -209,9 +209,9 @@ h6 {
   -webkit-box-sizing: border-box;
   height: 400px;
   padding: 25px;
-  -webkit-transition: background 0.75s, color 0.75s;
-  -moz-transition: background 0.75s, color 0.75s;
-  transition: background 0.75s, color 0.75s; }
+  -webkit-transition: background 0.75s, color 0.75s, opacity 0.75s;
+  -moz-transition: background 0.75s, color 0.75s, opacity 0.75s;
+  transition: background 0.75s, color 0.75s, opacity 0.75s; }
   .column.headline {
     height: auto; }
     .column.headline h1 {
