@@ -209,8 +209,7 @@ p {
   .display-image img {
     display: inline-block;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
-    width: 80%;
-    min-width: 400px; }
+    width: 90%; }
 
 .group, .xsmall-group, .small-group, .medium-group, .large-group, .xlarge-group {
   padding: 0;
