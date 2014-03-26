@@ -246,7 +246,7 @@ p {
   .module.no-link, .no-link.xsmall-module, .no-link.small-module, .no-link.medium-module, .no-link.large-module, .no-link.xlarge-module {
     opacity: 1.0;
     cursor: default; }
-  .module .module-href, .xsmall-module .module-href, .small-module .module-href, .medium-module .module-href, .large-module .module-href, .xlarge-module .module-href {
+  .module a, .xsmall-module a, .small-module a, .medium-module a, .large-module a, .xlarge-module a {
     display: block;
     width: 100%;
     height: 100%; }
