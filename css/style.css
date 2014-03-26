@@ -109,72 +109,6 @@ p {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* Special Sections */
-#about-me {
-  background: url("../images/portrait.jpg");
-  padding-top: 80px; }
-
-#decal {
-  background: url("../images/home/decal.png"); }
-
-#penpal {
-  background: url("../images/home/penpal.jpg"); }
-
-#posters {
-  background: url("../images/home/posters.jpg"); }
-
-#design-minor {
-  background: url("../images/home/design-minor.png");
-  background-position: center; }
-
-#jamnbread {
-  background: url("../images/home/jam-n-bread.gif");
-  background-position: center; }
-
-#spotify {
-  background: url("../images/home/spotify.jpg");
-  background-position: center; }
-
-#lostplayground {
-  background: url("../images/home/nostalgia.jpg");
-  background-position: center; }
-
-#bare {
-  background: url("../images/home/BARE.jpg");
-  background-position: center; }
-
-#motivateme {
-  background: url("../images/home/motivateme.gif");
-  background-position: 0px -75px; }
-
-#social-media {
-  background: #42393c; }
-  #social-media a {
-    width: 100%;
-    height: 100%;
-    display: block;
-    text-decoration: none;
-    font: 500 25px "Alegreya Sans", "Helvetica", "Arial";
-    color: white;
-    height: 25px;
-    text-align: center;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0; }
-  #social-media .module:hover, #social-media .xsmall-module:hover, #social-media .small-module:hover, #social-media .medium-module:hover, #social-media .large-module:hover, #social-media .xlarge-module:hover {
-    cursor: pointer;
-    background: white;
-    opacity: 1.0; }
-    #social-media .module:hover.blue a, #social-media .xsmall-module:hover.blue a, #social-media .small-module:hover.blue a, #social-media .medium-module:hover.blue a, #social-media .large-module:hover.blue a, #social-media .xlarge-module:hover.blue a {
-      color: #00bcdd; }
-    #social-media .module:hover.gray a, #social-media .xsmall-module:hover.gray a, #social-media .small-module:hover.gray a, #social-media .medium-module:hover.gray a, #social-media .large-module:hover.gray a, #social-media .xlarge-module:hover.gray a {
-      color: #42393c; }
-    #social-media .module:hover.pink a, #social-media .xsmall-module:hover.pink a, #social-media .small-module:hover.pink a, #social-media .medium-module:hover.pink a, #social-media .large-module:hover.pink a, #social-media .xlarge-module:hover.pink a {
-      color: #ee478d; }
-
 .container {
   background: white;
   width: 100%;
@@ -191,9 +125,9 @@ p {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -webkit-transition: background 0.75s, color 0.75s, opacity 0.75s;
-  -moz-transition: background 0.75s, color 0.75s, opacity 0.75s;
-  transition: background 0.75s, color 0.75s, opacity 0.75s; }
+  -webkit-transition: opacity 0.75s;
+  -moz-transition: opacity 0.75s;
+  transition: opacity 0.75s; }
   .module:hover, .xsmall-module:hover, .small-module:hover, .medium-module:hover, .large-module:hover, .xlarge-module:hover {
     opacity: 0.8;
     cursor: pointer; }
@@ -399,6 +333,76 @@ p {
 
 .small-module-text {
   width: 200px; }
+
+/* Special Styles */
+#about-me {
+  background: url("../images/portrait.jpg");
+  padding-top: 80px; }
+
+#decal {
+  background: url("../images/home/decal.png"); }
+
+#penpal {
+  background: url("../images/home/penpal.jpg"); }
+
+#posters {
+  background: url("../images/home/posters.jpg"); }
+
+#design-minor {
+  background: url("../images/home/design-minor.png");
+  background-position: center; }
+
+#jamnbread {
+  background: url("../images/home/jam-n-bread.gif");
+  background-position: center; }
+
+#spotify {
+  background: url("../images/home/spotify.jpg");
+  background-position: center; }
+
+#lostplayground {
+  background: url("../images/home/nostalgia.jpg");
+  background-position: center; }
+
+#bare {
+  background: url("../images/home/BARE.jpg");
+  background-position: center; }
+
+#motivateme {
+  background: url("../images/home/motivateme.gif");
+  background-position: 0px -75px; }
+
+#social-media {
+  background: #42393c; }
+  #social-media a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    font: 500 25px "Alegreya Sans", "Helvetica", "Arial";
+    color: white;
+    height: 25px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+  #social-media .module, #social-media .xsmall-module, #social-media .small-module, #social-media .medium-module, #social-media .large-module, #social-media .xlarge-module {
+    -webkit-transition: background 0.75s, color 0.75s;
+    -firefox-transition: background 0.75s, color 0.75s;
+    transition: background 0.75s, color 0.75s; }
+  #social-media .module:hover, #social-media .xsmall-module:hover, #social-media .small-module:hover, #social-media .medium-module:hover, #social-media .large-module:hover, #social-media .xlarge-module:hover {
+    cursor: pointer;
+    background: white;
+    opacity: 1.0; }
+    #social-media .module:hover.blue a, #social-media .xsmall-module:hover.blue a, #social-media .small-module:hover.blue a, #social-media .medium-module:hover.blue a, #social-media .large-module:hover.blue a, #social-media .xlarge-module:hover.blue a {
+      color: #00bcdd; }
+    #social-media .module:hover.gray a, #social-media .xsmall-module:hover.gray a, #social-media .small-module:hover.gray a, #social-media .medium-module:hover.gray a, #social-media .large-module:hover.gray a, #social-media .xlarge-module:hover.gray a {
+      color: #42393c; }
+    #social-media .module:hover.pink a, #social-media .xsmall-module:hover.pink a, #social-media .small-module:hover.pink a, #social-media .medium-module:hover.pink a, #social-media .large-module:hover.pink a, #social-media .xlarge-module:hover.pink a {
+      color: #ee478d; }
 
 /* Screen Compatibility */
 @media screen and (max-width: 731px) {

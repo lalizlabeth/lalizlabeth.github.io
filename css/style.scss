@@ -152,85 +152,6 @@ p {
   box-sizing: border-box;
 }
 
-/* Special Sections */
-#about-me {
-  background: url("../images/portrait.jpg");
-  padding-top: 80px;
-}
-
-#decal {
-  background: url("../images/home/decal.png");
-}
-
-#penpal {
-  background: url("../images/home/penpal.jpg");
-}
-
-#posters {
-  background: url("../images/home/posters.jpg");
-}
-
-#design-minor {
-  background: url("../images/home/design-minor.png");
-  background-position:center;
-}
-
-#jamnbread {
-  background: url("../images/home/jam-n-bread.gif");
-  background-position: center;
-}
-
-#spotify {
-  background: url("../images/home/spotify.jpg");
-  background-position: center;
-}
-
-#lostplayground {
-  background: url("../images/home/nostalgia.jpg");
-  background-position: center;
-}
-
-#bare {
-  background: url("../images/home/BARE.jpg");
-  background-position: center;
-}
-
-#motivateme {
-  background: url("../images/home/motivateme.gif");
-  background-position: 0px -75px;
-}
-
-#social-media {
-  background: $gray;
-  a {
-    width: 100%;
-    height: 100%;
-    display: block;
-    text-decoration: none;
-    font: 500 25px "Alegreya Sans", "Helvetica", "Arial";
-    color: white;
-    height: 25px;
-    text-align: center;
-    margin: auto;
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-  }
-  .module:hover {
-    cursor: pointer;
-    background: $white;
-    opacity: 1.0;
-    &.blue {
-      a { color: $blue; }
-    }
-    &.gray {
-      a { color: $gray; }
-    }
-    &.pink {
-      a { color: $pink; }
-    }
-  }
-}
-
 .container {
   background: $white;
   width: 100%;
@@ -254,9 +175,9 @@ $box_height: 400px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 
-  -webkit-transition: background 0.75s, color 0.75s, opacity 0.75s;
-  -moz-transition: background 0.75s, color 0.75s, opacity 0.75s;
-  transition: background 0.75s, color 0.75s, opacity 0.75s;
+  -webkit-transition: opacity 0.75s;
+  -moz-transition: opacity 0.75s;
+  transition: opacity 0.75s;
 
   &:hover {
     opacity: 0.8;
@@ -434,8 +355,91 @@ $box_height: 400px;
 }
 
 
-/* Screen Compatibility */
+/* Special Styles */
+#about-me {
+  background: url("../images/portrait.jpg");
+  padding-top: 80px;
+}
 
+#decal {
+  background: url("../images/home/decal.png");
+}
+
+#penpal {
+  background: url("../images/home/penpal.jpg");
+}
+
+#posters {
+  background: url("../images/home/posters.jpg");
+}
+
+#design-minor {
+  background: url("../images/home/design-minor.png");
+  background-position:center;
+}
+
+#jamnbread {
+  background: url("../images/home/jam-n-bread.gif");
+  background-position: center;
+}
+
+#spotify {
+  background: url("../images/home/spotify.jpg");
+  background-position: center;
+}
+
+#lostplayground {
+  background: url("../images/home/nostalgia.jpg");
+  background-position: center;
+}
+
+#bare {
+  background: url("../images/home/BARE.jpg");
+  background-position: center;
+}
+
+#motivateme {
+  background: url("../images/home/motivateme.gif");
+  background-position: 0px -75px;
+}
+
+#social-media {
+  background: $gray;
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    font: 500 25px "Alegreya Sans", "Helvetica", "Arial";
+    color: white;
+    height: 25px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
+  .module {
+    -webkit-transition: background 0.75s, color 0.75s;
+    -firefox-transition: background 0.75s, color 0.75s;
+    transition: background 0.75s, color 0.75s;
+  }
+  .module:hover {
+    cursor: pointer;
+    background: $white;
+    opacity: 1.0;
+    &.blue {
+      a { color: $blue; }
+    }
+    &.gray {
+      a { color: $gray; }
+    }
+    &.pink {
+      a { color: $pink; }
+    }
+  }
+}
+
+/* Screen Compatibility */
 @media screen and (max-width: 731px) {
   #wrapper {
     width: 100%;
