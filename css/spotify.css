@@ -18,16 +18,6 @@
   height: auto;
 }
 
-.auto-height {
-  height: auto;
-}
-
-.row {
-  overflow: hidden;
-  background: #42393c;
-  float: left;
-}
-
 h5.answer {
   font-size: 35px;
   line-height: 45px;

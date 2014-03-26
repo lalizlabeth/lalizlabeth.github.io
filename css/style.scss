@@ -10,16 +10,31 @@ $light_pink: #fcdce4;
 $light_blue: #9edbed;
 
 
+
+
 /* General */
 body {
   background: $light_gray;
 }
 
 #wrapper {
-  overflow: hidden;
+  @extend .clearfix;
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.clearfix {
+  zoom:1;
+  &:before, &:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    @extend .clearfix;
+  }
+  &:after {
+    clear: both;
+  }
 }
 
 /* Navigation */
@@ -244,6 +259,17 @@ $box_height: 400px;
   }
   &.green {
     background: $green;
+  }
+}
+
+.row {
+  @extend .clearfix;
+  background: #42393c;
+  float: left;
+  @each $size in $module-sizes {
+    .#{$size}-module {
+      height: auto;
+    }
   }
 }
 
