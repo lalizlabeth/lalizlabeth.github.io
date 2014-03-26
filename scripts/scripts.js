@@ -5,11 +5,11 @@ $(document).ready(function() {
     var width;
     $(".general-navigation-item").each(function(index) {
       if (navigationState === "open") {
-        width = -$(this).width();
+        width = -$(this).width()-$("#logo").width();
       } else {
         width = 0;
         if (index === 0) {
-          width = 65;
+          width = $("#logo").width();
         } 
       }
       $("#logo").toggleClass("open");
