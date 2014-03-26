@@ -200,7 +200,7 @@ p {
   background-position: 0px -75px;
 }
 
-#info {
+#social-media {
   background: $gray;
   a {
     width: 100%;
@@ -432,6 +432,9 @@ $box_height: 400px;
 .small-module-text {
   width: 200px;
 }
+
+
+/* Screen Compatibility */
 
 @media screen and (max-width: 731px) {
   #wrapper {

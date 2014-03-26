@@ -147,9 +147,9 @@ p {
   background: url("../images/home/motivateme.gif");
   background-position: 0px -75px; }
 
-#info {
+#social-media {
   background: #42393c; }
-  #info a {
+  #social-media a {
     width: 100%;
     height: 100%;
     display: block;
@@ -164,15 +164,15 @@ p {
     left: 0;
     bottom: 0;
     right: 0; }
-  #info .module:hover, #info .xsmall-module:hover, #info .small-module:hover, #info .medium-module:hover, #info .large-module:hover, #info .xlarge-module:hover {
+  #social-media .module:hover, #social-media .xsmall-module:hover, #social-media .small-module:hover, #social-media .medium-module:hover, #social-media .large-module:hover, #social-media .xlarge-module:hover {
     cursor: pointer;
     background: white;
     opacity: 1.0; }
-    #info .module:hover.blue a, #info .xsmall-module:hover.blue a, #info .small-module:hover.blue a, #info .medium-module:hover.blue a, #info .large-module:hover.blue a, #info .xlarge-module:hover.blue a {
+    #social-media .module:hover.blue a, #social-media .xsmall-module:hover.blue a, #social-media .small-module:hover.blue a, #social-media .medium-module:hover.blue a, #social-media .large-module:hover.blue a, #social-media .xlarge-module:hover.blue a {
       color: #00bcdd; }
-    #info .module:hover.gray a, #info .xsmall-module:hover.gray a, #info .small-module:hover.gray a, #info .medium-module:hover.gray a, #info .large-module:hover.gray a, #info .xlarge-module:hover.gray a {
+    #social-media .module:hover.gray a, #social-media .xsmall-module:hover.gray a, #social-media .small-module:hover.gray a, #social-media .medium-module:hover.gray a, #social-media .large-module:hover.gray a, #social-media .xlarge-module:hover.gray a {
       color: #42393c; }
-    #info .module:hover.pink a, #info .xsmall-module:hover.pink a, #info .small-module:hover.pink a, #info .medium-module:hover.pink a, #info .large-module:hover.pink a, #info .xlarge-module:hover.pink a {
+    #social-media .module:hover.pink a, #social-media .xsmall-module:hover.pink a, #social-media .small-module:hover.pink a, #social-media .medium-module:hover.pink a, #social-media .large-module:hover.pink a, #social-media .xlarge-module:hover.pink a {
       color: #ee478d; }
 
 .container {
@@ -400,6 +400,7 @@ p {
 .small-module-text {
   width: 200px; }
 
+/* Screen Compatibility */
 @media screen and (max-width: 731px) {
   #wrapper {
     width: 100%; }
