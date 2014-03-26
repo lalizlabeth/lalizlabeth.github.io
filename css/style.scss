@@ -405,7 +405,6 @@ $box_height: 400px;
 }
 
 #social-media {
-  background: $gray;
   a {
     width: 100%;
     height: 25px;
@@ -418,11 +417,15 @@ $box_height: 400px;
     top: 0; left: 0; bottom: 0; right: 0;
   }
   .module {
+    &:first-child {
+      height: $box_height/3 + 1;
+    }
     padding: 0;
     -webkit-transition: background 0.75s, color 0.75s;
     -firefox-transition: background 0.75s, color 0.75s;
     transition: background 0.75s, color 0.75s;
   }
+
   .module:hover {
     cursor: pointer;
     background: $white;
