@@ -116,8 +116,16 @@ h6 {
   font-weight: 100;
   font-size: 15px;
   line-height: 17px;
-  font-style: italic;
   margin-bottom: 10px; }
+
+p {
+  font-weight: 100;
+  font-size: 25px;
+  line-height: 32px; }
+  p strong {
+    font-weight: 400; }
+  p em {
+    text-decoration: underline; }
 
 .solo-text {
   position: absolute;

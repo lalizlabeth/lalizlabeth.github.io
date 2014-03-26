@@ -9,6 +9,11 @@
   background: #8dc73f;
 }
 
+.emphasized-heading {
+  color: #8dc73f;
+  text-align: center;
+}
+
 .description {
   height: auto;
 }
