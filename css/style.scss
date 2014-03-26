@@ -489,7 +489,7 @@ $box_height: 400px;
 
 #bare {
   background: url("../images/home/BARE.jpg");
-  background-position: center;
+  background-position: cover;
   &:hover {
     background: 
      linear-gradient(
@@ -497,7 +497,7 @@ $box_height: 400px;
         rgba(255, 255, 255, 0.3)
       ),
       url("../images/home/BARE.jpg");
-    background-position: center;
+    background-position: cover;
   }
 }
 

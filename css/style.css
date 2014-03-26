@@ -399,10 +399,10 @@ p {
 
 #bare {
   background: url("../images/home/BARE.jpg");
-  background-position: center; }
+  background-position: cover; }
   #bare:hover {
     background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/BARE.jpg");
-    background-position: center; }
+    background-position: cover; }
 
 #motivateme {
   background: url("../images/home/motivateme.gif");
