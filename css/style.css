@@ -122,15 +122,19 @@ p {
   float: left;
   height: 400px;
   padding: 25px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-transition: opacity 0.75s;
   -moz-transition: opacity 0.75s;
-  transition: opacity 0.75s; }
+  transition: opacity 0.75s;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -backface-visibility: hidden; }
   .module:hover, .xsmall-module:hover, .small-module:hover, .medium-module:hover, .large-module:hover, .xlarge-module:hover {
-    opacity: 0.8;
-    cursor: pointer; }
+    opacity: 0.8; }
+    .module:hover a, .xsmall-module:hover a, .small-module:hover a, .medium-module:hover a, .large-module:hover a, .xlarge-module:hover a {
+      cursor: pointer; }
   .module.half-height, .half-height.xsmall-module, .half-height.small-module, .half-height.medium-module, .half-height.large-module, .half-height.xlarge-module {
     height: 200px; }
   .module.third-height, .third-height.xsmall-module, .third-height.small-module, .third-height.medium-module, .third-height.large-module, .third-height.xlarge-module {

@@ -171,17 +171,23 @@ $box_height: 400px;
   height: $box_height;
   padding: 25px;
 
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 
   -webkit-transition: opacity 0.75s;
   -moz-transition: opacity 0.75s;
   transition: opacity 0.75s;
 
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -backface-visibility: hidden;
+
   &:hover {
     opacity: 0.8;
-    cursor: pointer;
+    a {
+      cursor: pointer;
+    }
   }
 
   &.half-height {
