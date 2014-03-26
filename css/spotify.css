@@ -4,7 +4,7 @@
   background-position: center;
 }
 
-.column.green,
+.module.green,
 .section-heading.green {
   background: #8dc73f;
 }
@@ -43,7 +43,7 @@ hr {
   margin: 15px 0;
 }
 
-.column-4 {
+.large-module {
   height: 570px;
 }
 

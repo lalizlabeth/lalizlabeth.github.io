@@ -1,3 +1,4 @@
+/* Color Definitions */
 body {
   background: #e4e1e2; }
 
@@ -60,8 +61,6 @@ h1, h2, h3, h4, h5, h6, p {
     float: right; }
     h1.section-heading.pink, h2.section-heading.pink, h3.section-heading.pink, h4.section-heading.pink, h5.section-heading.pink, h6.section-heading.pink, p.section-heading.pink {
       background: #ee478d; }
-    h1.section-heading.yellow, h2.section-heading.yellow, h3.section-heading.yellow, h4.section-heading.yellow, h5.section-heading.yellow, h6.section-heading.yellow, p.section-heading.yellow {
-      background: #ffcf01; }
     h1.section-heading.blue, h2.section-heading.blue, h3.section-heading.blue, h4.section-heading.blue, h5.section-heading.blue, h6.section-heading.blue, p.section-heading.blue {
       background: #00bcdd; }
     h1.section-heading.gray, h2.section-heading.gray, h3.section-heading.gray, h4.section-heading.gray, h5.section-heading.gray, h6.section-heading.gray, p.section-heading.gray {
@@ -190,15 +189,15 @@ p {
     left: 0;
     bottom: 0;
     right: 0; }
-  #info .column:hover {
+  #info .module:hover {
     cursor: pointer;
     background: #fff;
     opacity: 1.0; }
-    #info .column:hover.blue a {
+    #info .module:hover.blue a {
       color: #00bcdd; }
-    #info .column:hover.gray a {
+    #info .module:hover.gray a {
       color: #42393c; }
-    #info .column:hover.pink a {
+    #info .module:hover.pink a {
       color: #ee478d; }
 
 .container {
@@ -214,8 +213,8 @@ p {
 #design-heading .section-heading {
   float: none; }
 
-/* Responsive Columns */
-.column {
+/* Responsive modules */
+.module {
   position: relative;
   float: left;
   box-sizing: border-box;
@@ -226,65 +225,63 @@ p {
   -webkit-transition: background 0.75s, color 0.75s, opacity 0.75s;
   -moz-transition: background 0.75s, color 0.75s, opacity 0.75s;
   transition: background 0.75s, color 0.75s, opacity 0.75s; }
-  .column.image-box {
+  .module.image-box {
     height: auto; }
-    .column.image-box img {
+    .module.image-box img {
       box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
       width: 100%; }
-  .column.container {
+  .module.container {
     background: #fff;
     width: 100%;
     height: auto;
     float: left; }
-  .column.headline {
+  .module.headline {
     height: auto; }
-    .column.headline h1 {
+    .module.headline h1 {
       color: #42393c; }
-  .column:hover {
+  .module:hover {
     opacity: 0.8;
     cursor: pointer; }
-  .column.no-link {
+  .module.no-link {
     opacity: 1.0;
     cursor: default; }
-  .column .column-href {
+  .module .module-href {
     display: block;
     width: 100%;
     height: 100%; }
-  .column.column-1 {
+  .module.xsmall-module {
     width: 20%; }
-  .column.column-1.group, .column.column-3.group {
+  .module.xsmall-module.group, .module.medium-module.group {
     padding: 0; }
-  .column.column-1.half-height, .column.column-1.third-height, .column.column-3.half-height, .column.column-3.third-height {
+  .module.xsmall-module.half-height, .module.xsmall-module.third-height, .module.medium-module.half-height, .module.medium-module.third-height {
     padding: 25px;
     width: 100%; }
-  .column.column-2 {
+  .module.small-module {
     width: 40%; }
-  .column.column-3 {
+  .module.medium-module {
     width: 60%; }
-  .column.column-4 {
+  .module.large-module {
     width: 80%; }
-  .column.column-5 {
+  .module.xlarge-module {
     width: 100%; }
-  .column.half-height {
+  .module.half-height {
     height: 200px; }
-  .column.third-height {
+  .module.third-height {
     height: 133.33333px; }
-  .column.blue {
+  .module.blue {
     background: #00bcdd; }
-  .column.pink {
+  .module.pink {
     background: #ee478d; }
-  .column.yellow {
-    background: #ffcf01; }
-  .column.gray {
+  .module.gray {
     background: #42393c; }
-  .column.white {
+  .module.white {
     background: #fff; }
 
 @media screen and (max-width: 731px) {
   #wrapper {
     width: 100%; }
 
-  .column.column-1, .column.column-2, .column.column-3, .column.column-4, .column.column-5 {
+  .module.xsmall-module, .module.module-2, .module.medium-module, .module.large-module, .module.xlarge-module {
     width: 100%;
     background-size: cover; } }
 @media screen and (max-width: 1200px) {
