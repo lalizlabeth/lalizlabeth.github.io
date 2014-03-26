@@ -472,7 +472,7 @@ $box_height: 400px;
 }
 
 #spotify {
-  background: url("../images/home/spotify.jpg");
+  background: url("../images/home/spotify.jpg") no-repeat $white;
   background-position: center;
   &:hover {
     background: 
@@ -480,7 +480,7 @@ $box_height: 400px;
         rgba(255, 255, 255, 0.3), 
         rgba(255, 255, 255, 0.3)
       ),
-      url("../images/home/spotify.jpg");
+      url("../images/home/spotify.jpg") no-repeat $white;
     background-position: center;
   }
 }
@@ -566,23 +566,10 @@ $box_height: 400px;
 }
 
 /* Screen Compatibility */
-@media screen and (max-width: 731px) {
-  #wrapper {
-    width: 100%;
-  }
-  .module {
-    &.xsmall-module,
-    &.small-module,
-    &.medium-module,
-    &.large-module,
-    &.xlarge-module {
-      width: 100%;
-      background-size: cover;
-    }
-  }
-}
-
 @media screen and (max-width: 1200px) {
+  #wrapper {
+    width: 90%;
+  }
   h2 {
     font-size: 25px;
   }
@@ -620,6 +607,31 @@ $box_height: 400px;
       background-position: 0 -300px;
       background-size: cover;
     }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #wrapper {
+    width: 100%;
+  }
+  .module {
+    &.xsmall-module,
+    &.small-module,
+    &.medium-module,
+    &.large-module,
+    &.xlarge-module {
+      width: 100%;
+      background-size: cover;
+    }
+  }
+  .xsmall-group {
+    width: 60%;
+  }
+  #social-media {
+    width: 40%;
+  }
+  .medium-group {
+    width: 100%;
   }
 }
 
