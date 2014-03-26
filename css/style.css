@@ -95,16 +95,6 @@ h4 {
   h4.section-heading {
     padding: 4px 12px; }
 
-.text {
-  width: 280px;
-  display: block;
-  position: absolute;
-  bottom: 25px;
-  right: 25px;
-  text-align: right; }
-  .text.short {
-    width: 200px; }
-
 h5 {
   font-weight: 100;
   font-size: 40px; }
@@ -209,7 +199,7 @@ p {
 
 /* About Me */
 /* Design */
-#design-heading .text {
+#design-heading .large-module-text {
   left: 25px; }
 #design-heading .section-heading {
   float: none; }
@@ -286,6 +276,25 @@ p {
 .medium-module.third-height {
   padding: 25px;
   width: 100%; }
+
+/* Module Text */
+.module-text, .large-module-text,
+.medium-module-text,
+.small-module-text {
+  display: block;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  text-align: right; }
+
+.large-module-text {
+  width: 280px; }
+
+.medium-module-text {
+  width: 230px; }
+
+.small-module-text {
+  width: 200px; }
 
 @media screen and (max-width: 731px) {
   #wrapper {

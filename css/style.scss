@@ -137,18 +137,6 @@ h4 {
   }
 }
 
-.text {
-  width: 280px;
-  display: block;
-  position: absolute;
-  bottom: 25px;
-  right: 25px;
-  text-align: right;
-  &.short {
-    width: 200px;
-  }
-}
-
 h5 {
   font-weight: 100;
   font-size: 40px;
@@ -276,7 +264,7 @@ p {
 
 /* Design */
 #design-heading {
-  .text {
+  .large-module-text {
     left: 25px;
   }
   .section-heading {
@@ -392,6 +380,34 @@ $box_height: 400px;
     padding: 25px;
     width: 100%;
   }
+}
+
+/* Module Text */
+
+.module-text {
+  display: block;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  text-align: right; 
+}
+
+.large-module-text,
+.medium-module-text,
+.small-module-text {
+  @extend .module-text;
+}
+
+.large-module-text {
+  width: 280px;
+}
+
+.medium-module-text {
+  width: 230px;
+}
+
+.small-module-text {
+  width: 200px;
 }
 
 @media screen and (max-width: 731px) {
