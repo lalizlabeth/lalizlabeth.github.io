@@ -71,6 +71,12 @@ body {
         color: white;
       }
     }
+    &.active:hover {
+      cursor: default;
+      a {
+        cursor: default;
+      }
+    }
   }
 }
 
@@ -98,6 +104,9 @@ h1, h2, h3, h4, h5, h6, p {
 h1 {
   font-weight: 700;
   font-size: 45px;
+  &.special {
+    font-size: 8em;
+  }
   &.section-heading {
     padding: 4px 16px;
   }
@@ -139,6 +148,43 @@ h4 {
   &.short {
     width: 200px;
   }
+}
+
+h5 {
+  font-weight: 100;
+  font-size: 40px;
+  em {
+    font-style: italic;
+    font-weight: 400;
+  }
+}
+
+h6 {
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 17px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-weight: 100;
+  font-size: 25px;
+  line-height: 32px;
+  strong {
+    font-weight: 400;
+  }
+  em {
+    text-decoration: underline;
+  }
+}
+
+.solo-text {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  left: 25px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Sections */
@@ -220,8 +266,24 @@ h4 {
   }
 }
 
+.container {
+  background: #fff;
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
 /* About Me */
 
+/* Design */
+#design-heading {
+  .text {
+    left: 25px;
+  }
+  .section-heading {
+    float: none;
+  }
+}
 
 /* Responsive Columns */
 $box_height: 400px;
@@ -234,9 +296,31 @@ $box_height: 400px;
   height: $box_height;
   padding: 25px;
 
-  -webkit-transition: background 0.75s, color 0.75s;
-  -moz-transition: background 0.75s, color 0.75s;
-  transition: background 0.75s, color 0.75s;
+  -webkit-transition: background 0.75s, color 0.75s, opacity 0.75s;
+  -moz-transition: background 0.75s, color 0.75s, opacity 0.75s;
+  transition: background 0.75s, color 0.75s, opacity 0.75s;
+
+  &.image-box {
+    height: auto;
+    img {
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+      width: 100%;
+    }
+  }
+
+  &.container {
+    background: #fff;
+    width: 100%;
+    height: auto;
+    float: left;
+  }
+
+  &.headline {
+    height: auto;
+    h1 {
+      color: $gray;
+    }
+  }
 
   &:hover {
     opacity: 0.8;
@@ -300,9 +384,12 @@ $box_height: 400px;
   &.gray {
     background: $gray;
   }
+  &.white {
+    background: #fff;
+  }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 731px) {
   #wrapper {
     width: 100%;
   }
@@ -313,10 +400,16 @@ $box_height: 400px;
     &.column-4,
     &.column-5 {
       width: 100%;
+      background-size: cover;
     }
   }
 }
 
+@media screen and (max-width: 1200px) {
+  h5 {
+    font-size: 35px;
+  }
+}
 
 
 
