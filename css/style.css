@@ -625,4 +625,22 @@ p {
     width: 40%; }
 
   .medium-group {
-    width: 100%; } }
+    width: 100%; }
+
+  .general-navigation {
+    width: 100%; }
+    .general-navigation #logo {
+      width: 40px; }
+    .general-navigation li {
+      height: 40px; }
+    .general-navigation .general-navigation-item {
+      height: 40px;
+      padding: 10px;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      .general-navigation .general-navigation-item.first {
+        margin-left: 40px; }
+      .general-navigation .general-navigation-item a {
+        padding: 0 20px;
+        margin: 0; } }
