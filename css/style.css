@@ -128,7 +128,7 @@ p {
   -webkit-transition: opacity 0.75s;
   -moz-transition: opacity 0.75s;
   transition: opacity 0.75s; }
-  .module a:hover, .xsmall-module a:hover, .small-module a:hover, .medium-module a:hover, .large-module a:hover, .xlarge-module a:hover {
+  .module:hover, .xsmall-module:hover, .small-module:hover, .medium-module:hover, .large-module:hover, .xlarge-module:hover {
     opacity: 0.8;
     cursor: pointer; }
   .module.half-height, .half-height.xsmall-module, .half-height.small-module, .half-height.medium-module, .half-height.large-module, .half-height.xlarge-module {

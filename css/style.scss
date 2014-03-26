@@ -179,7 +179,7 @@ $box_height: 400px;
   -moz-transition: opacity 0.75s;
   transition: opacity 0.75s;
 
-  a:hover {
+  &:hover {
     opacity: 0.8;
     cursor: pointer;
   }
