@@ -410,10 +410,10 @@ p {
     background-position: center; }
 
 #bare {
-  background: url("../images/home/BARE.jpg");
+  background: url("../images/home/BARE.jpg") no-repeat white;
   background-position: cover; }
   #bare:hover {
-    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/BARE.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/BARE.jpg") no-repeat white;
     background-position: cover; }
 
 #motivateme {
@@ -463,5 +463,21 @@ p {
     width: 100%;
     background-size: cover; } }
 @media screen and (max-width: 1200px) {
+  h2 {
+    font-size: 25px; }
+
   h5 {
-    font-size: 35px; } }
+    font-size: 35px; }
+
+  .small-module-text {
+    width: 188px; }
+
+  .xsmall-module,
+  .xsmall-group {
+    width: 40%; }
+
+  #social-media {
+    width: 20%; }
+
+  #posters {
+    background-size: cover; } }
