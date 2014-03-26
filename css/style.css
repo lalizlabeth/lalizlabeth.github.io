@@ -480,4 +480,16 @@ p {
     width: 20%; }
 
   #posters {
-    background-size: cover; } }
+    background-size: cover; }
+    #posters:hover {
+      background-size: cover; }
+
+  #lostplayground {
+    width: 100%;
+    background-size: cover;
+    height: 200px;
+    background-position: 0 -300px; }
+    #lostplayground:hover {
+      background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/nostalgia.jpg");
+      background-position: 0 -300px;
+      background-size: cover; } }
