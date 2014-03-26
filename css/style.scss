@@ -324,28 +324,34 @@ $box_height: 400px;
   .#{$size}-module {
     @extend .module;
   }
+  .#{$size}-group {
+    padding: 0;
+    float: left;
+  }
 }
+.xsmall-group,
 .xsmall-module {
   width: 20%;
 }
+.small-group,
 .small-module {
   width: 40%;
 }
+.medium-group,
 .medium-module {
   width: 60%;
 }
+.large-group,
 .large-module {
   width: 80%;
 }
+.xlarge-group,
 .xlarge-module {
   width: 100%;
 }
 
 .xsmall-module,
 .medium-module {
-  &.group {
-    padding: 0;
-  }
   &.half-height,
   &.third-height {
     padding: 25px;
