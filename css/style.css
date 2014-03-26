@@ -1,4 +1,5 @@
 /* Color Definitions */
+/* General */
 body {
   background: #e4e1e2; }
 
@@ -189,15 +190,15 @@ p {
     left: 0;
     bottom: 0;
     right: 0; }
-  #info .module:hover {
+  #info .module:hover, #info .xsmall-module:hover, #info .small-module:hover, #info .medium-module:hover, #info .large-module:hover, #info .xlarge-module:hover {
     cursor: pointer;
     background: #fff;
     opacity: 1.0; }
-    #info .module:hover.blue a {
+    #info .module:hover.blue a, #info .xsmall-module:hover.blue a, #info .small-module:hover.blue a, #info .medium-module:hover.blue a, #info .large-module:hover.blue a, #info .xlarge-module:hover.blue a {
       color: #00bcdd; }
-    #info .module:hover.gray a {
+    #info .module:hover.gray a, #info .xsmall-module:hover.gray a, #info .small-module:hover.gray a, #info .medium-module:hover.gray a, #info .large-module:hover.gray a, #info .xlarge-module:hover.gray a {
       color: #42393c; }
-    #info .module:hover.pink a {
+    #info .module:hover.pink a, #info .xsmall-module:hover.pink a, #info .small-module:hover.pink a, #info .medium-module:hover.pink a, #info .large-module:hover.pink a, #info .xlarge-module:hover.pink a {
       color: #ee478d; }
 
 .container {
@@ -214,74 +215,83 @@ p {
   float: none; }
 
 /* Responsive modules */
-.module {
+.module, .xsmall-module, .small-module, .medium-module, .large-module, .xlarge-module {
   position: relative;
   float: left;
+  height: 400px;
+  padding: 25px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  height: 400px;
-  padding: 25px;
   -webkit-transition: background 0.75s, color 0.75s, opacity 0.75s;
   -moz-transition: background 0.75s, color 0.75s, opacity 0.75s;
   transition: background 0.75s, color 0.75s, opacity 0.75s; }
-  .module.image-box {
+  .module:hover, .xsmall-module:hover, .small-module:hover, .medium-module:hover, .large-module:hover, .xlarge-module:hover {
+    opacity: 0.8;
+    cursor: pointer; }
+  .module.image-box, .image-box.xsmall-module, .image-box.small-module, .image-box.medium-module, .image-box.large-module, .image-box.xlarge-module {
     height: auto; }
-    .module.image-box img {
+    .module.image-box img, .image-box.xsmall-module img, .image-box.small-module img, .image-box.medium-module img, .image-box.large-module img, .image-box.xlarge-module img {
       box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
       width: 100%; }
-  .module.container {
+  .module.container, .container.xsmall-module, .container.small-module, .container.medium-module, .container.large-module, .container.xlarge-module {
     background: #fff;
     width: 100%;
     height: auto;
     float: left; }
-  .module.headline {
+  .module.headline, .headline.xsmall-module, .headline.small-module, .headline.medium-module, .headline.large-module, .headline.xlarge-module {
     height: auto; }
-    .module.headline h1 {
+    .module.headline h1, .headline.xsmall-module h1, .headline.small-module h1, .headline.medium-module h1, .headline.large-module h1, .headline.xlarge-module h1 {
       color: #42393c; }
-  .module:hover {
-    opacity: 0.8;
-    cursor: pointer; }
-  .module.no-link {
+  .module.no-link, .no-link.xsmall-module, .no-link.small-module, .no-link.medium-module, .no-link.large-module, .no-link.xlarge-module {
     opacity: 1.0;
     cursor: default; }
-  .module .module-href {
+  .module .module-href, .xsmall-module .module-href, .small-module .module-href, .medium-module .module-href, .large-module .module-href, .xlarge-module .module-href {
     display: block;
     width: 100%;
     height: 100%; }
-  .module.xsmall-module {
-    width: 20%; }
-  .module.xsmall-module.group, .module.medium-module.group {
-    padding: 0; }
-  .module.xsmall-module.half-height, .module.xsmall-module.third-height, .module.medium-module.half-height, .module.medium-module.third-height {
-    padding: 25px;
-    width: 100%; }
-  .module.small-module {
-    width: 40%; }
-  .module.medium-module {
-    width: 60%; }
-  .module.large-module {
-    width: 80%; }
-  .module.xlarge-module {
-    width: 100%; }
-  .module.half-height {
+  .module.half-height, .half-height.xsmall-module, .half-height.small-module, .half-height.medium-module, .half-height.large-module, .half-height.xlarge-module {
     height: 200px; }
-  .module.third-height {
+  .module.third-height, .third-height.xsmall-module, .third-height.small-module, .third-height.medium-module, .third-height.large-module, .third-height.xlarge-module {
     height: 133.33333px; }
-  .module.blue {
+  .module.blue, .blue.xsmall-module, .blue.small-module, .blue.medium-module, .blue.large-module, .blue.xlarge-module {
     background: #00bcdd; }
-  .module.pink {
+  .module.pink, .pink.xsmall-module, .pink.small-module, .pink.medium-module, .pink.large-module, .pink.xlarge-module {
     background: #ee478d; }
-  .module.gray {
+  .module.gray, .gray.xsmall-module, .gray.small-module, .gray.medium-module, .gray.large-module, .gray.xlarge-module {
     background: #42393c; }
-  .module.white {
+  .module.white, .white.xsmall-module, .white.small-module, .white.medium-module, .white.large-module, .white.xlarge-module {
     background: #fff; }
+
+.xsmall-module {
+  width: 20%; }
+
+.small-module {
+  width: 40%; }
+
+.medium-module {
+  width: 60%; }
+
+.large-module {
+  width: 80%; }
+
+.xlarge-module {
+  width: 100%; }
+
+.xsmall-module.group,
+.medium-module.group {
+  padding: 0; }
+.xsmall-module.half-height, .xsmall-module.third-height,
+.medium-module.half-height,
+.medium-module.third-height {
+  padding: 25px;
+  width: 100%; }
 
 @media screen and (max-width: 731px) {
   #wrapper {
     width: 100%; }
 
-  .module.xsmall-module, .module.module-2, .module.medium-module, .module.large-module, .module.xlarge-module {
+  .module.xsmall-module, .xsmall-module, .module.module-2, .module-2.xsmall-module, .module-2.small-module, .module-2.medium-module, .module-2.large-module, .module-2.xlarge-module, .module.medium-module, .medium-module, .module.large-module, .large-module, .module.xlarge-module, .xlarge-module {
     width: 100%;
     background-size: cover; } }
 @media screen and (max-width: 1200px) {
