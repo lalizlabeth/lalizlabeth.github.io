@@ -2,6 +2,7 @@
 $pink: #ee478d;
 $blue: #00bcdd;
 $gray: #42393c;
+$green: #8dc73f;
 
 $light_gray: #e4e1e2;
 $light_pink: #fcdce4;
@@ -86,18 +87,6 @@ body {
 h1, h2, h3, h4, h5, h6, p {
   font-family: "Alegreya Sans", "Helvetica", "Arial";
   color: white;
-  &.section-heading {
-    float: right;
-    &.pink {
-      background: $pink;
-    }
-    &.blue {
-      background: $blue;
-    }
-    &.gray {
-      background: $gray;
-    }
-  }
 }
 
 h1 {
@@ -106,35 +95,23 @@ h1 {
   &.special {
     font-size: 8em;
   }
-  &.section-heading {
-    padding: 4px 16px;
-  }
 }
 
 h2 {
   font-weight: 500;
   font-size: 30px;
-  &.section-heading {
-    padding: 4px 12px;
-  }
 }
 
 h3 {
   font-weight: 100;
   font-size: 20px;
   line-height: 30px;
-  &.section-heading {
-    padding: 4px 12px;
-  }
 }
 
 h4 {
   font-weight: 100;
   font-size: 17px;
   line-height: 20px;
-  &.section-heading {
-    padding: 4px 12px;
-  }
 }
 
 h5 {
@@ -262,16 +239,6 @@ p {
 
 /* About Me */
 
-/* Design */
-#design-heading {
-  .large-module-text {
-    left: 25px;
-  }
-  .section-heading {
-    float: none;
-  }
-}
-
 /* Responsive modules */
 $module-sizes: (xsmall small medium large xlarge);
 $box_height: 400px;
@@ -347,6 +314,9 @@ $box_height: 400px;
   &.white {
     background: #fff;
   }
+  &.green {
+    background: $green;
+  }
 }
 
 @each $size in $module-sizes {
@@ -389,7 +359,53 @@ $box_height: 400px;
   position: absolute;
   bottom: 25px;
   right: 25px;
-  text-align: right; 
+  text-align: right;
+
+  h1 {
+    padding: 4px 16px;
+  }
+
+  h2, h3, h4 {
+    padding: 4px 12px;
+  }
+
+  &.pink {
+    h1, h2,
+    h3, h4,
+    h5, h6 {
+      background: $pink;
+    }
+  }
+
+  &.blue {
+    h1, h2,
+    h3, h4,
+    h5, h6 {
+      background: $blue;
+    }
+  }
+
+  &.gray {
+    h1, h2,
+    h3, h4,
+    h5, h6 {
+      background: $gray;
+    }
+  }
+
+  &.green {
+    h1, h2,
+    h3, h4,
+    h5, h6 {
+      background: $green;
+    }
+  }
+
+  h1, h2,
+  h3, h4,
+  h5, h6 {
+    float: right;
+  }
 }
 
 .large-module-text,

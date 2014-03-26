@@ -58,42 +58,26 @@ body {
 h1, h2, h3, h4, h5, h6, p {
   font-family: "Alegreya Sans", "Helvetica", "Arial";
   color: white; }
-  h1.section-heading, h2.section-heading, h3.section-heading, h4.section-heading, h5.section-heading, h6.section-heading, p.section-heading {
-    float: right; }
-    h1.section-heading.pink, h2.section-heading.pink, h3.section-heading.pink, h4.section-heading.pink, h5.section-heading.pink, h6.section-heading.pink, p.section-heading.pink {
-      background: #ee478d; }
-    h1.section-heading.blue, h2.section-heading.blue, h3.section-heading.blue, h4.section-heading.blue, h5.section-heading.blue, h6.section-heading.blue, p.section-heading.blue {
-      background: #00bcdd; }
-    h1.section-heading.gray, h2.section-heading.gray, h3.section-heading.gray, h4.section-heading.gray, h5.section-heading.gray, h6.section-heading.gray, p.section-heading.gray {
-      background: #42393c; }
 
 h1 {
   font-weight: 700;
   font-size: 45px; }
   h1.special {
     font-size: 8em; }
-  h1.section-heading {
-    padding: 4px 16px; }
 
 h2 {
   font-weight: 500;
   font-size: 30px; }
-  h2.section-heading {
-    padding: 4px 12px; }
 
 h3 {
   font-weight: 100;
   font-size: 20px;
   line-height: 30px; }
-  h3.section-heading {
-    padding: 4px 12px; }
 
 h4 {
   font-weight: 100;
   font-size: 17px;
   line-height: 20px; }
-  h4.section-heading {
-    padding: 4px 12px; }
 
 h5 {
   font-weight: 100;
@@ -198,12 +182,6 @@ p {
   float: left; }
 
 /* About Me */
-/* Design */
-#design-heading .large-module-text {
-  left: 25px; }
-#design-heading .section-heading {
-  float: none; }
-
 /* Responsive modules */
 .module, .xsmall-module, .small-module, .medium-module, .large-module, .xlarge-module {
   position: relative;
@@ -252,6 +230,8 @@ p {
     background: #42393c; }
   .module.white, .white.xsmall-module, .white.small-module, .white.medium-module, .white.large-module, .white.xlarge-module {
     background: #fff; }
+  .module.green, .green.xsmall-module, .green.small-module, .green.medium-module, .green.large-module, .green.xlarge-module {
+    background: #8dc73f; }
 
 .xsmall-module {
   width: 20%; }
@@ -286,6 +266,108 @@ p {
   bottom: 25px;
   right: 25px;
   text-align: right; }
+  .module-text h1, .large-module-text h1,
+  .medium-module-text h1,
+  .small-module-text h1 {
+    padding: 4px 16px; }
+  .module-text h2, .large-module-text h2,
+  .medium-module-text h2,
+  .small-module-text h2, .module-text h3, .large-module-text h3,
+  .medium-module-text h3,
+  .small-module-text h3, .module-text h4, .large-module-text h4,
+  .medium-module-text h4,
+  .small-module-text h4 {
+    padding: 4px 12px; }
+  .module-text.pink h1, .pink.large-module-text h1,
+  .pink.medium-module-text h1,
+  .pink.small-module-text h1, .module-text.pink h2, .pink.large-module-text h2,
+  .pink.medium-module-text h2,
+  .pink.small-module-text h2,
+  .module-text.pink h3,
+  .pink.large-module-text h3,
+  .pink.medium-module-text h3,
+  .pink.small-module-text h3, .module-text.pink h4, .pink.large-module-text h4,
+  .pink.medium-module-text h4,
+  .pink.small-module-text h4,
+  .module-text.pink h5,
+  .pink.large-module-text h5,
+  .pink.medium-module-text h5,
+  .pink.small-module-text h5, .module-text.pink h6, .pink.large-module-text h6,
+  .pink.medium-module-text h6,
+  .pink.small-module-text h6 {
+    background: #ee478d; }
+  .module-text.blue h1, .blue.large-module-text h1,
+  .blue.medium-module-text h1,
+  .blue.small-module-text h1, .module-text.blue h2, .blue.large-module-text h2,
+  .blue.medium-module-text h2,
+  .blue.small-module-text h2,
+  .module-text.blue h3,
+  .blue.large-module-text h3,
+  .blue.medium-module-text h3,
+  .blue.small-module-text h3, .module-text.blue h4, .blue.large-module-text h4,
+  .blue.medium-module-text h4,
+  .blue.small-module-text h4,
+  .module-text.blue h5,
+  .blue.large-module-text h5,
+  .blue.medium-module-text h5,
+  .blue.small-module-text h5, .module-text.blue h6, .blue.large-module-text h6,
+  .blue.medium-module-text h6,
+  .blue.small-module-text h6 {
+    background: #00bcdd; }
+  .module-text.gray h1, .gray.large-module-text h1,
+  .gray.medium-module-text h1,
+  .gray.small-module-text h1, .module-text.gray h2, .gray.large-module-text h2,
+  .gray.medium-module-text h2,
+  .gray.small-module-text h2,
+  .module-text.gray h3,
+  .gray.large-module-text h3,
+  .gray.medium-module-text h3,
+  .gray.small-module-text h3, .module-text.gray h4, .gray.large-module-text h4,
+  .gray.medium-module-text h4,
+  .gray.small-module-text h4,
+  .module-text.gray h5,
+  .gray.large-module-text h5,
+  .gray.medium-module-text h5,
+  .gray.small-module-text h5, .module-text.gray h6, .gray.large-module-text h6,
+  .gray.medium-module-text h6,
+  .gray.small-module-text h6 {
+    background: #42393c; }
+  .module-text.green h1, .green.large-module-text h1,
+  .green.medium-module-text h1,
+  .green.small-module-text h1, .module-text.green h2, .green.large-module-text h2,
+  .green.medium-module-text h2,
+  .green.small-module-text h2,
+  .module-text.green h3,
+  .green.large-module-text h3,
+  .green.medium-module-text h3,
+  .green.small-module-text h3, .module-text.green h4, .green.large-module-text h4,
+  .green.medium-module-text h4,
+  .green.small-module-text h4,
+  .module-text.green h5,
+  .green.large-module-text h5,
+  .green.medium-module-text h5,
+  .green.small-module-text h5, .module-text.green h6, .green.large-module-text h6,
+  .green.medium-module-text h6,
+  .green.small-module-text h6 {
+    background: #8dc73f; }
+  .module-text h1, .large-module-text h1,
+  .medium-module-text h1,
+  .small-module-text h1, .module-text h2, .large-module-text h2,
+  .medium-module-text h2,
+  .small-module-text h2,
+  .module-text h3,
+  .large-module-text h3,
+  .medium-module-text h3,
+  .small-module-text h3, .module-text h4, .large-module-text h4,
+  .medium-module-text h4,
+  .small-module-text h4,
+  .module-text h5,
+  .large-module-text h5,
+  .medium-module-text h5,
+  .small-module-text h5, .module-text h6, .large-module-text h6,
+  .medium-module-text h6,
+  .small-module-text h6 {
+    float: right; }
 
 .large-module-text {
   width: 280px; }
