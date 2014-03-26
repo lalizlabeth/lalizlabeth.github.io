@@ -222,13 +222,6 @@ $box_height: 400px;
       width: 100%;
     }
   }
-
-  &.headline {
-    height: auto;
-    h1 {
-      color: $gray;
-    }
-  }
   &.blue {
     background: $blue;
   }
@@ -246,7 +239,16 @@ $box_height: 400px;
   }
 }
 
+.display-images {
+  @extend .clearfix;
+}
+
+.display-images .display-image:first-child {
+  padding: 25px;
+}
+
 .display-image {
+  list-style: none;
   background: $white;
   width: 100%;
   height: auto;
@@ -275,6 +277,24 @@ $box_height: 400px;
     .#{$size}-module {
       height: auto;
     }
+  }
+}
+
+.headline,
+.footer {
+  @extend .xlarge-module;
+  height: auto;
+  text-align: center;
+  a {
+    @extend h2;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.footer {
+  &:hover {
+    opacity: 0.85;
   }
 }
 
@@ -314,6 +334,11 @@ $box_height: 400px;
     padding: 25px;
     width: 100%;
   }
+}
+
+.intro-module {
+  @extend .xlarge-module;
+  height: 600px;
 }
 
 /* Module Text */
@@ -565,6 +590,11 @@ $box_height: 400px;
   }
 }
 
+#posters-intro {
+  background: url("../images/posters/horizontal-cocktails.jpg") center;
+  background-position: contain;
+}
+
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
   #wrapper {
@@ -626,6 +656,7 @@ $box_height: 400px;
   }
   .xsmall-group {
     width: 60%;
+    background-size: cover no-repeat;
   }
   #social-media {
     width: 40%;
