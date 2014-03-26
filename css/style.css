@@ -30,7 +30,7 @@ body {
   .general-navigation .general-navigation-item {
     float: left;
     position: relative;
-    background: #fff;
+    background: white;
     margin-left: 0;
     -moz-transition: margin-left 2s, background 1s, color 1s;
     -webkit-transition: margin-left 2s, background 1s, color 1s;
@@ -109,9 +109,9 @@ p {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* Sections */
+/* Home Sections */
 #about-me {
-  background: #00bcdd url("../images/portrait.jpg");
+  background: url("../images/portrait.jpg");
   padding-top: 80px; }
 
 #decal {
@@ -166,7 +166,7 @@ p {
     right: 0; }
   #info .module:hover, #info .xsmall-module:hover, #info .small-module:hover, #info .medium-module:hover, #info .large-module:hover, #info .xlarge-module:hover {
     cursor: pointer;
-    background: #fff;
+    background: white;
     opacity: 1.0; }
     #info .module:hover.blue a, #info .xsmall-module:hover.blue a, #info .small-module:hover.blue a, #info .medium-module:hover.blue a, #info .large-module:hover.blue a, #info .xlarge-module:hover.blue a {
       color: #00bcdd; }
@@ -176,7 +176,7 @@ p {
       color: #ee478d; }
 
 .container {
-  background: #fff;
+  background: white;
   width: 100%;
   height: auto;
   float: left; }
@@ -197,13 +197,17 @@ p {
   .module:hover, .xsmall-module:hover, .small-module:hover, .medium-module:hover, .large-module:hover, .xlarge-module:hover {
     opacity: 0.8;
     cursor: pointer; }
+  .module.half-height, .half-height.xsmall-module, .half-height.small-module, .half-height.medium-module, .half-height.large-module, .half-height.xlarge-module {
+    height: 200px; }
+  .module.third-height, .third-height.xsmall-module, .third-height.small-module, .third-height.medium-module, .third-height.large-module, .third-height.xlarge-module {
+    height: 133.33333px; }
   .module.image-box, .image-box.xsmall-module, .image-box.small-module, .image-box.medium-module, .image-box.large-module, .image-box.xlarge-module {
     height: auto; }
     .module.image-box img, .image-box.xsmall-module img, .image-box.small-module img, .image-box.medium-module img, .image-box.large-module img, .image-box.xlarge-module img {
       box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
       width: 100%; }
   .module.container, .container.xsmall-module, .container.small-module, .container.medium-module, .container.large-module, .container.xlarge-module {
-    background: #fff;
+    background: white;
     width: 100%;
     height: auto;
     float: left; }
@@ -218,10 +222,6 @@ p {
     display: block;
     width: 100%;
     height: 100%; }
-  .module.half-height, .half-height.xsmall-module, .half-height.small-module, .half-height.medium-module, .half-height.large-module, .half-height.xlarge-module {
-    height: 200px; }
-  .module.third-height, .third-height.xsmall-module, .third-height.small-module, .third-height.medium-module, .third-height.large-module, .third-height.xlarge-module {
-    height: 133.33333px; }
   .module.blue, .blue.xsmall-module, .blue.small-module, .blue.medium-module, .blue.large-module, .blue.xlarge-module {
     background: #00bcdd; }
   .module.pink, .pink.xsmall-module, .pink.small-module, .pink.medium-module, .pink.large-module, .pink.xlarge-module {
@@ -229,7 +229,7 @@ p {
   .module.gray, .gray.xsmall-module, .gray.small-module, .gray.medium-module, .gray.large-module, .gray.xlarge-module {
     background: #42393c; }
   .module.white, .white.xsmall-module, .white.small-module, .white.medium-module, .white.large-module, .white.xlarge-module {
-    background: #fff; }
+    background: white; }
   .module.green, .green.xsmall-module, .green.small-module, .green.medium-module, .green.large-module, .green.xlarge-module {
     background: #8dc73f; }
 

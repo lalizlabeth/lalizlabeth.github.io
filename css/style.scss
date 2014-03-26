@@ -3,6 +3,7 @@ $pink: #ee478d;
 $blue: #00bcdd;
 $gray: #42393c;
 $green: #8dc73f;
+$white: #fff;
 
 $light_gray: #e4e1e2;
 $light_pink: #fcdce4;
@@ -47,7 +48,7 @@ body {
   .general-navigation-item {
     float: left;
     position: relative;
-    background: #fff;
+    background: $white;
     margin-left: 0;
 
     -moz-transition: margin-left 2s, background 1s, color 1s;
@@ -151,9 +152,9 @@ p {
   box-sizing: border-box;
 }
 
-/* Sections */
+/* Home Sections */
 #about-me {
-  background: $blue url("../images/portrait.jpg");
+  background: url("../images/portrait.jpg");
   padding-top: 80px;
 }
 
@@ -216,7 +217,7 @@ p {
   }
   .module:hover {
     cursor: pointer;
-    background: #fff;
+    background: $white;
     opacity: 1.0;
     &.blue {
       a { color: $blue; }
@@ -231,7 +232,7 @@ p {
 }
 
 .container {
-  background: #fff;
+  background: $white;
   width: 100%;
   height: auto;
   float: left;
@@ -262,6 +263,13 @@ $box_height: 400px;
     cursor: pointer;
   }
 
+  &.half-height {
+    height: $box_height/2;
+  }
+  &.third-height {
+    height: $box_height/3;
+  }
+
   &.image-box {
     height: auto;
     img {
@@ -271,7 +279,7 @@ $box_height: 400px;
   }
 
   &.container {
-    background: #fff;
+    background: $white;
     width: 100%;
     height: auto;
     float: left;
@@ -295,13 +303,6 @@ $box_height: 400px;
     height: 100%;
   }
 
-  &.half-height {
-    height: $box_height/2;
-  }
-  &.third-height {
-    height: $box_height/3;
-  }
-
   &.blue {
     background: $blue;
   }
@@ -312,7 +313,7 @@ $box_height: 400px;
     background: $gray;
   }
   &.white {
-    background: #fff;
+    background: $white;
   }
   &.green {
     background: $green;
