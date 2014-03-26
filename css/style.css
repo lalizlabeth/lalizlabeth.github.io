@@ -342,6 +342,7 @@ p {
 /* Special Styles */
 #about-me {
   background: url("../images/portrait.jpg");
+  background-size: cover;
   padding-top: 80px; }
 
 #decal {
