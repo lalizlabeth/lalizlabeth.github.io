@@ -197,14 +197,8 @@ $box_height: 400px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 
-  //-webkit-transition: background 0.75s;
-  //-moz-transition: background 0.75s;
-  //transition: background 0.75s;
-
-  &:hover {
-    a {
-      cursor: pointer;
-    }
+  &:hover a {
+    cursor: pointer;
   }
 
   a {
@@ -241,12 +235,6 @@ $box_height: 400px;
       color: $gray;
     }
   }
-
-  &.no-link {
-    opacity: 1.0;
-    cursor: default;
-  }
-
   &.blue {
     background: $blue;
   }

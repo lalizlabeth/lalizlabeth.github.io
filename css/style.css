@@ -172,9 +172,6 @@ p {
     height: auto; }
     .module.headline h1, .headline.xsmall-module h1, .headline.small-module h1, .headline.medium-module h1, .headline.large-module h1, .headline.xlarge-module h1 {
       color: #42393c; }
-  .module.no-link, .no-link.xsmall-module, .no-link.small-module, .no-link.medium-module, .no-link.large-module, .no-link.xlarge-module {
-    opacity: 1.0;
-    cursor: default; }
   .module.blue, .blue.xsmall-module, .blue.small-module, .blue.medium-module, .blue.large-module, .blue.xlarge-module {
     background: #00bcdd; }
   .module.pink, .pink.xsmall-module, .pink.small-module, .pink.medium-module, .pink.large-module, .pink.xlarge-module {
