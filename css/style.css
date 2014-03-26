@@ -179,7 +179,7 @@ p {
   .module.green, .green.xsmall-module, .green.small-module, .green.medium-module, .green.large-module, .green.xlarge-module {
     background: #8dc73f; }
 
-.container {
+.display-image {
   background: white;
   width: 100%;
   height: auto;
@@ -189,7 +189,7 @@ p {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  .container img {
+  .display-image img {
     display: inline-block;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
     width: 80%;
