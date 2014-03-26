@@ -201,6 +201,12 @@ p {
     #info .column:hover.pink a {
       color: #ee478d; }
 
+.container {
+  background: #fff;
+  width: 100%;
+  height: auto;
+  float: left; }
+
 /* About Me */
 /* Design */
 #design-heading .text {
@@ -220,6 +226,11 @@ p {
   -webkit-transition: background 0.75s, color 0.75s, opacity 0.75s;
   -moz-transition: background 0.75s, color 0.75s, opacity 0.75s;
   transition: background 0.75s, color 0.75s, opacity 0.75s; }
+  .column.image-box {
+    height: auto; }
+    .column.image-box img {
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+      width: 100%; }
   .column.headline {
     height: auto; }
     .column.headline h1 {
