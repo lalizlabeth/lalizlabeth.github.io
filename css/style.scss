@@ -1,3 +1,5 @@
+/* Styles for www.elizabethylin.com */
+
 /* Color Definitions */
 $pink: #ee478d;
 $blue: #00bcdd;
@@ -8,8 +10,6 @@ $white: #fff;
 $light_gray: #e4e1e2;
 $light_pink: #fcdce4;
 $light_blue: #9edbed;
-
-
 
 
 /* General */
@@ -37,7 +37,9 @@ body {
   }
 }
 
+
 /* Navigation */
+$navigation_height: 65px;
 .general-navigation {
   position: fixed;
   z-index: 3;
@@ -45,11 +47,11 @@ body {
     overflow: hidden;
   }
   li {
-    height: 65px;
+    height: $navigation_height;
   }
   #logo {
     position: fixed;
-    width: 65px;
+    width: $navigation_height;
     background: $pink url("../images/menu-icon.png");
     background-size: contain;
     z-index: 2;
@@ -71,7 +73,7 @@ body {
     transition: margin-left 2s, background 1s, color 1s;
 
     &.first {
-      margin-left: 65px;
+      margin-left: $navigation_height;
     }
 
     a {
@@ -180,9 +182,14 @@ p {
 $module-sizes: (xsmall small medium large xlarge);
 $box_height: 400px;
 
+.row,
+.module,
+.group {
+  float: left;
+}
+
 .module {
   position: relative;
-  float: left;
   height: $box_height;
   padding: 25px;
 
@@ -190,19 +197,20 @@ $box_height: 400px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 
-  -webkit-transition: opacity 0.75s;
-  -moz-transition: opacity 0.75s;
-  transition: opacity 0.75s;
-
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -backface-visibility: hidden;
+  //-webkit-transition: background 0.75s;
+  //-moz-transition: background 0.75s;
+  //transition: background 0.75s;
 
   &:hover {
-    opacity: 0.8;
     a {
       cursor: pointer;
     }
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
   &.half-height {
@@ -239,12 +247,6 @@ $box_height: 400px;
     cursor: default;
   }
 
-  a {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-
   &.blue {
     background: $blue;
   }
@@ -262,10 +264,13 @@ $box_height: 400px;
   }
 }
 
+.group {
+  padding: 0;
+  height: $box_height;
+}
+
 .row {
   @extend .clearfix;
-  background: #42393c;
-  float: left;
   @each $size in $module-sizes {
     .#{$size}-module {
       height: auto;
@@ -278,9 +283,7 @@ $box_height: 400px;
     @extend .module;
   }
   .#{$size}-group {
-    padding: 0;
-    float: left;
-    height: $box_height;
+    @extend .group;
   }
 }
 .xsmall-group,
@@ -391,50 +394,137 @@ $box_height: 400px;
 /* Special Styles */
 #about-me {
   background: url("../images/portrait.jpg");
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.3), 
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("../images/portrait.jpg");
+    background-size: cover;
+  }
   background-size: cover;
   padding-top: 80px;
 }
 
 #decal {
   background: url("../images/home/decal.png");
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.3), 
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("../images/home/decal.png");
+  }
 }
 
 #penpal {
   background: url("../images/home/penpal.jpg");
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.3), 
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("../images/home/penpal.jpg");
+  }
 }
 
 #posters {
   background: url("../images/home/posters.jpg");
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.3), 
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("../images/home/posters.jpg");
+  }
 }
 
 #design-minor {
   background: url("../images/home/design-minor.png");
-  background-position:center;
+  background-position: center;
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.3), 
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("../images/home/design-minor.png");
+    background-position: center;
+  }
 }
 
 #jamnbread {
   background: url("../images/home/jam-n-bread.gif");
   background-position: center;
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.3), 
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("../images/home/jam-n-bread.gif");
+    background-position: center;
+  }
 }
 
 #spotify {
   background: url("../images/home/spotify.jpg");
   background-position: center;
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.3), 
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("../images/home/spotify.jpg");
+    background-position: center;
+  }
 }
 
 #lostplayground {
   background: url("../images/home/nostalgia.jpg");
   background-position: center;
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.3), 
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("../images/home/nostalgia.jpg");
+    background-position: center;
+  }
 }
 
 #bare {
   background: url("../images/home/BARE.jpg");
   background-position: center;
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.3), 
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("../images/home/BARE.jpg");
+    background-position: center;
+  }
 }
 
 #motivateme {
   background: url("../images/home/motivateme.gif");
   background-position: 0px -75px;
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.3), 
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("../images/home/motivateme.gif");
+    background-position: 0px -75px;
+  }
 }
 
 #social-media {

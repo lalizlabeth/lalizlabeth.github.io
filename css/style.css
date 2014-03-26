@@ -1,3 +1,4 @@
+/* Styles for www.elizabethylin.com */
 /* Color Definitions */
 /* General */
 body {
@@ -125,24 +126,34 @@ p {
 
 /* About Me */
 /* Responsive modules */
+.row,
+.module,
+.xsmall-module,
+.small-module,
+.medium-module,
+.large-module,
+.xlarge-module,
+.group,
+.xsmall-group,
+.small-group,
+.medium-group,
+.large-group,
+.xlarge-group {
+  float: left; }
+
 .module, .xsmall-module, .small-module, .medium-module, .large-module, .xlarge-module {
   position: relative;
-  float: left;
   height: 400px;
   padding: 25px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: opacity 0.75s;
-  -moz-transition: opacity 0.75s;
-  transition: opacity 0.75s;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -backface-visibility: hidden; }
-  .module:hover, .xsmall-module:hover, .small-module:hover, .medium-module:hover, .large-module:hover, .xlarge-module:hover {
-    opacity: 0.8; }
-    .module:hover a, .xsmall-module:hover a, .small-module:hover a, .medium-module:hover a, .large-module:hover a, .xlarge-module:hover a {
-      cursor: pointer; }
+  box-sizing: border-box; }
+  .module:hover a, .xsmall-module:hover a, .small-module:hover a, .medium-module:hover a, .large-module:hover a, .xlarge-module:hover a {
+    cursor: pointer; }
+  .module a, .xsmall-module a, .small-module a, .medium-module a, .large-module a, .xlarge-module a {
+    display: block;
+    width: 100%;
+    height: 100%; }
   .module.half-height, .half-height.xsmall-module, .half-height.small-module, .half-height.medium-module, .half-height.large-module, .half-height.xlarge-module {
     height: 200px; }
   .module.third-height, .third-height.xsmall-module, .third-height.small-module, .third-height.medium-module, .third-height.large-module, .third-height.xlarge-module {
@@ -164,10 +175,6 @@ p {
   .module.no-link, .no-link.xsmall-module, .no-link.small-module, .no-link.medium-module, .no-link.large-module, .no-link.xlarge-module {
     opacity: 1.0;
     cursor: default; }
-  .module a, .xsmall-module a, .small-module a, .medium-module a, .large-module a, .xlarge-module a {
-    display: block;
-    width: 100%;
-    height: 100%; }
   .module.blue, .blue.xsmall-module, .blue.small-module, .blue.medium-module, .blue.large-module, .blue.xlarge-module {
     background: #00bcdd; }
   .module.pink, .pink.xsmall-module, .pink.small-module, .pink.medium-module, .pink.large-module, .pink.xlarge-module {
@@ -179,44 +186,20 @@ p {
   .module.green, .green.xsmall-module, .green.small-module, .green.medium-module, .green.large-module, .green.xlarge-module {
     background: #8dc73f; }
 
-.row {
-  background: #42393c;
-  float: left; }
-  .row .xsmall-module {
-    height: auto; }
-  .row .small-module {
-    height: auto; }
-  .row .medium-module {
-    height: auto; }
-  .row .large-module {
-    height: auto; }
-  .row .xlarge-module {
-    height: auto; }
-
-.xsmall-group {
+.group, .xsmall-group, .small-group, .medium-group, .large-group, .xlarge-group {
   padding: 0;
-  float: left;
   height: 400px; }
 
-.small-group {
-  padding: 0;
-  float: left;
-  height: 400px; }
-
-.medium-group {
-  padding: 0;
-  float: left;
-  height: 400px; }
-
-.large-group {
-  padding: 0;
-  float: left;
-  height: 400px; }
-
-.xlarge-group {
-  padding: 0;
-  float: left;
-  height: 400px; }
+.row .xsmall-module {
+  height: auto; }
+.row .small-module {
+  height: auto; }
+.row .medium-module {
+  height: auto; }
+.row .large-module {
+  height: auto; }
+.row .xlarge-module {
+  height: auto; }
 
 .xsmall-group,
 .xsmall-module {
@@ -370,39 +353,66 @@ p {
   background: url("../images/portrait.jpg");
   background-size: cover;
   padding-top: 80px; }
+  #about-me:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/portrait.jpg");
+    background-size: cover; }
 
 #decal {
   background: url("../images/home/decal.png"); }
+  #decal:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/decal.png"); }
 
 #penpal {
   background: url("../images/home/penpal.jpg"); }
+  #penpal:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/penpal.jpg"); }
 
 #posters {
   background: url("../images/home/posters.jpg"); }
+  #posters:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/posters.jpg"); }
 
 #design-minor {
   background: url("../images/home/design-minor.png");
   background-position: center; }
+  #design-minor:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/design-minor.png");
+    background-position: center; }
 
 #jamnbread {
   background: url("../images/home/jam-n-bread.gif");
   background-position: center; }
+  #jamnbread:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/jam-n-bread.gif");
+    background-position: center; }
 
 #spotify {
   background: url("../images/home/spotify.jpg");
   background-position: center; }
+  #spotify:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/spotify.jpg");
+    background-position: center; }
 
 #lostplayground {
   background: url("../images/home/nostalgia.jpg");
   background-position: center; }
+  #lostplayground:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/nostalgia.jpg");
+    background-position: center; }
 
 #bare {
   background: url("../images/home/BARE.jpg");
   background-position: center; }
+  #bare:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/BARE.jpg");
+    background-position: center; }
 
 #motivateme {
   background: url("../images/home/motivateme.gif");
   background-position: 0px -75px; }
+  #motivateme:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/motivateme.gif");
+    background-position: 0px -75px; }
 
 #social-media a {
   width: 100%;
