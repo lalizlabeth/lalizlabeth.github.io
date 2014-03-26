@@ -68,9 +68,9 @@ $navigation_height: 65px;
     background: $white;
     margin-left: 0;
 
-    -moz-transition: margin-left 0.75s, background 1s, color 1s;
-    -webkit-transition: margin-left 0.75s, background 1s, color 1s;
-    transition: margin-left 0.75s, background 1s, color 1s;
+    -moz-transition: margin-left 1s, background 1s, color 1s;
+    -webkit-transition: margin-left 1s, background 1s, color 1s;
+    transition: margin-left 1s, background 1s, color 1s;
 
     &.first {
       margin-left: $navigation_height;
