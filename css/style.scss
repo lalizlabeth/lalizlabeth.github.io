@@ -72,7 +72,7 @@ body {
       cursor: pointer;
       background: $pink;
       a {
-        color: white;
+        color: $white;
       }
     }
     &.active:hover {
@@ -87,7 +87,7 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6, p {
   font-family: "Alegreya Sans", "Helvetica", "Arial";
-  color: white;
+  color: $white;
 }
 
 h1 {
@@ -152,7 +152,7 @@ p {
   box-sizing: border-box;
 }
 
-/* Home Sections */
+/* Special Sections */
 #about-me {
   background: url("../images/portrait.jpg");
   padding-top: 80px;
