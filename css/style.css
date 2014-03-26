@@ -498,7 +498,8 @@ p {
     background-size: cover; }
 
   .xsmall-group {
-    width: 60%; }
+    width: 60%;
+    background-size: cover no-repeat; }
 
   #social-media {
     width: 40%; }
