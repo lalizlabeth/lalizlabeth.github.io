@@ -260,6 +260,7 @@ $box_height: 400px;
     display:inline-block;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
     width: 80%;
+    min-width: 400px;
   }
 }
 
@@ -571,7 +572,7 @@ $box_height: 400px;
   }
   .module {
     &.xsmall-module,
-    &.module-2,
+    &.small-module,
     &.medium-module,
     &.large-module,
     &.xlarge-module {

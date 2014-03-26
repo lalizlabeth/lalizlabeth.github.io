@@ -192,7 +192,8 @@ p {
   .container img {
     display: inline-block;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
-    width: 80%; }
+    width: 80%;
+    min-width: 400px; }
 
 .group, .xsmall-group, .small-group, .medium-group, .large-group, .xlarge-group {
   padding: 0;
@@ -458,7 +459,7 @@ p {
   #wrapper {
     width: 100%; }
 
-  .module.xsmall-module, .xsmall-module, .module.module-2, .module-2.xsmall-module, .module-2.small-module, .module-2.medium-module, .module-2.large-module, .module-2.xlarge-module, .module.medium-module, .medium-module, .module.large-module, .large-module, .module.xlarge-module, .xlarge-module {
+  .module.xsmall-module, .xsmall-module, .module.small-module, .small-module, .module.medium-module, .medium-module, .module.large-module, .large-module, .module.xlarge-module, .xlarge-module {
     width: 100%;
     background-size: cover; } }
 @media screen and (max-width: 1200px) {
