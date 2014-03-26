@@ -14,6 +14,11 @@
   text-align: center;
 }
 
+.emphasized-heading a {
+  color: white;
+  text-decoration: none;
+}
+
 .description {
   height: auto;
 }

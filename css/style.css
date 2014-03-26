@@ -231,6 +231,11 @@ p {
     .column.image-box img {
       box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
       width: 100%; }
+  .column.container {
+    background: #fff;
+    width: 100%;
+    height: auto;
+    float: left; }
   .column.headline {
     height: auto; }
     .column.headline h1 {
