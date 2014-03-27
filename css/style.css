@@ -121,7 +121,7 @@ p {
   p em {
     text-decoration: underline; }
 
-li {
+.text-module li {
   font-weight: 400;
   font-size: 20px;
   color: #42393c;

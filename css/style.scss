@@ -170,13 +170,16 @@ p {
   }
 }
 
-li {
-  font-weight: 400;
-  font-size: 20px;
-  color: $gray;
-  margin-left: 30px;
-  line-height: 35px;
+.text-module { 
+  li {
+    font-weight: 400;
+    font-size: 20px;
+    color: $gray;
+    margin-left: 30px;
+    line-height: 35px;
+  }
 }
+
 
 li~p {
   margin-top: 20px;
