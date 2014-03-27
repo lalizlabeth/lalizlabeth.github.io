@@ -591,6 +591,9 @@ p {
   background: url("../images/posters/horizontal-cocktails.jpg") center;
   background-position: contain; }
 
+#penpal-intro {
+  background: url("../images/penpal/userflow.jpg") center; }
+
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
   #wrapper {
