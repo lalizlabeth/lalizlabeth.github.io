@@ -180,8 +180,8 @@ p {
   }
 }
 
-
-li~p {
+li~p,
+li~h2 {
   margin-top: 20px;
 }
 
@@ -674,6 +674,11 @@ $box_height: 400px;
 
 #decal-intro {
   background: url("../images/decal/header.png") center $white;
+}
+
+#motivateme-intro {
+  background: url("../images/motivateme/header.gif") center;
+  background-position: 0 -150px;
 }
 
 /* Screen Compatibility */

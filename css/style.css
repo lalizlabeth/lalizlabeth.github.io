@@ -128,7 +128,10 @@ p {
   margin-left: 30px;
   line-height: 35px; }
 
-li ~ p {
+li ~ p,
+li ~ h2,
+.headline li ~ a,
+.footer li ~ a {
   margin-top: 20px; }
 
 .solo-text {
@@ -732,6 +735,10 @@ li ~ p {
 
 #decal-intro {
   background: url("../images/decal/header.png") center white; }
+
+#motivateme-intro {
+  background: url("../images/motivateme/header.gif") center;
+  background-position: 0 -150px; }
 
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
