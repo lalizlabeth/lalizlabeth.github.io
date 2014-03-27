@@ -259,6 +259,18 @@ $box_height: 400px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  h2 {
+    color: $gray;
+    text-align: center;
+    margin-top: 10px;
+  }
+  p {
+    color: $gray;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+    line-height: 22px;
+  }
   img {
     display:inline-block;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
