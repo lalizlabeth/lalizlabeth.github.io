@@ -291,6 +291,9 @@ p {
 .intro-module {
   height: 600px; }
 
+.video-module {
+  height: auto; }
+
 /* Module Text */
 .module-text, .large-module-text,
 .medium-module-text,

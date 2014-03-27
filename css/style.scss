@@ -361,6 +361,10 @@ $box_height: 400px;
   height: 600px;
 }
 
+.video-module {
+  height: auto;
+}
+
 /* Module Text */
 
 .module-text {
@@ -613,6 +617,10 @@ $box_height: 400px;
 #posters-intro {
   background: url("../images/posters/horizontal-cocktails.jpg") center;
   background-position: contain;
+}
+
+#penpal-intro {
+  background: url("../images/penpal/userflow.jpg") center;
 }
 
 /* Screen Compatibility */
