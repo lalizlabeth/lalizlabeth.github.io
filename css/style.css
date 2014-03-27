@@ -209,6 +209,20 @@ p {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+  .display-image h2, .display-image-vertical h2, .display-image .headline a, .headline .display-image a, .display-image-vertical .headline a, .headline .display-image-vertical a,
+  .display-image .footer a,
+  .footer .display-image a,
+  .display-image-vertical .footer a,
+  .footer .display-image-vertical a {
+    color: #42393c;
+    text-align: center;
+    margin-top: 10px; }
+  .display-image p, .display-image-vertical p {
+    color: #42393c;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+    line-height: 22px; }
   .display-image img, .display-image-vertical img {
     display: inline-block;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
