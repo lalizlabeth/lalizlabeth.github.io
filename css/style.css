@@ -96,7 +96,6 @@ h5 {
   font-weight: 100;
   font-size: 40px; }
   h5 em {
-    font-style: italic;
     font-weight: 400; }
 
 h6 {
@@ -490,13 +489,15 @@ p {
   width: 200px; }
 
 /* Special Styles */
+#bio,
 #about-me {
   background: url("../images/portrait.jpg");
   background-size: cover;
   padding-top: 80px; }
-  #about-me:hover {
-    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/portrait.jpg");
-    background-size: cover; }
+
+#about-me:hover {
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/portrait.jpg");
+  background-size: cover; }
 
 #decal {
   background: url("../images/home/decal.png"); }
