@@ -8,16 +8,6 @@
   text-align: center;
 }
 
-.emphasized-heading a {
-  color: white;
-  text-decoration: none;
-}
-
 .description {
   height: auto;
-}
-
-hr {
-  border: 1px solid white;
-  margin: 15px 0;
 }

@@ -18,6 +18,10 @@ body {
   #wrapper:after, .clearfix:after, .display-images:after, .row:after {
     clear: both; }
 
+hr {
+  border: 1px solid white;
+  margin: 15px 0; }
+
 /* Navigation */
 .general-navigation {
   position: fixed;
@@ -67,7 +71,7 @@ body {
 
 /* Typography */
 h1, h2, .headline a,
-.footer a, h3, h4, h5, h6, p, a {
+.footer a, h3, h4, h5, h6, p, a, li {
   font-family: "Alegreya Sans", "Helvetica", "Arial";
   color: white; }
 
@@ -107,11 +111,25 @@ h6 {
 p {
   font-weight: 100;
   font-size: 25px;
-  line-height: 32px; }
+  line-height: 32px;
+  margin-bottom: 20px;
+  text-indent: 20px; }
+  p:last-child {
+    margin-bottom: 0; }
   p strong {
     font-weight: 400; }
   p em {
     text-decoration: underline; }
+
+li {
+  font-weight: 400;
+  font-size: 20px;
+  color: #42393c;
+  margin-left: 30px;
+  line-height: 35px; }
+
+li ~ p {
+  margin-top: 20px; }
 
 .solo-text {
   position: absolute;
@@ -136,6 +154,7 @@ p {
 .medium-module,
 .large-module,
 .xlarge-module,
+.text-module,
 .headline,
 .footer,
 .intro-module,
@@ -147,7 +166,7 @@ p {
 .xlarge-group {
   float: left; }
 
-.module, .xsmall-module, .small-module, .medium-module, .large-module, .xlarge-module, .headline,
+.module, .xsmall-module, .small-module, .medium-module, .large-module, .xlarge-module, .text-module, .headline,
 .footer, .intro-module {
   position: relative;
   height: 400px;
@@ -155,46 +174,94 @@ p {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  .module:hover a, .xsmall-module:hover a, .small-module:hover a, .medium-module:hover a, .large-module:hover a, .xlarge-module:hover a, .headline:hover a,
+  .module:hover a, .xsmall-module:hover a, .small-module:hover a, .medium-module:hover a, .large-module:hover a, .xlarge-module:hover a, .text-module:hover a, .headline:hover a,
   .footer:hover a, .intro-module:hover a {
     cursor: pointer; }
-  .module a, .xsmall-module a, .small-module a, .medium-module a, .large-module a, .xlarge-module a, .headline a,
+  .module a, .xsmall-module a, .small-module a, .medium-module a, .large-module a, .xlarge-module a, .text-module a, .headline a,
   .footer a, .intro-module a {
     display: block;
     width: 100%;
     height: 100%; }
-  .module.half-height, .half-height.xsmall-module, .half-height.small-module, .half-height.medium-module, .half-height.large-module, .half-height.xlarge-module, .half-height.headline,
+  .module.half-height, .half-height.xsmall-module, .half-height.small-module, .half-height.medium-module, .half-height.large-module, .half-height.xlarge-module, .half-height.text-module, .half-height.headline,
   .half-height.footer, .half-height.intro-module {
     height: 200px; }
-  .module.third-height, .third-height.xsmall-module, .third-height.small-module, .third-height.medium-module, .third-height.large-module, .third-height.xlarge-module, .third-height.headline,
+  .module.third-height, .third-height.xsmall-module, .third-height.small-module, .third-height.medium-module, .third-height.large-module, .third-height.xlarge-module, .third-height.text-module, .third-height.headline,
   .third-height.footer, .third-height.intro-module {
     height: 133.33333px; }
-  .module.image-box, .image-box.xsmall-module, .image-box.small-module, .image-box.medium-module, .image-box.large-module, .image-box.xlarge-module, .image-box.headline,
+  .module.image-box, .image-box.xsmall-module, .image-box.small-module, .image-box.medium-module, .image-box.large-module, .image-box.xlarge-module, .image-box.text-module, .image-box.headline,
   .image-box.footer, .image-box.intro-module {
     height: auto;
     display: inline-block; }
-    .module.image-box img, .image-box.xsmall-module img, .image-box.small-module img, .image-box.medium-module img, .image-box.large-module img, .image-box.xlarge-module img, .image-box.headline img,
+    .module.image-box img, .image-box.xsmall-module img, .image-box.small-module img, .image-box.medium-module img, .image-box.large-module img, .image-box.xlarge-module img, .image-box.text-module img, .image-box.headline img,
     .image-box.footer img, .image-box.intro-module img {
       box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
       width: 100%; }
-  .module.blue, .blue.xsmall-module, .blue.small-module, .blue.medium-module, .blue.large-module, .blue.xlarge-module, .blue.headline,
+  .module.blue, .blue.xsmall-module, .blue.small-module, .blue.medium-module, .blue.large-module, .blue.xlarge-module, .blue.text-module, .blue.headline,
   .blue.footer, .blue.intro-module {
     background: #00bcdd; }
-  .module.pink, .pink.xsmall-module, .pink.small-module, .pink.medium-module, .pink.large-module, .pink.xlarge-module, .pink.headline,
+  .module.pink, .pink.xsmall-module, .pink.small-module, .pink.medium-module, .pink.large-module, .pink.xlarge-module, .pink.text-module, .pink.headline,
   .pink.footer, .pink.intro-module {
     background: #ee478d; }
-  .module.gray, .gray.xsmall-module, .gray.small-module, .gray.medium-module, .gray.large-module, .gray.xlarge-module, .gray.headline,
+  .module.gray, .gray.xsmall-module, .gray.small-module, .gray.medium-module, .gray.large-module, .gray.xlarge-module, .gray.text-module, .gray.headline,
   .gray.footer, .gray.intro-module {
     background: #42393c; }
-  .module.white, .white.xsmall-module, .white.small-module, .white.medium-module, .white.large-module, .white.xlarge-module, .white.headline,
+  .module.white, .white.xsmall-module, .white.small-module, .white.medium-module, .white.large-module, .white.xlarge-module, .white.text-module, .white.headline,
   .white.footer, .white.intro-module {
     background: white; }
-  .module.green, .green.xsmall-module, .green.small-module, .green.medium-module, .green.large-module, .green.xlarge-module, .green.headline,
+    .module.white h2, .white.xsmall-module h2, .white.small-module h2, .white.medium-module h2, .white.large-module h2, .white.xlarge-module h2, .white.text-module h2, .white.headline h2,
+    .white.footer h2, .white.intro-module h2, .module.white .headline a, .headline .module.white a, .white.xsmall-module .headline a, .headline .white.xsmall-module a, .white.small-module .headline a, .headline .white.small-module a, .white.medium-module .headline a, .headline .white.medium-module a, .white.large-module .headline a, .headline .white.large-module a, .white.xlarge-module .headline a, .headline .white.xlarge-module a, .white.text-module .headline a, .headline .white.text-module a, .white.headline a, .white.intro-module .headline a, .headline .white.intro-module a,
+    .module.white .footer a,
+    .footer .module.white a,
+    .white.xsmall-module .footer a,
+    .footer .white.xsmall-module a,
+    .white.small-module .footer a,
+    .footer .white.small-module a,
+    .white.medium-module .footer a,
+    .footer .white.medium-module a,
+    .white.large-module .footer a,
+    .footer .white.large-module a,
+    .white.xlarge-module .footer a,
+    .footer .white.xlarge-module a,
+    .white.text-module .footer a,
+    .footer .white.text-module a,
+    .white.footer a,
+    .white.intro-module .footer a,
+    .footer .white.intro-module a, .module.white p, .white.xsmall-module p, .white.small-module p, .white.medium-module p, .white.large-module p, .white.xlarge-module p, .white.text-module p, .white.headline p,
+    .white.footer p, .white.intro-module p {
+      color: #42393c; }
+    .module.white h2, .white.xsmall-module h2, .white.small-module h2, .white.medium-module h2, .white.large-module h2, .white.xlarge-module h2, .white.text-module h2, .white.headline h2,
+    .white.footer h2, .white.intro-module h2, .module.white .headline a, .headline .module.white a, .white.xsmall-module .headline a, .headline .white.xsmall-module a, .white.small-module .headline a, .headline .white.small-module a, .white.medium-module .headline a, .headline .white.medium-module a, .white.large-module .headline a, .headline .white.large-module a, .white.xlarge-module .headline a, .headline .white.xlarge-module a, .white.text-module .headline a, .headline .white.text-module a, .white.headline a, .white.intro-module .headline a, .headline .white.intro-module a,
+    .module.white .footer a,
+    .footer .module.white a,
+    .white.xsmall-module .footer a,
+    .footer .white.xsmall-module a,
+    .white.small-module .footer a,
+    .footer .white.small-module a,
+    .white.medium-module .footer a,
+    .footer .white.medium-module a,
+    .white.large-module .footer a,
+    .footer .white.large-module a,
+    .white.xlarge-module .footer a,
+    .footer .white.xlarge-module a,
+    .white.text-module .footer a,
+    .footer .white.text-module a,
+    .white.footer a,
+    .white.intro-module .footer a,
+    .footer .white.intro-module a {
+      margin-bottom: 10px; }
+  .module.green, .green.xsmall-module, .green.small-module, .green.medium-module, .green.large-module, .green.xlarge-module, .green.text-module, .green.headline,
   .green.footer, .green.intro-module {
     background: #8dc73f; }
 
 .display-images {
   background: white; }
+
+.text-module {
+  padding-left: 15%;
+  padding-right: 15%;
+  height: auto; }
+  .text-module p {
+    text-align: justify; }
 
 .display-images .display-image:first-child, .display-images .display-image-vertical:first-child {
   padding: 25px; }
@@ -244,7 +311,7 @@ p {
   height: auto; }
 .row .large-module {
   height: auto; }
-.row .xlarge-module, .row .headline,
+.row .xlarge-module, .row .text-module, .row .headline,
 .row .footer, .row .intro-module {
   height: auto; }
 
@@ -278,6 +345,7 @@ p {
 
 .xlarge-group,
 .xlarge-module,
+.text-module,
 .headline,
 .footer,
 .intro-module {
@@ -296,7 +364,8 @@ p {
   height: auto; }
 
 /* Module Text */
-.module-text, .large-module-text,
+.module-text, .xlarge-module-text,
+.large-module-text,
 .medium-module-text,
 .small-module-text {
   display: block;
@@ -304,41 +373,55 @@ p {
   bottom: 25px;
   right: 25px;
   text-align: right; }
-  .module-text h1, .large-module-text h1,
+  .module-text h1, .xlarge-module-text h1,
+  .large-module-text h1,
   .medium-module-text h1,
   .small-module-text h1 {
     padding: 4px 16px; }
-  .module-text h2, .large-module-text h2,
+  .module-text h2, .xlarge-module-text h2,
+  .large-module-text h2,
   .medium-module-text h2,
-  .small-module-text h2, .module-text .headline a, .headline .module-text a, .large-module-text .headline a, .headline .large-module-text a,
+  .small-module-text h2, .module-text .headline a, .headline .module-text a, .xlarge-module-text .headline a, .headline .xlarge-module-text a,
+  .large-module-text .headline a,
+  .headline .large-module-text a,
   .medium-module-text .headline a,
   .headline .medium-module-text a,
   .small-module-text .headline a,
   .headline .small-module-text a,
   .module-text .footer a,
   .footer .module-text a,
+  .xlarge-module-text .footer a,
+  .footer .xlarge-module-text a,
   .large-module-text .footer a,
   .footer .large-module-text a,
   .medium-module-text .footer a,
   .footer .medium-module-text a,
   .small-module-text .footer a,
-  .footer .small-module-text a, .module-text h3, .large-module-text h3,
+  .footer .small-module-text a, .module-text h3, .xlarge-module-text h3,
+  .large-module-text h3,
   .medium-module-text h3,
-  .small-module-text h3, .module-text h4, .large-module-text h4,
+  .small-module-text h3, .module-text h4, .xlarge-module-text h4,
+  .large-module-text h4,
   .medium-module-text h4,
   .small-module-text h4 {
     padding: 4px 12px; }
-  .module-text.pink h1, .pink.large-module-text h1,
+  .module-text.pink h1, .pink.xlarge-module-text h1,
+  .pink.large-module-text h1,
   .pink.medium-module-text h1,
-  .pink.small-module-text h1, .module-text.pink h2, .pink.large-module-text h2,
+  .pink.small-module-text h1, .module-text.pink h2, .pink.xlarge-module-text h2,
+  .pink.large-module-text h2,
   .pink.medium-module-text h2,
-  .pink.small-module-text h2, .module-text.pink .headline a, .headline .module-text.pink a, .pink.large-module-text .headline a, .headline .pink.large-module-text a,
+  .pink.small-module-text h2, .module-text.pink .headline a, .headline .module-text.pink a, .pink.xlarge-module-text .headline a, .headline .pink.xlarge-module-text a,
+  .pink.large-module-text .headline a,
+  .headline .pink.large-module-text a,
   .pink.medium-module-text .headline a,
   .headline .pink.medium-module-text a,
   .pink.small-module-text .headline a,
   .headline .pink.small-module-text a,
   .module-text.pink .footer a,
   .footer .module-text.pink a,
+  .pink.xlarge-module-text .footer a,
+  .footer .pink.xlarge-module-text a,
   .pink.large-module-text .footer a,
   .footer .pink.large-module-text a,
   .pink.medium-module-text .footer a,
@@ -346,29 +429,39 @@ p {
   .pink.small-module-text .footer a,
   .footer .pink.small-module-text a,
   .module-text.pink h3,
+  .pink.xlarge-module-text h3,
   .pink.large-module-text h3,
   .pink.medium-module-text h3,
-  .pink.small-module-text h3, .module-text.pink h4, .pink.large-module-text h4,
+  .pink.small-module-text h3, .module-text.pink h4, .pink.xlarge-module-text h4,
+  .pink.large-module-text h4,
   .pink.medium-module-text h4,
   .pink.small-module-text h4,
   .module-text.pink h5,
+  .pink.xlarge-module-text h5,
   .pink.large-module-text h5,
   .pink.medium-module-text h5,
-  .pink.small-module-text h5, .module-text.pink h6, .pink.large-module-text h6,
+  .pink.small-module-text h5, .module-text.pink h6, .pink.xlarge-module-text h6,
+  .pink.large-module-text h6,
   .pink.medium-module-text h6,
   .pink.small-module-text h6 {
     background: #ee478d; }
-  .module-text.blue h1, .blue.large-module-text h1,
+  .module-text.blue h1, .blue.xlarge-module-text h1,
+  .blue.large-module-text h1,
   .blue.medium-module-text h1,
-  .blue.small-module-text h1, .module-text.blue h2, .blue.large-module-text h2,
+  .blue.small-module-text h1, .module-text.blue h2, .blue.xlarge-module-text h2,
+  .blue.large-module-text h2,
   .blue.medium-module-text h2,
-  .blue.small-module-text h2, .module-text.blue .headline a, .headline .module-text.blue a, .blue.large-module-text .headline a, .headline .blue.large-module-text a,
+  .blue.small-module-text h2, .module-text.blue .headline a, .headline .module-text.blue a, .blue.xlarge-module-text .headline a, .headline .blue.xlarge-module-text a,
+  .blue.large-module-text .headline a,
+  .headline .blue.large-module-text a,
   .blue.medium-module-text .headline a,
   .headline .blue.medium-module-text a,
   .blue.small-module-text .headline a,
   .headline .blue.small-module-text a,
   .module-text.blue .footer a,
   .footer .module-text.blue a,
+  .blue.xlarge-module-text .footer a,
+  .footer .blue.xlarge-module-text a,
   .blue.large-module-text .footer a,
   .footer .blue.large-module-text a,
   .blue.medium-module-text .footer a,
@@ -376,29 +469,39 @@ p {
   .blue.small-module-text .footer a,
   .footer .blue.small-module-text a,
   .module-text.blue h3,
+  .blue.xlarge-module-text h3,
   .blue.large-module-text h3,
   .blue.medium-module-text h3,
-  .blue.small-module-text h3, .module-text.blue h4, .blue.large-module-text h4,
+  .blue.small-module-text h3, .module-text.blue h4, .blue.xlarge-module-text h4,
+  .blue.large-module-text h4,
   .blue.medium-module-text h4,
   .blue.small-module-text h4,
   .module-text.blue h5,
+  .blue.xlarge-module-text h5,
   .blue.large-module-text h5,
   .blue.medium-module-text h5,
-  .blue.small-module-text h5, .module-text.blue h6, .blue.large-module-text h6,
+  .blue.small-module-text h5, .module-text.blue h6, .blue.xlarge-module-text h6,
+  .blue.large-module-text h6,
   .blue.medium-module-text h6,
   .blue.small-module-text h6 {
     background: #00bcdd; }
-  .module-text.gray h1, .gray.large-module-text h1,
+  .module-text.gray h1, .gray.xlarge-module-text h1,
+  .gray.large-module-text h1,
   .gray.medium-module-text h1,
-  .gray.small-module-text h1, .module-text.gray h2, .gray.large-module-text h2,
+  .gray.small-module-text h1, .module-text.gray h2, .gray.xlarge-module-text h2,
+  .gray.large-module-text h2,
   .gray.medium-module-text h2,
-  .gray.small-module-text h2, .module-text.gray .headline a, .headline .module-text.gray a, .gray.large-module-text .headline a, .headline .gray.large-module-text a,
+  .gray.small-module-text h2, .module-text.gray .headline a, .headline .module-text.gray a, .gray.xlarge-module-text .headline a, .headline .gray.xlarge-module-text a,
+  .gray.large-module-text .headline a,
+  .headline .gray.large-module-text a,
   .gray.medium-module-text .headline a,
   .headline .gray.medium-module-text a,
   .gray.small-module-text .headline a,
   .headline .gray.small-module-text a,
   .module-text.gray .footer a,
   .footer .module-text.gray a,
+  .gray.xlarge-module-text .footer a,
+  .footer .gray.xlarge-module-text a,
   .gray.large-module-text .footer a,
   .footer .gray.large-module-text a,
   .gray.medium-module-text .footer a,
@@ -406,29 +509,39 @@ p {
   .gray.small-module-text .footer a,
   .footer .gray.small-module-text a,
   .module-text.gray h3,
+  .gray.xlarge-module-text h3,
   .gray.large-module-text h3,
   .gray.medium-module-text h3,
-  .gray.small-module-text h3, .module-text.gray h4, .gray.large-module-text h4,
+  .gray.small-module-text h3, .module-text.gray h4, .gray.xlarge-module-text h4,
+  .gray.large-module-text h4,
   .gray.medium-module-text h4,
   .gray.small-module-text h4,
   .module-text.gray h5,
+  .gray.xlarge-module-text h5,
   .gray.large-module-text h5,
   .gray.medium-module-text h5,
-  .gray.small-module-text h5, .module-text.gray h6, .gray.large-module-text h6,
+  .gray.small-module-text h5, .module-text.gray h6, .gray.xlarge-module-text h6,
+  .gray.large-module-text h6,
   .gray.medium-module-text h6,
   .gray.small-module-text h6 {
     background: #42393c; }
-  .module-text.green h1, .green.large-module-text h1,
+  .module-text.green h1, .green.xlarge-module-text h1,
+  .green.large-module-text h1,
   .green.medium-module-text h1,
-  .green.small-module-text h1, .module-text.green h2, .green.large-module-text h2,
+  .green.small-module-text h1, .module-text.green h2, .green.xlarge-module-text h2,
+  .green.large-module-text h2,
   .green.medium-module-text h2,
-  .green.small-module-text h2, .module-text.green .headline a, .headline .module-text.green a, .green.large-module-text .headline a, .headline .green.large-module-text a,
+  .green.small-module-text h2, .module-text.green .headline a, .headline .module-text.green a, .green.xlarge-module-text .headline a, .headline .green.xlarge-module-text a,
+  .green.large-module-text .headline a,
+  .headline .green.large-module-text a,
   .green.medium-module-text .headline a,
   .headline .green.medium-module-text a,
   .green.small-module-text .headline a,
   .headline .green.small-module-text a,
   .module-text.green .footer a,
   .footer .module-text.green a,
+  .green.xlarge-module-text .footer a,
+  .footer .green.xlarge-module-text a,
   .green.large-module-text .footer a,
   .footer .green.large-module-text a,
   .green.medium-module-text .footer a,
@@ -436,29 +549,39 @@ p {
   .green.small-module-text .footer a,
   .footer .green.small-module-text a,
   .module-text.green h3,
+  .green.xlarge-module-text h3,
   .green.large-module-text h3,
   .green.medium-module-text h3,
-  .green.small-module-text h3, .module-text.green h4, .green.large-module-text h4,
+  .green.small-module-text h3, .module-text.green h4, .green.xlarge-module-text h4,
+  .green.large-module-text h4,
   .green.medium-module-text h4,
   .green.small-module-text h4,
   .module-text.green h5,
+  .green.xlarge-module-text h5,
   .green.large-module-text h5,
   .green.medium-module-text h5,
-  .green.small-module-text h5, .module-text.green h6, .green.large-module-text h6,
+  .green.small-module-text h5, .module-text.green h6, .green.xlarge-module-text h6,
+  .green.large-module-text h6,
   .green.medium-module-text h6,
   .green.small-module-text h6 {
     background: #8dc73f; }
-  .module-text h1, .large-module-text h1,
+  .module-text h1, .xlarge-module-text h1,
+  .large-module-text h1,
   .medium-module-text h1,
-  .small-module-text h1, .module-text h2, .large-module-text h2,
+  .small-module-text h1, .module-text h2, .xlarge-module-text h2,
+  .large-module-text h2,
   .medium-module-text h2,
-  .small-module-text h2, .module-text .headline a, .headline .module-text a, .large-module-text .headline a, .headline .large-module-text a,
+  .small-module-text h2, .module-text .headline a, .headline .module-text a, .xlarge-module-text .headline a, .headline .xlarge-module-text a,
+  .large-module-text .headline a,
+  .headline .large-module-text a,
   .medium-module-text .headline a,
   .headline .medium-module-text a,
   .small-module-text .headline a,
   .headline .small-module-text a,
   .module-text .footer a,
   .footer .module-text a,
+  .xlarge-module-text .footer a,
+  .footer .xlarge-module-text a,
   .large-module-text .footer a,
   .footer .large-module-text a,
   .medium-module-text .footer a,
@@ -466,18 +589,25 @@ p {
   .small-module-text .footer a,
   .footer .small-module-text a,
   .module-text h3,
+  .xlarge-module-text h3,
   .large-module-text h3,
   .medium-module-text h3,
-  .small-module-text h3, .module-text h4, .large-module-text h4,
+  .small-module-text h3, .module-text h4, .xlarge-module-text h4,
+  .large-module-text h4,
   .medium-module-text h4,
   .small-module-text h4,
   .module-text h5,
+  .xlarge-module-text h5,
   .large-module-text h5,
   .medium-module-text h5,
-  .small-module-text h5, .module-text h6, .large-module-text h6,
+  .small-module-text h5, .module-text h6, .xlarge-module-text h6,
+  .large-module-text h6,
   .medium-module-text h6,
   .small-module-text h6 {
     float: right; }
+
+.xlarge-module-text {
+  width: 400px; }
 
 .large-module-text {
   width: 280px; }
@@ -569,27 +699,27 @@ p {
   left: 0;
   bottom: 0;
   right: 0; }
-#social-media .module, #social-media .xsmall-module, #social-media .small-module, #social-media .medium-module, #social-media .large-module, #social-media .xlarge-module, #social-media .headline,
+#social-media .module, #social-media .xsmall-module, #social-media .small-module, #social-media .medium-module, #social-media .large-module, #social-media .xlarge-module, #social-media .text-module, #social-media .headline,
 #social-media .footer, #social-media .intro-module {
   padding: 0;
   -webkit-transition: background 0.75s, color 0.75s;
   -firefox-transition: background 0.75s, color 0.75s;
   transition: background 0.75s, color 0.75s; }
-  #social-media .module:first-child, #social-media .xsmall-module:first-child, #social-media .small-module:first-child, #social-media .medium-module:first-child, #social-media .large-module:first-child, #social-media .xlarge-module:first-child, #social-media .headline:first-child,
+  #social-media .module:first-child, #social-media .xsmall-module:first-child, #social-media .small-module:first-child, #social-media .medium-module:first-child, #social-media .large-module:first-child, #social-media .xlarge-module:first-child, #social-media .text-module:first-child, #social-media .headline:first-child,
   #social-media .footer:first-child, #social-media .intro-module:first-child {
     height: 134.33333px; }
-#social-media .module:hover, #social-media .xsmall-module:hover, #social-media .small-module:hover, #social-media .medium-module:hover, #social-media .large-module:hover, #social-media .xlarge-module:hover, #social-media .headline:hover,
+#social-media .module:hover, #social-media .xsmall-module:hover, #social-media .small-module:hover, #social-media .medium-module:hover, #social-media .large-module:hover, #social-media .xlarge-module:hover, #social-media .text-module:hover, #social-media .headline:hover,
 #social-media .footer:hover, #social-media .intro-module:hover {
   cursor: pointer;
   background: white;
   opacity: 1.0; }
-  #social-media .module:hover.blue a, #social-media .xsmall-module:hover.blue a, #social-media .small-module:hover.blue a, #social-media .medium-module:hover.blue a, #social-media .large-module:hover.blue a, #social-media .xlarge-module:hover.blue a, #social-media .headline:hover.blue a,
+  #social-media .module:hover.blue a, #social-media .xsmall-module:hover.blue a, #social-media .small-module:hover.blue a, #social-media .medium-module:hover.blue a, #social-media .large-module:hover.blue a, #social-media .xlarge-module:hover.blue a, #social-media .text-module:hover.blue a, #social-media .headline:hover.blue a,
   #social-media .footer:hover.blue a, #social-media .intro-module:hover.blue a {
     color: #00bcdd; }
-  #social-media .module:hover.gray a, #social-media .xsmall-module:hover.gray a, #social-media .small-module:hover.gray a, #social-media .medium-module:hover.gray a, #social-media .large-module:hover.gray a, #social-media .xlarge-module:hover.gray a, #social-media .headline:hover.gray a,
+  #social-media .module:hover.gray a, #social-media .xsmall-module:hover.gray a, #social-media .small-module:hover.gray a, #social-media .medium-module:hover.gray a, #social-media .large-module:hover.gray a, #social-media .xlarge-module:hover.gray a, #social-media .text-module:hover.gray a, #social-media .headline:hover.gray a,
   #social-media .footer:hover.gray a, #social-media .intro-module:hover.gray a {
     color: #42393c; }
-  #social-media .module:hover.pink a, #social-media .xsmall-module:hover.pink a, #social-media .small-module:hover.pink a, #social-media .medium-module:hover.pink a, #social-media .large-module:hover.pink a, #social-media .xlarge-module:hover.pink a, #social-media .headline:hover.pink a,
+  #social-media .module:hover.pink a, #social-media .xsmall-module:hover.pink a, #social-media .small-module:hover.pink a, #social-media .medium-module:hover.pink a, #social-media .large-module:hover.pink a, #social-media .xlarge-module:hover.pink a, #social-media .text-module:hover.pink a, #social-media .headline:hover.pink a,
   #social-media .footer:hover.pink a, #social-media .intro-module:hover.pink a {
     color: #ee478d; }
 
@@ -599,6 +729,9 @@ p {
 
 #penpal-intro {
   background: url("../images/penpal/userflow.jpg") center; }
+
+#decal-intro {
+  background: url("../images/decal/header.png") center white; }
 
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
@@ -639,7 +772,7 @@ p {
   #wrapper {
     width: 100%; }
 
-  .module.xsmall-module, .xsmall-module, .module.small-module, .small-module, .module.medium-module, .medium-module, .module.large-module, .large-module, .module.xlarge-module, .xlarge-module, .headline,
+  .module.xsmall-module, .xsmall-module, .module.small-module, .small-module, .module.medium-module, .medium-module, .module.large-module, .large-module, .module.xlarge-module, .xlarge-module, .text-module, .headline,
   .footer, .intro-module {
     width: 100%;
     background-size: cover; }

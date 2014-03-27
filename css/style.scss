@@ -37,6 +37,10 @@ body {
   }
 }
 
+hr {
+  border: 1px solid white;
+  margin: 15px 0;
+}
 
 /* Navigation */
 $navigation_height: 65px;
@@ -104,7 +108,7 @@ $navigation_height: 65px;
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, a, li {
   font-family: "Alegreya Sans", "Helvetica", "Arial";
   color: $white;
 }
@@ -153,12 +157,29 @@ p {
   font-weight: 100;
   font-size: 25px;
   line-height: 32px;
+  margin-bottom: 20px;
+  text-indent: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
   strong {
     font-weight: 400;
   }
   em {
     text-decoration: underline;
   }
+}
+
+li {
+  font-weight: 400;
+  font-size: 20px;
+  color: $gray;
+  margin-left: 30px;
+  line-height: 35px;
+}
+
+li~p {
+  margin-top: 20px;
 }
 
 .solo-text {
@@ -234,6 +255,12 @@ $box_height: 400px;
   }
   &.white {
     background: $white;
+    h2, p {
+      color: $gray;
+    }
+    h2 {
+      margin-bottom: 10px;
+    }
   }
   &.green {
     background: $green;
@@ -243,6 +270,16 @@ $box_height: 400px;
 .display-images {
   @extend .clearfix;
   background: $white;
+}
+
+.text-module {
+  @extend .xlarge-module;
+  padding-left: 15%;
+  padding-right: 15%;
+  height: auto;
+  p {
+    text-align: justify;
+  }
 }
 
 .display-images .display-image:first-child {
@@ -422,10 +459,15 @@ $box_height: 400px;
   }
 }
 
+.xlarge-module-text,
 .large-module-text,
 .medium-module-text,
 .small-module-text {
   @extend .module-text;
+}
+
+.xlarge-module-text {
+  width: 400px;
 }
 
 .large-module-text {
@@ -627,6 +669,10 @@ $box_height: 400px;
   background: url("../images/penpal/userflow.jpg") center;
 }
 
+#decal-intro {
+  background: url("../images/decal/header.png") center $white;
+}
+
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
   #wrapper {
@@ -658,7 +704,6 @@ $box_height: 400px;
     width: 100%;
     background-size: cover;
     height: 200px;
-    background-position: 0 -300px;
     &:hover {
       background: 
        linear-gradient(
