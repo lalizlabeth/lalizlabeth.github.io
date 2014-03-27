@@ -241,6 +241,7 @@ $box_height: 400px;
 
 .display-images {
   @extend .clearfix;
+  background: $white;
 }
 
 .display-images .display-image:first-child {
@@ -262,6 +263,14 @@ $box_height: 400px;
     display:inline-block;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
     width: 90%;
+  }
+}
+
+.display-image-vertical {
+  @extend .display-image;
+  img {
+    @extend img.display-image;
+    width: 45%;
   }
 }
 

@@ -192,10 +192,13 @@ p {
   .green.footer, .green.intro-module {
     background: #8dc73f; }
 
-.display-images .display-image:first-child {
+.display-images {
+  background: white; }
+
+.display-images .display-image:first-child, .display-images .display-image-vertical:first-child {
   padding: 25px; }
 
-.display-image {
+.display-image, .display-image-vertical {
   list-style: none;
   background: white;
   width: 100%;
@@ -206,10 +209,13 @@ p {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  .display-image img {
+  .display-image img, .display-image-vertical img {
     display: inline-block;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
     width: 90%; }
+
+.display-image-vertical img {
+  width: 45%; }
 
 .group, .xsmall-group, .small-group, .medium-group, .large-group, .xlarge-group {
   padding: 0;
