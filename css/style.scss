@@ -347,6 +347,10 @@ $box_height: 400px;
   }
 }
 
+.headline {
+  padding-bottom: 0;
+}
+
 .footer {
   &:hover {
     opacity: 0.85;
@@ -399,14 +403,12 @@ $box_height: 400px;
 .video-module {
   @extend .xlarge-module;
   background: $white;
-  display: inline-block;
   iframe {
     margin-left: 10%;
     margin-right: 10%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    text-align: center;
   }
 }
 

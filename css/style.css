@@ -373,15 +373,13 @@ li ~ h2,
   height: 600px; }
 
 .video-module {
-  background: white;
-  display: inline-block; }
+  background: white; }
   .video-module iframe {
     margin-left: 10%;
     margin-right: 10%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    text-align: center; }
+    box-sizing: border-box; }
 
 /* Module Text */
 .module-text, .xlarge-module-text,
