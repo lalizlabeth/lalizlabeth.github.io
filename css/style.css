@@ -833,6 +833,10 @@ li ~ h2,
   background: url("../images/bare/bare.jpg");
   background-size: cover; }
 
+#designminor-intro {
+  background: url("../images/designminor/intro.png");
+  background-size: cover; }
+
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
   #wrapper {
