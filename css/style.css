@@ -265,10 +265,10 @@ li ~ h2,
     text-align: justify;
     margin-bottom: 20px;
     text-indent: 20px; }
+    .text-module p.first-paragraph {
+      text-indent: 0; }
     .text-module p:last-child {
       margin-bottom: 0; }
-  .text-module hr ~ p {
-    text-indent: 0; }
 
 .display-images .display-image:first-child, .display-images .display-image-vertical:first-child {
   padding: 25px; }
@@ -769,6 +769,10 @@ li ~ h2,
 #spotify-intro {
   background: white url("../images/spotify/intro.jpg") no-repeat 0 100px;
   background-position: center; }
+
+#jamnbread-intro {
+  background: url("../images/home/jam-n-bread.gif") no-repeat;
+  background-size: cover; }
 
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
