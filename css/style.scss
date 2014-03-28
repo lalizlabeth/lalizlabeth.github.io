@@ -274,6 +274,9 @@ $box_height: 400px;
       margin-bottom: 0;
     }
   }
+  hr~p {
+    text-indent: 0;
+  }
 }
 
 .display-images .display-image:first-child {
@@ -394,7 +397,17 @@ $box_height: 400px;
 }
 
 .video-module {
-  height: auto;
+  @extend .xlarge-module;
+  background: $white;
+  display: inline-block;
+  iframe {
+    margin-left: 10%;
+    margin-right: 10%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+  }
 }
 
 /* Module Text */
@@ -522,14 +535,16 @@ $box_height: 400px;
 }
 
 #penpal {
-  background: url("../images/home/penpal.jpg");
+  background: url("../images/home/penpal.jpg") no-repeat;
+  background-size: cover;
   &:hover {
     background: 
      linear-gradient(
         rgba(255, 255, 255, 0.3), 
         rgba(255, 255, 255, 0.3)
       ),
-      url("../images/home/penpal.jpg");
+      url("../images/home/penpal.jpg") no-repeat;
+      background-size: cover;
   }
 }
 
