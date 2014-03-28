@@ -331,6 +331,9 @@ li ~ h2,
     color: white;
     text-decoration: none; }
 
+.headline {
+  padding-bottom: 0; }
+
 .footer:hover {
   opacity: 0.85; }
 
