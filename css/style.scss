@@ -266,6 +266,16 @@ $box_height: 400px;
   padding-left: 15%;
   padding-right: 15%;
   height: auto;
+  &.white {
+    h3 {
+      color: $gray;
+      font-weight: 400;
+      font-size: 25px;
+    }
+    hr {
+      border: 1px solid $gray;
+    }
+  }
   p {
     text-align: justify;
     margin-bottom: 20px;
@@ -279,18 +289,14 @@ $box_height: 400px;
   }
 }
 
-.display-images .display-image:first-child {
-  padding: 25px;
-}
-
 .display-image {
   list-style: none;
   background: $white;
-  width: 100%;
+  width: 70%;
   height: auto;
   float: left;
   text-align: center; 
-  padding: 0 25px 25px 25px;
+  margin: 20px 15%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -308,8 +314,8 @@ $box_height: 400px;
   }
   img {
     display:inline-block;
+    width: 100%;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
-    width: 90%;
   }
 }
 
@@ -405,11 +411,12 @@ $box_height: 400px;
   background: $white;
   display: inline-block;
   iframe {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    width: 70%;
   }
 }
 
@@ -729,6 +736,11 @@ $box_height: 400px;
   background: url("../images/lostplayground/intro.jpg");
   background-size: cover;
   background-position: center;
+}
+
+#bare-intro {
+  background: url("../images/bare/bare.jpg");
+  background-size: cover;
 }
 
 /* Screen Compatibility */

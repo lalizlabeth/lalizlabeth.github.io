@@ -276,17 +276,14 @@ li ~ h2,
     .text-module p:last-child {
       margin-bottom: 0; }
 
-.display-images .display-image:first-child, .display-images .display-image-vertical:first-child {
-  padding: 25px; }
-
 .display-image, .display-image-vertical {
   list-style: none;
   background: white;
-  width: 100%;
+  width: 70%;
   height: auto;
   float: left;
   text-align: center;
-  padding: 0 25px 25px 25px;
+  margin: 20px 15%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -306,8 +303,8 @@ li ~ h2,
     line-height: 22px; }
   .display-image img, .display-image-vertical img {
     display: inline-block;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
-    width: 90%; }
+    width: 100%;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); }
 
 .display-image-vertical img {
   width: 45%; }
@@ -831,6 +828,10 @@ li ~ h2,
   background: url("../images/lostplayground/intro.jpg");
   background-size: cover;
   background-position: center; }
+
+#bare-intro {
+  background: url("../images/bare/bare.jpg");
+  background-size: cover; }
 
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
