@@ -707,13 +707,17 @@ li ~ h2,
   background-size: cover; }
 
 #decal {
-  background: url("../images/home/decal.png"); }
+  background: url("../images/home/decal.png");
+  background-size: cover;
+  background-position: center; }
   #decal:hover {
-    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/decal.png"); }
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/decal.png");
+    background-size: cover;
+    background-position: center; }
 
 #penpal {
   background: url("../images/home/penpal.jpg") no-repeat;
-  background-size: cover; }
+  background-size: contain; }
   #penpal:hover {
     background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/penpal.jpg") no-repeat;
     background-size: cover; }
