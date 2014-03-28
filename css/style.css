@@ -373,7 +373,8 @@ li ~ h2,
   height: 600px; }
 
 .video-module {
-  background: white; }
+  background: white;
+  display: inline-block; }
   .video-module iframe {
     margin-left: 10%;
     margin-right: 10%;
