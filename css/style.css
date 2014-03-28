@@ -363,9 +363,6 @@ li ~ h2,
 .intro-module {
   height: 600px; }
 
-.video-module {
-  height: 100%; }
-
 /* Module Text */
 .module-text, .xlarge-module-text,
 .large-module-text,
