@@ -376,11 +376,12 @@ li ~ h2,
   background: white;
   display: inline-block; }
   .video-module iframe {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    width: 70%; }
 
 /* Module Text */
 .module-text, .xlarge-module-text,
