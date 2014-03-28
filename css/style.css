@@ -660,9 +660,11 @@ li ~ h2,
     background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/decal.png"); }
 
 #penpal {
-  background: url("../images/home/penpal.jpg"); }
+  background: url("../images/home/penpal.jpg") no-repeat;
+  background-size: cover; }
   #penpal:hover {
-    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/penpal.jpg"); }
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/penpal.jpg") no-repeat;
+    background-size: cover; }
 
 #posters {
   background: url("../images/home/posters.jpg"); }
