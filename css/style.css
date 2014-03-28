@@ -261,6 +261,12 @@ li ~ h2,
   padding-left: 15%;
   padding-right: 15%;
   height: auto; }
+  .text-module.white h3 {
+    color: #42393c;
+    font-weight: 400;
+    font-size: 25px; }
+  .text-module.white hr {
+    border: 1px solid #42393c; }
   .text-module p {
     text-align: justify;
     margin-bottom: 20px;
