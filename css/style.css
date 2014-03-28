@@ -764,6 +764,10 @@ li ~ h2,
   background: url("../images/motivateme/header.gif") center;
   background-position: 0 -150px; }
 
+#spotify-intro {
+  background: white url("../images/spotify/intro.jpg") no-repeat 0 100px;
+  background-position: center; }
+
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
   #wrapper {
