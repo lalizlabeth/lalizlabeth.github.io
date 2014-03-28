@@ -584,6 +584,52 @@ li ~ h2,
   .green.medium-module-text h6,
   .green.small-module-text h6 {
     background: #8dc73f; }
+  .module-text.white h1, .white.xlarge-module-text h1,
+  .white.large-module-text h1,
+  .white.medium-module-text h1,
+  .white.small-module-text h1, .module-text.white h2, .white.xlarge-module-text h2,
+  .white.large-module-text h2,
+  .white.medium-module-text h2,
+  .white.small-module-text h2, .module-text.white .headline a, .headline .module-text.white a, .white.xlarge-module-text .headline a, .headline .white.xlarge-module-text a,
+  .white.large-module-text .headline a,
+  .headline .white.large-module-text a,
+  .white.medium-module-text .headline a,
+  .headline .white.medium-module-text a,
+  .white.small-module-text .headline a,
+  .headline .white.small-module-text a,
+  .module-text.white .footer a,
+  .footer .module-text.white a,
+  .white.xlarge-module-text .footer a,
+  .footer .white.xlarge-module-text a,
+  .white.large-module-text .footer a,
+  .footer .white.large-module-text a,
+  .white.medium-module-text .footer a,
+  .footer .white.medium-module-text a,
+  .white.small-module-text .footer a,
+  .footer .white.small-module-text a,
+  .module-text.white h3,
+  .white.xlarge-module-text h3,
+  .white.large-module-text h3,
+  .white.medium-module-text h3,
+  .white.small-module-text h3, .module-text.white h4, .white.xlarge-module-text h4,
+  .white.large-module-text h4,
+  .white.medium-module-text h4,
+  .white.small-module-text h4,
+  .module-text.white h5,
+  .white.xlarge-module-text h5,
+  .white.large-module-text h5,
+  .white.medium-module-text h5,
+  .white.small-module-text h5, .module-text.white h6, .white.xlarge-module-text h6,
+  .white.large-module-text h6,
+  .white.medium-module-text h6,
+  .white.small-module-text h6 {
+    color: #42393c;
+    background: white; }
+  .module-text.white h3, .white.xlarge-module-text h3,
+  .white.large-module-text h3,
+  .white.medium-module-text h3,
+  .white.small-module-text h3 {
+    font-weight: 400; }
   .module-text h1, .xlarge-module-text h1,
   .large-module-text h1,
   .medium-module-text h1,
@@ -773,6 +819,11 @@ li ~ h2,
 #jamnbread-intro {
   background: url("../images/home/jam-n-bread.gif") no-repeat;
   background-size: cover; }
+
+#lostplayground-intro {
+  background: url("../images/lostplayground/intro.jpg");
+  background-size: cover;
+  background-position: center; }
 
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {

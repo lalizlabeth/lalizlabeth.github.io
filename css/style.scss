@@ -270,12 +270,12 @@ $box_height: 400px;
     text-align: justify;
     margin-bottom: 20px;
     text-indent: 20px;
+    &.first-paragraph {
+      text-indent: 0;
+    }
     &:last-child {
       margin-bottom: 0;
     }
-  }
-  hr~p {
-    text-indent: 0;
   }
 }
 
@@ -403,6 +403,7 @@ $box_height: 400px;
 .video-module {
   @extend .xlarge-module;
   background: $white;
+  display: inline-block;
   iframe {
     margin-left: 10%;
     margin-right: 10%;
@@ -458,6 +459,18 @@ $box_height: 400px;
     h3, h4,
     h5, h6 {
       background: $green;
+    }
+  }
+
+  &.white {
+    h1, h2,
+    h3, h4,
+    h5, h6 {
+      color: $gray;
+      background: $white;
+    }
+    h3 {
+      font-weight: 400;
     }
   }
 
@@ -704,6 +717,17 @@ $box_height: 400px;
 
 #spotify-intro {
   background: #fff url("../images/spotify/intro.jpg") no-repeat 0 100px;
+  background-position: center;
+}
+
+#jamnbread-intro {
+  background: url("../images/home/jam-n-bread.gif") no-repeat;
+  background-size: cover;
+}
+
+#lostplayground-intro {
+  background: url("../images/lostplayground/intro.jpg");
+  background-size: cover;
   background-position: center;
 }
 
