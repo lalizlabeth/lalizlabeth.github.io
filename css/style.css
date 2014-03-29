@@ -45,9 +45,9 @@ hr {
     position: relative;
     background: white;
     margin-left: 0;
-    -moz-transition: margin-left 1s;
-    -webkit-transition: margin-left 1s;
-    transition: margin-left 1s; }
+    -moz-transition: margin-left 0.8s;
+    -webkit-transition: margin-left 0.8s;
+    transition: margin-left 0.8s; }
     .general-navigation .general-navigation-item.first {
       margin-left: 65px; }
     .general-navigation .general-navigation-item a {
