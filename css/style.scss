@@ -72,9 +72,9 @@ $navigation_height: 65px;
     background: $white;
     margin-left: 0;
 
-    -moz-transition: margin-left 1s, background 1s, color 1s;
-    -webkit-transition: margin-left 1s, background 1s, color 1s;
-    transition: margin-left 1s, background 1s, color 1s;
+    -moz-transition: margin-left 1s;
+    -webkit-transition: margin-left 1s;
+    transition: margin-left 1s;
 
     &.first {
       margin-left: $navigation_height;
@@ -130,6 +130,12 @@ h3 {
   font-weight: 100;
   font-size: 20px;
   line-height: 30px;
+  &.skill {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 23px;
+  }
 }
 
 h4 {
@@ -141,8 +147,17 @@ h4 {
 h5 {
   font-weight: 100;
   font-size: 40px;
+  line-height: 46px;
+  a.about-link,
   em {
     font-weight: 400;
+  }
+  a.about-link {
+    display: inline;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -512,15 +527,56 @@ $box_height: 400px;
 }
 
 
-.small-text-only-module {
-  @extend .small-module;
+.text-only-module {
   .solo-text {
     position: absolute;
     bottom: 25px;
     right: 25px;
     left: 25px;
+    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+  }
+  &.white {
+    .solo-text h5 {
+      color: $pink;
+      font-weight: 400;
+    }
+  }
+}
+
+.small-text-only-module {
+  @extend .small-module;
+  @extend .text-only-module;
+}
+
+.large-text-only-module {
+  @extend .large-module;
+  @extend .text-only-module;
+}
+
+.footer-buttons {
+  .xsmall-module {
+    height: auto;
+  }
+  li {
+    &:last-child {
+      border: none;
+    }
+    &:hover {
+      background: $pink;
+      a {
+        color: $white;
+      }
+    }
+    a {
+      font: 500 18px/20px "Alegreya Sans", "Helvetica", "Arial", sans-serif;
+      text-align: center;
+      text-decoration: none;
+      width: 100%;
+      height: 100%;
+      color: $pink;
+    }
   }
 }
 
@@ -562,7 +618,7 @@ $box_height: 400px;
 
 #penpal {
   background: url("../images/home/penpal.jpg") no-repeat;
-  background-size: contain;
+  background-size: cover;
   &:hover {
     background: 
      linear-gradient(
@@ -794,6 +850,28 @@ $box_height: 400px;
       background-size: cover;
     }
   }
+  .footer-buttons {
+    .xsmall-module {
+      width: 20%;
+    }
+  }
+  #skills {
+    width: 30%;
+  }
+  .large-text-only-module {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #skills {
+    width: 100%;
+    height: auto;
+  }
+  .large-text-only-module {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -826,6 +904,19 @@ $box_height: 400px;
     width: 100%;
   }
 
+  .small-text-only-module {
+    height: auto;
+    padding: 25px;
+    border-bottom: 1px solid $white;
+    .solo-text {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+  }
+
   .general-navigation {
     width: 100%;
     #logo {
@@ -847,6 +938,11 @@ $box_height: 400px;
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
+    }
+  }
+  .footer-buttons {
+    .xsmall-module {
+      width: 100%;
     }
   }
 }

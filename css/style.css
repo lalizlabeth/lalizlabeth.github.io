@@ -90,6 +90,11 @@ h3 {
   font-weight: 100;
   font-size: 20px;
   line-height: 30px; }
+  h3.skill {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 23px; }
 
 h4 {
   font-weight: 100;
@@ -98,9 +103,16 @@ h4 {
 
 h5 {
   font-weight: 100;
-  font-size: 40px; }
+  font-size: 40px;
+  line-height: 46px; }
+  h5 a.about-link,
   h5 em {
     font-weight: 400; }
+  h5 a.about-link {
+    display: inline;
+    text-decoration: none; }
+    h5 a.about-link:hover {
+      text-decoration: underline; }
 
 h6 {
   font-weight: 100;
@@ -145,6 +157,7 @@ li ~ h2,
 .small-text-only-module,
 .medium-module,
 .large-module,
+.large-text-only-module,
 .xlarge-module,
 .text-module,
 .headline,
@@ -159,7 +172,7 @@ li ~ h2,
 .xlarge-group {
   float: left; }
 
-.module, .xsmall-module, .small-module, .small-text-only-module, .medium-module, .large-module, .xlarge-module, .text-module, .headline,
+.module, .xsmall-module, .small-module, .small-text-only-module, .medium-module, .large-module, .large-text-only-module, .xlarge-module, .text-module, .headline,
 .footer, .intro-module, .video-module {
   position: relative;
   height: 400px;
@@ -167,42 +180,42 @@ li ~ h2,
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  .module:hover a, .xsmall-module:hover a, .small-module:hover a, .small-text-only-module:hover a, .medium-module:hover a, .large-module:hover a, .xlarge-module:hover a, .text-module:hover a, .headline:hover a,
+  .module:hover a, .xsmall-module:hover a, .small-module:hover a, .small-text-only-module:hover a, .medium-module:hover a, .large-module:hover a, .large-text-only-module:hover a, .xlarge-module:hover a, .text-module:hover a, .headline:hover a,
   .footer:hover a, .intro-module:hover a, .video-module:hover a {
     cursor: pointer; }
-  .module a, .xsmall-module a, .small-module a, .small-text-only-module a, .medium-module a, .large-module a, .xlarge-module a, .text-module a, .headline a,
+  .module a, .xsmall-module a, .small-module a, .small-text-only-module a, .medium-module a, .large-module a, .large-text-only-module a, .xlarge-module a, .text-module a, .headline a,
   .footer a, .intro-module a, .video-module a {
     display: block;
     width: 100%;
     height: 100%; }
-  .module.half-height, .half-height.xsmall-module, .half-height.small-module, .half-height.small-text-only-module, .half-height.medium-module, .half-height.large-module, .half-height.xlarge-module, .half-height.text-module, .half-height.headline,
+  .module.half-height, .half-height.xsmall-module, .half-height.small-module, .half-height.small-text-only-module, .half-height.medium-module, .half-height.large-module, .half-height.large-text-only-module, .half-height.xlarge-module, .half-height.text-module, .half-height.headline,
   .half-height.footer, .half-height.intro-module, .half-height.video-module {
     height: 200px; }
-  .module.third-height, .third-height.xsmall-module, .third-height.small-module, .third-height.small-text-only-module, .third-height.medium-module, .third-height.large-module, .third-height.xlarge-module, .third-height.text-module, .third-height.headline,
+  .module.third-height, .third-height.xsmall-module, .third-height.small-module, .third-height.small-text-only-module, .third-height.medium-module, .third-height.large-module, .third-height.large-text-only-module, .third-height.xlarge-module, .third-height.text-module, .third-height.headline,
   .third-height.footer, .third-height.intro-module, .third-height.video-module {
     height: 133.33333px; }
-  .module.image-box, .image-box.xsmall-module, .image-box.small-module, .image-box.small-text-only-module, .image-box.medium-module, .image-box.large-module, .image-box.xlarge-module, .image-box.text-module, .image-box.headline,
+  .module.image-box, .image-box.xsmall-module, .image-box.small-module, .image-box.small-text-only-module, .image-box.medium-module, .image-box.large-module, .image-box.large-text-only-module, .image-box.xlarge-module, .image-box.text-module, .image-box.headline,
   .image-box.footer, .image-box.intro-module, .image-box.video-module {
     height: auto;
     display: inline-block; }
-    .module.image-box img, .image-box.xsmall-module img, .image-box.small-module img, .image-box.small-text-only-module img, .image-box.medium-module img, .image-box.large-module img, .image-box.xlarge-module img, .image-box.text-module img, .image-box.headline img,
+    .module.image-box img, .image-box.xsmall-module img, .image-box.small-module img, .image-box.small-text-only-module img, .image-box.medium-module img, .image-box.large-module img, .image-box.large-text-only-module img, .image-box.xlarge-module img, .image-box.text-module img, .image-box.headline img,
     .image-box.footer img, .image-box.intro-module img, .image-box.video-module img {
       box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
       width: 100%; }
-  .module.blue, .blue.xsmall-module, .blue.small-module, .blue.small-text-only-module, .blue.medium-module, .blue.large-module, .blue.xlarge-module, .blue.text-module, .blue.headline,
+  .module.blue, .blue.xsmall-module, .blue.small-module, .blue.small-text-only-module, .blue.medium-module, .blue.large-module, .blue.large-text-only-module, .blue.xlarge-module, .blue.text-module, .blue.headline,
   .blue.footer, .blue.intro-module, .blue.video-module {
     background: #00bcdd; }
-  .module.pink, .pink.xsmall-module, .pink.small-module, .pink.small-text-only-module, .pink.medium-module, .pink.large-module, .pink.xlarge-module, .pink.text-module, .pink.headline,
+  .module.pink, .pink.xsmall-module, .pink.small-module, .pink.small-text-only-module, .pink.medium-module, .pink.large-module, .pink.large-text-only-module, .pink.xlarge-module, .pink.text-module, .pink.headline,
   .pink.footer, .pink.intro-module, .pink.video-module {
     background: #ee478d; }
-  .module.gray, .gray.xsmall-module, .gray.small-module, .gray.small-text-only-module, .gray.medium-module, .gray.large-module, .gray.xlarge-module, .gray.text-module, .gray.headline,
+  .module.gray, .gray.xsmall-module, .gray.small-module, .gray.small-text-only-module, .gray.medium-module, .gray.large-module, .gray.large-text-only-module, .gray.xlarge-module, .gray.text-module, .gray.headline,
   .gray.footer, .gray.intro-module, .gray.video-module {
     background: #42393c; }
-  .module.white, .white.xsmall-module, .white.small-module, .white.small-text-only-module, .white.medium-module, .white.large-module, .white.xlarge-module, .white.text-module, .white.headline,
+  .module.white, .white.xsmall-module, .white.small-module, .white.small-text-only-module, .white.medium-module, .white.large-module, .white.large-text-only-module, .white.xlarge-module, .white.text-module, .white.headline,
   .white.footer, .white.intro-module, .white.video-module {
     background: white; }
-    .module.white h2, .white.xsmall-module h2, .white.small-module h2, .white.small-text-only-module h2, .white.medium-module h2, .white.large-module h2, .white.xlarge-module h2, .white.text-module h2, .white.headline h2,
-    .white.footer h2, .white.intro-module h2, .white.video-module h2, .module.white .headline a, .headline .module.white a, .white.xsmall-module .headline a, .headline .white.xsmall-module a, .white.small-module .headline a, .headline .white.small-module a, .white.small-text-only-module .headline a, .headline .white.small-text-only-module a, .white.medium-module .headline a, .headline .white.medium-module a, .white.large-module .headline a, .headline .white.large-module a, .white.xlarge-module .headline a, .headline .white.xlarge-module a, .white.text-module .headline a, .headline .white.text-module a, .white.headline a, .white.intro-module .headline a, .headline .white.intro-module a, .white.video-module .headline a, .headline .white.video-module a,
+    .module.white h2, .white.xsmall-module h2, .white.small-module h2, .white.small-text-only-module h2, .white.medium-module h2, .white.large-module h2, .white.large-text-only-module h2, .white.xlarge-module h2, .white.text-module h2, .white.headline h2,
+    .white.footer h2, .white.intro-module h2, .white.video-module h2, .module.white .headline a, .headline .module.white a, .white.xsmall-module .headline a, .headline .white.xsmall-module a, .white.small-module .headline a, .headline .white.small-module a, .white.small-text-only-module .headline a, .headline .white.small-text-only-module a, .white.medium-module .headline a, .headline .white.medium-module a, .white.large-module .headline a, .headline .white.large-module a, .white.large-text-only-module .headline a, .headline .white.large-text-only-module a, .white.xlarge-module .headline a, .headline .white.xlarge-module a, .white.text-module .headline a, .headline .white.text-module a, .white.headline a, .white.intro-module .headline a, .headline .white.intro-module a, .white.video-module .headline a, .headline .white.video-module a,
     .module.white .footer a,
     .footer .module.white a,
     .white.xsmall-module .footer a,
@@ -215,6 +228,8 @@ li ~ h2,
     .footer .white.medium-module a,
     .white.large-module .footer a,
     .footer .white.large-module a,
+    .white.large-text-only-module .footer a,
+    .footer .white.large-text-only-module a,
     .white.xlarge-module .footer a,
     .footer .white.xlarge-module a,
     .white.text-module .footer a,
@@ -223,11 +238,11 @@ li ~ h2,
     .white.intro-module .footer a,
     .footer .white.intro-module a,
     .white.video-module .footer a,
-    .footer .white.video-module a, .module.white p, .white.xsmall-module p, .white.small-module p, .white.small-text-only-module p, .white.medium-module p, .white.large-module p, .white.xlarge-module p, .white.text-module p, .white.headline p,
+    .footer .white.video-module a, .module.white p, .white.xsmall-module p, .white.small-module p, .white.small-text-only-module p, .white.medium-module p, .white.large-module p, .white.large-text-only-module p, .white.xlarge-module p, .white.text-module p, .white.headline p,
     .white.footer p, .white.intro-module p, .white.video-module p {
       color: #42393c; }
-    .module.white h2, .white.xsmall-module h2, .white.small-module h2, .white.small-text-only-module h2, .white.medium-module h2, .white.large-module h2, .white.xlarge-module h2, .white.text-module h2, .white.headline h2,
-    .white.footer h2, .white.intro-module h2, .white.video-module h2, .module.white .headline a, .headline .module.white a, .white.xsmall-module .headline a, .headline .white.xsmall-module a, .white.small-module .headline a, .headline .white.small-module a, .white.small-text-only-module .headline a, .headline .white.small-text-only-module a, .white.medium-module .headline a, .headline .white.medium-module a, .white.large-module .headline a, .headline .white.large-module a, .white.xlarge-module .headline a, .headline .white.xlarge-module a, .white.text-module .headline a, .headline .white.text-module a, .white.headline a, .white.intro-module .headline a, .headline .white.intro-module a, .white.video-module .headline a, .headline .white.video-module a,
+    .module.white h2, .white.xsmall-module h2, .white.small-module h2, .white.small-text-only-module h2, .white.medium-module h2, .white.large-module h2, .white.large-text-only-module h2, .white.xlarge-module h2, .white.text-module h2, .white.headline h2,
+    .white.footer h2, .white.intro-module h2, .white.video-module h2, .module.white .headline a, .headline .module.white a, .white.xsmall-module .headline a, .headline .white.xsmall-module a, .white.small-module .headline a, .headline .white.small-module a, .white.small-text-only-module .headline a, .headline .white.small-text-only-module a, .white.medium-module .headline a, .headline .white.medium-module a, .white.large-module .headline a, .headline .white.large-module a, .white.large-text-only-module .headline a, .headline .white.large-text-only-module a, .white.xlarge-module .headline a, .headline .white.xlarge-module a, .white.text-module .headline a, .headline .white.text-module a, .white.headline a, .white.intro-module .headline a, .headline .white.intro-module a, .white.video-module .headline a, .headline .white.video-module a,
     .module.white .footer a,
     .footer .module.white a,
     .white.xsmall-module .footer a,
@@ -240,6 +255,8 @@ li ~ h2,
     .footer .white.medium-module a,
     .white.large-module .footer a,
     .footer .white.large-module a,
+    .white.large-text-only-module .footer a,
+    .footer .white.large-text-only-module a,
     .white.xlarge-module .footer a,
     .footer .white.xlarge-module a,
     .white.text-module .footer a,
@@ -250,7 +267,7 @@ li ~ h2,
     .white.video-module .footer a,
     .footer .white.video-module a {
       margin-bottom: 10px; }
-  .module.green, .green.xsmall-module, .green.small-module, .green.small-text-only-module, .green.medium-module, .green.large-module, .green.xlarge-module, .green.text-module, .green.headline,
+  .module.green, .green.xsmall-module, .green.small-module, .green.small-text-only-module, .green.medium-module, .green.large-module, .green.large-text-only-module, .green.xlarge-module, .green.text-module, .green.headline,
   .green.footer, .green.intro-module, .green.video-module {
     background: #8dc73f; }
 
@@ -319,7 +336,7 @@ li ~ h2,
   height: auto; }
 .row .medium-module {
   height: auto; }
-.row .large-module {
+.row .large-module, .row .large-text-only-module {
   height: auto; }
 .row .xlarge-module, .row .text-module, .row .headline,
 .row .footer, .row .intro-module, .row .video-module {
@@ -354,7 +371,8 @@ li ~ h2,
   width: 60%; }
 
 .large-group,
-.large-module {
+.large-module,
+.large-text-only-module {
   width: 80%; }
 
 .xlarge-group,
@@ -687,13 +705,17 @@ li ~ h2,
 .small-module-text {
   width: 200px; }
 
-.small-text-only-module .solo-text {
+.text-only-module .solo-text, .small-text-only-module .solo-text, .large-text-only-module .solo-text {
   position: absolute;
   bottom: 25px;
   right: 25px;
   left: 25px;
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+.text-only-module.white .solo-text h5, .white.small-text-only-module .solo-text h5, .white.large-text-only-module .solo-text h5 {
+  color: #ee478d;
+  font-weight: 400; }
 
 .footer-buttons .xsmall-module {
   height: auto; }
@@ -798,27 +820,27 @@ li ~ h2,
   left: 0;
   bottom: 0;
   right: 0; }
-#social-media .module, #social-media .xsmall-module, #social-media .small-module, #social-media .small-text-only-module, #social-media .medium-module, #social-media .large-module, #social-media .xlarge-module, #social-media .text-module, #social-media .headline,
+#social-media .module, #social-media .xsmall-module, #social-media .small-module, #social-media .small-text-only-module, #social-media .medium-module, #social-media .large-module, #social-media .large-text-only-module, #social-media .xlarge-module, #social-media .text-module, #social-media .headline,
 #social-media .footer, #social-media .intro-module, #social-media .video-module {
   padding: 0;
   -webkit-transition: background 0.75s, color 0.75s;
   -firefox-transition: background 0.75s, color 0.75s;
   transition: background 0.75s, color 0.75s; }
-  #social-media .module:first-child, #social-media .xsmall-module:first-child, #social-media .small-module:first-child, #social-media .small-text-only-module:first-child, #social-media .medium-module:first-child, #social-media .large-module:first-child, #social-media .xlarge-module:first-child, #social-media .text-module:first-child, #social-media .headline:first-child,
+  #social-media .module:first-child, #social-media .xsmall-module:first-child, #social-media .small-module:first-child, #social-media .small-text-only-module:first-child, #social-media .medium-module:first-child, #social-media .large-module:first-child, #social-media .large-text-only-module:first-child, #social-media .xlarge-module:first-child, #social-media .text-module:first-child, #social-media .headline:first-child,
   #social-media .footer:first-child, #social-media .intro-module:first-child, #social-media .video-module:first-child {
     height: 134.33333px; }
-#social-media .module:hover, #social-media .xsmall-module:hover, #social-media .small-module:hover, #social-media .small-text-only-module:hover, #social-media .medium-module:hover, #social-media .large-module:hover, #social-media .xlarge-module:hover, #social-media .text-module:hover, #social-media .headline:hover,
+#social-media .module:hover, #social-media .xsmall-module:hover, #social-media .small-module:hover, #social-media .small-text-only-module:hover, #social-media .medium-module:hover, #social-media .large-module:hover, #social-media .large-text-only-module:hover, #social-media .xlarge-module:hover, #social-media .text-module:hover, #social-media .headline:hover,
 #social-media .footer:hover, #social-media .intro-module:hover, #social-media .video-module:hover {
   cursor: pointer;
   background: white;
   opacity: 1.0; }
-  #social-media .module:hover.blue a, #social-media .xsmall-module:hover.blue a, #social-media .small-module:hover.blue a, #social-media .small-text-only-module:hover.blue a, #social-media .medium-module:hover.blue a, #social-media .large-module:hover.blue a, #social-media .xlarge-module:hover.blue a, #social-media .text-module:hover.blue a, #social-media .headline:hover.blue a,
+  #social-media .module:hover.blue a, #social-media .xsmall-module:hover.blue a, #social-media .small-module:hover.blue a, #social-media .small-text-only-module:hover.blue a, #social-media .medium-module:hover.blue a, #social-media .large-module:hover.blue a, #social-media .large-text-only-module:hover.blue a, #social-media .xlarge-module:hover.blue a, #social-media .text-module:hover.blue a, #social-media .headline:hover.blue a,
   #social-media .footer:hover.blue a, #social-media .intro-module:hover.blue a, #social-media .video-module:hover.blue a {
     color: #00bcdd; }
-  #social-media .module:hover.gray a, #social-media .xsmall-module:hover.gray a, #social-media .small-module:hover.gray a, #social-media .small-text-only-module:hover.gray a, #social-media .medium-module:hover.gray a, #social-media .large-module:hover.gray a, #social-media .xlarge-module:hover.gray a, #social-media .text-module:hover.gray a, #social-media .headline:hover.gray a,
+  #social-media .module:hover.gray a, #social-media .xsmall-module:hover.gray a, #social-media .small-module:hover.gray a, #social-media .small-text-only-module:hover.gray a, #social-media .medium-module:hover.gray a, #social-media .large-module:hover.gray a, #social-media .large-text-only-module:hover.gray a, #social-media .xlarge-module:hover.gray a, #social-media .text-module:hover.gray a, #social-media .headline:hover.gray a,
   #social-media .footer:hover.gray a, #social-media .intro-module:hover.gray a, #social-media .video-module:hover.gray a {
     color: #42393c; }
-  #social-media .module:hover.pink a, #social-media .xsmall-module:hover.pink a, #social-media .small-module:hover.pink a, #social-media .small-text-only-module:hover.pink a, #social-media .medium-module:hover.pink a, #social-media .large-module:hover.pink a, #social-media .xlarge-module:hover.pink a, #social-media .text-module:hover.pink a, #social-media .headline:hover.pink a,
+  #social-media .module:hover.pink a, #social-media .xsmall-module:hover.pink a, #social-media .small-module:hover.pink a, #social-media .small-text-only-module:hover.pink a, #social-media .medium-module:hover.pink a, #social-media .large-module:hover.pink a, #social-media .large-text-only-module:hover.pink a, #social-media .xlarge-module:hover.pink a, #social-media .text-module:hover.pink a, #social-media .headline:hover.pink a,
   #social-media .footer:hover.pink a, #social-media .intro-module:hover.pink a, #social-media .video-module:hover.pink a {
     color: #ee478d; }
 
@@ -891,7 +913,24 @@ li ~ h2,
     #lostplayground:hover {
       background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/nostalgia.jpg");
       background-position: 0 -300px;
-      background-size: cover; } }
+      background-size: cover; }
+
+  .footer-buttons .xsmall-module {
+    width: 20%; }
+
+  #skills {
+    width: 30%; }
+
+  .large-text-only-module {
+    width: 70%; } }
+@media screen and (max-width: 900px) {
+  #skills {
+    width: 100%;
+    height: auto; }
+
+  .large-text-only-module {
+    width: 100%;
+    height: auto; } }
 @media screen and (max-width: 750px) {
   .text-module p {
     text-align: left; }
@@ -899,7 +938,7 @@ li ~ h2,
   #wrapper {
     width: 100%; }
 
-  .module.xsmall-module, .xsmall-module, .module.small-module, .small-module, .small-text-only-module, .module.medium-module, .medium-module, .module.large-module, .large-module, .module.xlarge-module, .xlarge-module, .text-module, .headline,
+  .module.xsmall-module, .xsmall-module, .module.small-module, .small-module, .small-text-only-module, .module.medium-module, .medium-module, .module.large-module, .large-module, .large-text-only-module, .module.xlarge-module, .xlarge-module, .text-module, .headline,
   .footer, .intro-module, .video-module {
     width: 100%;
     background-size: cover; }
@@ -913,6 +952,17 @@ li ~ h2,
 
   .medium-group {
     width: 100%; }
+
+  .small-text-only-module {
+    height: auto;
+    padding: 25px;
+    border-bottom: 1px solid white; }
+    .small-text-only-module .solo-text {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0; }
 
   .general-navigation {
     width: 100%; }
@@ -930,4 +980,7 @@ li ~ h2,
         margin-left: 40px; }
       .general-navigation .general-navigation-item a {
         padding: 0 10px;
-        margin: 0; } }
+        margin: 0; }
+
+  .footer-buttons .xsmall-module {
+    width: 100%; } }
