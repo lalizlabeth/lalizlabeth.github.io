@@ -72,9 +72,9 @@ $navigation_height: 65px;
     background: $white;
     margin-left: 0;
 
-    -moz-transition: margin-left 1s;
-    -webkit-transition: margin-left 1s;
-    transition: margin-left 1s;
+    -moz-transition: margin-left 0.8s;
+    -webkit-transition: margin-left 0.8s;
+    transition: margin-left 0.8s;
 
     &.first {
       margin-left: $navigation_height;
@@ -286,6 +286,9 @@ $box_height: 400px;
       color: $gray;
       font-weight: 400;
       font-size: 25px;
+    }
+    li {
+      color: $gray;
     }
     hr {
       border: 1px solid $gray;
@@ -762,6 +765,12 @@ $box_height: 400px;
       a { color: $pink; }
     }
   }
+}
+
+#leviosa-intro,
+#leviosa {
+  background: url("../images/home/leviosa.png") center $white no-repeat;
+  background-size: 50%;
 }
 
 #posters-intro {

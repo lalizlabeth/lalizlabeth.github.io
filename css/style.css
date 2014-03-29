@@ -282,6 +282,8 @@ li ~ h2,
     color: #42393c;
     font-weight: 400;
     font-size: 25px; }
+  .text-module.white li {
+    color: #42393c; }
   .text-module.white hr {
     border: 1px solid #42393c; }
   .text-module p {
@@ -843,6 +845,11 @@ li ~ h2,
   #social-media .module:hover.pink a, #social-media .xsmall-module:hover.pink a, #social-media .small-module:hover.pink a, #social-media .small-text-only-module:hover.pink a, #social-media .medium-module:hover.pink a, #social-media .large-module:hover.pink a, #social-media .large-text-only-module:hover.pink a, #social-media .xlarge-module:hover.pink a, #social-media .text-module:hover.pink a, #social-media .headline:hover.pink a,
   #social-media .footer:hover.pink a, #social-media .intro-module:hover.pink a, #social-media .video-module:hover.pink a {
     color: #ee478d; }
+
+#leviosa-intro,
+#leviosa {
+  background: url("../images/home/leviosa.png") center white no-repeat;
+  background-size: 50%; }
 
 #posters-intro {
   background: url("../images/posters/horizontal-cocktails.jpg") center;
