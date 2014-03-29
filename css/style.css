@@ -794,6 +794,9 @@ li ~ h2,
   #lostplayground:hover {
     background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/nostalgia.jpg");
     background-position: center; }
+  #lostplayground.design {
+    width: 40%;
+    height: 400px; }
 
 #bare {
   background: url("../images/home/BARE.jpg") no-repeat white;
@@ -808,6 +811,11 @@ li ~ h2,
   #motivateme:hover {
     background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/motivateme.gif");
     background-position: 0px -75px; }
+
+#fungi {
+  background: url("../images/home/fungi.jpg"); }
+  #fungi:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/fungi.jpg"); }
 
 #social-media a {
   width: 100%;
@@ -849,6 +857,10 @@ li ~ h2,
 #leviosa-intro,
 #leviosa {
   background: url("../images/home/leviosa.png") center white no-repeat;
+  background-size: 50%; }
+
+#leviosa:hover {
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/leviosa.png") center white no-repeat;
   background-size: 50%; }
 
 #posters-intro {
@@ -904,6 +916,9 @@ li ~ h2,
   .xsmall-module,
   .xsmall-group {
     width: 40%; }
+    .xsmall-module.design,
+    .xsmall-group.design {
+      width: 20%; }
 
   #social-media {
     width: 20%; }
