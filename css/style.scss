@@ -228,13 +228,25 @@ $tall_box_height: 550px;
     background: $white;
     h2 {
       color: $gray;
-    }
-    h2 {
       margin-bottom: 10px;
     }
   }
   &.green {
     background: $green;
+  }
+}
+
+.group {
+  padding: 0;
+  height: $box_height;
+}
+
+.row {
+  @extend .clearfix;
+  @each $size in $module-sizes {
+    .#{$size}-module {
+      height: auto;
+    }
   }
 }
 
@@ -261,7 +273,6 @@ $tall_box_height: 550px;
     color: $gray;
     text-align: center;
   }
-
   h2 {
     margin-top: 10px;
   }
@@ -282,26 +293,6 @@ $tall_box_height: 550px;
   img {
     @extend img.display-image;
     width: 45%;
-  }
-}
-
-.group {
-  padding: 0;
-  height: $box_height;
-  &.tall {
-    height: $tall_box_height;
-    &.medium-module.half-height {
-      height: $tall_box_height/2;
-    }
-  }
-}
-
-.row {
-  @extend .clearfix;
-  @each $size in $module-sizes {
-    .#{$size}-module {
-      height: auto;
-    }
   }
 }
 
@@ -328,8 +319,12 @@ $tall_box_height: 550px;
 }
 
 @each $size in $module-sizes {
-  .#{$size}-module {
+  .#{$size}-module,
+  .#{$size}-module-tall {
     @extend .module;
+  }
+  .#{$size}-module-tall {
+    height: $tall_box_height;
   }
   .#{$size}-group {
     @extend .group;
@@ -339,36 +334,46 @@ $tall_box_height: 550px;
       height: $box_height/2;;
     }
   }
+  .#{$size}-group-tall {
+    @extend .group;
+    height: $tall_box_height;
+    .#{$size}-module-tall {
+      padding: 25px;
+      width: 100%;
+      height: $tall_box_height/2;;
+    }
+  }
 }
+
 .xsmall-group,
-.xsmall-module {
+.xsmall-module,
+.xsmall-module-tall,
+.xsmall-group-tall {
   width: 20%;
 }
 .small-group,
-.small-module {
+.small-module,
+.small-module-tall,
+.small-group-tall {
   width: 40%;
 }
 .medium-group,
-.medium-module {
+.medium-module,
+.medium-module-tall,
+.medium-group-tall {
   width: 60%;
 }
 .large-group,
-.large-module {
+.large-module,
+.large-module-tall,
+.large-group-tall {
   width: 80%;
 }
 .xlarge-group,
-.xlarge-module {
+.xlarge-module,
+.xlarge-module-tall,
+.xlarge-group-tall {
   width: 100%;
-}
-
-.xsmall-module,
-.small-group .small-module,
-.medium-module {
-  &.half-height,
-  &.third-height {
-    padding: 25px;
-    width: 100%;
-  }
 }
 
 .intro-module {
@@ -717,7 +722,7 @@ $tall_box_height: 550px;
 }
 
 #photoshop {
-  background: url("../images/home/photoshop.png") no-repeat;
+  background: url("../images/home/photoshop.png") center no-repeat;
   background-size: cover;
   &:hover {
     background: 
@@ -725,7 +730,7 @@ $tall_box_height: 550px;
         rgba(255, 255, 255, 0.3), 
         rgba(255, 255, 255, 0.3)
       ),
-      url("../images/home/photoshop.png") no-repeat;
+      url("../images/home/photoshop.png") center no-repeat;
     background-size: cover;
   }
 }
@@ -809,14 +814,16 @@ $tall_box_height: 550px;
 }
 
 #fungi {
-  background: url("../images/home/fungi.jpg");
+  background: url("../images/home/fungi.jpg") center;
+  background-size: cover;
   &:hover {
      background: 
      linear-gradient(
         rgba(255, 255, 255, 0.3), 
         rgba(255, 255, 255, 0.3)
       ),
-      url("../images/home/fungi.jpg");
+      url("../images/home/fungi.jpg") center;
+    background-size: cover;
   }
 }
 
