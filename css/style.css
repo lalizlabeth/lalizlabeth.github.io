@@ -1029,3 +1029,43 @@ li ~ h2,
 
   .footer-buttons .xsmall-module {
     width: 100%; } }
+@keyframe spinner1 {
+  from {
+    transform: rotate(0deg); }
+
+  to {
+    transform: rotate(360deg); } }
+
+@keyframe spinner2 {
+  from {
+    transform: rotate(0deg); }
+
+  to {
+    transform: rotate(-360deg); } }
+
+.loading {
+  width: 100%; }
+  .loading .spinner {
+    position: fixed;
+    width: 34px;
+    height: 34px;
+    top: 50%;
+    left: 50%;
+    margin-left: -17px;
+    margin-top: -17px; }
+    .loading .spinner:after, .loading .spinner:before {
+      position: fixed;
+      content: "";
+      border: 2px solid #a1a1a1;
+      width: 32px;
+      height: 32px; }
+    .loading .spinner:after {
+      -webkit-animation: spinner1 2.5s linear infinite;
+      animation: spinner1 2.5s linear infinite; }
+    .loading .spinner:before {
+      width: 44px;
+      height: 44px;
+      margin-left: -6.5px;
+      margin-top: -6.5px;
+      -webkit-animation: spinner2 2.5s linear infinite;
+      animation: spinner2 2.5s linear infinite; }
