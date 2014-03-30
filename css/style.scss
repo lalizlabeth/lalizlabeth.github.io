@@ -80,6 +80,14 @@ $navigation_height: 65px;
       margin-left: $navigation_height;
     }
 
+    &#home {
+      &:hover {
+        cursor: default;
+        background: $white;
+        a { color: $pink; cursor: default; }
+      }
+    }
+
     a {
       display: block;
       width: 100%;
@@ -411,6 +419,7 @@ $box_height: 400px;
 }
 
 .xsmall-module,
+.small-group .small-module,
 .medium-module {
   &.half-height,
   &.third-height {
@@ -558,6 +567,11 @@ $box_height: 400px;
   @extend .text-only-module;
 }
 
+.xlarge-text-only-module {
+  @extend .xlarge-module;
+  @extend .text-only-module;
+}
+
 .footer-buttons {
   .xsmall-module {
     height: auto;
@@ -642,7 +656,11 @@ $box_height: 400px;
         rgba(255, 255, 255, 0.3)
       ),
       url("../images/home/posters.jpg");
+      background-size: cover;
+      background-position: center;
   }
+  background-size: cover;
+  background-position: center;
 }
 
 #design-minor {
@@ -699,11 +717,15 @@ $box_height: 400px;
       url("../images/home/nostalgia.jpg");
     background-position: center;
   }
+  &.design {
+    width: 40%;
+    height: 400px;
+  }
 }
 
 #bare {
   background: url("../images/home/BARE.jpg") no-repeat $white;
-  background-position: cover;
+  background-size: cover;
   &:hover {
     background: 
      linear-gradient(
@@ -711,7 +733,7 @@ $box_height: 400px;
         rgba(255, 255, 255, 0.3)
       ),
       url("../images/home/BARE.jpg") no-repeat $white;
-    background-position: cover;
+    background-size: cover;
   }
 }
 
@@ -726,6 +748,18 @@ $box_height: 400px;
       ),
       url("../images/home/motivateme.gif");
     background-position: 0px -75px;
+  }
+}
+
+#fungi {
+  background: url("../images/home/fungi.jpg");
+  &:hover {
+     background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.3), 
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("../images/home/fungi.jpg");
   }
 }
 
@@ -771,6 +805,18 @@ $box_height: 400px;
 #leviosa {
   background: url("../images/home/leviosa.png") center $white no-repeat;
   background-size: 50%;
+}
+
+#leviosa {
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.3), 
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("../images/home/leviosa.png") center $white no-repeat;
+    background-size: 50%;
+  }
 }
 
 #posters-intro {
@@ -834,6 +880,9 @@ $box_height: 400px;
   .xsmall-module,
   .xsmall-group {
     width: 40%;
+    &.design {
+      width: 20%;
+    }
   }
   #social-media {
     width: 20%;
@@ -858,6 +907,9 @@ $box_height: 400px;
       background-position: 0 -300px;
       background-size: cover;
     }
+  }
+  #spotify {
+    width: 60%;
   }
   .footer-buttons {
     .xsmall-module {
@@ -897,14 +949,14 @@ $box_height: 400px;
     &.small-module,
     &.medium-module,
     &.large-module,
-    &.xlarge-module {
+    &.xlarge-module,
+    &#spotify {
       width: 100%;
       background-size: cover;
     }
   }
-  .xsmall-group {
-    width: 60%;
-    background-size: cover no-repeat;
+  .small-group {
+    width: 100%;
   }
   #social-media {
     width: 40%;
