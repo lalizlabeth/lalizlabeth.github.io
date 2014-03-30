@@ -1051,6 +1051,10 @@ p {
   background: url("../images/designminor/intro.png");
   background-size: cover; }
 
+#endlessmobile-intro {
+  background: url("../images/endlessmobile/cover.jpg") center;
+  background-size: cover; }
+
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
   #wrapper {
