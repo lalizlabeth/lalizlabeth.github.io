@@ -72,9 +72,9 @@ $navigation_height: 65px;
     background: $white;
     margin-left: 0;
 
-    -moz-transition: margin-left 0.8s;
-    -webkit-transition: margin-left 0.8s;
-    transition: margin-left 0.8s;
+    -moz-transition: margin-left 0.5s;
+    -webkit-transition: margin-left 0.5s;
+    transition: margin-left 0.5s;
 
     &.first {
       margin-left: $navigation_height;
@@ -572,6 +572,12 @@ $box_height: 400px;
   @extend .text-only-module;
 }
 
+.page-header {
+  @extend .xlarge-text-only-module;
+  background: $pink;
+  height: 300px;
+}
+
 .footer-buttons {
   .xsmall-module {
     height: auto;
@@ -701,6 +707,52 @@ $box_height: 400px;
         rgba(255, 255, 255, 0.3)
       ),
       url("../images/home/spotify.jpg") no-repeat $white;
+    background-position: center;
+  }
+}
+
+#davinci {
+  background: url("../images/home/davinci.jpg") no-repeat;
+  background-size: cover;
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.3), 
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("../images/home/davinci.jpg") no-repeat;
+    background-position: cover;
+  }
+}
+
+#endlessmobile {
+  background: url("../images/home/endlessmobile.png") no-repeat #d16828;
+  background-size: contain;
+  background-position: center;
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.3), 
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("../images/home/endlessmobile.png") no-repeat #d16828;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+#tracks {
+  background: url("../images/home/tracks.jpg") $white no-repeat;
+  background-size: contain;
+  background-position: center;
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.3), 
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("../images/home/tracks.jpg") $white no-repeat;
+    background-size: contain;
     background-position: center;
   }
 }
@@ -893,6 +945,9 @@ $box_height: 400px;
       background-size: cover;
     }
   }
+  #tracks {
+    width: 20%;
+  }
   #lostplayground {
     width: 100%;
     background-size: cover;
@@ -942,6 +997,9 @@ $box_height: 400px;
     }
   }
   #wrapper {
+    width: 100%;
+  }
+  #tracks {
     width: 100%;
   }
   .module {
@@ -1007,7 +1065,6 @@ $box_height: 400px;
     }
   }
 }
-
 
 
 
