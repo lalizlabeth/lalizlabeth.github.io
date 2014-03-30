@@ -808,10 +808,10 @@ li ~ h2,
 
 #bare {
   background: url("../images/home/BARE.jpg") no-repeat white;
-  background-position: cover; }
+  background-size: cover; }
   #bare:hover {
     background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/BARE.jpg") no-repeat white;
-    background-position: cover; }
+    background-size: cover; }
 
 #motivateme {
   background: url("../images/home/motivateme.gif");
@@ -945,6 +945,9 @@ li ~ h2,
       background-position: 0 -300px;
       background-size: cover; }
 
+  #spotify {
+    width: 60%; }
+
   .footer-buttons .xsmall-module {
     width: 20%; }
 
@@ -969,13 +972,13 @@ li ~ h2,
     width: 100%; }
 
   .module.xsmall-module, .xsmall-module, .module.small-module, .small-module, .small-text-only-module, .module.medium-module, .medium-module, .module.large-module, .large-module, .large-text-only-module, .module.xlarge-module, .xlarge-module, .text-module, .headline,
-  .footer, .intro-module, .video-module {
+  .footer, .intro-module, .video-module, .module#spotify, #spotify.xsmall-module, #spotify.small-module, #spotify.small-text-only-module, #spotify.medium-module, #spotify.large-module, #spotify.large-text-only-module, #spotify.xlarge-module, #spotify.text-module, #spotify.headline,
+  #spotify.footer, #spotify.intro-module, #spotify.video-module {
     width: 100%;
     background-size: cover; }
 
-  .xsmall-group {
-    width: 60%;
-    background-size: cover no-repeat; }
+  .small-group {
+    width: 100%; }
 
   #social-media {
     width: 40%; }
