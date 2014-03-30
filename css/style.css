@@ -1005,6 +1005,10 @@ p {
   background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/leviosa.png") center white no-repeat;
   background-size: 50%; }
 
+#dataanalytics-intro {
+  background: url("../images/dataanalytics/cover.jpg") center;
+  background-size: cover; }
+
 #posters-intro {
   background: url("../images/posters/horizontal-cocktails.jpg") center;
   background-position: contain; }
