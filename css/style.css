@@ -387,6 +387,10 @@ li ~ h2,
   width: 100%; }
 
 .xsmall-module.half-height, .xsmall-module.third-height,
+.small-group .small-module.half-height,
+.small-group .half-height.small-text-only-module,
+.small-group .small-module.third-height,
+.small-group .third-height.small-text-only-module,
 .medium-module.half-height,
 .medium-module.third-height {
   padding: 25px;
@@ -763,9 +767,13 @@ li ~ h2,
     background-size: cover; }
 
 #posters {
-  background: url("../images/home/posters.jpg"); }
+  background: url("../images/home/posters.jpg");
+  background-size: cover;
+  background-position: center; }
   #posters:hover {
-    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/posters.jpg"); }
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/posters.jpg");
+    background-size: cover;
+    background-position: center; }
 
 #design-minor {
   background: url("../images/home/design-minor.png");
