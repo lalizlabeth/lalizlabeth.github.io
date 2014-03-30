@@ -823,7 +823,7 @@ li ~ h2,
   background-size: cover; }
   #davinci:hover {
     background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/davinci.jpg") no-repeat;
-    background-position: cover; }
+    background-size: cover; }
 
 #endlessmobile {
   background: url("../images/home/endlessmobile.png") no-repeat #d16828;
