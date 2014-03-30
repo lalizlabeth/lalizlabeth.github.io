@@ -9,6 +9,7 @@ body {
   max-width: 1200px;
   margin: 0 auto; }
 
+/* Clearfix */
 .clearfix, #wrapper, .clearfix:before, .clearfix:after, .display-images, .row {
   zoom: 1; }
   #wrapper:before, .clearfix:before, .display-images:before, .row:before, #wrapper:after, .clearfix:after, .display-images:after, .row:after {
@@ -17,10 +18,6 @@ body {
     height: 0; }
   #wrapper:after, .clearfix:after, .display-images:after, .row:after {
     clear: both; }
-
-hr {
-  border: 1px solid white;
-  margin: 15px 0; }
 
 /* Navigation */
 .general-navigation {
@@ -78,22 +75,25 @@ hr {
 /* Typography */
 h1, h2, .headline a,
 .footer a, h3, h4, h5, h6, p, a, li {
-  font-family: "Alegreya Sans", "Helvetica", "Arial";
+  font-family: "Alegreya Sans", "Helvetica", "Arial", sans-serif;
   color: white; }
 
 h1 {
   font-weight: 700;
   font-size: 45px; }
-  h1.special {
-    font-size: 8em; }
 
 h2, .headline a,
 .footer a {
   font-weight: 500;
   font-size: 30px; }
 
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100; }
+
 h3 {
-  font-weight: 100;
   font-size: 20px;
   line-height: 30px; }
   h3.skill {
@@ -103,12 +103,10 @@ h3 {
     line-height: 23px; }
 
 h4 {
-  font-weight: 100;
   font-size: 17px;
   line-height: 20px; }
 
 h5 {
-  font-weight: 100;
   font-size: 40px;
   line-height: 46px; }
   h5 a.about-link,
@@ -121,10 +119,13 @@ h5 {
       text-decoration: underline; }
 
 h6 {
-  font-weight: 100;
   font-size: 15px;
   line-height: 17px;
   margin-bottom: 10px; }
+
+hr {
+  border: 1px solid white;
+  margin: 15px 0; }
 
 p {
   font-weight: 100;
@@ -135,6 +136,7 @@ p {
   p em {
     text-decoration: underline; }
 
+/* Text Module */
 .text-module li {
   font-weight: 400;
   font-size: 20px;
@@ -147,12 +149,6 @@ li ~ h2,
 .headline li ~ a,
 .footer li ~ a {
   margin-top: 20px; }
-
-.container {
-  background: white;
-  width: 100%;
-  height: auto;
-  float: left; }
 
 /* About Me */
 /* Responsive modules */
@@ -199,9 +195,6 @@ li ~ h2,
   .module.half-height, .half-height.xsmall-module, .half-height.small-module, .half-height.small-text-only-module, .half-height.medium-module, .half-height.large-module, .half-height.large-text-only-module, .half-height.xlarge-module, .half-height.text-module, .half-height.headline,
   .half-height.footer, .half-height.intro-module, .half-height.video-module, .half-height.xlarge-text-only-module, .half-height.page-header {
     height: 200px; }
-  .module.third-height, .third-height.xsmall-module, .third-height.small-module, .third-height.small-text-only-module, .third-height.medium-module, .third-height.large-module, .third-height.large-text-only-module, .third-height.xlarge-module, .third-height.text-module, .third-height.headline,
-  .third-height.footer, .third-height.intro-module, .third-height.video-module, .third-height.xlarge-text-only-module, .third-height.page-header {
-    height: 133.33333px; }
   .module.image-box, .image-box.xsmall-module, .image-box.small-module, .image-box.small-text-only-module, .image-box.medium-module, .image-box.large-module, .image-box.large-text-only-module, .image-box.xlarge-module, .image-box.text-module, .image-box.headline,
   .image-box.footer, .image-box.intro-module, .image-box.video-module, .image-box.xlarge-text-only-module, .image-box.page-header {
     height: auto;
@@ -250,8 +243,7 @@ li ~ h2,
     .white.xlarge-text-only-module .footer a,
     .footer .white.xlarge-text-only-module a,
     .white.page-header .footer a,
-    .footer .white.page-header a, .module.white p, .white.xsmall-module p, .white.small-module p, .white.small-text-only-module p, .white.medium-module p, .white.large-module p, .white.large-text-only-module p, .white.xlarge-module p, .white.text-module p, .white.headline p,
-    .white.footer p, .white.intro-module p, .white.video-module p, .white.xlarge-text-only-module p, .white.page-header p {
+    .footer .white.page-header a {
       color: #42393c; }
     .module.white h2, .white.xsmall-module h2, .white.small-module h2, .white.small-text-only-module h2, .white.medium-module h2, .white.large-module h2, .white.large-text-only-module h2, .white.xlarge-module h2, .white.text-module h2, .white.headline h2,
     .white.footer h2, .white.intro-module h2, .white.video-module h2, .white.xlarge-text-only-module h2, .white.page-header h2, .module.white .headline a, .headline .module.white a, .white.xsmall-module .headline a, .headline .white.xsmall-module a, .white.small-module .headline a, .headline .white.small-module a, .white.small-text-only-module .headline a, .headline .white.small-text-only-module a, .white.medium-module .headline a, .headline .white.medium-module a, .white.large-module .headline a, .headline .white.large-module a, .white.large-text-only-module .headline a, .headline .white.large-text-only-module a, .white.xlarge-module .headline a, .headline .white.xlarge-module a, .white.text-module .headline a, .headline .white.text-module a, .white.headline a, .white.intro-module .headline a, .headline .white.intro-module a, .white.video-module .headline a, .headline .white.video-module a, .white.xlarge-text-only-module .headline a, .headline .white.xlarge-text-only-module a, .white.page-header .headline a, .headline .white.page-header a,
@@ -286,6 +278,11 @@ li ~ h2,
   .module.green, .green.xsmall-module, .green.small-module, .green.small-text-only-module, .green.medium-module, .green.large-module, .green.large-text-only-module, .green.xlarge-module, .green.text-module, .green.headline,
   .green.footer, .green.intro-module, .green.video-module, .green.xlarge-text-only-module, .green.page-header {
     background: #8dc73f; }
+
+.tall {
+  height: 550px; }
+  .tall.half-height {
+    height: 275px; }
 
 .display-images {
   background: white; }
@@ -347,6 +344,10 @@ li ~ h2,
 .group, .xsmall-group, .small-group, .medium-group, .large-group, .xlarge-group {
   padding: 0;
   height: 400px; }
+  .group.tall, .tall.xsmall-group, .tall.small-group, .tall.medium-group, .tall.large-group, .tall.xlarge-group {
+    height: 550px; }
+    .group.tall.medium-module.half-height, .tall.medium-module.half-height.xsmall-group, .tall.medium-module.half-height.small-group, .tall.medium-module.half-height.medium-group, .tall.medium-module.half-height.large-group, .tall.medium-module.half-height.xlarge-group {
+      height: 275px; }
 
 .row .xsmall-module {
   height: auto; }
@@ -825,6 +826,13 @@ li ~ h2,
     background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/davinci.jpg") no-repeat;
     background-size: cover; }
 
+#photoshop {
+  background: url("../images/home/photoshop.png") no-repeat;
+  background-size: cover; }
+  #photoshop:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/photoshop.png") no-repeat;
+    background-size: cover; }
+
 #endlessmobile {
   background: url("../images/home/endlessmobile.png") no-repeat #d16828;
   background-size: contain;
@@ -913,6 +921,11 @@ li ~ h2,
 #leviosa {
   background: url("../images/home/leviosa.png") center white no-repeat;
   background-size: 50%; }
+
+#dataanalytics {
+  background: url("../images/home/data-analytics.jpg") center no-repeat; }
+  #dataanalytics:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/data-analytics.jpg") center no-repeat; }
 
 #leviosa:hover {
   background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/leviosa.png") center white no-repeat;

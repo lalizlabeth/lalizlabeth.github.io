@@ -24,6 +24,7 @@ body {
   margin: 0 auto;
 }
 
+/* Clearfix */
 .clearfix {
   zoom:1;
   &:before, &:after {
@@ -35,11 +36,6 @@ body {
   &:after {
     clear: both;
   }
-}
-
-hr {
-  border: 1px solid white;
-  margin: 15px 0;
 }
 
 /* Navigation */
@@ -102,31 +98,24 @@ $navigation_height: 65px;
     &:hover {
       cursor: pointer;
       background: $pink;
-      a {
-        color: $white;
-      }
+      a { color: $white; }
     }
     &.active:hover {
       cursor: default;
-      a {
-        cursor: default;
-      }
+      a { cursor: default; }
     }
   }
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6, p, a, li {
-  font-family: "Alegreya Sans", "Helvetica", "Arial";
+  font-family: "Alegreya Sans", "Helvetica", "Arial", sans-serif;
   color: $white;
 }
 
 h1 {
   font-weight: 700;
   font-size: 45px;
-  &.special {
-    font-size: 8em;
-  }
 }
 
 h2 {
@@ -134,8 +123,14 @@ h2 {
   font-size: 30px;
 }
 
-h3 {
+h3,
+h4,
+h5,
+h6 {
   font-weight: 100;
+}
+
+h3 {
   font-size: 20px;
   line-height: 30px;
   &.skill {
@@ -147,13 +142,11 @@ h3 {
 }
 
 h4 {
-  font-weight: 100;
   font-size: 17px;
   line-height: 20px;
 }
 
 h5 {
-  font-weight: 100;
   font-size: 40px;
   line-height: 46px;
   a.about-link,
@@ -170,10 +163,14 @@ h5 {
 }
 
 h6 {
-  font-weight: 100;
   font-size: 15px;
   line-height: 17px;
   margin-bottom: 10px;
+}
+
+hr {
+  border: 1px solid white;
+  margin: 15px 0;
 }
 
 p {
@@ -188,6 +185,7 @@ p {
   }
 }
 
+/* Text Module */
 .text-module { 
   li {
     font-weight: 400;
@@ -203,18 +201,11 @@ li~h2 {
   margin-top: 20px;
 }
 
-.container {
-  background: $white;
-  width: 100%;
-  height: auto;
-  float: left;
-}
-
 /* About Me */
-
 /* Responsive modules */
 $module-sizes: (xsmall small medium large xlarge);
 $box_height: 400px;
+$tall_box_height: 550px;
 
 .row,
 .module,
@@ -244,9 +235,6 @@ $box_height: 400px;
   &.half-height {
     height: $box_height/2;
   }
-  &.third-height {
-    height: $box_height/3;
-  }
 
   &.image-box {
     height: auto;
@@ -267,7 +255,7 @@ $box_height: 400px;
   }
   &.white {
     background: $white;
-    h2, p {
+    h2 {
       color: $gray;
     }
     h2 {
@@ -276,6 +264,13 @@ $box_height: 400px;
   }
   &.green {
     background: $green;
+  }
+}
+
+.tall {
+  height: $tall_box_height;
+  &.half-height {
+    height: $tall_box_height/2;
   }
 }
 
@@ -356,6 +351,12 @@ $box_height: 400px;
 .group {
   padding: 0;
   height: $box_height;
+  &.tall {
+    height: $tall_box_height;
+    &.medium-module.half-height {
+      height: $tall_box_height/2;
+    }
+  }
 }
 
 .row {
@@ -725,6 +726,20 @@ $box_height: 400px;
   }
 }
 
+#photoshop {
+  background: url("../images/home/photoshop.png") no-repeat;
+  background-size: cover;
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.3), 
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("../images/home/photoshop.png") no-repeat;
+    background-size: cover;
+  }
+}
+
 #endlessmobile {
   background: url("../images/home/endlessmobile.png") no-repeat #d16828;
   background-size: contain;
@@ -857,6 +872,18 @@ $box_height: 400px;
 #leviosa {
   background: url("../images/home/leviosa.png") center $white no-repeat;
   background-size: 50%;
+}
+
+#dataanalytics {
+  background: url("../images/home/data-analytics.jpg") center no-repeat;
+  &:hover {
+   background: 
+   linear-gradient(
+      rgba(255, 255, 255, 0.3), 
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/home/data-analytics.jpg") center no-repeat;
+  }
 }
 
 #leviosa {
@@ -1036,18 +1063,19 @@ $box_height: 400px;
     }
   }
 
+  $small_navigation_height: 40px;
   .general-navigation {
     width: 100%;
     #logo {
-      width: 40px;
+      width: $small_navigation_height;
     }
     li {
-      height: 40px;
+      height: $small_navigation_height;
     }
     .general-navigation-item {
-      height: 40px;
+      height: $small_navigation_height;
       &.first {
-        margin-left: 40px;
+        margin-left: $small_navigation_height;
       }
       a {
         padding: 0 10px;
