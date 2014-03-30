@@ -54,7 +54,8 @@ hr {
       cursor: default;
       background: white; }
       .general-navigation .general-navigation-item#home:hover a {
-        color: #ee478d; }
+        color: #ee478d;
+        cursor: default; }
     .general-navigation .general-navigation-item a {
       display: block;
       width: 100%;
