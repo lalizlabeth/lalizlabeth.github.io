@@ -50,6 +50,9 @@ hr {
     transition: margin-left 0.8s; }
     .general-navigation .general-navigation-item.first {
       margin-left: 65px; }
+    .general-navigation .general-navigation-item #home:hover {
+      cursor: default;
+      background: white; }
     .general-navigation .general-navigation-item a {
       display: block;
       width: 100%;
