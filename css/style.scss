@@ -535,7 +535,7 @@ $tall_box_height: 550px;
   padding-right: 15%;
   height: auto;
   &.white {
-    p {
+    a, p {
       color: $gray;
     }
     h3 {
@@ -549,6 +549,10 @@ $tall_box_height: 550px;
     hr {
       border: 1px solid $gray;
     }
+  }
+  a {
+    display: inline;
+    font-weight: 400;
   }
   p {
     text-align: justify;
@@ -873,6 +877,11 @@ $tall_box_height: 550px;
 
 #decal-intro {
   background: url("../images/decal/header.png") center $white;
+}
+
+#fungi-intro {
+  background: url("../images/fungi/cover.jpg") center no-repeat;
+  background-size: cover;
 }
 
 #motivateme-intro {

@@ -823,7 +823,7 @@ p {
   padding-left: 15%;
   padding-right: 15%;
   height: auto; }
-  .text-module.white p {
+  .text-module.white a, .text-module.white p {
     color: #42393c; }
   .text-module.white h3 {
     color: #42393c;
@@ -833,6 +833,9 @@ p {
     color: #42393c; }
   .text-module.white hr {
     border: 1px solid #42393c; }
+  .text-module a {
+    display: inline;
+    font-weight: 400; }
   .text-module p {
     text-align: justify;
     margin-bottom: 20px;
@@ -1018,6 +1021,10 @@ p {
 
 #decal-intro {
   background: url("../images/decal/header.png") center white; }
+
+#fungi-intro {
+  background: url("../images/fungi/cover.jpg") center no-repeat;
+  background-size: cover; }
 
 #motivateme-intro {
   background: url("../images/motivateme/header.gif") center;
