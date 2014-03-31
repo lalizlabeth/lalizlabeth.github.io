@@ -903,7 +903,8 @@ p {
     margin-top: 20px; }
 
 .footer-buttons .xsmall-module {
-  height: auto; }
+  height: auto;
+  padding: 0; }
 .footer-buttons li:last-child {
   border: none; }
 .footer-buttons li:hover {
@@ -911,6 +912,10 @@ p {
   .footer-buttons li:hover a {
     color: white; }
 .footer-buttons li a {
+  padding: 25px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   font: 500 18px/20px "Alegreya Sans", "Helvetica", "Arial", sans-serif;
   text-align: center;
   text-decoration: none;

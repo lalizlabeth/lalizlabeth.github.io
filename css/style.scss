@@ -626,6 +626,7 @@ $tall_box_height: 550px;
 .footer-buttons {
   .xsmall-module {
     height: auto;
+    padding: 0;
   }
   li {
     &:last-child {
@@ -638,6 +639,10 @@ $tall_box_height: 550px;
       }
     }
     a {
+      padding: 25px;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
       font: 500 18px/20px "Alegreya Sans", "Helvetica", "Arial", sans-serif;
       text-align: center;
       text-decoration: none;
