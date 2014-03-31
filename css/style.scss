@@ -712,7 +712,7 @@ $tall_box_height: 550px;
 }
 
 #davinci {
-  background: url("../images/home/davinci.jpg") no-repeat;
+  background: url("../images/home/davinci.png") no-repeat;
   background-size: cover;
   &:hover {
     background: 
@@ -720,7 +720,7 @@ $tall_box_height: 550px;
         rgba(255, 255, 255, 0.3), 
         rgba(255, 255, 255, 0.3)
       ),
-      url("../images/home/davinci.jpg") no-repeat;
+      url("../images/home/davinci.png") no-repeat;
     background-size: cover;
   }
 }
