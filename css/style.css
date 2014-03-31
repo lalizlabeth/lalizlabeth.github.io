@@ -1144,10 +1144,12 @@ p {
 
   #lostplayground {
     width: 100%;
+    background: url("../images/home/nostalgia.jpg") no-repeat;
+    background-position: center;
     background-size: cover; }
     #lostplayground:hover {
       background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/nostalgia.jpg") no-repeat;
-      background-position: 0 -300px;
+      background-position: center;
       background-size: cover; }
 
   #spotify {

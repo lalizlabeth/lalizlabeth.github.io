@@ -1013,6 +1013,8 @@ $tall_box_height: 550px;
   }
   #lostplayground {
     width: 100%;
+    background: url("../images/home/nostalgia.jpg") no-repeat;
+    background-position: center;
     background-size: cover;
     &:hover {
       background: 
@@ -1021,7 +1023,7 @@ $tall_box_height: 550px;
           rgba(255, 255, 255, 0.3)
         ),
         url("../images/home/nostalgia.jpg") no-repeat;
-      background-position: 0 -300px;
+      background-position: center;
       background-size: cover;
     }
   }
