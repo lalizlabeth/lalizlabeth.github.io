@@ -925,6 +925,11 @@ $tall_box_height: 550px;
   background-size: cover;
 }
 
+#tracks-intro {
+  background: url("../images/tracks/cover.png") center;
+  background-size: cover;
+}
+
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
   #wrapper {

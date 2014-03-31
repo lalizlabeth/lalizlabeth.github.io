@@ -1059,6 +1059,10 @@ p {
   background: url("../images/davinci/cover.jpg") center;
   background-size: cover; }
 
+#tracks-intro {
+  background: url("../images/tracks/cover.png") center;
+  background-size: cover; }
+
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
   #wrapper {
