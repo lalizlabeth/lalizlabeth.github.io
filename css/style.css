@@ -964,10 +964,12 @@ p {
 
 #lostplayground {
   background: url("../images/home/nostalgia.jpg") no-repeat;
-  background-position: center; }
+  background-position: center;
+  background-size: cover; }
   #lostplayground:hover {
     background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/nostalgia.jpg") no-repeat;
-    background-position: center; }
+    background-position: center;
+    background-size: cover; }
   #lostplayground.design {
     width: 40%;
     height: 400px; }
@@ -1195,6 +1197,12 @@ p {
     width: 100%; }
 
   .medium-group {
+    width: 100%; }
+
+  .small-module-tall,
+  .small-group-tall,
+  .medium-module-tall,
+  .medium-group-tall {
     width: 100%; }
 
   .small-text-only-module {
