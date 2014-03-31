@@ -773,6 +773,7 @@ $tall_box_height: 550px;
 #lostplayground {
   background: url("../images/home/nostalgia.jpg") no-repeat;
   background-position: center;
+  background-size: cover;
   &:hover {
     background: 
      linear-gradient(
@@ -781,6 +782,7 @@ $tall_box_height: 550px;
       ),
       url("../images/home/nostalgia.jpg") no-repeat;
     background-position: center;
+    background-size: cover;
   }
   &.design {
     width: 40%;
@@ -894,7 +896,7 @@ $tall_box_height: 550px;
 }
 
 #jamnbread-intro {
-  background: url("../images/home/jam-n-bread.gif") no-repeat;
+  background: url(http://fat.gfycat.com/NauticalTornDragon.gif) no-repeat;
   background-size: cover;
 }
 
@@ -1031,6 +1033,12 @@ $tall_box_height: 550px;
     width: 100%;
   }
   .medium-group {
+    width: 100%;
+  }
+  .small-module-tall,
+  .small-group-tall,
+  .medium-module-tall,
+  .medium-group-tall {
     width: 100%;
   }
 
