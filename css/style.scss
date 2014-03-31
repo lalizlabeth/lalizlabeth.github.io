@@ -88,9 +88,8 @@ $navigation_height: 65px;
       display: block;
       width: 100%;
       height: 100%;
-      padding: 0 40px;
+      padding: 22px 40px 0 40px;
       font: 500 18px/20px "Alegreya Sans", "Helvetica", "Arial", sans-serif;
-      margin-top: 22px;
       color: $pink;
       text-decoration: none;
     }
@@ -684,7 +683,7 @@ $tall_box_height: 550px;
 }
 
 #jamnbread {
-  background: url("../images/home/jam-n-bread.gif");
+  background: url(http://fat.gfycat.com/NauticalTornDragon.gif);
   background-position: center;
   &:hover {
     background: 
@@ -692,7 +691,7 @@ $tall_box_height: 550px;
         rgba(255, 255, 255, 0.3), 
         rgba(255, 255, 255, 0.3)
       ),
-      url("../images/home/jam-n-bread.gif");
+      url(http://fat.gfycat.com/NauticalTornDragon.gif);
     background-position: center;
   }
 }
@@ -772,7 +771,7 @@ $tall_box_height: 550px;
 }
 
 #lostplayground {
-  background: url("../images/home/nostalgia.jpg");
+  background: url("../images/home/nostalgia.jpg") no-repeat;
   background-position: center;
   &:hover {
     background: 
@@ -780,7 +779,7 @@ $tall_box_height: 550px;
         rgba(255, 255, 255, 0.3), 
         rgba(255, 255, 255, 0.3)
       ),
-      url("../images/home/nostalgia.jpg");
+      url("../images/home/nostalgia.jpg") no-repeat;
     background-position: center;
   }
   &.design {
@@ -900,7 +899,7 @@ $tall_box_height: 550px;
 }
 
 #lostplayground-intro {
-  background: url("../images/lostplayground/intro.jpg");
+  background: url("../images/lostplayground/intro.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -974,7 +973,7 @@ $tall_box_height: 550px;
           rgba(255, 255, 255, 0.3), 
           rgba(255, 255, 255, 0.3)
         ),
-        url("../images/home/nostalgia.jpg");
+        url("../images/home/nostalgia.jpg") no-repeat;
       background-position: 0 -300px;
       background-size: cover;
     }
