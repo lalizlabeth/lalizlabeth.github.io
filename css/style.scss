@@ -920,6 +920,11 @@ $tall_box_height: 550px;
   background-size: cover;
 }
 
+#davinci-intro {
+  background: url("../images/davinci/cover.jpg") center;
+  background-size: cover;
+}
+
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
   #wrapper {

@@ -1055,6 +1055,10 @@ p {
   background: url("../images/endlessmobile/cover.jpg") center;
   background-size: cover; }
 
+#davinci-intro {
+  background: url("../images/davinci/cover.jpg") center;
+  background-size: cover; }
+
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
   #wrapper {
