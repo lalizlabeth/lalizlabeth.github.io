@@ -932,10 +932,10 @@ p {
     background-position: center; }
 
 #davinci {
-  background: url("../images/home/davinci.jpg") no-repeat;
+  background: url("../images/home/davinci.png") no-repeat;
   background-size: cover; }
   #davinci:hover {
-    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/davinci.jpg") no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/home/davinci.png") no-repeat;
     background-size: cover; }
 
 #photoshop {
