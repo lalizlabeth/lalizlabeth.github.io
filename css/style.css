@@ -1,4 +1,29 @@
 /* Styles for www.elizabethylin.com */
+/* Font styles */
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 100;
+  src: local("Alegreya Sans Thin"), local("AlegreyaSans-Thin"), url(http://themes.googleusercontent.com/static/fonts/alegreyasans/v1/TKyx_-JJ6MdpQruNk-t-PMirbh6OUF7J5FHbYIz0tTY.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Alegreya Sans"), local("AlegreyaSans-Regular"), url(http://themes.googleusercontent.com/static/fonts/alegreyasans/v1/KYNzioYhDai7mTMnx_gDgnt9r5m2YmP5sw3cUAQwL0E.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Alegreya Sans Medium"), local("AlegreyaSans-Medium"), url(http://themes.googleusercontent.com/static/fonts/alegreyasans/v1/11EDm-lum6tskJMBbdy9aRSu2h6M8zeGTOAvuRkzdcM.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Alegreya Sans Bold"), local("AlegreyaSans-Bold"), url(http://themes.googleusercontent.com/static/fonts/alegreyasans/v1/11EDm-lum6tskJMBbdy9aVV8F1P-UN-fltcX6iMUcbA.woff) format("woff"); }
+
 /* Reset.css */
 html, body, div, span, applet, object, iframe,
 h1, h2, .headline a,
