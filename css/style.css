@@ -1063,6 +1063,9 @@ p {
   background: url("../images/tracks/cover.png") center;
   background-size: cover; }
 
+#photoshop-intro {
+  background: url("../images/photoshop/cover.png") center; }
+
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
   #wrapper {

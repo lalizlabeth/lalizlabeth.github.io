@@ -930,6 +930,10 @@ $tall_box_height: 550px;
   background-size: cover;
 }
 
+#photoshop-intro {
+  background: url("../images/photoshop/cover.png") center;
+}
+
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
   #wrapper {
