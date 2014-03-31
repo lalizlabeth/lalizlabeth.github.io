@@ -4,7 +4,7 @@ $(document).ready(function() {
   function toggleNavigation(navigationState) {
     var width;
     $(".general-navigation-item").each(function(index) {
-      if (navigationState === "open") {
+      if (navigationState === true) {
         width = -$(this).width()-$("#logo").width();
       } else {
         width = 0;
@@ -25,11 +25,11 @@ $(document).ready(function() {
   $(window).scroll(function() {
     var scrollHeight = $(document).scrollTop();
     if (scrollHeight === 0) {
-      toggleNavigation("closed");
+      toggleNavigation(false);
       firstScroll = false;
     } else {
       if (firstScroll === false) {
-        toggleNavigation("open");
+        toggleNavigation(true);
         firstScroll = true;
       }
     }
