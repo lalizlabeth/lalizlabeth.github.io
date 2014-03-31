@@ -249,7 +249,6 @@ p {
 .xlarge-module-tall {
   position: relative;
   height: 400px;
-  padding: 25px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -270,7 +269,11 @@ p {
   .xlarge-module-tall a {
     display: block;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    padding: 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
   .module.blue, .blue.xsmall-module,
   .blue.xsmall-module-tall, .blue.small-module, .blue.small-text-only-module,
   .blue.small-module-tall, .blue.medium-module,
@@ -445,14 +448,12 @@ p {
   height: 550px; }
 
 .xsmall-group .xsmall-module {
-  padding: 25px;
   width: 100%;
   height: 200px; }
 
 .xsmall-group-tall {
   height: 550px; }
   .xsmall-group-tall .xsmall-module-tall {
-    padding: 25px;
     width: 100%;
     height: 275px; }
 
@@ -460,14 +461,12 @@ p {
   height: 550px; }
 
 .small-group .small-module, .small-group .small-text-only-module {
-  padding: 25px;
   width: 100%;
   height: 200px; }
 
 .small-group-tall {
   height: 550px; }
   .small-group-tall .small-module-tall {
-    padding: 25px;
     width: 100%;
     height: 275px; }
 
@@ -475,14 +474,12 @@ p {
   height: 550px; }
 
 .medium-group .medium-module {
-  padding: 25px;
   width: 100%;
   height: 200px; }
 
 .medium-group-tall {
   height: 550px; }
   .medium-group-tall .medium-module-tall {
-    padding: 25px;
     width: 100%;
     height: 275px; }
 
@@ -490,14 +487,12 @@ p {
   height: 550px; }
 
 .large-group .large-module, .large-group .large-text-only-module {
-  padding: 25px;
   width: 100%;
   height: 200px; }
 
 .large-group-tall {
   height: 550px; }
   .large-group-tall .large-module-tall {
-    padding: 25px;
     width: 100%;
     height: 275px; }
 
@@ -506,14 +501,12 @@ p {
 
 .xlarge-group .xlarge-module, .xlarge-group .headline,
 .xlarge-group .footer, .xlarge-group .intro-module, .xlarge-group .video-module, .xlarge-group .xlarge-text-only-module, .xlarge-group .page-header, .xlarge-group .text-module {
-  padding: 25px;
   width: 100%;
   height: 200px; }
 
 .xlarge-group-tall {
   height: 550px; }
   .xlarge-group-tall .xlarge-module-tall {
-    padding: 25px;
     width: 100%;
     height: 275px; }
 

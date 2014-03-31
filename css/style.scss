@@ -270,8 +270,6 @@ $tall_box_height: 550px;
 .module {
   position: relative;
   height: $box_height;
-  padding: 25px;
-
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -284,6 +282,10 @@ $tall_box_height: 550px;
     display: block;
     width: 100%;
     height: 100%;
+    padding: 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   &.blue {
@@ -400,7 +402,6 @@ $tall_box_height: 550px;
   .#{$size}-group {
     @extend .group;
     .#{$size}-module {
-      padding: 25px;
       width: 100%;
       height: $box_height/2;;
     }
@@ -409,7 +410,6 @@ $tall_box_height: 550px;
     @extend .group;
     height: $tall_box_height;
     .#{$size}-module-tall {
-      padding: 25px;
       width: 100%;
       height: $tall_box_height/2;;
     }
