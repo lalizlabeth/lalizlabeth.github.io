@@ -183,7 +183,8 @@ h5 {
     font-weight: 400; }
   h5 a.about-link {
     display: inline;
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 0; }
     h5 a.about-link:hover {
       text-decoration: underline; }
 
@@ -1135,6 +1136,10 @@ p {
 #photoshop-intro {
   background: url("../images/photoshop/cover.png") center; }
 
+#about-me-bio,
+#skills {
+  padding: 25px; }
+
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
   #wrapper {
@@ -1182,7 +1187,8 @@ p {
     width: 20%; }
 
   #skills {
-    width: 30%; }
+    width: 30%;
+    padding: 25px; }
 
   .large-text-only-module {
     width: 70%; } }

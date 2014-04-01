@@ -227,6 +227,7 @@ h5 {
   a.about-link {
     display: inline;
     text-decoration: none;
+    padding: 0;
     &:hover {
       text-decoration: underline;
     }
@@ -1012,6 +1013,11 @@ $tall_box_height: 550px;
   background: url("../images/photoshop/cover.png") center;
 }
 
+#about-me-bio,
+#skills {
+  padding: 25px;
+}
+
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
   #wrapper {
@@ -1068,6 +1074,7 @@ $tall_box_height: 550px;
   }
   #skills {
     width: 30%;
+    padding: 25px;
   }
   .large-text-only-module {
     width: 70%;
