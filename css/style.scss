@@ -320,6 +320,7 @@ $tall_box_height: 550px;
   @each $size in $module-sizes {
     .#{$size}-module {
       height: auto;
+      padding: 25px;
     }
   }
 }
@@ -383,7 +384,7 @@ $tall_box_height: 550px;
 }
 
 .headline {
-  padding-bottom: 0;
+  padding: 25px 25px 0 25px;
 }
 
 .footer {
@@ -457,6 +458,7 @@ $tall_box_height: 550px;
   @extend .xlarge-module;
   background: $white;
   display: inline-block;
+  padding: 25px;
   iframe {
     margin-left: 15%;
     margin-right: 15%;
@@ -603,8 +605,7 @@ $tall_box_height: 550px;
 
 .text-module {
   @extend .xlarge-module;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding: 25px 15%;
   height: auto;
   &.white {
     a, p {
