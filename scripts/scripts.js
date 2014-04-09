@@ -19,7 +19,11 @@ $(document).ready(function() {
 
   $("#logo").click(function(evt) {
     var navState = $("#logo").attr("class");
-    toggleNavigation(navState);
+    if (navState === "open") {
+      toggleNavigation(true);
+    } else {
+      toggleNavigation(false);
+    }
   });
 
   $(window).scroll(function() {
