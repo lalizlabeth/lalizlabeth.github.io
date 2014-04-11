@@ -18,7 +18,8 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 
     <!-- Stylesheets -->
-    <link href="css/style.min.css" rel="stylesheet">
+    <!--link href="css/style.min.css" rel="stylesheet"-->
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- Google Analytics -->
     <script>
@@ -34,13 +35,7 @@
   </head>
   <body>
 
-<!--     <form id="search">
-      <input type="text" placeholder="Type to search projects..." id="search-input"></input>
-      <p id="search-help-text">Press ESC to exit.</p>
-    </form> -->
-
     <div id="wrapper">
-
       <nav class="general-navigation">
         <ul>
           <li id="logo" class="open">
@@ -70,104 +65,106 @@
         </ul>
       </nav>
 
-      <div id="about-me" class="medium-module">
-        <a href="about">
-          <div class="large-module-text pink">
-            <h3>Berkeley, CA</h3>
-            <h1>Elizabeth Lin</h1>
-            <h3>Visual + UI/UX Designer</h3>
-          </div>
-        </a>
-      </div>
-
-      <div class="small-group">
-        <div id="posters" class="small-module">
-          <a href="print/posters">
-            <div class="small-module-text gray">
-              <h4>Graphic Design</h4>
-              <h2>Posters</h2>
+      <div class="modules">
+        <div id="about-me" class="medium-module">
+          <a href="about">
+            <div class="large-module-text pink">
+              <h3>Berkeley, CA</h3>
+              <h1>Elizabeth Lin</h1>
+              <h3>Visual + UI/UX Designer</h3>
             </div>
           </a>
         </div>
 
-        <div id="jamnbread" class="small-module">
-          <a href="product/jamnbread">
+        <div class="small-group">
+          <div id="posters" class="small-module">
+            <a href="print/posters">
+              <div class="small-module-text gray">
+                <h4>Graphic Design</h4>
+                <h2>Posters</h2>
+              </div>
+            </a>
+          </div>
+
+          <div id="jamnbread" class="small-module">
+            <a href="product/jamnbread">
+              <div class="small-module-text blue">
+                <h4>Product Design</h4>
+                <h2>Jam 'n' Bread</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="small-group">
+          <div id="penpal" class="small-module">
+            <a href="ui/penpal">
+              <div class="small-module-text gray">
+                <h4>Mobile App Design</h4>
+                <h2>Pen Pal</h2>
+              </div>
+            </a>
+          </div>
+
+          <div id="bare" class="small-module">
+            <a href="print/bare">
+              <div class="small-module-text blue">
+                <h4>Layout Design</h4>
+                <h2>BARE</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div id="spotify" class="small-module">
+          <a href="ui/spotify">
+            <div class="small-module-text pink">
+              <h4>UI/UX Design</h4>
+              <h2>Spotify Radio</h2>
+              <h2>Redesign</h2>
+            </div>
+          </a>
+        </div>
+
+        <div id="design-minor" class="xsmall-module">
+          <a href="education/designminor">
+            <div class="small-module-text gray">
+              <h4>Education</h4>
+              <h2>Cal Design</h2>
+              <h2>Minor</h2>
+            </div>
+          </a>
+        </div>
+
+        <div class="medium-group">
+          <div id="motivateme" class="medium-module">
+            <a href="ui/motivateme">
+              <div class="small-module-text gray">
+                <h4>Web Development</h4>
+                <h2>motivateme</h2>
+              </div>
+            </a>
+          </div>
+
+          <div id="decal" class="medium-module">
+            <a href="education/decal">
+              <div class="medium-module-text pink">
+                <h4>Education</h4>
+                <h2>Graphic Design</h2>
+                <h2>Principles</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div id="lostplayground" class="small-module">
+          <a href="product/lostplayground">
             <div class="small-module-text blue">
               <h4>Product Design</h4>
-              <h2>Jam 'n' Bread</h2>
+              <h2>lostplayground</h2>
             </div>
           </a>
         </div>
-      </div>
-
-      <div class="small-group">
-        <div id="penpal" class="small-module">
-          <a href="ui/penpal">
-            <div class="small-module-text gray">
-              <h4>Mobile App Design</h4>
-              <h2>Pen Pal</h2>
-            </div>
-          </a>
-        </div>
-
-        <div id="bare" class="small-module">
-          <a href="print/bare">
-            <div class="small-module-text blue">
-              <h4>Layout Design</h4>
-              <h2>BARE</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div id="spotify" class="small-module">
-        <a href="ui/spotify">
-          <div class="small-module-text pink">
-            <h4>UI/UX Design</h4>
-            <h2>Spotify Radio</h2>
-            <h2>Redesign</h2>
-          </div>
-        </a>
-      </div>
-
-      <div id="design-minor" class="xsmall-module">
-        <a href="education/designminor">
-          <div class="small-module-text gray">
-            <h4>Education</h4>
-            <h2>Cal Design</h2>
-            <h2>Minor</h2>
-          </div>
-        </a>
-      </div>
-
-      <div class="medium-group">
-        <div id="motivateme" class="medium-module">
-          <a href="ui/motivateme">
-            <div class="small-module-text gray">
-              <h4>Web Development</h4>
-              <h2>motivateme</h2>
-            </div>
-          </a>
-        </div>
-
-        <div id="decal" class="medium-module">
-          <a href="education/decal">
-            <div class="medium-module-text pink">
-              <h4>Education</h4>
-              <h2>Graphic Design</h2>
-              <h2>Principles</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div id="lostplayground" class="small-module">
-        <a href="product/lostplayground">
-          <div class="small-module-text blue">
-            <h4>Product Design</h4>
-            <h2>lostplayground</h2>
-          </div>
-        </a>
       </div>
 
     <!-- Scripts -->

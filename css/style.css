@@ -87,13 +87,13 @@ body {
   margin: 0 auto; }
 
 /* Clearfix */
-.clearfix, #wrapper, .clearfix:before, .clearfix:after, .row, .display-images {
+.clearfix, #wrapper, .clearfix:before, .clearfix:after, .modules, .row, .display-images {
   zoom: 1; }
-  #wrapper:before, .clearfix:before, .row:before, .display-images:before, #wrapper:after, .clearfix:after, .row:after, .display-images:after {
+  #wrapper:before, .clearfix:before, .modules:before, .row:before, .display-images:before, #wrapper:after, .clearfix:after, .modules:after, .row:after, .display-images:after {
     content: "\0020";
     display: block;
     height: 0; }
-  #wrapper:after, .clearfix:after, .row:after, .display-images:after {
+  #wrapper:after, .clearfix:after, .modules:after, .row:after, .display-images:after {
     clear: both; }
 
 /* Navigation */
@@ -1650,11 +1650,11 @@ p {
     background-position: center; }
 
 #lostplayground {
-  background: url("../images/home/nostalgia.jpg") no-repeat;
+  background: url("http://giant.gfycat.com/KindlyHeavenlyCrane.gif") no-repeat;
   background-position: center;
   background-size: cover; }
   #lostplayground:hover {
-    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/nostalgia.jpg") no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("http://giant.gfycat.com/KindlyHeavenlyCrane.gif") no-repeat;
     background-position: center;
     background-size: cover; }
   #lostplayground.design {
@@ -1671,10 +1671,10 @@ p {
     background-position: 0 -70px; }
 
 #motivateme {
-  background: url("../images/home/motivateme.gif");
+  background: url("http://zippy.gfycat.com/SecondaryPotableGoldfish.gif");
   background-position: 0px -75px; }
   #motivateme:hover {
-    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/motivateme.gif");
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("http://zippy.gfycat.com/SecondaryPotableGoldfish.gif");
     background-position: 0px -75px; }
 
 #fungi {
@@ -1792,11 +1792,11 @@ p {
 
   #lostplayground {
     width: 100%;
-    background: url("../images/home/nostalgia.jpg") no-repeat;
+    background: url("http://giant.gfycat.com/KindlyHeavenlyCrane.gif") no-repeat;
     background-position: center;
     background-size: cover; }
     #lostplayground:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/nostalgia.jpg") no-repeat;
+      background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("http://giant.gfycat.com/KindlyHeavenlyCrane.gif") no-repeat;
       background-position: center;
       background-size: cover; }
 

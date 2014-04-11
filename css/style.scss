@@ -307,6 +307,10 @@ $tall_box_height: 550px;
   float: left;
 }
 
+.modules {
+  @extend .clearfix;
+}
+
 .module {
   position: relative;
   height: $box_height;
@@ -316,6 +320,13 @@ $tall_box_height: 550px;
 
   &:hover a {
     cursor: pointer;
+    .module-text {
+      display: block;
+      h2, h4 {
+        background: $gray;
+        color: $white
+      }
+    }
   }
 
   a {
@@ -576,11 +587,18 @@ $tall_box_height: 550px;
   }
 }
 
+#about-me .large-module-text,
+.intro-module .module-text,
+#bio .module-text {
+  display: block;
+}
+
 .xlarge-module-text,
 .large-module-text,
 .medium-module-text,
 .small-module-text {
   @extend .module-text;
+  display: none;
 }
 
 .xlarge-module-text {
@@ -635,8 +653,7 @@ $tall_box_height: 550px;
 
 .page-header {
   @extend .xlarge-text-only-module;
-  // background: url(../images/geometry.png);
-  background: $pink;
+  background: $gray;
   height: 300px;
 }
 
@@ -733,8 +750,8 @@ $tall_box_height: 550px;
   &:hover {
     background: 
      linear-gradient(
-        rgba(255, 255, 255, 0.3), 
-        rgba(255, 255, 255, 0.3)
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
       ),
       url("../images/portrait.jpg");
     background-size: cover;
@@ -748,8 +765,8 @@ $tall_box_height: 550px;
   &:hover {
     background: 
      linear-gradient(
-        rgba(255, 255, 255, 0.3), 
-        rgba(255, 255, 255, 0.3)
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
       ),
       url("../images/home/decal.png");
     background-size: cover;
@@ -763,8 +780,8 @@ $tall_box_height: 550px;
   &:hover {
     background: 
      linear-gradient(
-        rgba(255, 255, 255, 0.3), 
-        rgba(255, 255, 255, 0.3)
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
       ),
       url("../images/home/penpal.jpg") no-repeat;
       background-size: cover;
@@ -776,8 +793,8 @@ $tall_box_height: 550px;
   &:hover {
     background: 
      linear-gradient(
-        rgba(255, 255, 255, 0.3), 
-        rgba(255, 255, 255, 0.3)
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
       ),
       url("../images/home/posters.jpg");
       background-size: cover;
@@ -794,8 +811,8 @@ $tall_box_height: 550px;
   &:hover {
     background: 
      linear-gradient(
-        rgba(255, 255, 255, 0.3), 
-        rgba(255, 255, 255, 0.3)
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
       ),
       url("../images/home/designminor.png");
     background-position: center;
@@ -809,8 +826,8 @@ $tall_box_height: 550px;
   &:hover {
     background: 
      linear-gradient(
-        rgba(255, 255, 255, 0.3), 
-        rgba(255, 255, 255, 0.3)
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
       ),
       url(http://fat.gfycat.com/NauticalTornDragon.gif);
     background-position: center;
@@ -823,8 +840,8 @@ $tall_box_height: 550px;
   &:hover {
     background: 
      linear-gradient(
-        rgba(255, 255, 255, 0.3), 
-        rgba(255, 255, 255, 0.3)
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
       ),
       url("../images/home/spotify.jpg") no-repeat $white;
     background-position: center;
@@ -837,8 +854,8 @@ $tall_box_height: 550px;
   &:hover {
     background: 
      linear-gradient(
-        rgba(255, 255, 255, 0.3), 
-        rgba(255, 255, 255, 0.3)
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
       ),
       url("../images/home/davinci.png") no-repeat;
     background-size: cover;
@@ -851,8 +868,8 @@ $tall_box_height: 550px;
   &:hover {
     background: 
      linear-gradient(
-        rgba(255, 255, 255, 0.3), 
-        rgba(255, 255, 255, 0.3)
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
       ),
       url("../images/home/photoshop.png") center no-repeat;
     background-size: cover;
@@ -866,8 +883,8 @@ $tall_box_height: 550px;
   &:hover {
     background: 
      linear-gradient(
-        rgba(255, 255, 255, 0.3), 
-        rgba(255, 255, 255, 0.3)
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
       ),
       url("../images/home/endlessmobile.png") no-repeat #d16828;
     background-size: contain;
@@ -882,8 +899,8 @@ $tall_box_height: 550px;
   &:hover {
     background: 
      linear-gradient(
-        rgba(255, 255, 255, 0.3), 
-        rgba(255, 255, 255, 0.3)
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
       ),
       url("../images/home/tracks.jpg") $white no-repeat;
     background-size: contain;
@@ -892,16 +909,16 @@ $tall_box_height: 550px;
 }
 
 #lostplayground {
-  background: url("../images/home/nostalgia.jpg") no-repeat;
+  background: url("http://giant.gfycat.com/KindlyHeavenlyCrane.gif") no-repeat;
   background-position: center;
   background-size: cover;
   &:hover {
     background: 
      linear-gradient(
-        rgba(255, 255, 255, 0.3), 
-        rgba(255, 255, 255, 0.3)
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
       ),
-      url("../images/home/nostalgia.jpg") no-repeat;
+      url("http://giant.gfycat.com/KindlyHeavenlyCrane.gif") no-repeat;
     background-position: center;
     background-size: cover;
   }
@@ -918,8 +935,8 @@ $tall_box_height: 550px;
   &:hover {
     background: 
      linear-gradient(
-        rgba(255, 255, 255, 0.3), 
-        rgba(255, 255, 255, 0.3)
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
       ),
       url("../images/home/BARE.jpg") no-repeat $white;
     background-size: cover;
@@ -928,15 +945,15 @@ $tall_box_height: 550px;
 }
 
 #motivateme {
-  background: url("../images/home/motivateme.gif");
+  background: url("http://zippy.gfycat.com/SecondaryPotableGoldfish.gif");
   background-position: 0px -75px;
   &:hover {
     background: 
      linear-gradient(
-        rgba(255, 255, 255, 0.3), 
-        rgba(255, 255, 255, 0.3)
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
       ),
-      url("../images/home/motivateme.gif");
+      url("http://zippy.gfycat.com/SecondaryPotableGoldfish.gif");
     background-position: 0px -75px;
   }
 }
@@ -947,8 +964,8 @@ $tall_box_height: 550px;
   &:hover {
      background: 
      linear-gradient(
-        rgba(255, 255, 255, 0.3), 
-        rgba(255, 255, 255, 0.3)
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
       ),
       url("../images/home/fungi.jpg") center;
     background-size: cover;
@@ -966,8 +983,8 @@ $tall_box_height: 550px;
   &:hover {
    background: 
    linear-gradient(
-      rgba(255, 255, 255, 0.3), 
-      rgba(255, 255, 255, 0.3)
+      rgba(255, 255, 255, 0.2), 
+      rgba(255, 255, 255, 0.2)
     ),
     url("../images/home/data-analytics.jpg") center no-repeat;
   }
@@ -977,8 +994,8 @@ $tall_box_height: 550px;
   &:hover {
     background: 
      linear-gradient(
-        rgba(255, 255, 255, 0.3), 
-        rgba(255, 255, 255, 0.3)
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
       ),
       url("../images/home/leviosa.png") center $white no-repeat;
     background-size: 50%;
@@ -1095,16 +1112,16 @@ $tall_box_height: 550px;
   }
   #lostplayground {
     width: 100%;
-    background: url("../images/home/nostalgia.jpg") no-repeat;
+    background: url("http://giant.gfycat.com/KindlyHeavenlyCrane.gif") no-repeat;
     background-position: center;
     background-size: cover;
     &:hover {
       background: 
        linear-gradient(
-          rgba(255, 255, 255, 0.3), 
-          rgba(255, 255, 255, 0.3)
+          rgba(255, 255, 255, 0.2), 
+          rgba(255, 255, 255, 0.2)
         ),
-        url("../images/home/nostalgia.jpg") no-repeat;
+        url("http://giant.gfycat.com/KindlyHeavenlyCrane.gif") no-repeat;
       background-position: center;
       background-size: cover;
     }
