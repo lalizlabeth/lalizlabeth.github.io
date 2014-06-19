@@ -27,6 +27,15 @@
       .small-text-only-module {
         border-bottom: none; 
       }
+      #bio {
+        height: 400px;
+      }
+      .small-module,
+      .medium-module,
+      .large-module,
+      .xlarge-module {
+        height: 300px;
+      }
     </style>
     <!-- <link href="css/style.css" rel="stylesheet"> -->
 
@@ -48,10 +57,10 @@
       <nav class="general-navigation">
         <ul>
           <li id="logo" class="open">
-            <a href="javascript:void(0)"></a>
+            <a href="#"></a>
           </li>
-          <li id="home" class="general-navigation-item first">
-            <a href="../">See full website</a>
+          <li class="general-navigation-item first">
+            <a href="#projects">Projects</a>
           </li>
         </ul>
       </nav>
@@ -98,32 +107,30 @@
 
       <div class="modules">
 
-        <div class="small-group">
-          <div id="penpal" class="small-module">
-            <a href="../ui/penpal">
-              <div class="small-module-text gray">
-                <h4>Mobile App Design</h4>
-                <h2>Pen Pal</h2>
-              </div>
-            </a>
-          </div>
-
-          <div id="decal" class="small-module">
-            <a href="../education/decal">
-              <div class="medium-module-text pink">
-                <h4>Education</h4>
-                <h2>Graphic Design</h2>
-                <h2>Principles</h2>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div id="jamnbread" class="medium-module">
+        <div id="jamnbread" class="xlarge-module">
           <a href="jamnbread">
-            <div class="small-module-text blue">
+            <div class="medium-module-text blue">
               <h4>Product Design</h4>
               <h2>Jam 'n' Bread</h2>
+            </div>
+          </a>
+        </div>
+
+        <div id="penpal" class="small-module">
+          <a href="../ui/penpal">
+            <div class="small-module-text gray">
+              <h4>Mobile App Design</h4>
+              <h2>Pen Pal</h2>
+            </div>
+          </a>
+        </div>
+
+        <div id="decal" class="medium-module">
+          <a href="../education/decal">
+            <div class="small-module-text pink">
+              <h4>Education</h4>
+              <h2>Graphic Design</h2>
+              <h2>Principles</h2>
             </div>
           </a>
         </div>
