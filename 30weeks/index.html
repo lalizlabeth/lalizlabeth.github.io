@@ -34,8 +34,31 @@
       .medium-module,
       .large-module,
       .xlarge-module {
-        height: 300px;
+        height: 280px;
       }
+      #decal {
+        background: url(images/typography.png);
+        background-size: cover;
+        background-position: center;
+      }
+
+      #decal:hover {
+        background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(images/typography.png);
+        background-size: cover;
+        background-position: center;
+      }
+
+      #penpal {
+        background: url(images/penpal.png);
+        background-size: cover;
+        background-position: center;
+      }
+      #penpal:hover {
+        background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(images/penpal.png);
+        background-size: cover;
+        background-position: center;
+      }
+
     </style>
     <!-- <link href="css/style.css" rel="stylesheet"> -->
 
@@ -107,7 +130,7 @@
 
       <div class="modules">
 
-        <div id="jamnbread" class="xlarge-module">
+        <div id="jamnbread" class="medium-module">
           <a href="jamnbread">
             <div class="medium-module-text blue">
               <h4>Product Design</h4>
@@ -116,8 +139,17 @@
           </a>
         </div>
 
+        <div id="davinci" class="small-module">
+          <a href="davinci">
+            <div class="medium-module-text blue">
+              <h4>User Experience</h4>
+              <h2>DaVinci LinkedIn</h2>
+            </div>
+          </a>
+        </div>
+
         <div id="penpal" class="small-module">
-          <a href="../ui/penpal">
+          <a href="penpal">
             <div class="small-module-text gray">
               <h4>Mobile App Design</h4>
               <h2>Pen Pal</h2>
@@ -126,8 +158,8 @@
         </div>
 
         <div id="decal" class="medium-module">
-          <a href="../education/decal">
-            <div class="small-module-text pink">
+          <a href="decal">
+            <div class="medium-module-text pink">
               <h4>Education</h4>
               <h2>Graphic Design</h2>
               <h2>Principles</h2>
@@ -143,16 +175,6 @@
             </div>
           </a>
         </div>
-
-        <div id="davinci" class="small-module">
-          <a href="../ui/davinci">
-            <div class="small-module-text blue">
-              <h4>User Experience</h4>
-              <h2>DaVinci LinkedIn</h2>
-            </div>
-          </a>
-        </div>
-
       </div>
 
     <!-- Scripts -->
