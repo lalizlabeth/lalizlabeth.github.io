@@ -3,7 +3,7 @@ body {
 
 #wrapper {
   width: 75%;
-  margin: 0 auto; }
+  margin: 20px auto; }
 
 h1,
 h2 {
@@ -19,8 +19,16 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  margin-bottom: 18px;
+  margin-bottom: 0;
   letter-spacing: 0.05em; }
+
+h4 {
+  font: 100 20px "Lato";
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0; }
 
 hr {
   border: none;
