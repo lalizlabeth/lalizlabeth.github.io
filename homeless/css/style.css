@@ -2,8 +2,9 @@ body {
   background: #03c5e3; }
 
 #wrapper {
-  width: 75%;
-  margin: 20px auto; }
+  padding: 15px 0;
+  width: 70%;
+  margin: 0 auto; }
 
 h1,
 h2 {
@@ -15,11 +16,7 @@ h2 {
   text-shadow: 0 3px 3px rgba(0, 0, 0, 0.5); }
 
 h2 {
-  font: 400 40px/90px "Oswald";
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 0;
+  font: 400 40px/48px "Oswald";
   letter-spacing: 0.05em; }
 
 h4 {
@@ -27,11 +24,12 @@ h4 {
   color: white;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   margin-top: 0; }
 
 hr {
   border: none;
+  margin: 30px 0;
   border-bottom: 3px solid white; }
 
 p {
@@ -42,3 +40,11 @@ p {
     font-weight: 700;
     letter-spacing: 0.1em;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+img {
+  margin: 0 auto;
+  border: 4px solid white;
+  box-shadow: 0 0 6px 0px rgba(0, 0, 0, 0.5);
+  display: block;
+  width: 500px;
+  margin-bottom: 15px; }
