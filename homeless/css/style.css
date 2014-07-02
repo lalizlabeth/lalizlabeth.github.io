@@ -33,7 +33,7 @@ hr {
   border-bottom: 3px solid white; }
 
 p {
-  font: 100 30px/50px "Lato", "Helvetica", "Arial";
+  font: 300 30px/50px "Lato", "Helvetica", "Arial";
   margin-bottom: 20px;
   color: white; }
   p strong {
@@ -49,3 +49,8 @@ img {
   width: 500px;
   margin-bottom: 15px;
   max-width: 100%; }
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+    line-height: 50px; } }
