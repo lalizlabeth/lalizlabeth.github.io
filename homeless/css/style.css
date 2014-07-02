@@ -1,0 +1,36 @@
+body {
+  background: #03c5e3; }
+
+#wrapper {
+  width: 75%;
+  margin: 0 auto; }
+
+h1,
+h2 {
+  font: 400 70px/90px "Oswald";
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 18px;
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.5); }
+
+h2 {
+  font: 400 40px/90px "Oswald";
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 18px;
+  letter-spacing: 0.05em; }
+
+hr {
+  border: none;
+  border-bottom: 3px solid white; }
+
+p {
+  font: 100 30px/50px "Lato", "Helvetica", "Arial";
+  margin-bottom: 20px;
+  color: white; }
+  p strong {
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
