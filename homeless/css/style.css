@@ -47,4 +47,5 @@ img {
   box-shadow: 0 0 6px 0px rgba(0, 0, 0, 0.5);
   display: block;
   width: 500px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  max-width: 100%; }
