@@ -136,8 +136,31 @@
   		$("#left-eye").contents().find(".cards").animate({scrollRight: 250}, 800);
   	}
 
-    function playVideo() {
-      $("#video").attr('src', $("#video", parent).attr('src') + '?autoplay=1');
+    var player;
+    function onYouTubePlayerAPIReady() {
+        player = new YT.Player('video', {
+          events: {
+            'onReady': onPlayerReady
+          }
+        });
+    }
+    function onPlayerReady(event){
+      event.target.playVideo();
+        document.id("escolta").addEvent('click', function() {
+          player.playVideo();
+        });
+        document.id("pausa").addEvent('click', function() {
+          player.stopVideo();
+        });
+      }
+    var tag = document.createElement('script');
+    tag.src = "//www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+    function playVideo2() {
+      player.playVideo();
       // $("#video-play")[0].src += "&autoplay=1";
       // $(this).unbind("click");//or some other way to make sure that this only happens once
     }
