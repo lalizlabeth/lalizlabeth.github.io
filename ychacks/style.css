@@ -77,8 +77,6 @@ h5 {
 	margin-top: 125px;
 	margin-left: 15px;
 	float: left;
-	overflow-x: scroll;
-	overflow-y: hidden;
 	width: 10000px;
 	box-sizing: border-box;
 }
