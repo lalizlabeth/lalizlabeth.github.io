@@ -5,7 +5,8 @@ html {
 	overflow-y: hidden;
 }
 
-iframe {
+#left-eye,
+#right-eye {
 	height: 100%;
 	width: 50%;
 	outline: none;
