@@ -1,6 +1,7 @@
 body,
 html {
 	height: 100%;
+	background: rgba(255, 255, 255, 0.5);
 }
 
 #left-eye,
@@ -13,7 +14,6 @@ html {
 	outline: none;
 	border: none;
 	float: left;
-	background: rgba(255, 255, 255, 0.5);
 	-moz-perspective: 1600px;
   -webkit-perspective: 1600px;
   perspective: 1600px;
@@ -41,13 +41,22 @@ html {
 	width: 40px;
 	height: 40px;
 	background-size: cover;
+	opacity: 1.0;
+}
+
+.logo-right {
+	left: 50%;
 }
 
 .text {
 	position: fixed;
-	width: 100%;
+	width: 50%;
 	left: 0;
 	top: 0;
+}
+
+.text-right {
+	left: 50%;
 }
 
 h1 {
