@@ -3,10 +3,18 @@
   <head>
   	<link href="reset.css" rel="stylesheet">
   	<link href="style.css" rel="stylesheet">
+
   </head>
 
   <body>
   	<iframe src="view.html" id="left-eye"></iframe>
   	<iframe src="view.html" id="right-eye"></iframe>
   </body>
+
+  <script src="jquery-1.7.1.min.js"></script>
+  <script>
+  	function changeBackground() {
+  		$('iframe').css('background-color', 'yellow');
+  	}
+  </script>
 </html>

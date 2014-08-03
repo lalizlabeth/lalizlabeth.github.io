@@ -2,7 +2,6 @@ body,
 html {
 	height: 100%;
 	overflow-x: scroll;
-	overflow-y: hidden;
 }
 
 iframe {
@@ -12,6 +11,9 @@ iframe {
 	border: none;
 	float: left;
 	background: rgba(255, 255, 255, 0.5);
+	-moz-perspective: 1600px;
+  -webkit-perspective: 1600px;
+  perspective: 1600px;
 }
 
 #left-eye {
@@ -72,15 +74,21 @@ h3 {
 	box-sizing: border-box;
 }
 
-.vertical-card {
+.cards li {
+	float: left;
 	background: #ddd;
 	margin-right: 15px;
-	height: 100%;
-	width: 250px;
 	border-radius: 10px;
-	float: left;
 }
 
+.vertical-card {
+	height: 100%;
+	width: 250px;
+}
+
+.horizontal-card {
+	width: 500px;
+}
 
 
 
