@@ -50,9 +50,13 @@ html {
 
 .text {
 	position: fixed;
-	width: 100%;
+	width: 50%;
 	left: 0;
 	top: 0;
+}
+
+.text-right {
+	left: 50%;
 }
 
 h1 {
