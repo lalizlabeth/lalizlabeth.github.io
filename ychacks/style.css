@@ -105,13 +105,13 @@ p {
 	padding: 30px 20px;
 }
 
-.vertical-card {
+.cards li.vertical-card {
 	height: 100%;
 	width: 250px;
 	padding: 30px 20px;
 }
 
-.horizontal-card {
+.cards li.horizontal-card {
 	width: 300px;
 }
 
