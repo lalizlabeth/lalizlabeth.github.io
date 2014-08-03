@@ -5,6 +5,7 @@ html {
 
 #left-eye,
 #right-eye {
+	position: relative;
 	overflow-x: scroll;
 	overflow-y: hidden;
 	height: 100%;
@@ -33,7 +34,7 @@ html {
 }
 
 .logo {
-	position: fixed;
+	position: absolute;
 	left: 5px;
 	top: 5px;
 	background: url(img/logo.png);
