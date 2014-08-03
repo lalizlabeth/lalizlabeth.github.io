@@ -136,11 +136,14 @@
   		$("#left-eye").animate({scrollLeft: 250}, 500);
       $("#right-eye").animate({scrollLeft: 250}, 500);
   	}
+    window.scrollRight = scrollRight;
 
     function scrollLeft() {
       $("#left-eye").animate({scrollLeft: -250}, 500);
       $("#right-eye").animate({scrollLeft: -250}, 500);
     }   
+
+    window.scrollLeft = scrollLeft;
 
     function playVideo() {
       // $("#video-play")[0].src += "&autoplay=1";

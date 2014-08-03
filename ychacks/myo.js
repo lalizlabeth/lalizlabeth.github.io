@@ -3,8 +3,10 @@ socket.onmessage = function(event) {
   pose = JSON.parse(event.data)[1]["pose"];
   if (pose === "wave_out") {
     console.log("WAVED OUT");
+    scrollRight();
   } else if (pose === "wave_in") {
     console.log("WAVED IN");
+    scrollLeft();
   } else if (pose === "fist") {
     console.log("FIST");
   }
