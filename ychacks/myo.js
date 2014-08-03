@@ -7,8 +7,9 @@ socket.onmessage = function(event) {
   } else if (pose === "wave_in") {
     console.log("WAVED IN");
     scrollLeft();
-  } else if (pose === "fist") {
+  } else if (pose === "fist" || pose === "thumb_to_pinky" || pose === "fingers_spread") {
     console.log("FIST");
+    playVideo();
   }
 };
 socket.onopen = function(event) {

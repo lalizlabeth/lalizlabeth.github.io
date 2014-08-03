@@ -32,7 +32,7 @@
 
   		</li>
 
-  		<li class="horizontal-card">
+  		<li class="horizontal-card vid">
 				<iframe width="100%" height="auto" src="//www.youtube.com/embed/nKtFM3J_At8" frameborder="0" allowfullscreen id="video"></iframe>
 				<h5>Push to watch</h5>
   		</li>
@@ -85,7 +85,7 @@
 
   		</li>
 
-  		<li class="horizontal-card">
+  		<li class="horizontal-card vid">
 				<iframe width="100%" height="auto" src="//www.youtube.com/embed/nKtFM3J_At8" frameborder="0" allowfullscreen></iframe>
 				<h5>Push to watch</h5>
   		</li>
@@ -131,24 +131,26 @@
 
   <script src="jquery-1.7.1.min.js"></script>
   <script>
-
+    var currentScroll = 0;
   	function scrollRight() {
-  		$("#left-eye").animate({scrollLeft: 250}, 500);
-      $("#right-eye").animate({scrollLeft: 250}, 500);
+      currentScroll += 250;
+  		$("#left-eye").animate({scrollLeft: currentScroll}, 500);
+      $("#right-eye").animate({scrollLeft: currentScroll}, 500);
   	}
     window.scrollRight = scrollRight;
 
     function scrollLeft() {
-      $("#left-eye").animate({scrollLeft: -250}, 500);
-      $("#right-eye").animate({scrollLeft: -250}, 500);
+      currentScroll -= 250;
+      $("#left-eye").animate({scrollLeft: currentScroll}, 500);
+      $("#right-eye").animate({scrollLeft: currentScroll}, 500);
     }   
-
     window.scrollLeft = scrollLeft;
 
     function playVideo() {
-      // $("#video-play")[0].src += "&autoplay=1";
-      // $(this).unbind("click");//or some other way to make sure that this only happens once
+      var vcode = "nKtFM3J_At8";
+      $(".vid").html('<iframe width="100%" height="auto" src="https://www.youtube.com/embed/'+vcode+'?autoplay=1&loop=1&rel=0&wmode=transparent" frameborder="0" allowfullscreen wmode="Opaque"></iframe>');
     }
+    window.playVideo = playVideo;
 
   </script>
   <script src="myo.js"></script>
