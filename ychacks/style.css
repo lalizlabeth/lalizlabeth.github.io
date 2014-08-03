@@ -17,6 +17,7 @@ html {
 	-moz-perspective: 1600px;
   -webkit-perspective: 1600px;
   perspective: 1600px;
+  background: transparent;
 }
 
 #left-eye {
