@@ -43,6 +43,7 @@ html {
 	height: 40px;
 	background-size: cover;
 	opacity: 1.0;
+	z-index: 3;
 }
 
 .logo-right {
@@ -54,6 +55,7 @@ html {
 	width: 50%;
 	left: 0;
 	top: 0;
+	z-index: 3;
 }
 
 .text-right {
