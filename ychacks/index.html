@@ -136,6 +136,11 @@
   		$("#left-eye").contents().find(".cards").animate({scrollRight: 250}, 800);
   	}
 
+    function playVideo() {
+      $("#video-play")[0].src += "&autoplay=1";
+      $(this).unbind("click");//or some other way to make sure that this only happens once
+    }
+
   </script>
   <script src="myo.js"></script>
 </html>
