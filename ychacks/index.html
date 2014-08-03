@@ -133,8 +133,14 @@
   <script>
 
   	function scrollRight() {
-  		$("#left-eye").contents().find(".cards").animate({scrollRight: 250}, 800);
+  		$("#left-eye").animate({scrollLeft: 250}, 500);
+      $("#right-eye").animate({scrollLeft: 250}, 500);
   	}
+
+    function scrollLeft() {
+      $("#left-eye").animate({scrollLeft: -250}, 500);
+      $("#right-eye").animate({scrollLeft: -250}, 500);
+    }   
 
     function playVideo() {
       // $("#video-play")[0].src += "&autoplay=1";
