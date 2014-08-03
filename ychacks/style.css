@@ -1,6 +1,8 @@
 body,
 html {
 	height: 100%;
+	overflow-x: scroll;
+	overflow-y: hidden;
 }
 
 iframe {
@@ -14,10 +16,16 @@ iframe {
 
 #left-eye {
 	/*background: blue;*/
+	-moz-perspective-origin: 63.5% -340px;
+  -webkit-perspective-origin: 63.5% -340px;
+  perspective-origin: 63.5% -340px;
 }
 
 #right-eye {
 	/*background: red;*/
+	-moz-perspective-origin: 36.5% -340px;
+  -webkit-perspective-origin: 36.5% -340px;
+  perspective-origin: 36.5% -340px;
 }
 
 .logo {
@@ -25,9 +33,16 @@ iframe {
 	left: 10px;
 	top: 10px;
 	background: url(img/logo.png);
-	width: 75px;
-	height: 75px;
+	width: 60px;
+	height: 60px;
 	background-size: cover;
+}
+
+.text {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
 }
 
 h1 {
@@ -38,20 +53,23 @@ h1 {
 h1,
 h3 {
 	color: #555;
-	font: 500 30px "Montserrat";
+	font: 500 25px "Montserrat";
 	text-align: center;
 }
 
 h3 {
-	font-size: 15px;
+	font-size: 10px;
 }
 
 .cards {
-	margin-top: 50px;
+	margin-top: 125px;
 	margin-left: 15px;
-	overflow: hidden;
 	float: left;
 	height: 600px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	width: 10000px;
+	box-sizing: border-box;
 }
 
 .vertical-card {
