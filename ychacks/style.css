@@ -1,0 +1,12 @@
+iframe {
+	height: 100%;
+	width: 50%;
+}
+
+#left-eye {
+	background: blue;
+}
+
+#rgith-eye {
+	background: red;
+}
