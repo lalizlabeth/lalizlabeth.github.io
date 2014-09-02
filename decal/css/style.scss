@@ -55,6 +55,81 @@ hr {
   margin-bottom: 30px;
 }
 
+// Application 
+form {
+  padding: 30px 20%;
+}
+.ss-item {
+  margin-bottom: 25px;
+}
+.ss-q-title {
+  font: bold 20px/27px "Lato", "Helvetica", "Arial", sans-serif;
+  a {
+    color: #0FBEEB;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+.ss-q-help,
+.ss-secondary-text {
+  font: bold 17px/21px "Lato", "Helvetica", "Arial", sans-serif;
+  margin-bottom: 10px;
+  color: #777;
+}
+.ss-choice-label {
+  font: 300 17px/25px "Lato", "Helvetica", "Arial", sans-serif;
+  margin-bottom: 10px;
+}
+.ss-required-asterisk {
+  color: red;
+}
+.required-message {
+  display: none;
+}
+.error-message {
+  color: red;
+  font: 15px "Lato", "Helvetica", "Arial", sans-serif;
+  margin-top: 5px;
+  display: none;
+}
+
+.ss-q-short,
+.ss-q-long {
+  outline: none;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  font-family: "Lato";
+  &:focus {
+    border: 1px solid #0FBEEB;
+  }
+}
+#ss-submit {
+  cursor: pointer;
+  font: 20px bebas-neue, "Bebas Neue", "Helvetica", "Arial";
+  display: block;
+  text-decoration: none;
+  background: $yellow1;
+  padding: 10px 20px;
+  color: $black;
+  width: 200px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: none;
+  border-bottom: #d7cd00 5px solid;
+  border-radius: 10px;
+  &:hover,
+  &:active {
+    border-bottom: #d7cd00 2px solid;
+  }
+}
+
+.ss-q-long {
+  width: 100%;
+}
+
 // Home Page
 header {
   width: 100%;
