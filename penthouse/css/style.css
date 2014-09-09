@@ -5,7 +5,10 @@ html {
 
 article {
   background: #fff;
-  width: 100%; }
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 15%;
+  overflow: hidden; }
 
 #navigation {
   background: #febe10;
@@ -19,7 +22,10 @@ article {
   #navigation.hidden {
     opacity: 0; }
   #navigation li {
-    display: inline-block; }
+    display: inline-block;
+    margin: 0; }
+    #navigation li.logo {
+      margin-right: 20px; }
     #navigation li a {
       display: block;
       padding: 20px;
@@ -31,19 +37,23 @@ article {
       #navigation li.logo a:hover {
         color: #000b1f; }
     #navigation li.nav-item a {
-      font: normal 13px "Lato", sans-serif;
+      font: normal 14px "Lato", sans-serif;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       text-decoration: none; }
+      #navigation li.nav-item a:hover {
+        color: #000b1f; }
 
 #intro {
   width: 100%;
   height: 100%;
   background: url("../images/intro-bg.png") center center;
-  background-size: cover; }
+  background-size: cover;
+  padding: 0; }
 
-#why {
-  height: 100%; }
+#story {
+  margin-top: 120px;
+  min-height: 100%; }
 
 .title-box {
   background: white;
@@ -70,17 +80,52 @@ article {
   margin-left: auto;
   margin-right: auto; }
 
+.headline,
+.details {
+  float: left; }
+
+.headline {
+  width: 34%;
+  text-align: right;
+  margin-right: 4%; }
+
+.details {
+  width: 62%;
+  text-align: left;
+  padding-top: 12px; }
+
 h1,
-h2 {
+h2,
+p,
+h3,
+li {
   color: #003462; }
 
 h1.logo {
   font: 900 italic 50px/60px "Playfair Display", serif; }
+h1.section-header {
+  font: 900 italic 50px/60px "Playfair Display", serif;
+  margin-bottom: 10px; }
 
 h2.subtitle {
   font: normal 18px/40px "Lato", sans-serif;
   letter-spacing: 0.2em;
   text-transform: uppercase; }
+
+h3 {
+  font: 900 22px/28px "Lato", sans-serif;
+  margin-top: 22px;
+  margin-bottom: 5px; }
+
+li,
+p {
+  font: normal 19px/28px "Lato", sans-serif; }
+
+li {
+  list-style-type: circle;
+  margin-left: 28px;
+  font-size: 15px;
+  margin-top: 5px; }
 
 @media screen and (max-width: 580px) {
   .title-box {
@@ -91,6 +136,10 @@ h2.subtitle {
     .title-box h2.subtitle {
       font-size: 12px;
       line-height: 30px; } }
+@media screen and (max-width: 1000px) {
+  .headline,
+  .details {
+    width: 100%; } }
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: translateY(0);
