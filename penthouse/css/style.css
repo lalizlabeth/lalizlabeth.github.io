@@ -165,7 +165,16 @@ img {
     width: 100%; } }
 @media screen and (max-width: 480px) {
   #navigation {
-    display: none; } }
+    display: none; }
+
+  .title-box {
+    width: 300px; }
+
+  h2.subtitle {
+    font-size: 11px; }
+
+  .triangle {
+    bottom: 50px; } }
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: translateY(0);
