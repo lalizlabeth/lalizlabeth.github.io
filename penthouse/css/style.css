@@ -129,6 +129,13 @@ p {
   p strong {
     font-weight: 900; }
 
+p.small {
+  text-align: center;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 0 10px;
+  margin-bottom: 20px; }
+
 .list {
   margin: 10px; }
   .list li {

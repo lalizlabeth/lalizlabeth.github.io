@@ -165,6 +165,14 @@ p {
   }
 }
 
+p.small {
+  text-align: center;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
 .list {
   li {
     list-style-type: circle;
