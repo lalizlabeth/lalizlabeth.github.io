@@ -170,6 +170,12 @@ img {
   .title-box {
     width: 300px; }
 
+  #story {
+    margin-top: 20px; }
+
+  h1.logo {
+    font-size: 38px; }
+
   h2.subtitle {
     font-size: 11px; }
 
