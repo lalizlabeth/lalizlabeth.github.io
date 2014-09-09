@@ -20,7 +20,8 @@ article {
   display: block;
   transition: 0.5s; }
   #navigation.hidden {
-    opacity: 0; }
+    opacity: 0;
+    visibility: hidden; }
   #navigation li {
     display: inline-block;
     margin: 0; }
@@ -109,8 +110,9 @@ h1.section-header {
 
 h2.subtitle {
   font: normal 18px/40px "Lato", sans-serif;
-  letter-spacing: 0.2em;
-  text-transform: uppercase; }
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  word-spacing: 7px; }
 
 h3 {
   font: 900 22px/28px "Lato", sans-serif;

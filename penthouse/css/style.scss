@@ -28,6 +28,7 @@ article {
   opacity: 1.0;
   &.hidden {
     opacity: 0;
+    visibility: hidden;
   }
   position: fixed;
   top: 0;
@@ -141,8 +142,9 @@ h1 {
 h2 {
   &.subtitle {
     font: normal 18px/40px "Lato", sans-serif;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
+    word-spacing: 7px;
   }
 }
 
