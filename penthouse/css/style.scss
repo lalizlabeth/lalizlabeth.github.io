@@ -21,6 +21,7 @@ article {
   box-sizing: border-box;
   padding: 0 15%;
   overflow: hidden;
+  margin-bottom: 100px;
 }
 
 #navigation {
@@ -44,7 +45,7 @@ article {
     }
     a {
       display: block;
-      padding: 20px;
+      padding: 20px 30px;
       line-height: 20px;
       color: $navy;
     }
@@ -73,11 +74,11 @@ article {
   background: url("../images/intro-bg01.png") center center;
   background-size: cover;
   padding: 0;
+  margin: 0;
 }
 
 #story {
   padding-top: 120px;
-  min-height: 100%;
 }
 
 .title-box {
@@ -150,20 +151,41 @@ h2 {
 
 h3 {
   font: 900 22px/28px "Lato", sans-serif;
-  margin-top: 22px;
+  margin-top: 35px;
   margin-bottom: 5px;
 }
-
 li,
 p {
   font: normal 19px/28px "Lato", sans-serif;
+  strong {
+    font-weight: 900;
+  }
 }
 
-li {
-  list-style-type: circle;
-  margin-left: 28px;
-  font-size: 15px;
-  margin-top: 5px;
+.list {
+  li {
+    list-style-type: circle;
+    margin-left: 28px;
+    font-size: 15px;
+    margin-top: 5px;
+    line-height: 20px;
+    a {
+      color: $navy;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  margin: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
 }
 
 @media screen and (max-width: 580px) {
@@ -189,6 +211,8 @@ li {
 
 // Animations
 
+// Bounce animation...
+// Thank you, http://codepen.io/dodozhang21/pen/siKtp
 @mixin keyframes($name) {
   @-webkit-keyframes #{$name} {
     @content; 
