@@ -14,3 +14,15 @@ $(function() {
     }
   });
 });
+
+
+// Navigation appears
+$(window).scroll(function() {
+  var scrollHeight = $(document).scrollTop();
+  var bodyHeight = $("body").height();
+  if (scrollHeight >= bodyHeight) {
+    $("#navigation").removeClass("hidden");
+  } else {
+    $("#navigation").addClass("hidden");
+  }
+});
