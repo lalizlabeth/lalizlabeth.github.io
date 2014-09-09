@@ -9,7 +9,7 @@ article {
   box-sizing: border-box;
   padding: 0 15%;
   overflow: hidden;
-  margin-bottom: 100px; }
+  margin-bottom: 125px; }
 
 #navigation {
   background: #febe10;
@@ -119,6 +119,8 @@ h3 {
   font: 900 22px/28px "Lato", sans-serif;
   margin-top: 35px;
   margin-bottom: 5px; }
+  h3.first {
+    margin-top: 0; }
 
 li,
 p {
@@ -161,6 +163,9 @@ img {
   .headline,
   .details {
     width: 100%; } }
+@media screen and (max-width: 480px) {
+  #navigation {
+    display: none; } }
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: translateY(0);
