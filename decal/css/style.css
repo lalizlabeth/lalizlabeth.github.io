@@ -157,20 +157,14 @@ header {
   width: calc(100% / 6); }
   .thumbnail a.shade1 {
     background: #fff200; }
-    .thumbnail a.shade1.not-active {
-      background: rgba(0, 0, 0, 0.5); }
   .thumbnail a.shade2 {
     background: rgba(255, 242, 0, 0.75); }
-    .thumbnail a.shade2.not-active {
-      background: rgba(0, 0, 0, 0.3); }
   .thumbnail a.shade3 {
     background: rgba(255, 242, 0, 0.5); }
-    .thumbnail a.shade3.not-active {
-      background: rgba(0, 0, 0, 0.4); }
   .thumbnail a.shade4 {
     background: rgba(255, 242, 0, 0.25); }
-    .thumbnail a.shade4.not-active {
-      background: rgba(0, 0, 0, 0.1); }
+  .thumbnail a.not-active {
+    opacity: 0.5; }
   .thumbnail a .lesson-number {
     position: relative;
     font-family: bebas-neue, "Bebas Neue", "Helvetica", "Arial", sans-serif;

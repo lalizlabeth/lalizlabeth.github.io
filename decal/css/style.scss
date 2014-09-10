@@ -202,27 +202,19 @@ header {
 
   &.shade1 {
     background: $yellow1;
-    &.not-active {
-      background: $gray1;
-    }
   }
   &.shade2 {
     background: $yellow2;
-    &.not-active {
-      background: $gray2;
-    }
   }
   &.shade3 {
     background: $yellow3;
-    &.not-active {
-      background: $gray3;
-    }
   }
   &.shade4 {
     background: $yellow4;
-    &.not-active {
-      background: $gray4;
-    }
+  }
+
+  &.not-active {
+    opacity: 0.5;
   }
 
 
