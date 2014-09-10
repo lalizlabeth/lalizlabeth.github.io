@@ -4,6 +4,11 @@ $yellow3: rgba(255, 242, 0, 0.5);
 $yellow4: rgba(255, 242, 0, 0.25);
 $black: rgba(13, 13, 13, 1.0);
 
+$gray1: rgba(0, 0, 0, 0.5);
+$gray2: rgba(0, 0, 0, 0.3);
+$gray3: rgba(0, 0, 0, 0.4);
+$gray4: rgba(0, 0, 0, 0.1);
+
 // Settings for sticky footer
 * {
   margin: 0;
@@ -197,16 +202,29 @@ header {
 
   &.shade1 {
     background: $yellow1;
+    &.not-active {
+      background: $gray1;
+    }
   }
   &.shade2 {
     background: $yellow2;
+    &.not-active {
+      background: $gray2;
+    }
   }
   &.shade3 {
     background: $yellow3;
+    &.not-active {
+      background: $gray3;
+    }
   }
   &.shade4 {
     background: $yellow4;
+    &.not-active {
+      background: $gray4;
+    }
   }
+
 
   .lesson-number {
     position: relative;
