@@ -12,6 +12,7 @@ $black: rgba(13, 13, 13, 1.0);
 html,
 body {
   height: 100%;
+  padding-bottom: 100px;
 }
 
 .page-wrapper {
@@ -370,10 +371,10 @@ section {
     width: 80px;
     height: 80px;   
     position: absolute;
-    -webkit-transition: top 1s ease-out;
-    -firefox-transition: top 1s ease-out;
-    -o-transition: top 1s ease-out;
-    transition: top 1s ease-out; 
+    -webkit-transition: top 0.25s ease-out;
+    -firefox-transition: top 0.25s ease-out;
+    -o-transition: top 0.25s ease-out;
+    transition: top 0.25s ease-out; 
     a {
       height: 100%;
       width: 100%;
