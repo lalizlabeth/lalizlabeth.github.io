@@ -297,7 +297,7 @@ p {
 }
 
 /* Responsive modules */
-$module-sizes: (xsmall small medium large xlarge);
+$module-sizes: (xxsmall xsmall small medium large xlarge);
 $box_height: 400px;
 $tall_box_height: 550px;
 
@@ -469,6 +469,10 @@ $tall_box_height: 550px;
       height: $tall_box_height/2;;
     }
   }
+}
+
+.xxsmall-module {
+  width: 16.66%;
 }
 
 .xsmall-group,
@@ -712,7 +716,7 @@ $tall_box_height: 550px;
 }
 
 .footer-buttons {
-  .xsmall-module {
+  .xxsmall-module {
     height: auto;
     padding: 0;
   }
@@ -1231,7 +1235,7 @@ $tall_box_height: 550px;
     }
   }
   .footer-buttons {
-    .xsmall-module {
+    .xxsmall-module {
       width: 100%;
     }
   }
