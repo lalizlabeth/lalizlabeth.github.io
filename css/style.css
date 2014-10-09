@@ -899,6 +899,14 @@ p {
   .white.footer, .white.intro-module, .white.video-module, .white.xlarge-text-only-module, .white.page-header, .white.text-module,
   .white.xlarge-module-tall {
     background: white; }
+    .module.white p, .white.xsmall-module p,
+    .white.xsmall-module-tall p, .white.small-module p, .white.small-text-only-module p,
+    .white.small-module-tall p, .white.medium-module p,
+    .white.medium-module-tall p, .white.large-module p, .white.large-text-only-module p,
+    .white.large-module-tall p, .white.xlarge-module p, .white.headline p,
+    .white.footer p, .white.intro-module p, .white.video-module p, .white.xlarge-text-only-module p, .white.page-header p, .white.text-module p,
+    .white.xlarge-module-tall p {
+      color: #42393c; }
     .module.white h2, .white.xsmall-module h2,
     .white.xsmall-module-tall h2, .white.small-module h2, .white.small-text-only-module h2,
     .white.small-module-tall h2, .white.medium-module h2,

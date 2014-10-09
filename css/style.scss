@@ -350,6 +350,9 @@ $tall_box_height: 550px;
   }
   &.white {
     background: $white;
+    p {
+      color: $gray;
+    }
     h2 {
       color: $gray;
       margin-bottom: 10px;
