@@ -61,9 +61,10 @@ header {
 #instafeed {
     text-align: center;
     a {
-        background: blue;
         display: inline-block;
-        width: 350px;
-        height: 350px;
+        img {
+            width: 350px;
+            height: 350px;
+        }
     }
 }
