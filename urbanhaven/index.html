@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:fb="http://ogp.me/ns/fb#">
+  <head>
+    <meta http-equiv="Content-type" content="small-module-text/html" charset="utf-8">
+    <title>Urban Haven SF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Elizabeth Lin">
+
+    <meta property="og:title" content="UrbanHavenSF" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="http://www.elizabethylin.com/urbanhaven" />
+    <meta property="og:description" content="Urban Haven SF" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+    <!-- Stylesheets -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <div id="instafeed"></div>
+  </body>
+
+  <script src="scripts/jquery-1.7.1.min.js"></script>
+  <script src="scripts/instafeed.js"></script>
+  <script type="text/javascript">
+      var feed = new Instafeed({
+          get: 'tagged',
+          tagName: 'urbanhavensf',
+          clientId: '6247f78e9c11458d933c82dedad184cb'
+      });
+      feed.run();
+  </script>
+
+</html>
