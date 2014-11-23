@@ -56,6 +56,18 @@ header {
     height: 600px;
     background: url("http://giant.gfycat.com/FavoriteIdealisticGull.gif");
     background-size: cover;
+    text-align: center;
+}
+
+.hashtag {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background: url(../img/hashtag.png) no-repeat no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 article {
