@@ -44,3 +44,6 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+header {
+  background: url(../img/text1.gif); }
