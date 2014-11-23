@@ -55,9 +55,10 @@ header {
   background-size: cover; }
 
 #instafeed {
+  margin-top: 25px;
   text-align: center; }
   #instafeed a {
     display: inline-block; }
     #instafeed a img {
-      width: 350px;
-      height: 350px; }
+      width: 300px;
+      height: 300px; }

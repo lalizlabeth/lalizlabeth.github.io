@@ -59,12 +59,13 @@ header {
 }
 
 #instafeed {
+    margin-top: 25px;
     text-align: center;
     a {
         display: inline-block;
         img {
-            width: 350px;
-            height: 350px;
+            width: 300px;
+            height: 300px;
         }
     }
 }
