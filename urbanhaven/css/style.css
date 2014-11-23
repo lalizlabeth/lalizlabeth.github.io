@@ -54,8 +54,22 @@ header {
   background: url("http://giant.gfycat.com/FavoriteIdealisticGull.gif");
   background-size: cover; }
 
+article {
+  text-align: center;
+  margin-top: 30px; }
+
+h1,
+h2 {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif; }
+
+h1 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  text-transform: uppercase; }
+
 #instafeed {
-  margin-top: 25px;
+  margin: 25px 0;
   text-align: center; }
   #instafeed a {
     display: inline-block; }
