@@ -57,3 +57,13 @@ header {
     background: url(../img/background.gif);
     background-size: cover;
 }
+
+#instafeed {
+    text-align: center;
+    a {
+        background: blue;
+        display: inline-block;
+        width: 350px;
+        height: 350px;
+    }
+}
