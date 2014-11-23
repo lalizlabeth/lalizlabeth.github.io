@@ -55,6 +55,7 @@ html {
 header {
     height: 600px;
     background: url("http://giant.gfycat.com/FavoriteIdealisticGull.gif");
+    background-position: center;
     background-size: cover;
     text-align: center;
 }
@@ -68,6 +69,23 @@ header {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: right;
+    li {
+        padding: 10px 20px;
+        display: inline-block;
+        a {
+            color: white;
+            font-family: "Montserrat";
+            font-weight: 300;  
+        }
+    }
 }
 
 article {
