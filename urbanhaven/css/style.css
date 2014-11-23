@@ -45,5 +45,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body,
+html {
+  width: 100%; }
+
 header {
-  background: url(../img/text1.gif); }
+  height: 600px;
+  background: url(../img/background.gif);
+  background-size: cover; }
