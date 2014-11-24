@@ -67,29 +67,6 @@
           limit: '3'
       });
       feed.run();
-
-      $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html,body').animate({
-                scrollTop: target.offset().top
-              }, 500);
-              return false;
-            }
-          }
-        });
-      });
-
-      $(window).scroll(function() {
-        var scrollHeight = $(document).scrollTop();
-        if (scrollHeight === "600px") {
-          console.log("hi");
-        } else {
-      });
-
   </script>
 
 </html>
