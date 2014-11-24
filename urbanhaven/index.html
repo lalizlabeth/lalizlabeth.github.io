@@ -39,10 +39,16 @@
     </header>
 
     <article>
+      <h1>The Story</h1>
+      <h2></h2>
+    </article>
+
+    <article>
       <h1>Join the movement</h1>
-      <h2>Follow the story at #urbanhavensf...</h2>
+      <h2>Follow the story at <span class="orange">#urbanhavensf</span>...</h2>
       <div id="instafeed"></div>
     </article>
+
   </body>
 
   <script src="scripts/jquery-1.7.1.min.js"></script>
@@ -53,7 +59,7 @@
           tagName: 'urbanhavensf',
           clientId: '6247f78e9c11458d933c82dedad184cb',
           resolution: 'low_resolution',
-          limit: '4'
+          limit: '3'
       });
       feed.run();
   </script>
