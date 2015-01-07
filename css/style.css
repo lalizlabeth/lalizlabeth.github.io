@@ -1116,7 +1116,8 @@ p {
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); }
 
 .display-image-vertical img {
-  width: 45%; }
+  width: 45%;
+  display: inline-block; }
 
 .headline,
 .footer {
