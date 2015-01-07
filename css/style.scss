@@ -444,8 +444,7 @@ $tall_box_height: 550px;
   }
 }
 
-.headline,
-.footer {
+.headline {
   @extend .xlarge-module;
   height: auto;
   text-align: center;
@@ -461,8 +460,30 @@ $tall_box_height: 550px;
 }
 
 .footer {
-  &:hover {
-    opacity: 0.85;
+  a {
+    @extend h3;
+    box-sizing: border-box;
+    height: auto;
+    text-align: center;
+    float: left;
+    width: 50%;
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    background: $pink;
+    &:hover {
+      opacity: 0.85;
+    }
+    em {
+      @extend h2;
+      display: block;
+    }
+    &.next {
+      border-left: 2px solid white;
+    }
+    &.previous {
+      border-right: 2px solid white;
+    }
   }
 }
 
@@ -708,6 +729,7 @@ $tall_box_height: 550px;
     }
   }
   a {
+    padding: 0;
     display: inline;
     font-weight: 400;
   }
