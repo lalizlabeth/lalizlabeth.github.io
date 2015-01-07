@@ -1128,6 +1128,10 @@ figcaption {
 .display-image-vertical img {
   width: 45%;
   display: inline-block; }
+  .display-image-vertical img.left {
+    margin-right: 10px; }
+  .display-image-vertical img.right {
+    margin-left: 10px; }
 
 .headline,
 .footer {

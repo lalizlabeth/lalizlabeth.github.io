@@ -435,6 +435,12 @@ $tall_box_height: 550px;
     @extend img.display-image;
     width: 45%;
     display: inline-block;
+    &.left {
+      margin-right: 10px;
+    }
+    &.right {
+      margin-left: 10px;
+    }
   }
 }
 
