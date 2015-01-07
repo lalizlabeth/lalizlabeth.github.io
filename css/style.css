@@ -150,7 +150,7 @@ body {
 
 /* Typography */
 h1, h2, .headline a,
-.footer a, h3, h4, h5, h6, p, a, li {
+.footer a, h3, h4, h5, h6, p, a, li, figcaption {
   font-family: "Alegreya Sans", "Helvetica", "Arial", sans-serif;
   color: white; }
 
@@ -212,6 +212,16 @@ p {
     font-weight: 400; }
   p em {
     text-decoration: underline; }
+
+figcaption {
+  color: #42393c;
+  display: block;
+  margin: 0 15% 20px 15%;
+  line-height: 24px; }
+  figcaption.title {
+    margin-bottom: 0; }
+  figcaption strong {
+    font-weight: 900; }
 
 /* Search */
 #search {

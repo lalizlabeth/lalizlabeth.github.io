@@ -187,7 +187,7 @@ $navigation_height: 65px;
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6, p, a, li {
+h1, h2, h3, h4, h5, h6, p, a, li, figcaption {
   font-family: "Alegreya Sans", "Helvetica", "Arial", sans-serif;
   color: $white;
 }
@@ -262,6 +262,19 @@ p {
   }
   em {
     text-decoration: underline;
+  }
+}
+
+figcaption {
+  color: $gray;
+  display: block;
+  margin: 0 15% 20px 15%;
+  line-height: 24px;
+  &.title {
+    margin-bottom: 0;
+  }
+  strong {
+    font-weight: 900;
   }
 }
 
