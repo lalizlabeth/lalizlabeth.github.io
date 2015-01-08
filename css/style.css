@@ -1735,6 +1735,10 @@ figcaption {
   background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/leviosa.png") center white no-repeat;
   background-size: 50%; }
 
+#charmbits-intro {
+  background: url("../images/charmbits/cover.jpg") center;
+  background-size: cover; }
+
 #dataanalytics-intro {
   background: url("../images/dataanalytics/cover.jpg") center;
   background-size: cover; }
