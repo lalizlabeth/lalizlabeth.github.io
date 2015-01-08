@@ -6,13 +6,14 @@ $(document).ready(function() {
     $(".general-navigation-item").each(function(index) {
       if (navigationState === true) {
         width = -$(this).width()-$("#logo").width();
+        $("#logo").removeClass("open");
       } else {
         width = 0;
         if (index === 0) {
           width = $("#logo").width();
-        } 
+        }
+        $("#logo").addClass("open");
       }
-      $("#logo").toggleClass("open");
       $(this).css("margin-left", width);
     });
   }
