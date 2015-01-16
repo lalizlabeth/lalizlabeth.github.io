@@ -1552,6 +1552,8 @@ figcaption {
     padding: 0;
     display: inline;
     font-weight: 400; }
+    .text-module a:hover {
+      opacity: 0.8; }
   .text-module p {
     text-align: justify;
     margin-bottom: 20px;

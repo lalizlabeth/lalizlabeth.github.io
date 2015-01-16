@@ -732,6 +732,9 @@ $tall_box_height: 550px;
     padding: 0;
     display: inline;
     font-weight: 400;
+    &:hover {
+      opacity: 0.8;
+    }
   }
   p {
     text-align: justify;
