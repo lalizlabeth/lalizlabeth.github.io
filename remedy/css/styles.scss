@@ -350,6 +350,7 @@ color: white;
 	opacity: 0;
 	padding: 0;
 	position: relative;
+	min-height: 100%;
 	-webkit-animation: dc-fade-in 2s 1s forwards;
 	        animation: dc-fade-in 2s 1s forwards;
 	
@@ -404,7 +405,7 @@ color: white;
 		position: relative;
 		transform: translateY(-90%);
 		.solo-btn {
-			margin-top: 10px;
+			margin-top: 25px;
 		}
 	}
 
@@ -1158,9 +1159,17 @@ select.placeholder {
 		background-position-x: -820px;
 		.header-text {
 			padding: 20px;
+		}
+		.iphone-demo-image {
+			width: 100%;
+			height: auto;
+		}
+		.welcome {
 			position: absolute;
 			bottom: 0;
 			left: 0;
+			transform: none;
+			padding-bottom: 25px;
 		}
 		h1 {
 			font-size: 30px;

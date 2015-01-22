@@ -249,6 +249,7 @@ select:after {
   opacity: 0;
   padding: 0;
   position: relative;
+  min-height: 100%;
   -webkit-animation: dc-fade-in 2s 1s forwards;
   animation: dc-fade-in 2s 1s forwards; }
   .header h1,
@@ -291,7 +292,7 @@ select:after {
     position: relative;
     transform: translateY(-90%); }
     .header .welcome .solo-btn {
-      margin-top: 10px; }
+      margin-top: 25px; }
   .header .welcome,
   .header .header-iphone {
     display: inline-block; }
@@ -858,10 +859,16 @@ select.placeholder {
   .header {
     background-position-x: -820px; }
     .header .header-text {
-      padding: 20px;
+      padding: 20px; }
+    .header .iphone-demo-image {
+      width: 100%;
+      height: auto; }
+    .header .welcome {
       position: absolute;
       bottom: 0;
-      left: 0; }
+      left: 0;
+      transform: none;
+      padding-bottom: 25px; }
     .header h1 {
       font-size: 30px; }
     .header p {
