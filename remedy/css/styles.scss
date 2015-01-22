@@ -347,7 +347,6 @@ color: white;
 .header {
 	background: $mainColor;
 	box-sizing: border-box;
-	height: 100%;
 	opacity: 0;
 	padding: 0;
 	position: relative;
@@ -389,6 +388,10 @@ color: white;
 				border-bottom: 4px solid white;
 			}
 		}
+	}
+
+	#video-still {
+		display: none;
 	}
 
 	.welcome {
@@ -1144,10 +1147,20 @@ select.placeholder {
 		padding: 80px 5%;
 	}
 
+	#movie {
+		display: none;
+	}
+	.header #video-still {
+		display: block;
+	}
+
 	.header {
 		background-position-x: -820px;
 		.header-text {
 			padding: 20px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
 		}
 		h1 {
 			font-size: 30px;

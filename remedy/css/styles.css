@@ -246,7 +246,6 @@ select:after {
 .header {
   background: #2b3a75;
   box-sizing: border-box;
-  height: 100%;
   opacity: 0;
   padding: 0;
   position: relative;
@@ -280,6 +279,8 @@ select:after {
       font-weight: 500; }
       .header .header-text a:hover {
         border-bottom: 4px solid white; }
+  .header #video-still {
+    display: none; }
   .header .welcome {
     width: 500px;
     opacity: 0;
@@ -848,10 +849,19 @@ select.placeholder {
   section {
     padding: 80px 5%; }
 
+  #movie {
+    display: none; }
+
+  .header #video-still {
+    display: block; }
+
   .header {
     background-position-x: -820px; }
     .header .header-text {
-      padding: 20px; }
+      padding: 20px;
+      position: absolute;
+      bottom: 0;
+      left: 0; }
     .header h1 {
       font-size: 30px; }
     .header p {
