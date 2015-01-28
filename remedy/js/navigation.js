@@ -27,6 +27,5 @@ $(window).scroll(function() {
 
 // Mobile menu
 $(".menu-icon").on('click', function(){
-	console.log("hi");
 	$("#nav").toggleClass("mobile-nav");
 });
