@@ -87,25 +87,25 @@
       </div>
 
       <div class="text-module white">
-        <div class="video-module">
+<!--         <div class="video-module">
           <iframe width="80%" height="100%" src="//www.youtube.com/embed/nWJMbW4dJEQ" frameborder="0" allowfullscreen></iframe>
-        </div>
+        </div> -->
         <p class="first-paragraph">This past summer, I was fortunate enough to be a Product Design intern on Khan Academy's iOS team. Over the course of three months, my team <a href="http://www.fastcodesign.com/3041180/old-fashioned-libraries-and-handwritten-notes-inside-khan-academys-new-online-education-app">launched math exercises</a> onto <a href="https://itunes.apple.com/us/app/khan-academy-learn-math-biology/id469863705?mt=8">the iPad app</a>. Because Khan gives interns a great deal of autonomy, I also had the opportunity to lead design projects outside the iOS team. These projects ranged from revamping the <a href="http://khanacademy.org/careers/interns">interns recruitment page</a> to creating <a href="https://dribbble.com/shots/1585257-Intern-Tea-Tim">invites for intern tea time</a>. Below, you'll find details about my internship.</p>
       </div>
 
       <div class="text-module white">
         <h2>iPad Math Exercise UI</h2>
-        <p class="first-paragraph">My summer-long project was to redesign different exercises types for the iPad interface. Previously, math exercises had only existed in the web app:</p>
+        <p class="first-paragraph">My summer-long project was to redesign different exercise types for the iPad interface. Previously, math exercises had only existed on web:</p>
 
         <img class="inline-image" src="images/desktop-exercise.png">
 
-        <p>This project was challenging because of the large variety of exercises. Khan Academy’s platform offers a wide spread of  math topics from basic arithmetic to linear algebra. Due to the breadth of material, Khan had to support inputs ranging from multiple choice to direct graph manipulation. My mission was to take each exercise and create a cohesive experience.</p>
+        <p class="first-paragraph">This project was challenging because of the large variety of exercises. Khan Academy offers a wide spread of math topics from basic arithmetic to linear algebra. Due to the breadth of material, Khan had to support exercises ranging from multiple choice to direct graph manipulation. My mission was to take these exercises and create a cohesive experience tailored for the iPad.</p>
 
-        <h3>Multiple Choice and Multiple Select</h3>
-        <p class="first-paragraph">My first task was to design an iPad-friendly multiple choice input. In the web app, these exercises were created for the dexterity of a cursor.</p>
+        <h3>Multiple Choice</h3>
+        <p class="first-paragraph">My first task was to redesign multiple choice exercises. On desktop, these exercises appear as a set of radio buttons. Although radio buttons work well </p>
         <img class="inline-image" src="images/exercises/multiple-choice.png">
 
-        <p class="first-paragraph">For the first pass, I created some quick mocks in Illustrator. The idea was to create inputs that were more button-like.</p>
+        <p class="first-paragraph">For my initial pass, I created some quick mocks in Illustrator. The idea was to create button-like inputs with whimsical animations.</p>
         <img class="inline-image" src="images/exercises/multiple-choice-mock.png">
 
         <p class="first-paragraph">I translated these static mockups into interactive prototypes using HTML, CSS, and JavaScript.</p>
@@ -114,7 +114,13 @@
         <p class="first-paragraph">I also modified this prototype to work for multiple select exercises.</p>
         <img class="half-width-image" src="images/exercises/multiple-select.gif">
 
+
         <h3>Dropdowns</h3>
+        <p class="first-paragraph">I tackled dropdowns using a similar process. In these iterations, I wanted to mix the default iOS pattern with the multiple choice aesthetic.</p>
+        <img class="inline-image" src="images/exercises/dropdown-iterations.png">
+
+        <p class="first-paragraph">None of these designs felt right to me. They all looked "off" for one reason or another. I decided to start from scratch. This time, I ignored the default iOS pattern and tried to maintain style consistency.</p>
+        <img class="inline-image" src="images/exercises/dropdown-iterations-2.png">
 
         <h3>Expressions</h3>
 
