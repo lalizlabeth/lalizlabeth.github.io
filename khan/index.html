@@ -24,10 +24,13 @@
         background: url(images/header.png) center;
         background-size: cover;
       }
+      .display-image,
+      .inline-image {
+        box-shadow: 0 0 3px 0 rgba(0,0,0,.2);        
+      }
       .inline-image {
         width: 100%;
         margin-bottom: 15px;
-        box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
       }
       .text-module.white h3 {
         font-style: italic;
@@ -111,7 +114,7 @@
         <p class="first-paragraph">With these static mocks in hand, I translated them into interactive prototypes using HTML, CSS, and JavaScript.</p>
         <img class="half-width-image" src="images/exercises/multiple-choice.gif">
 
-        <p class="first-paragraph">I also modified this prototype to work for multiple select exercises.</p>
+        <p class="first-paragraph">I also modified this prototype to work for multiple select exercises (checkboxes). </p>
         <img class="half-width-image" src="images/exercises/multiple-select.gif">
 
 
@@ -122,10 +125,13 @@
         <p class="first-paragraph">None of these designs felt right to me. They all looked "off" for one reason or another, so I decided to start from scratch. This time, I ignored the default iOS pattern, and instead tried to maintain a consistent style.</p>
         <img class="inline-image" src="images/exercises/dropdown-iterations-2.png">
 
-        <p class="first-paragraph">I chose a couple of designs to explore further in an interactive prototype.</p>
-        <video class="display-image" width="320" height="240" autoplay loop>
+        <p class="first-paragraph">I chose a couple of designs to explore in an interactive Keynote prototype. This first one mimicks single text input exercises where an answer area slides in.</p>
+        <video class="display-image" width="300" height="225" autoplay loop>
           <source src="images/exercises/dropdowns.mp4" type="video/mp4">
         </video>
+
+        <p class="first-paragraph">The second one is based on a classic dropdown, but with the style of the multiple choice.</p>
+        <img class="display-image" src="images/exercises/dropdowns-2.gif">
 
       </div>
 
