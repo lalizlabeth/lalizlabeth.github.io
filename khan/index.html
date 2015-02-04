@@ -39,6 +39,19 @@
       .half-width-image {
         display: block;
         margin: 0 auto;
+        max-width: 100%;
+      }
+      .bullets {
+        list-style: circle;
+        margin-bottom: 25px;
+      }
+      .bullets li {
+        font-weight: 100;
+        line-height: 27px;
+        margin: 0 10% 8px 10%;
+      }
+      .bullets li strong {
+        font-weight: 400;
       }
     </style>
 
@@ -98,7 +111,7 @@
 
       <div class="text-module white">
         <h2>iPad Math Exercise UI</h2>
-        <p class="first-paragraph">My summer-long project was to redesign different exercise types for the iPad interface. Previously, math exercises had only existed on web:</p>
+        <p class="first-paragraph">My summer-long project was to redesign different exercise types for the iPad interface. Previously, math exercises had only existed in the browser:</p>
 
         <img class="inline-image" src="images/desktop-exercise.png">
 
@@ -114,50 +127,46 @@
         <p class="first-paragraph">With these static mocks in hand, I translated them into interactive prototypes using HTML, CSS, and JavaScript.</p>
         <img class="half-width-image" src="images/exercises/multiple-choice.gif">
 
-        <p class="first-paragraph">I also modified this prototype to work for multiple select exercises (checkboxes). </p>
+        <p class="first-paragraph">I also modified this prototype to work for multiple select exercises (checkboxes).</p>
         <img class="half-width-image" src="images/exercises/multiple-select.gif">
-
 
         <h3>Dropdowns</h3>
         <p class="first-paragraph">I tackled dropdowns using a similar process. In these iterations, I wanted to mix the default iOS pattern with the multiple choice aesthetic.</p>
         <img class="inline-image" src="images/exercises/dropdown-iterations.png">
 
-        <p class="first-paragraph">None of these designs felt right to me. They all looked "off" for one reason or another, so I decided to start from scratch. This time, I ignored the default iOS pattern, and instead tried to maintain a consistent style.</p>
+        <p class="first-paragraph">None of these designs felt right to me. They all looked "off" for one reason or another, so I decided to start from scratch. This time, I ignored the default iOS dropdown pattern, and instead tried to maintain a consistent style.</p>
         <img class="inline-image" src="images/exercises/dropdown-iterations-2.png">
 
-        <p class="first-paragraph">I chose a couple of designs to explore in an interactive Keynote prototype. This first one mimicks single text input exercises where an answer area slides in.</p>
+        <p class="first-paragraph">I chose a couple of designs to explore with interactive prototypes. This first Keynote prototype mimicks the handwriting answer area of the single text inputs.</p>
         <video class="display-image" width="300" height="225" autoplay loop>
           <source src="images/exercises/dropdowns.mp4" type="video/mp4">
         </video>
 
-        <p class="first-paragraph">The second one is based on a classic dropdown, but with the style of the multiple choice.</p>
+        <p class="first-paragraph">The second one is based on a classic dropdown, but styled like the multiple choice exercises from before.</p>
         <img class="display-image" src="images/exercises/dropdowns-2.gif">
+
+        <p class="first-paragraph">If you take a look at app, our final design was very close to this one!</p>
 
       </div>
 
       <div class="text-module white">
         <h2>iPad User Onboarding</h2>
-        <p class="first-paragraph"></p>
-      </div>
+        <p class="first-paragraph">My favorite aspect about the internship was that I could create my own projects. If I wanted a change, all I had to do was ask. One of these projects was to design the iPad onboarding experience. As this iPad update would be a drastic one, we wanted to emphasize the following:
+        </p>
 
-      <ul class="display-images">
-        <li class="display-image">
-          <img src="images/onboarding-presentation/onboarding-presentation.004.jpg">
-        </li>
+        <ul class="bullets">
+          <li><strong>You can learn lots of things.</strong> Khan Academy isn't just about learning algebra and geometry. There are more than 50 different subjects in economics, art history, etc.</li>
+          <li><strong>Exercises exist now.</strong> Previously, the iPad app was simply library of videos.</li>
+          <li><strong>Logging in saves progress.</strong> Users do not have to log in to access content on the app.</li>
+        </ul>
+        
+        <h3>Initial Sketches</h3>
+        <img class="inline-image" src="images/onboarding-presentation/onboarding-presentation.004.jpg">
 
-        <div class="text-module white">
-          <h2>Iterations</h2>
-          <p class="first-paragraph">Iterations</p>
-        </div>
+        <h3>Iterations</h3>
+        <img class="inline-image" src="images/onboarding/onboarding-process.gif">
 
-        <li class="display-image">
-          <img src="images/onboarding/onboarding-process.gif">
-        </li>
-
-        <li class="display-image">
-          <img src="images/onboarding-presentation/onboarding-presentation.024.jpg">
-        </li>        
-
+        <img class="inline-image" src="images/onboarding-presentation/onboarding-presentation.024.jpg">
         <video class="display-image" width="320" height="240" controls loop>
           <source src="videos/onboardingv1.m4v" type="video/mp4">
         </video>
@@ -169,8 +178,7 @@
         <video class="display-image" width="320" height="240" controls loop>
           <source src="videos/onboardingrevised.m4v" type="video/mp4">
         </video>
-      </ul>
-
+      </div>
 
       <div class="text-module white">
         <h2>Toolbar</h2>
@@ -178,8 +186,10 @@
       </div>
 
       <div class="text-module white">
-        <h2>Small Things</h2>
-        <hr>
+        <h2>The Details</h2>
+        <h3>Iconography</h3>
+        <h3>Loading an Exercise</h3>
+        <h3>Showing Progress</h3>
       </div>
 
       <div class="text-module white">
