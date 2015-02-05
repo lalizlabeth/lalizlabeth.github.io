@@ -26,7 +26,8 @@
       }
       .display-image,
       .inline-image {
-        box-shadow: 0 0 3px 0 rgba(0,0,0,.2);        
+        box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
+        margin-top: 0;        
       }
       .inline-image {
         width: 100%;
@@ -110,6 +111,46 @@
       </div>
 
       <div class="text-module white">
+        <h2>iPad User Onboarding</h2>
+        <p class="first-paragraph">My favorite aspect about the internship was that I could essentially create my own projects. If I wanted to make a change or add a feature, I had the freedom to take charge. All I had to do was ask! One of the projects I led was the iPad onboarding experience. As this update was a drastic one, we wanted to emphasize a few things:
+        </p>
+
+        <ul class="bullets">
+          <li><strong>You can learn anything.</strong> Khan Academy isn't just about learning algebra and geometry. There are lessons in more than 50 different subjects including economics, art history, and chemistry.</li>
+          <li><strong>Exercises exist now.</strong> Before, the iPad app was simply a library of videos. We wanted to draw attention to the exercises that would now supplement these videos.</li>
+          <li><strong>Logging in saves progress.</strong> Users do not have to log in to access content on the app. However, logging in allows students to start where they left off creating a more personalized experience.</li>
+        </ul>
+        
+        <h3>Initial Sketches</h3>
+        <p class="first-paragraph">I wanted to practice illustration, so I made it a point to design an experience that was illustrative in nature. Looking at the list of goals, I decided to tackle "You can learn anything" first. The blog <a href="http://thingsorganizedneatly.tumblr.com/">Things Organized Neatly</a> inspired me to create a welcome illustration with every Khan Academy subject in an organized way. Take a look at some of my very messy sketches! (And yes, there may be some hidden ampersands.)</p>
+        <img class="inline-image" src="images/onboarding-presentation/onboarding-presentation.004.jpg">
+
+        <h3>Iterations</h3>
+        <p class="first-paragraph">After brainstorming, I continued by creating wireframes and mockups in Illustrator. I began with a grayscale palette using solely rudimentary geometric shapes. Then, if I liked the wireframe, I would add color and content. The idea was to have the user swipe through these screens before they logged in. Some iterations featured a walkthrough tutorial while others showcased new features.</p>
+        <img class="inline-image" src="images/onboarding/onboarding-process.gif">
+
+        <h3>User Testing</h3>
+        <p class="first-paragraph">With these iterations, I chose two concepts to prototype in Keynote. This first prototype walks through the new features, followed by the user log in.</p>
+        <video class="display-image" width="320" height="240" controls autoplay loop muted>
+          <source src="videos/onboardingv1.m4v" type="video/mp4">
+        </video>
+
+        <p class="first-paragraph">The second prototype takes a much more winded approach. The user is first prompted to log in. Afterwards, they get the option to complete a tutorial about the exercise experience. This tutorial is a simplified, playful version of the actual interface. I didn't want to overwhelm the user with an overview of all the new features at once. My goal, instead, was to get the user excited about Khan Academy.</p>
+        <video class="display-image" width="320" height="240" controls autoplay loop muted>
+          <source src="videos/onboardingv2.m4v" type="video/mp4">
+        </video>
+
+        <p class="first-paragraph">Every Friday, my product manager <a href="https://twitter.com/wahl">(@wahl)</a> would invite a group of students in for user testing. I brought both of these prototypes to one of these sessions where the students were between the grades of 5-7. For each student, I walked through both prototypes. At the end of each walkthrough, I asked them what knowledge they gained from the onboarding experience. Most students brought up at least 1 of our 3 goals. They also enjoyed the second prototype's tutorial, but felt that the process was too long.</p>
+
+        <h3>The Last Prototype</h3>
+        <p class="first-paragraph">Using my knowledge from the user testing, I decided to make some edits to my first round of interactive prototypes. Aside from making the process shorter, I also made tweaks to maintain a consistent design language across the mobile and desktop experience.</p>
+        <video class="display-image" width="320" height="240" controls autoplay loop muted>
+          <source src="videos/onboardingrevised.m4v" type="video/mp4">
+        </video>
+        <p class="first-paragraph">If you <a href="https://itunes.apple.com/us/app/khan-academy-learn-math-biology/id469863705?mt=8">download Khan Academy</a> on your iPad, you'll notice that the shipped onboarding design is fairly similar, but has changed a little in order to reflect the style of the rest of the app!</p>
+      </div>
+
+      <div class="text-module white">
         <h2>iPad Math Exercise UI</h2>
         <p class="first-paragraph">My summer-long project was to redesign different exercise types for the iPad interface. Previously, math exercises had only existed in the browser:</p>
 
@@ -150,39 +191,7 @@
       </div>
 
       <div class="text-module white">
-        <h2>iPad User Onboarding</h2>
-        <p class="first-paragraph">My favorite aspect about the internship was that I could create my own projects. If I wanted a change, all I had to do was ask. One of these projects was to design the iPad onboarding experience. As this iPad update would be a drastic one, we wanted to emphasize the following:
-        </p>
-
-        <ul class="bullets">
-          <li><strong>You can learn lots of things.</strong> Khan Academy isn't just about learning algebra and geometry. There are more than 50 different subjects in economics, art history, etc.</li>
-          <li><strong>Exercises exist now.</strong> Previously, the iPad app was simply library of videos.</li>
-          <li><strong>Logging in saves progress.</strong> Users do not have to log in to access content on the app.</li>
-        </ul>
-        
-        <h3>Initial Sketches</h3>
-        <img class="inline-image" src="images/onboarding-presentation/onboarding-presentation.004.jpg">
-
-        <h3>Iterations</h3>
-        <img class="inline-image" src="images/onboarding/onboarding-process.gif">
-
-        <img class="inline-image" src="images/onboarding-presentation/onboarding-presentation.024.jpg">
-        <video class="display-image" width="320" height="240" controls loop>
-          <source src="videos/onboardingv1.m4v" type="video/mp4">
-        </video>
-
-        <video class="display-image" width="320" height="240" controls loop>
-          <source src="videos/onboardingv2.m4v" type="video/mp4">
-        </video>
-
-        <video class="display-image" width="320" height="240" controls loop>
-          <source src="videos/onboardingrevised.m4v" type="video/mp4">
-        </video>
-      </div>
-
-      <div class="text-module white">
         <h2>Toolbar</h2>
-        <hr>
       </div>
 
       <div class="text-module white">
@@ -194,7 +203,6 @@
 
       <div class="text-module white">
         <h2>Intern Careers Pages</h2>
-        <hr>
       </div>
 
       <div class="footer pink">
