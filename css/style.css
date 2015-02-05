@@ -5,25 +5,21 @@
   font-style: normal;
   font-weight: 100;
   src: local("Alegreya Sans Thin"), local("AlegreyaSans-Thin"), url(http://themes.googleusercontent.com/static/fonts/alegreyasans/v1/TKyx_-JJ6MdpQruNk-t-PMirbh6OUF7J5FHbYIz0tTY.woff) format("woff"); }
-
 @font-face {
   font-family: 'Alegreya Sans';
   font-style: normal;
   font-weight: 400;
   src: local("Alegreya Sans"), local("AlegreyaSans-Regular"), url(http://themes.googleusercontent.com/static/fonts/alegreyasans/v1/KYNzioYhDai7mTMnx_gDgnt9r5m2YmP5sw3cUAQwL0E.woff) format("woff"); }
-
 @font-face {
   font-family: 'Alegreya Sans';
   font-style: normal;
   font-weight: 500;
   src: local("Alegreya Sans Medium"), local("AlegreyaSans-Medium"), url(http://themes.googleusercontent.com/static/fonts/alegreyasans/v1/11EDm-lum6tskJMBbdy9aRSu2h6M8zeGTOAvuRkzdcM.woff) format("woff"); }
-
 @font-face {
   font-family: 'Alegreya Sans';
   font-style: normal;
   font-weight: 700;
   src: local("Alegreya Sans Bold"), local("AlegreyaSans-Bold"), url(http://themes.googleusercontent.com/static/fonts/alegreyasans/v1/11EDm-lum6tskJMBbdy9aVV8F1P-UN-fltcX6iMUcbA.woff) format("woff"); }
-
 /* Reset.css */
 html, body, div, span, applet, object, iframe,
 h1, h2, .headline a, .footer a em, h3, .footer a, h4, h5, h6, p, blockquote, pre,
@@ -88,11 +84,11 @@ body {
 /* Clearfix */
 .clearfix, #wrapper, .clearfix:before, .clearfix:after, .modules, .row, .display-images {
   zoom: 1; }
-  #wrapper:before, .clearfix:before, .modules:before, .row:before, .display-images:before, #wrapper:after, .clearfix:after, .modules:after, .row:after, .display-images:after {
+  .clearfix:before, #wrapper:before, .modules:before, .row:before, .display-images:before, .clearfix:after, #wrapper:after, .modules:after, .row:after, .display-images:after {
     content: "\0020";
     display: block;
     height: 0; }
-  #wrapper:after, .clearfix:after, .modules:after, .row:after, .display-images:after {
+  .clearfix:after, #wrapper:after, .modules:after, .row:after, .display-images:after {
     clear: both; }
 
 /* Navigation */
@@ -116,7 +112,7 @@ body {
   .general-navigation .general-navigation-item {
     float: left;
     position: relative;
-    background: white;
+    background: #fff;
     margin-left: 0;
     -moz-transition: margin-left 0.5s;
     -webkit-transition: margin-left 0.5s;
@@ -125,7 +121,7 @@ body {
       margin-left: 65px; }
     .general-navigation .general-navigation-item#home:hover {
       cursor: default;
-      background: white; }
+      background: #fff; }
       .general-navigation .general-navigation-item#home:hover a {
         color: #ee478d;
         cursor: default; }
@@ -141,7 +137,7 @@ body {
       cursor: pointer;
       background: #ee478d; }
       .general-navigation .general-navigation-item.active a, .general-navigation .general-navigation-item:hover a {
-        color: white; }
+        color: #fff; }
     .general-navigation .general-navigation-item.active:hover {
       cursor: default; }
       .general-navigation .general-navigation-item.active:hover a {
@@ -150,7 +146,7 @@ body {
 /* Typography */
 h1, h2, .headline a, .footer a em, h3, .footer a, h4, h5, h6, p, a, li, figcaption {
   font-family: "Alegreya Sans", "Helvetica", "Arial", sans-serif;
-  color: white; }
+  color: #fff; }
 
 h1 {
   font-weight: 700;
@@ -832,7 +828,7 @@ figcaption {
       .text-module:hover a .small-module-text h4,
       .xlarge-module-tall:hover a .small-module-text h4 {
         background: #42393c;
-        color: white; }
+        color: #fff; }
   .module a, .xxsmall-module a,
   .xxsmall-module-tall a, .xsmall-module a,
   .xsmall-module-tall a, .small-module a, .small-text-only-module a,
@@ -878,7 +874,7 @@ figcaption {
   .white.medium-module-tall, .white.large-module, .white.large-text-only-module,
   .white.large-module-tall, .white.xlarge-module, .white.headline, .white.intro-module, .white.video-module, .white.xlarge-text-only-module, .white.page-header, .white.text-module,
   .white.xlarge-module-tall {
-    background: white; }
+    background: #fff; }
     .module.white p, .white.xxsmall-module p,
     .white.xxsmall-module-tall p, .white.xsmall-module p,
     .white.xsmall-module-tall p, .white.small-module p, .white.small-text-only-module p,
@@ -954,10 +950,10 @@ figcaption {
 
 /* Images */
 .display-images {
-  background: white; }
+  background: #fff; }
 
 .display-image, .display-image-vertical {
-  background: white;
+  background: #fff;
   list-style: none;
   width: 70%;
   height: auto;
@@ -1143,7 +1139,7 @@ figcaption {
   height: 600px; }
 
 .video-module {
-  background: white;
+  background: #fff;
   display: inline-block;
   padding: 25px; }
   .video-module iframe {
@@ -1428,7 +1424,7 @@ figcaption {
   .white.medium-module-text h6,
   .white.small-module-text h6 {
     color: #42393c;
-    background: white; }
+    background: #fff; }
   .module-text.white h3, .white.xlarge-module-text h3,
   .white.large-module-text h3,
   .white.medium-module-text h3,
@@ -1584,7 +1580,7 @@ figcaption {
 .footer-buttons li:hover {
   background: #ee478d; }
   .footer-buttons li:hover a {
-    color: white; }
+    color: #fff; }
 .footer-buttons li a {
   padding: 25px;
   -moz-box-sizing: border-box;
@@ -1650,10 +1646,10 @@ figcaption {
     background-position: center; }
 
 #spotify {
-  background: url("../images/home/spotify.jpg") no-repeat white;
+  background: url("../images/home/spotify.jpg") no-repeat #fff;
   background-position: center; }
   #spotify:hover {
-    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/spotify.jpg") no-repeat white;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/spotify.jpg") no-repeat #fff;
     background-position: center; }
 
 #davinci {
@@ -1680,11 +1676,11 @@ figcaption {
     background-position: center; }
 
 #tracks {
-  background: url("../images/home/tracks.jpg") white no-repeat;
+  background: url("../images/home/tracks.jpg") #fff no-repeat;
   background-size: contain;
   background-position: center; }
   #tracks:hover {
-    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/tracks.jpg") white no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/tracks.jpg") #fff no-repeat;
     background-size: contain;
     background-position: center; }
 
@@ -1700,12 +1696,19 @@ figcaption {
     width: 40%;
     height: 400px; }
 
+#khan-academy {
+  background: url("../images/home/khan.png") no-repeat center center #fff;
+  background-size: cover; }
+  #khan-academy:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/khan.png") no-repeat center center #fff;
+    background-size: cover; }
+
 #bare {
-  background: url("../images/home/BARE.jpg") no-repeat white;
+  background: url("../images/home/BARE.jpg") no-repeat #fff;
   background-size: cover;
   background-position: 0 -70px; }
   #bare:hover {
-    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/BARE.jpg") no-repeat white;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/BARE.jpg") no-repeat #fff;
     background-size: cover;
     background-position: 0 -70px; }
 
@@ -1725,7 +1728,7 @@ figcaption {
 
 #leviosa-intro,
 #leviosa {
-  background: url("../images/home/leviosa.png") center white no-repeat;
+  background: url("../images/home/leviosa.png") center #fff no-repeat;
   background-size: 50%; }
 
 #dataanalytics {
@@ -1734,7 +1737,7 @@ figcaption {
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/data-analytics.jpg") center no-repeat; }
 
 #leviosa:hover {
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/leviosa.png") center white no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/leviosa.png") center #fff no-repeat;
   background-size: 50%; }
 
 #charmbits-intro {
@@ -1753,7 +1756,7 @@ figcaption {
   background: url("../images/penpal/userflow.jpg") center; }
 
 #decal-intro {
-  background: url("../images/decal/header.png") center white; }
+  background: url("../images/decal/header.png") center #fff; }
 
 #fungi-intro {
   background: url("../images/fungi/cover.jpg") center no-repeat;
@@ -1764,7 +1767,7 @@ figcaption {
   background-position: 0 -150px; }
 
 #spotify-intro {
-  background: white url("../images/spotify/intro.jpg") no-repeat 0 100px;
+  background: #fff url("../images/spotify/intro.jpg") no-repeat 0 100px;
   background-position: center; }
 
 #jamnbread-intro {
@@ -1939,7 +1942,7 @@ figcaption {
   .small-text-only-module {
     height: auto;
     padding: 25px;
-    border-bottom: 1px solid white; }
+    border-bottom: 1px solid #fff; }
     .small-text-only-module .solo-text {
       position: relative;
       bottom: 0;
@@ -1967,3 +1970,5 @@ figcaption {
 
   .footer-buttons .xxsmall-module {
     width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
