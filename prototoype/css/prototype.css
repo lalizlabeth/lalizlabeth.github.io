@@ -1,0 +1,580 @@
+/* Reset CSS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+nav,
+body,
+html,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Type Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  color: #333;
+  font-family: "Proxima Nova";
+  margin: 0;
+}
+
+.module {
+  margin: 32px auto;
+  margin-top: 0;
+  width: 720px;
+}
+
+.module-large {
+  width: 1168px;
+}
+
+.breadcrumb,
+.breadcrumb a {
+  color: #c55f73;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.8;
+  line-height: 1.167;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.article-container {
+
+}
+
+article.hidden {
+  display: none;
+}
+
+.breadcrumb a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.heading {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.subheading {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.17;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+#article .body-large {
+  margin-bottom: 30px;
+}
+
+.subheading:first-child {
+  margin-top: 0;
+}
+
+.body-large {
+  font-size: 20px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.body-large.heading {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.body-large a {
+  color: #c55f73;
+  text-decoration: none;
+}
+
+.body-large a:hover {
+  text-decoration: underline;
+}
+
+.body-small {
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.labels-small {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.167;
+  margin: 0;
+}
+
+.labels-large {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.global-nav {
+  height: 37.5px;
+  padding-top: 22.5px;
+}
+
+.logo {
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 15px;
+  margin-left: 95px;
+}
+
+/* Playlist things */
+
+/* Animations */
+@keyframes entrance {
+  from {
+    margin-left: 1366px
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes entrance-alt {
+  from {
+    margin-top: 100px;
+  }  
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes activechild {
+  from {
+    background: 0;
+  }
+  to {
+    background: #f7f7f7;
+  }
+}
+
+.arrows {
+  font-size: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 5px;
+  margin-right: -10px;
+  opacity: 0;
+  z-index: 3;
+  transition: 0.5s;
+}
+
+.playlist-container:hover .arrows {
+  opacity: 1.0;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.arrow-right,
+.arrow-left {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 5px 10px;
+  color: white;
+  display: block;
+  height: 100%;
+}
+
+.arrow-right:hover,
+.arrow-left:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.arrow-right {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.arrow-left {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.arrow-right:hover,
+.arrow-left:hover {
+  cursor: pointer;
+}
+
+#playlist.scrolldown {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+#playlist.scrollup {
+  opacity: 1.0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s;
+}
+
+#playlist.scrollup .arrows {
+  position: fixed;
+}
+
+.title.scrollup {
+  margin-top: 122px;
+}
+
+.playlist-container,
+.playlist-nodes {
+  height: 90px;
+}
+
+.playlist-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  position: relative;
+  z-index: 1;
+}
+
+.playlist-nodes {
+  overflow-x: scroll;
+  text-align: center;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.playlist-node {
+  animation-duration: 1.5s;
+  animation-name: entrance;
+  /*animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);*/
+  animation-timing-function: ease-out;
+
+  border-right: 1px solid #ddd;
+  display: inline-block;
+  list-style: none;
+  padding: 16px;
+  text-align: left;
+  white-space: normal;
+  width: 265px;
+}
+
+.playlist-node:first-child {
+  padding-left: 95px;
+}
+
+.playlist-node.active {
+  background: #f7f7f7;
+  border-bottom: 5px solid #c55f73;
+  padding-bottom: 11px;
+}
+
+.thumbnail {
+  background: #333;
+  background-position: center;
+  background-size: 100%;
+  border-radius: 2px;
+  display: inline-block;
+  height: 54px;
+  margin-right: 5px;
+  width: 95px;
+}
+
+/* Playlist Thumbnails */
+
+.thumbnail-1 {
+  background-image: url(../img/thumbnail1.png);
+}
+.thumbnail-2 {
+  background-image: url(../img/thumbnail2.png);
+}
+.thumbnail-3 {
+  background-image: url(../img/thumbnail3.png);
+}
+.thumbnail-4 {
+  background-image: url(../img/thumbnail4.png);
+}
+.thumbnail-5 {
+  background-image: url(../img/thumbnail5.png);
+}
+.thumbnail-6 {
+  background-image: url(../img/thumbnail6.png);
+}
+.thumbnail-7 {
+  background-image: url(../img/thumbnail7.png);
+}
+.thumbnail-8 {
+  background-image: url(../img/thumbnail8.png);
+}
+.thumbnail-9 {
+  background-image: url(../img/thumbnail9.png);
+}
+
+.playlist-node:hover {
+  background: #f7f7f7;
+  cursor: pointer;
+}
+
+.playlist-node:hover .labels-large,
+.playlist-node:hover .labels-small {
+  text-decoration: underline;
+}
+
+.node-group {
+  display: inline-block;
+  width: 161px;
+  vertical-align: top;
+}
+
+.node-title {
+  margin-bottom: 4px;
+}
+
+.node-description {
+  color: #777;
+}
+
+/* Video Styles */
+
+.title {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.video-container {
+  background: black;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.container {
+  background: #f7f7f7;
+  padding: 32px 0;
+}
+
+.video {
+  display: inline-block;
+}
+
+/* Tabs */
+.tabz {
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.tab {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.tab:hover .body-large {
+  color: #c55f73;
+}
+
+.tab.active {
+  border-bottom: 4px solid #c55f73;
+}
+
+.tab.active .body-large {
+  color: #c55f73;
+  font-weight: 600;
+}
+
+.about {
+  text-align: center;
+}
+
+/* Recommendations */
+
+.thumbnail.large,
+.thumbnail-descrip {
+  width: 208px;
+}
+
+.thumbnail.large {
+  height: 117px;
+  display: block;
+  margin: 0;
+  vertical-align: top;
+}
+
+.thumbnail-descrip .labels-large {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.thumbnail-descrip .labels-small {
+  color: #c55f73;
+}
+
+.recommendation {
+  display: inline-block;
+  margin-right: 32px;
+  vertical-align: top;
+}
+
+.recommendation:hover {
+  cursor: pointer;
+}
+
+.recommendation:hover .labels-large,
+.recommendation:hover .labels-small {
+  text-decoration: underline;
+}
+
+.recommendation:hover .thumbnail {
+  opacity: 0.8;
+}
+
+.recommendation:last-child {
+  margin-right: 0;
+}
+
+footer {
+  background: #333;
+  height: 400px;
+  width: 100%;
+}
+
+.ask {
+  background: #f7f7f7;
+  border-radius: 2px;
+  padding: 16px;
+}
+
+.ask .body-small {
+  display: inline-block;
+}
+
+.comments .heading {
+  border-bottom: 1px solid #ddd;
+  margin-top: 32px;
+}
+
+.user-icon {
+  background: #333;
+  border-radius: 40px;
+  color: white;
+  display: inline-block;
+  height: 34px;
+  font-weight: 300;
+  font-family: "Proxima Nova";
+  text-align: center;
+  margin-right: 8px;
+  padding-top: 6px;
+  width:40px;
+}
+
+input {
+  background: none;
+  border: none;
+  font-family: "Proxima Nova";
+  outline: none;
+}
+
+.discussion {
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  height: 300px;
+}
+
+.secondary-header.active {
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #ddd;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 15px 95px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.secondary-header.active .heading {
+  font-size: 20px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.secondary-header.active .breadcrumb,
+.secondary-header.active .body-large {
+  display: none;
+}
+
+.secondary-header.playlist-open {
+  top: 92px;
+  transition: top 1s;
+}
+
+.playlist-title {
+  color: #c55f73;
+  display: none;
+  left: 95px;
+  top: 18px;
+  position: absolute;
+  vertical-align: center;
+}
+
+.playlist-title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.secondary-header.active .playlist-title {
+  display: inline-block;
+}
