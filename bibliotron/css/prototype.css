@@ -67,7 +67,7 @@ h6,
 p,
 a {
   color: #333;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "proxima-nova", sans-serif;
   margin: 0;
 }
 

@@ -57,17 +57,21 @@
       text-align: left;
       white-space: normal;
       opacity: 0.3;
+      margin-right: 24px;
       width: 220px;
+      vertical-align: top;
     }
 
     .links:first-child {
       padding-left:16px;
-      margin-right: 24px;
+    }
+    .links:last-child {
+      margin-right: 0;
     }
     .quick-links {
       height: 204px;
       overflow-x: scroll;
-      width: 484px;
+      width: 752px;
     }
     .quick-links-module {
       width: 100%;
@@ -75,13 +79,13 @@
     }
 
     li {
-      font-family: "Proxima Nova";
+      font-family: "Proxima Nova", "proxima-nova", sans-serif;
     }
   </style>
 
 </head>
 
-<body>
+<body class=".tk-proxima-nova">
   <nav class="global-nav">
     <div class="logo"></div>
   </nav>
@@ -110,6 +114,12 @@
         <li class="quick-link labels-large">Thermodynamics</li>
         <li class="quick-link labels-large">Electricity and magnetism</li>
         <li class="quick-link labels-large">Circuits</li>
+      </ul>
+      <ul class="links" id="group3">
+        <li class="quick-link labels-large">Mechanical waves and sound</li>
+        <li class="quick-link labels-large">Geometric optics</li>
+        <li class="quick-link labels-large">Light waves</li>
+        <li class="quick-link labels-large">See description</li>
       </ul>
     </div>
   </div>
