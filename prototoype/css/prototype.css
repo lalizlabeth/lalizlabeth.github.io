@@ -75,6 +75,7 @@ a {
   margin: 32px auto;
   margin-top: 0;
   width: 720px;
+  max-width: 100%;
 }
 
 .module-large {
@@ -177,7 +178,7 @@ article.hidden {
   background-repeat: no-repeat;
   background-size: contain;
   height: 15px;
-  margin-left: 95px;
+  margin-left: 99px;
 }
 
 /* Playlist things */
@@ -314,7 +315,7 @@ article.hidden {
 }
 
 .playlist-node:first-child {
-  padding-left: 95px;
+  padding-left: 99px;
 }
 
 .playlist-node.active {
@@ -398,7 +399,12 @@ article.hidden {
 .video-container {
   background: black;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
+  max-width: 100%;
+}
+
+.video {
+  max-width: 100%;
 }
 
 .container {
@@ -408,6 +414,25 @@ article.hidden {
 
 .video {
   display: inline-block;
+}
+
+.video-pip-container {
+  position: fixed;
+  opacity: 0.5;
+  top: -172px;
+  left: 99px;
+  transition: 0.25s ease-in-out;
+}
+
+.video-pip-container.hidden {
+  display: none;
+}
+
+.pip .video-pip-container {
+  text-align: left;
+  top: 0;
+  opacity: 1.0;
+  transition: 0.25s ease-in-out;
 }
 
 /* Tabs */
@@ -426,7 +451,7 @@ article.hidden {
 }
 
 .tab.active {
-  border-bottom: 4px solid #c55f73;
+  border-bottom: 5px solid #c55f73;
 }
 
 .tab.active .body-large {
@@ -453,6 +478,7 @@ article.hidden {
 }
 
 .thumbnail-descrip .labels-large {
+  font-weight: 600;
   margin-top: 4px;
   margin-bottom: 4px;
 }
@@ -578,3 +604,46 @@ input {
 .secondary-header.active .playlist-title {
   display: inline-block;
 }
+
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 16px;
+  }
+  .playlist-node:first-child {
+    padding-left: 16px;
+  }
+  .title.module {
+    width: 100%;
+    padding: 0 32px;
+    box-sizing: border-box;
+    margin-left: none;
+    margin-right: none;
+  }
+  .module {
+    width: 483px;
+  }
+  .recommendations {
+    height: 164px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 100%;
+  }
+  .video {
+    height: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .video-pip-container {
+    top: -400px;
+    left: 0;
+  }
+  .video-pip-container .video-pip {
+    height: auto;
+    width: 100%;
+  }
+  .recommend-shelf {
+    padding-left: 16px;
+  }
+}
+

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 
@@ -12,9 +13,13 @@
      * Comments section
      * Pagination on playlist
      -->
-
+  <meta http-equiv="Content-type" content="small-module-text/html" charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/prototype.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <script src="https://use.typekit.net/lsi6nxy.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 </head>
 
@@ -24,7 +29,7 @@
   </nav>
 
   <nav class="playlist-container" id="playlist">
-    <ol class="playlist-nodes">
+    <ol class="playlist-nodes" scrollLeft="161">
       <li class="playlist-node" id="page-1">
         <span class="thumbnail thumbnail-1"></span>
         <div class="node-group">
@@ -85,6 +90,11 @@
       <a id="arrow-left" class="arrow-left"><i class="fa fa-angle-left"></i></a>
     </div>
   </nav>
+
+  <section class="video-pip-container">
+    <video class="video-pip" width="208px" height="117px" src="" poster="img/poster-frame.jpg" frameborder="0" allowfullscreen></video>
+  </section>
+
 
   <article id="video">
 
@@ -191,14 +201,33 @@
   <script src="scripts/jquery-1.11.3.min.js"></script>
   <script>
 
+    // $(window).load( function(){
+    //   $(".playlist-nodes").scrollLeft = 161;
+    //   $(".playlist-nodes").animate({scrollLeft: 161, easing: "easeOutBounce"}, 200);
+    // });
+    
     $('#article-node, #video-node').click( function() {
-      $('#article, #video').toggleClass('hidden');
+      $('#article, #video, .video-pip-container').toggleClass('hidden');
       $('#article-node, #video-node').toggleClass('active');
+    });
+
+    $("#article-node").click( function() {
+      $(".playlist-nodes").animate({scrollLeft: 0, easing: "easeOutBounce"}, 200);
+    });
+
+    $("#video-node").click( function() {
+      $(".playlist-nodes").animate({scrollLeft: 161, easing: "easeOutBounce"}, 200);
     });
 
     var lastScroll = 0;
     $(window).scroll( function(){
       var thisScroll = $(document).scrollTop();
+
+      if (thisScroll > 650) {
+        $("body").addClass("pip");
+      } else {
+        $("body").removeClass("pip");
+      }
 
       if (thisScroll < 60) {
         $("#playlist, .title").removeClass("scrolldown, scrollup");
@@ -209,20 +238,26 @@
       } else {
         $("#playlist").removeClass("scrolldown");
         $("#playlist, .title").addClass("scrollup");
+        $("body").removeClass("pip");
       }
+
       lastScroll = thisScroll
     });
 
     $("#arrow-right").click( function() {
       var current = $(".playlist-nodes").scrollLeft(),
-          updated = current + 1192;
+          pageWidth = $("body").width(),
+          multiplier = Math.floor(pageWidth / 298),
+          updated = (current + 298 * multiplier);
 
       $(".playlist-nodes").animate({scrollLeft: updated, easing: "easeOutBounce"}, 500);
     });
 
     $("#arrow-left").click( function() {
       var current = $(".playlist-nodes").scrollLeft(),
-          updated = current - 1192;
+          pageWidth = $("body").width(),
+          multiplier = Math.floor(pageWidth / 298),
+          updated = (current - 298 * multiplier);
 
       $(".playlist-nodes").animate({scrollLeft: updated, easing: "easeOutBounce"}, 500);
     });
