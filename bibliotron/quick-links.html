@@ -13,13 +13,13 @@
      * Comments section
      * Pagination on playlist
      -->
+  <script src="https://use.typekit.net/lsi6nxy.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <meta http-equiv="Content-type" content="small-module-text/html" charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/prototype.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-  <script src="https://use.typekit.net/lsi6nxy.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
   <style>
     .global-nav {
@@ -42,7 +42,7 @@
       font-weight: 500;
       margin-bottom: 16px;
     }
-    .quick-link:hover {
+    .active .quick-link:hover {
       cursor: pointer;
       text-decoration: underline;
     }
@@ -51,6 +51,7 @@
     }
     .links.active {
       opacity: 1.0;
+      transition: 0.25s;
     }
     .links {
       display: inline-block;
@@ -127,20 +128,43 @@
   <script src="scripts/jquery-1.11.3.min.js"></script>
   <script>
     $('.links').click( function() {
-      $('.links').toggleClass('active');
+      $('.active').removeClass('active');
+      $(this).addClass('active');
     });
     $('#group1').click( function() {
       var current = $(".quick-links-module").scrollLeft(),
-          updated = (current - 244);
+          updated = 0;
 
       $(".quick-links-module").animate({scrollLeft: updated, easing: "easeOutBounce"}, 200);
     });
     $('#group2').click( function() {
       var current = $(".quick-links-module").scrollLeft(),
-          updated = (current + 244);
+          updated = 244;
 
       $(".quick-links-module").animate({scrollLeft: updated, easing: "easeOutBounce"}, 200);
     });
+    $('#group3').click( function() {
+      var current = $(".quick-links-module").scrollLeft(),
+          updated = 688;
+
+      $(".quick-links-module").animate({scrollLeft: updated, easing: "easeOutBounce"}, 200);
+    });
+
+    $('.quick-links-module').scroll( function(){
+      console.log('here');
+      var current = $(".quick-links-module").scrollLeft();
+      if (current < 212) {
+        $('.active').removeClass('active');
+        $('#group1').addClass('active');
+      } else if (current < 276) {
+        $('.active').removeClass('active');
+        $('#group2').addClass('active');
+      } else {
+        $('.active').removeClass('active');
+        $('#group3').addClass('active');
+      }
+    });
+
   </script>
 </body>
 </html>
