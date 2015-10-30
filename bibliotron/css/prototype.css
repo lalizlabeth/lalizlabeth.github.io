@@ -643,6 +643,7 @@ input {
     width: 100%;
   }
   .recommend-shelf {
+    box-sizing: border-box;
     padding-left: 16px;
   }
 }
