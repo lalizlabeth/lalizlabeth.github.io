@@ -620,6 +620,8 @@ input {
     margin-right: none;
   }
   .module {
+    box-sizing: border-box;
+    padding: 0 16px;
     width: 483px;
   }
   .recommendations {
