@@ -92,7 +92,7 @@
   </nav>
 
   <section class="video-pip-container">
-    <video class="video-pip" width="208px" height="117px" src="" poster="img/poster-frame.jpg" frameborder="0" allowfullscreen></video>
+    <img class="video-pip" width="208px" height="117px" src="img/poster-frame.jpg"></img>
   </section>
 
 
@@ -222,9 +222,10 @@
 
     var lastScroll = 0;
     $(window).scroll( function(){
-      var thisScroll = $(document).scrollTop();
+      var thisScroll = $(document).scrollTop(),
+          tabPosition = $(".tabz").position();
 
-      if (thisScroll > 650) {
+      if (thisScroll > tabPosition.top) {
         $("body").addClass("pip");
       } else {
         $("body").removeClass("pip");
