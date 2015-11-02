@@ -382,6 +382,7 @@ article.hidden {
 }
 
 .node-title {
+  font-weight: 500;
   margin-bottom: 4px;
 }
 
@@ -630,12 +631,29 @@ input {
     white-space: nowrap;
     width: 100%;
   }
+  .recommend-shelf {
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-right: 0;
+  }
   .video {
     height: auto;
   }
 }
 
 @media (max-width: 400px) {
+  .node-description {
+    display: none;
+  }
+  .playlist-node {
+    box-sizing: border-box;
+    width: 240px;
+  }
+  .node-group {
+    height: 54px;
+    overflow:hidden;
+    width: 103px;
+  }
   .video-pip-container {
     top: -400px;
     left: 0;
@@ -643,10 +661,6 @@ input {
   .video-pip-container .video-pip {
     height: auto;
     width: 100%;
-  }
-  .recommend-shelf {
-    box-sizing: border-box;
-    padding-left: 16px;
   }
 }
 
