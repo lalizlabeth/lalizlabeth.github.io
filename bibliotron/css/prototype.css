@@ -606,6 +606,20 @@ input {
   display: inline-block;
 }
 
+@media (max-width: 1100px) {
+  .recommendations {
+    height: 164px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 100%;
+  }
+  .recommend-shelf {
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-right: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .logo {
     margin-left: 16px;
