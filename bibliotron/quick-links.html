@@ -90,7 +90,7 @@
       height: 6px;
     }
 
-    .dot:first-child {
+    .dot.active {
       background: #9D4A5A;
     }
 
@@ -140,9 +140,9 @@
     </div>
 
     <div class="dots">
-      <span class="dot" id="dot-1"></span>
-      <span class="dot" id="dot-2"></span>
-      <span class="dot" id="dot-3"></span>
+      <span class="dot active" id="dot1"></span>
+      <span class="dot" id="dot2"></span>
+      <span class="dot" id="dot3"></span>
     </div>
   </div>
 
@@ -176,13 +176,13 @@
       var current = $(".quick-links-module").scrollLeft();
       if (current < 212) {
         $('.active').removeClass('active');
-        $('#group1').addClass('active');
+        $('#group1, #dot1').addClass('active');
       } else if (current < 276) {
         $('.active').removeClass('active');
-        $('#group2').addClass('active');
+        $('#group2, #dot2').addClass('active');
       } else {
         $('.active').removeClass('active');
-        $('#group3').addClass('active');
+        $('#group3, #dot3').addClass('active');
       }
     });
 
