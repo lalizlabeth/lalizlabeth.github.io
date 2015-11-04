@@ -70,14 +70,16 @@
     .quick-links {
       height: 210px;
       overflow-x: scroll;
+       -webkit-overflow-scrolling: touch;
       width: 752px;
     }
     .quick-links-module {
       width: 100%;
       overflow-x: scroll;
+       -webkit-overflow-scrolling: touch;
     }
     .dots {
-      margin: 8px 16px;
+      margin: 4px 16px;
       position: fixed;
     }
 
@@ -148,6 +150,22 @@
 
   <script src="scripts/jquery-1.11.3.min.js"></script>
   <script>
+
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+
     $('.links').click( function() {
       $('.active').removeClass('active');
       $(this).addClass('active');
