@@ -84,7 +84,7 @@ a {
 
 .breadcrumb,
 .breadcrumb a {
-  color: #c55f73;
+  color: #9D4A5A;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.8;
@@ -141,7 +141,7 @@ article.hidden {
 }
 
 .body-large a {
-  color: #c55f73;
+  color: #9D4A5A;
   text-decoration: none;
 }
 
@@ -320,7 +320,7 @@ article.hidden {
 
 .playlist-node.active {
   background: #f7f7f7;
-  border-bottom: 5px solid #c55f73;
+  border-bottom: 5px solid #9D4A5A;
   padding-bottom: 11px;
 }
 
@@ -449,15 +449,15 @@ article.hidden {
 }
 
 .tab:hover .body-large {
-  color: #c55f73;
+  color: #9D4A5A;
 }
 
 .tab.active {
-  border-bottom: 5px solid #c55f73;
+  border-bottom: 5px solid #9D4A5A;
 }
 
 .tab.active .body-large {
-  color: #c55f73;
+  color: #9D4A5A;
   font-weight: 600;
 }
 
@@ -486,7 +486,7 @@ article.hidden {
 }
 
 .thumbnail-descrip .labels-small {
-  color: #c55f73;
+  color: #9D4A5A;
 }
 
 .recommendation {
@@ -590,7 +590,7 @@ input {
 }
 
 .playlist-title {
-  color: #c55f73;
+  color: #9D4A5A;
   display: none;
   left: 95px;
   top: 18px;

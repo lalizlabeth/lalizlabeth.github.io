@@ -76,6 +76,23 @@
       width: 100%;
       overflow-x: scroll;
     }
+    .dots {
+      margin: 8px 16px;
+      position: fixed;
+    }
+
+    .dot {
+      background: #ddd;
+      display: inline-block;
+      border-radius: 6px;
+      width: 6px;
+      margin-right: 2px;
+      height: 6px;
+    }
+
+    .dot:first-child {
+      background: #9D4A5A;
+    }
 
     li {
       font-family: "Proxima Nova" "proxima-nova", sans-serif;
@@ -120,6 +137,12 @@
         <li class="quick-link labels-large">Light waves</li>
         <li class="quick-link labels-large">See description</li>
       </ul>
+    </div>
+
+    <div class="dots">
+      <span class="dot" id="dot-1"></span>
+      <span class="dot" id="dot-2"></span>
+      <span class="dot" id="dot-3"></span>
     </div>
   </div>
 
