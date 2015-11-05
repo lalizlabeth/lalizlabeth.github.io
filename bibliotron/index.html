@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<!-- Nodes Prototype v5: October 13, 2015
+<!-- Nodes Prototype v5: Nov 5, 2015
      View in 1366px wide browser
      Playlist hides on scroll down, shows on scroll up
      -->
@@ -11,7 +11,6 @@
      * Thumbnail overlays
      * Global Nav
      * Comments section
-     * Pagination on playlist
      -->
   <meta http-equiv="Content-type" content="small-module-text/html" charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,10 +28,13 @@
   </nav>
 
   <nav class="playlist-container" id="playlist">
+
+    <!-- Chevrons are just FontAwesome for now -->
     <div class="arrows arrows-left">
-      <a id="arrow-right" class="arrow-right"><i class="fa fa-angle-right"></i></a>
-      <a id="arrow-left" class="arrow-left"><i class="fa fa-angle-left"></i></a>
+      <a class="arrow-right"><i class="fa fa-angle-right"></i></a>
+      <a class="arrow-left"><i class="fa fa-angle-left"></i></a>
     </div>
+
     <ol class="playlist-nodes" scrollLeft="161" style="-webkit-overflow-scrolling: touch;">
       <li class="playlist-node" id="page-1">
         <span class="thumbnail thumbnail-1"></span>
@@ -89,9 +91,10 @@
         </div>
       </li>
     </ol>
+    
     <div class="arrows arrows-right">
-      <a id="arrow-right" class="arrow-right"><i class="fa fa-angle-right"></i></a>
-      <a id="arrow-left" class="arrow-left"><i class="fa fa-angle-left"></i></a>
+      <a class="arrow-right"><i class="fa fa-angle-right"></i></a>
+      <a class="arrow-left"><i class="fa fa-angle-left"></i></a>
     </div>
   </nav>
 
