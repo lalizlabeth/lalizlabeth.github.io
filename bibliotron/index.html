@@ -29,6 +29,10 @@
   </nav>
 
   <nav class="playlist-container" id="playlist">
+    <div class="arrows arrows-left">
+      <a id="arrow-right" class="arrow-right"><i class="fa fa-angle-right"></i></a>
+      <a id="arrow-left" class="arrow-left"><i class="fa fa-angle-left"></i></a>
+    </div>
     <ol class="playlist-nodes" scrollLeft="161" style="-webkit-overflow-scrolling: touch;">
       <li class="playlist-node" id="page-1">
         <span class="thumbnail thumbnail-1"></span>
@@ -85,7 +89,7 @@
         </div>
       </li>
     </ol>
-    <div class="arrows">
+    <div class="arrows arrows-right">
       <a id="arrow-right" class="arrow-right"><i class="fa fa-angle-right"></i></a>
       <a id="arrow-left" class="arrow-left"><i class="fa fa-angle-left"></i></a>
     </div>
@@ -246,7 +250,7 @@
       lastScroll = thisScroll
     });
 
-    $("#arrow-right").click( function() {
+    $(".arrow-right").click( function() {
       var current = $(".playlist-nodes").scrollLeft(),
           pageWidth = $("body").width(),
           multiplier = Math.floor(pageWidth / 298),
@@ -255,7 +259,7 @@
       $(".playlist-nodes").animate({scrollLeft: updated, easing: "easeOutBounce"}, 500);
     });
 
-    $("#arrow-left").click( function() {
+    $(".arrow-left").click( function() {
       var current = $(".playlist-nodes").scrollLeft(),
           pageWidth = $("body").width(),
           multiplier = Math.floor(pageWidth / 298),
