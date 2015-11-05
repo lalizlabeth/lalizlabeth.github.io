@@ -150,57 +150,56 @@
   <script src="scripts/jquery-1.11.3.min.js"></script>
   <script>
 
-    $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
-
     $('.links').click( function() {
       $('.active').removeClass('active');
       $(this).addClass('active');
     });
-    $('#group1').click( function() {
-      var current = $(".quick-links-module").scrollLeft(),
-          updated = 0;
+    // $('#group1').click( function() {
+    //   var current = $(".quick-links-module").scrollLeft(),
+    //       updated = 0;
 
-      $(".quick-links-module").animate({scrollLeft: updated, easing: "easeOutBounce"}, 200);
-    });
-    $('#group2').click( function() {
-      var current = $(".quick-links-module").scrollLeft(),
-          updated = 244;
+    //   $(".quick-links-module").animate({scrollLeft: updated, easing: "easeOutBounce"}, 200);
+    // });
+    // $('#group2').click( function() {
+    //   var current = $(".quick-links-module").scrollLeft(),
+    //       updated = 244;
 
-      $(".quick-links-module").animate({scrollLeft: updated, easing: "easeOutBounce"}, 200);
-    });
-    $('#group3').click( function() {
-      var current = $(".quick-links-module").scrollLeft(),
-          updated = 688;
+    //   $(".quick-links-module").animate({scrollLeft: updated, easing: "easeOutBounce"}, 200);
+    // });
+    // $('#group3').click( function() {
+    //   var current = $(".quick-links-module").scrollLeft(),
+    //       updated = 688;
 
-      $(".quick-links-module").animate({scrollLeft: updated, easing: "easeOutBounce"}, 200);
-    });
+    //   $(".quick-links-module").animate({scrollLeft: updated, easing: "easeOutBounce"}, 200);
+    // });
 
+    var lastScroll = 0;
     $('.quick-links-module').scroll( function(){
-      console.log('here');
-      var current = $(".quick-links-module").scrollLeft();
-      if (current < 212) {
-        $('.active').removeClass('active');
-        $('#group1, #dot1').addClass('active');
-      } else if (current < 276) {
-        $('.active').removeClass('active');
-        $('#group2, #dot2').addClass('active');
-      } else {
-        $('.active').removeClass('active');
-        $('#group3, #dot3').addClass('active');
+
+      var thisScroll = $(".quick-links-module").scrollLeft();
+
+      if ( thisScroll > lastScroll ) {
+        updated = lastScroll + 245;
+        $(".quick-links-module").animate({scrollLeft: ( updated )}, 500);
       }
+
+      lastScroll = updated;
+
+      // if (current < 212) {
+      //   $('.active').removeClass('active');
+      //   $('#group1, #dot1').addClass('active');
+
+      //   $(".quick-links-module").animate({scrollLeft: 212, easing: "easeOutBounce"}, 500);
+      // } else if (current < 276) {
+      //   $('.active').removeClass('active');
+      //   $('#group2, #dot2').addClass('active');
+      //   $(".quick-links-module").animate({scrollLeft: 276, easing: "easeOutBounce"}, 500);
+      // } else {
+      //   $('.active').removeClass('active');
+      //   $('#group3, #dot3').addClass('active');
+      //   // $(".quick-links-module").animate({scrollLeft: 300, easing: "easeOutBounce"}, 500);
+      // }
+
     });
 
   </script>

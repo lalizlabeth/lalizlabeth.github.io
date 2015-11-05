@@ -419,7 +419,22 @@ article.hidden {
 }
 
 .video {
+  background: url(../img/poster-frame.png);
+  background-size: cover;
   max-width: 100%;
+  width: 720px;
+  height: 405px;
+}
+
+.video:hover {
+  background: url(../img/video-playing.png);
+  cursor: pointer;
+  background-size: cover;
+}
+
+.video.playing {
+  background: url(../img/video-playing.png);
+  background-size: cover;
 }
 
 .container {
@@ -449,6 +464,11 @@ article.hidden {
   top: 0;
   opacity: 1.0;
   transition: 0.25s ease-in-out;
+}
+
+.video-pip {
+  width: 208px;
+  height: 117px;
 }
 
 /* Tabs */

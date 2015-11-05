@@ -35,7 +35,7 @@
       <a class="arrow-left"><i class="fa fa-angle-left"></i></a>
     </div>
 
-    <ol class="playlist-nodes" scrollLeft="161" style="-webkit-overflow-scrolling: touch;">
+    <ol class="playlist-nodes" style="-webkit-overflow-scrolling: touch;">
       <li class="playlist-node" id="page-1">
         <span class="thumbnail thumbnail-1"></span>
         <div class="node-group">
@@ -91,7 +91,7 @@
         </div>
       </li>
     </ol>
-    
+
     <div class="arrows arrows-right">
       <a class="arrow-right"><i class="fa fa-angle-right"></i></a>
       <a class="arrow-left"><i class="fa fa-angle-left"></i></a>
@@ -99,7 +99,7 @@
   </nav>
 
   <section class="video-pip-container">
-    <img class="video-pip" width="208px" height="117px" src="img/poster-frame.jpg"></img>
+    <div class="video-pip video"></div>
   </section>
 
 
@@ -111,8 +111,7 @@
     </section>
 
     <section class="video-container">
-      <!-- <video class="video" width="720px" height="408px" src="" poster="img/poster-frame.jpg" frameborder="0" allowfullscreen></video> -->
-      <img class="video" src="img/poster-frame.jpg" width="720px" height="408px">
+      <div class="video"></div>
     </section>
 
     <section class="video-description module">
@@ -205,14 +204,9 @@
 
   <footer></footer>
 
-
   <script src="scripts/jquery-1.11.3.min.js"></script>
-  <script>
 
-    // $(window).load( function(){
-    //   $(".playlist-nodes").scrollLeft = 161;
-    //   $(".playlist-nodes").animate({scrollLeft: 161, easing: "easeOutBounce"}, 200);
-    // });
+  <script>
     
     $('#article-node, #video-node').click( function() {
       $('#article, #video, .video-pip-container').toggleClass('hidden');
@@ -251,6 +245,10 @@
       }
 
       lastScroll = thisScroll
+    });
+
+    $(".video").click(function(){
+      $(".video").toggleClass("playing");
     });
 
     $(".arrow-right").click( function() {
