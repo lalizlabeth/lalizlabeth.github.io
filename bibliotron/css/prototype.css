@@ -533,13 +533,9 @@ article.hidden {
   cursor: pointer;
 }
 
-.recommendation:hover .labels-large,
-.recommendation:hover .labels-small {
+.labels-large:hover,
+.labels-small:hover {
   text-decoration: underline;
-}
-
-.recommendation:hover .thumbnail {
-  opacity: 0.8;
 }
 
 .recommendation:last-child {
