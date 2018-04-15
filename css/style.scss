@@ -333,14 +333,17 @@ $tall_box_height: 550px;
 .display-image {
   background: $white;
   list-style: none;
-  width: 70%;
+  width: 100%;
   height: auto;
-  float: left;
-  text-align: center; 
-  margin: 16px 15%;
+  margin: 16px 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+
+  &.small {
+    width: 60%;
+    margin: 16px 20%;
+  }
 
   h2,
   p {
@@ -719,6 +722,92 @@ $tall_box_height: 550px;
   }
 }
 
+// Updated
+
+#cuteness {
+  background: url("../images/home/cuteness.gif");
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
+      ),
+      url("../images/home/cuteness.gif");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+#dottie {
+  background: url("../images/home/dottie.png");
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
+      ),
+      url("../images/home/dottie.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+#project-tater {
+  background: url("../images/home/project-tater.gif");
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
+      ),
+      url("../images/home/project-tater.gif");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+#monsterz {
+  background: url("../images/home/monsterz.jpg");
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
+      ),
+      url("../images/home/monsterz.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+#illustrations {
+  background: url("../images/home/illustrations.png");
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
+      ),
+      url("../images/home/illustrations.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+
+
+// Archive
+
 #decal {
   background: url("../images/home/decal.png");
   background-size: cover;
@@ -1059,6 +1148,11 @@ $tall_box_height: 550px;
 #about-me-bio,
 #skills {
   padding: 25px;
+}
+
+#cuteness-intro {
+  background: url("../images/cuteness/cover.png") center;
+  background-size: cover;
 }
 
 /* Screen Compatibility */

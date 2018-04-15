@@ -1023,14 +1023,15 @@ figcaption {
 .display-image, .display-image-vertical {
   background: #fff;
   list-style: none;
-  width: 70%;
+  width: 100%;
   height: auto;
-  float: left;
-  text-align: center;
-  margin: 16px 15%;
+  margin: 16px 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+  .display-image.small, .small.display-image-vertical {
+    width: 60%;
+    margin: 16px 20%; }
   .display-image h2, .display-image-vertical h2, .display-image .headline a, .headline .display-image a, .display-image-vertical .headline a, .headline .display-image-vertical a, .display-image .footer a em, .footer a .display-image em, .display-image-vertical .footer a em, .footer a .display-image-vertical em,
   .display-image p,
   .display-image-vertical p {
@@ -1578,6 +1579,51 @@ figcaption {
   background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/portrait.jpg");
   background-size: cover; }
 
+#cuteness {
+  background: url("../images/home/cuteness.gif");
+  background-size: cover;
+  background-position: center; }
+  #cuteness:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/cuteness.gif");
+    background-size: cover;
+    background-position: center; }
+
+#dottie {
+  background: url("../images/home/dottie.png");
+  background-size: cover;
+  background-position: center; }
+  #dottie:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/dottie.png");
+    background-size: cover;
+    background-position: center; }
+
+#project-tater {
+  background: url("../images/home/project-tater.gif");
+  background-size: cover;
+  background-position: center; }
+  #project-tater:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/project-tater.gif");
+    background-size: cover;
+    background-position: center; }
+
+#monsterz {
+  background: url("../images/home/monsterz.jpg");
+  background-size: cover;
+  background-position: center; }
+  #monsterz:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/monsterz.jpg");
+    background-size: cover;
+    background-position: center; }
+
+#illustrations {
+  background: url("../images/home/illustrations.png");
+  background-size: cover;
+  background-position: center; }
+  #illustrations:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/illustrations.png");
+    background-size: cover;
+    background-position: center; }
+
 #decal {
   background: url("../images/home/decal.png");
   background-size: cover;
@@ -1779,6 +1825,10 @@ figcaption {
 #about-me-bio,
 #skills {
   padding: 25px; }
+
+#cuteness-intro {
+  background: url("../images/cuteness/cover.png") center;
+  background-size: cover; }
 
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
