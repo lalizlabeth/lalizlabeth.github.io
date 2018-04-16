@@ -63,13 +63,13 @@ body {
   margin: 0 auto; }
 
 /* Clearfix */
-.clearfix, #wrapper, .clearfix:before, .clearfix:after, .modules, .row, .display-images {
+.clearfix, #wrapper, .clearfix:before, .clearfix:after, .modules, .row, .display-images, .display-image.xsmall, .xsmall.display-image-vertical {
   zoom: 1; }
-  .clearfix:before, #wrapper:before, .modules:before, .row:before, .display-images:before, .clearfix:after, #wrapper:after, .modules:after, .row:after, .display-images:after {
+  .clearfix:before, #wrapper:before, .modules:before, .row:before, .display-images:before, .display-image.xsmall:before, .xsmall.display-image-vertical:before, .clearfix:after, #wrapper:after, .modules:after, .row:after, .display-images:after, .display-image.xsmall:after, .xsmall.display-image-vertical:after {
     content: "\0020";
     display: block;
     height: 0; }
-  .clearfix:after, #wrapper:after, .modules:after, .row:after, .display-images:after {
+  .clearfix:after, #wrapper:after, .modules:after, .row:after, .display-images:after, .display-image.xsmall:after, .xsmall.display-image-vertical:after {
     clear: both; }
 
 /* Navigation */
@@ -190,9 +190,11 @@ p {
 
 figcaption {
   color: #21242c;
+  opacity: 0.5;
   display: block;
-  margin: 0 15% 20px 15%;
-  line-height: 24px; }
+  margin-top: 4px;
+  text-align: center;
+  line-height: 22px; }
   figcaption.title {
     margin-bottom: 0; }
   figcaption strong {
@@ -1022,6 +1024,7 @@ figcaption {
 
 .display-image, .display-image-vertical {
   background: #fff;
+  display: inline-block;
   list-style: none;
   width: 100%;
   height: auto;
@@ -1029,9 +1032,15 @@ figcaption {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+  .display-image.medium, .medium.display-image-vertical {
+    width: 70%;
+    margin: 16px 15%; }
   .display-image.small, .small.display-image-vertical {
-    width: 60%;
-    margin: 16px 20%; }
+    width: 50%;
+    margin: 16px 25%; }
+  .display-image.xsmall, .xsmall.display-image-vertical {
+    float: left;
+    width: 50%; }
   .display-image h2, .display-image-vertical h2, .display-image .headline a, .headline .display-image a, .display-image-vertical .headline a, .headline .display-image-vertical a, .display-image .footer a em, .footer a .display-image em, .display-image-vertical .footer a em, .footer a .display-image-vertical em,
   .display-image p,
   .display-image-vertical p {
@@ -1047,6 +1056,8 @@ figcaption {
     display: inline-block;
     width: 100%;
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2); }
+    .display-image img.no-shadow, .display-image-vertical img.no-shadow {
+      box-shadow: 0 0 0 0; }
 
 .display-image-vertical img {
   width: 45%;
@@ -1517,14 +1528,18 @@ figcaption {
 
 /* Text Module */
 .text-module {
-  padding: 25px 15%;
+  padding: 25px 20%;
   height: auto; }
   .text-module h2, .text-module .headline a, .headline .text-module a, .text-module .footer a em, .footer a .text-module em {
     margin-bottom: 16px; }
+    .text-module h2.heading, .text-module .headline a.heading, .headline .text-module a.heading, .text-module .footer a em.heading, .footer a .text-module em.heading {
+      margin-bottom: 20px;
+      margin-top: 48px; }
   .text-module hr {
     border: 1px solid #e4e1e2; }
   .text-module ul {
-    list-style: circle; }
+    list-style: circle;
+    margin-bottom: 16px; }
   .text-module a {
     padding: 0;
     display: inline;
@@ -1533,8 +1548,7 @@ figcaption {
       opacity: 0.8; }
   .text-module p {
     text-align: justify;
-    margin-bottom: 20px;
-    text-indent: 20px; }
+    margin-bottom: 20px; }
     .text-module p.first-paragraph {
       text-indent: 0; }
     .text-module p:last-child {
@@ -1582,11 +1596,11 @@ figcaption {
 #cuteness {
   background: url("../images/home/cuteness.gif");
   background-size: cover;
-  background-position: center; }
+  background-position: center -10px; }
   #cuteness:hover {
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/cuteness.gif");
     background-size: cover;
-    background-position: center; }
+    background-position: center -10px; }
 
 #dottie {
   background: url("../images/home/dottie.png");
@@ -1828,6 +1842,18 @@ figcaption {
 
 #cuteness-intro {
   background: url("../images/cuteness/cover.png") center;
+  background-size: cover; }
+
+#dottie-intro {
+  background: url("../images/dottie/cover.png") center;
+  background-size: cover; }
+
+#monsterz-intro {
+  background: url("../images/monsterz/cover.jpg") center;
+  background-size: cover; }
+
+#illustrations-intro {
+  background: url("../images/illustrations/cover.png") center;
   background-size: cover; }
 
 /* Screen Compatibility */
