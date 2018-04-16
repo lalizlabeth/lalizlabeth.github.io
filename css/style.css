@@ -1905,6 +1905,22 @@ figcaption {
   background: url("../images/review-game/cover.png") center;
   background-size: cover; }
 
+#graphic-design-intro {
+  background: url("../images/graphic-design/cover.gif") center;
+  background-size: cover; }
+
+#color-contrast-intro {
+  background: url("../images/color-contrast/cover.png") center;
+  background-size: cover; }
+
+#progress-intro {
+  background: url("../images/progress/cover.png") center;
+  background-size: cover; }
+
+#exercises-intro {
+  background: url("../images/exercises/cover.png") center;
+  background-size: cover; }
+
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
   #wrapper {
