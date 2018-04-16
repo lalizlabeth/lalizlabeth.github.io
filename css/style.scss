@@ -827,7 +827,85 @@ $tall_box_height: 550px;
   }
 }
 
+#review-game {
+  background: url("../images/home/review-game.png");
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
+      ),
+      url("../images/home/review-game.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
 
+#exercises {
+  background: url("../images/home/exercise.gif");
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
+      ),
+      url("../images/home/exercise.gif");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+#graphic-design {
+  background: url("../images/home/graphic-design.gif");
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
+      ),
+      url("../images/home/graphic-design.gif");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+#progress {
+  background: url("../images/home/progress.png");
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
+      ),
+      url("../images/home/progress.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+#color-contrast {
+  background: url("../images/home/colors.png");
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
+      ),
+      url("../images/home/colors.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
 
 // Archive
 
@@ -1190,6 +1268,11 @@ $tall_box_height: 550px;
 
 #illustrations-intro {
   background: url("../images/illustrations/cover.png") center;
+  background-size: cover;
+}
+
+#review-game-intro {
+  background: url("../images/review-game/cover.png") center;
   background-size: cover;
 }
 
