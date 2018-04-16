@@ -1916,8 +1916,10 @@ figcaption {
     width: 100%;
     height: auto; } }
 @media screen and (max-width: 750px) {
-  .text-module p {
-    text-align: left; }
+  .text-module {
+    padding: 25px 8px; }
+    .text-module p {
+      text-align: left; }
 
   #wrapper {
     width: 100%; }
