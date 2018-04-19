@@ -1535,6 +1535,10 @@ figcaption {
     .text-module h2.heading, .text-module .headline a.heading, .headline .text-module a.heading, .text-module .footer a em.heading, .footer a .text-module em.heading {
       margin-bottom: 20px;
       margin-top: 48px; }
+    .text-module h2.subheading, .text-module .headline a.subheading, .headline .text-module a.subheading, .text-module .footer a em.subheading, .footer a .text-module em.subheading {
+      font-weight: 700;
+      font-size: 27px;
+      margin-top: 48px; }
   .text-module hr {
     border: 1px solid #e4e1e2; }
   .text-module ul {

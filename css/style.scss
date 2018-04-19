@@ -662,6 +662,11 @@ $tall_box_height: 550px;
       margin-bottom: 20px;
       margin-top: 48px;
     }
+    &.subheading {
+      font-weight: 700;
+      font-size: 27px;
+      margin-top: 48px;
+    }
   }
   hr {
     border: 1px solid $light_gray;

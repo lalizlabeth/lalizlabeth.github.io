@@ -69,7 +69,177 @@
       </div>
 
       <div class="text-module">
-        <p>Case study coming soon!</p>
+        <p>An engineer, user researcher, product manager, and I had the opportunity to research the classroom space and prototype how Khan Academy might fit into a teacher's workflow! This project spanned around 5 months from user research to concept testing.</p>
+
+        <h2 class="heading">Research</h2>
+        <p>Going into the user research study, our hypothesis was that teachers want a homework replacement. We spoke to 13 mainstream math teachers in the US about their day-to-day challenges. We sought out teachers who didn't routinely use technology in their classrooms.</p>
+
+        <p>We learned a lot! At a high level, we discovered that teachers didn't find assigning homework challenging, but that <strong>keeping student engaged and knowing where they are is tough!</strong></p>
+
+        <p>We also created some design principles to guide our thinking for the rest of the project:</p>
+
+        <div class="display-image">
+          <img src="../../images/review-game/teachers-rule-together.png" alt="Design Principles">
+        </div>
+
+
+        <h2 class="heading">Brainstorming</h2>
+        <div class="display-image">
+          <img src="../../images/review-game/brainstorming.jpg" alt="Brainstorming">
+          <figcaption>We nicknamed this the Foamboard Fort! These are all the ideas the team generated from the HMW questions.</figcaption>
+        </div>
+
+        <p>We created How Might We (HMW) questions and invited the rest of the company to generate ideas with us! Some of these questions included:</p>
+        <ul style="margin: 32px 0;">
+          <li>HMW make students feel joyful filling their own gaps for classrooms with no access to tech?</li>
+          <li>HMW make a fun diagnostic for teachers who know tech is a classroom management issues?</li>
+          <li>HMW make diagnostics feel useful on a routine basis for teachers on autopilot?</li>
+        </ul>
+
+        <p>At the same time, we looked at existing classroom products that teachers loved! We realized that in-class review games like Kahoot!, QuizletLive, and Socrative had high rates of growth.</p>
+
+        <div class="display-image">
+          <img src="../../images/review-game/competitors.png" alt="Competitors">
+          <figcaption>From left to right: Kahoot!, QuizletLive, Socrative</figcaption>
+        </div>
+
+        <p>Through ideation &amp; competitive analysis, we narrowed our question to: <strong>How might we create an engaging in-class math review game?</strong> For the following couple months, we used this question to guide our prototoype.</p>
+
+        <h2 class="heading">Prototyping &amp; Playtesting</h2>
+        <p>Each week, we created a prototoype based upon a hypothesis and brought it into a classroom. The teacher would guide the class in the review game and we would debrief with them afterwards!</p>
+
+        <p>Here are some illustrations that show the general flow of the game:</p>
+
+         <div class="display-image">
+          <img src="../../images/review-game/flow-01.png" class="no-shadow" alt="Flow">
+          <figcaption>Mrs. Frizzle checks wants to spend class time reviewing for the unit test tomorrow!</figcaption>
+        </div>       
+
+         <div class="display-image">
+          <img src="../../images/review-game/flow-02.png" class="no-shadow" alt="Flow">
+          <figcaption>She projects the review question on the board and students use a device to answer the question.</figcaption>
+        </div>  
+
+         <div class="display-image">
+          <img src="../../images/review-game/flow-03.png" class="no-shadow" alt="Flow">
+          <figcaption>She notices that the class is mostly done with the question and decides to see how they did.</figcaption>
+        </div>  
+
+         <div class="display-image">
+          <img src="../../images/review-game/flow-04.png" class="no-shadow" alt="Flow">
+          <figcaption>Since there were two very common answers, she asks two students to explain how they arrived at the solution.</figcaption>
+        </div>  
+
+        <p>If you're interested, we also drew out a detailed <a href="../../images/review-game/coreloop.png">core game loop diagram</a>! Before I get into each iteration, I want to mention that I can't show any of the videos of the in-class testing. Because of this, I only have low quality GIFs of each prototype.</p>
+
+        <h2 class="subheading">Week 1: Do teachers even want this?</h2>
+        <p>We created the prototype in Framer! The desktop view is what the teacher projects on the screen. The mobile screens are the student view.</p>
+
+        <div class="display-image">
+          <img src="../../images/review-game/week-1a.gif" class="no-shadow" alt="Prototype">
+          <figcaption>We wanted to make starting a game easy, so students just had to join with a class code! We allowed students to pick an avatar to engage them.</figcaption>
+        </div> 
+
+        <div class="display-image">
+          <img src="../../images/review-game/week-1b.gif" class="no-shadow" alt="Prototype">
+          <figcaption>When a student answers, they have to select how confident they are before they see the result. The teacher can monitor by looking at their avatar on the projected view.</figcaption>
+        </div>  
+
+        <p>Teachers were really excited about the idea, but they found it difficult to immediately engage with the students because the confidence and check were so small!</p>
+
+        <h2 class="subheading">Week 2: How do we allow teachers to engage immediately?</h2>
+        <p>We adjusted the layout this week, so that it was more easily scannable! We wanted to surface struggling students immediately to teachers.</p>
+
+        <div class="display-image">
+          <img src="../../images/review-game/week-2a.gif" class="no-shadow" alt="Prototype">
+          <figcaption>When a student answers correctly, a large green check appears next to their name.</figcaption>
+        </div>  
+
+        <p>Teachers loved how they could engage immediately, however, there was no way they could revisit student responses after the game.</p>
+
+        <h2 class="subheading">Week 3: What does a post-game report look like?</h2>
+        <p>This week, we focused on what happens after the game. We generated a PDF report that showcased student attempts and confidence! We also wanted to surface this information to the student, so that they could know what to review for the test.</p>
+
+        <div class="display-image">
+          <img src="../../images/review-game/week-3a.png" class="no-shadow" alt="Prototype">
+          <figcaption>This is the teacher report!</figcaption>
+        </div> 
+
+        <div class="display-image">
+          <img src="../../images/review-game/week-3b.jpeg" class="no-shadow" alt="Prototype">
+          <figcaption>This is the student report!</figcaption>
+        </div>   
+
+        <p>Teachers loved how they could dive deeply into student attempts and responses. It helped them identify where certain students had gaps in learning!</p>
+
+        <h2 class="subheading">Week 4: What would a game with points look like?</h2>
+        <p>This week, we decided to focus on making the game more engaging. We wanted to test if a more "competitive" would be more engaging for students! When a student joined, we would put them on a random team. For every correct answer, a student adds up to 10 points to their team's score. If a student attempts incorrectly, they still get 1 point for effort!</p>
+
+        <p>Because we had a little more time, we also spent some time doing a visual refresh of the earlier prototypes! We wanted to bring less focus to the confidence ratings of the indvidiual students, so that students were more comfortable inputing how they actually felt.</p>
+
+        <div class="display-image">
+          <img src="../../images/review-game/week-4a.png" class="no-shadow" alt="Prototype">
+          <figcaption>Team Green is on the left and Team Blue is on the right!</figcaption>
+        </div>
+
+        <div class="display-image">
+          <img src="../../images/review-game/week-4b.png" class="no-shadow" alt="Prototype">
+          <figcaption>Post-question screen. The teacher can quickly assess whether or not they should go over the question.</figcaption>
+        </div>
+
+        <div class="display-image">
+          <img src="../../images/review-game/week-4c.png" class="no-shadow" alt="Prototype">
+          <figcaption>End of game screen!</figcaption>
+        </div>
+
+        <p>When we tested this in the classroom, the teacher would tell students to try again if they only got 1 point. It was so rewarding watching the class play because the students would celebrate when they answered a question correctly!</p>
+
+        <p>This was our last prototype! If you're interested in playing, you can play the Demo at <a href="http://khanacademy.org/r/classroom-teacher">www.khanacademy.org/r/classroom-teacher</a>.</p>
+
+        <h2 class="subheading">Exploratory Designs</h2>
+        <p>Throughout the project, I also worked on exploratory designs for how the review game might flex in the future! In the iteration below, each team is trying to grow a plant. Instead of selecting an emoji, the student can decide if they're feeling rainy or feeling sunny, both of which will grow the plant!</p>
+
+        <div class="display-image">
+          <img src="../../images/review-game/explore-1a.jpeg" class="no-shadow" alt="Prototype">
+        </div>
+
+        <div class="display-image">
+          <img src="../../images/review-game/explore-1b.jpeg" class="no-shadow" alt="Prototype">
+        </div>
+
+        <div class="display-image">
+          <img src="../../images/review-game/explore-1c.jpeg" class="no-shadow" alt="Prototype">
+        </div>
+
+        <div class="display-image">
+          <img src="../../images/review-game/explore-1d.jpeg" class="no-shadow" alt="Prototype">
+        </div>
+
+        <p style="margin-bottom:0;">Since Khan Academy has a partnership with Pixar, we thought it might be fun to have themed games! In the example below, a teacher could set a class "balloon" goal. For each correct answer, the student gets to add a balloon to the Up house. If the class reaches the goal, the Up house flies away at the end of class.</p>
+
+        <div class="display-image">
+          <img src="../../images/review-game/explore-2.jpeg" class="no-shadow" alt="Prototype">
+        </div>
+
+        <p style="margin-bottom:0;">In the following exploration, the goal is for students to defeat the monster! Similarly to the Up example, a teacher could set the HP (number of correct questions) beforehand.</p>
+
+        <div class="display-image">
+          <img src="../../images/review-game/explore-3.jpeg" class="no-shadow" alt="Prototype">
+        </div>
+
+        <p style="margin-bottom:0;">Teachers love to have students reason through their answers! In the following exploration, we would surface two popular answers and select two students to "debate" the solution. Other students can send hearts to the two debaters based upon who they think is correct!</p>
+
+        <div class="display-image">
+          <img src="../../images/review-game/explore-4a.jpeg" class="no-shadow" alt="Prototype">
+        </div>
+
+        <div class="display-image">
+          <img src="../../images/review-game/explore-4b .jpeg" class="no-shadow" alt="Prototype">
+        </div>
+
+        <h2 class="subheading">Next steps</h2>
+        <p>Although we received lots of teacher validation during the project, the leadership team decided to hold off on pursuing this idea until we had a more solid foundation for the teacher product!</p>
+
       </div>
 
 
