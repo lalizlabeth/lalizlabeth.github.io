@@ -1955,6 +1955,9 @@ figcaption {
     #posters:hover {
       background-size: cover; }
 
+  #review-game {
+    width: 60%; }
+
   #tracks {
     width: 20%; }
 
@@ -1979,7 +1982,10 @@ figcaption {
     padding: 25px; }
 
   .large-text-only-module {
-    width: 70%; } }
+    width: 70%; }
+
+  #progress {
+    width: 100%; } }
 @media screen and (max-width: 900px) {
   #skills {
     width: 100%;
@@ -1993,6 +1999,9 @@ figcaption {
     padding: 25px 16px; }
     .text-module p {
       text-align: left; }
+
+  #review-game {
+    width: 100%; }
 
   #wrapper {
     width: 100%; }

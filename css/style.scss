@@ -1333,6 +1333,9 @@ $tall_box_height: 550px;
       background-size: cover;
     }
   }
+  #review-game {
+    width: 60%;
+  }
   #tracks {
     width: 20%;
   }
@@ -1367,6 +1370,10 @@ $tall_box_height: 550px;
   .large-text-only-module {
     width: 70%;
   }
+
+  #progress {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -1386,6 +1393,9 @@ $tall_box_height: 550px;
     p {
       text-align: left;
     }
+  }
+  #review-game {
+    width: 100%;
   }
   #wrapper {
     width: 100%;
