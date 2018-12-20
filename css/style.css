@@ -94,7 +94,7 @@ body {
     float: left;
     position: relative;
     background: #fff;
-    margin-left: 0;
+    margin-left: -1px;
     -moz-transition: margin-left 0.5s;
     -webkit-transition: margin-left 0.5s;
     transition: margin-left 0.5s; }

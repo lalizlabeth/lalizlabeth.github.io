@@ -120,7 +120,7 @@ $navigation_height: 65px;
     float: left;
     position: relative;
     background: $white;
-    margin-left: 0;
+    margin-left: -1px;
 
     -moz-transition: margin-left 0.5s;
     -webkit-transition: margin-left 0.5s;
