@@ -52,7 +52,7 @@ body {
   height: 100%; }
 
 body {
-  background: #e4e1e2;
+  background: #f9f9f9;
   width: 100%;
   height: 100%; }
 
@@ -1524,7 +1524,7 @@ figcaption {
 
 .page-header {
   background: #21242c;
-  height: 300px; }
+  height: 350px; }
 
 /* Text Module */
 .text-module {
@@ -1540,7 +1540,7 @@ figcaption {
       font-size: 27px;
       margin-top: 48px; }
   .text-module hr {
-    border: 1px solid #e4e1e2; }
+    border: 1px solid #f9f9f9; }
   .text-module ul {
     list-style: circle;
     margin-bottom: 16px; }
