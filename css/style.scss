@@ -106,7 +106,7 @@ $navigation_height: 65px;
   #logo {
     position: fixed;
     width: $navigation_height;
-    background: $pink url("../images/menu-icon.png");
+    background: $pink;
     background-size: contain;
     z-index: 2;
     a {

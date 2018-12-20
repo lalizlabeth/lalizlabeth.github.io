@@ -83,7 +83,7 @@ body {
   .general-navigation #logo {
     position: fixed;
     width: 65px;
-    background: #ee478d url("../images/menu-icon.png");
+    background: #ee478d;
     background-size: contain;
     z-index: 2; }
     .general-navigation #logo a {
