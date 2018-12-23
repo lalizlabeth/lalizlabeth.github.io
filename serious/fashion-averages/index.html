@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:fb="http://ogp.me/ns/fb#">
+  <head>
+    <meta http-equiv="Content-type" content="text/html" charset="utf-8">
+    <title>Elizabeth Lin: Student Progress</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Elizabeth Lin, Elizabeth Yuwen Lin, Cal, Berkeley, Design, Developer, LinkedIn, Computer Science, Iowa, Khan Academy, lalizlabeth, InnoD, Innovative Design, BARE Magazine, DeCal, Photoshop DeCal, UI, UX">
+    <meta name="description" content="Elizabeth Lin. UC Berkeley, Computer Science 2015. Designer. Graphic Design. UI/UX. Web Development Intern at LinkedIn. President of Innovative Design. Layout Director of BARE Magazine. Graphic Design DeCal. Future Product Design Intern at Khan Academy. Fashionista.">
+    <meta name="author" content="Elizabeth Lin">
+
+    <meta property="og:title" content="Elizabeth Lin: Student Progress" />
+    <meta property="og:image" content="http://www.elizabethylin.com/images/progress/cover.png" />
+    <meta property="og:url" content="http://www.elizabethylin.com" />
+    <meta property="og:description" content="Elizabeth Lin. UC Berkeley, Computer Science 2015. Designer. Graphic Design. UI/UX. Web Development Intern at LinkedIn. President of Innovative Design. Layout Director of BARE Magazine. Graphic Design DeCal. Future Product Design Intern at Khan Academy." />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../../images/favicon.png">
+
+    <!-- Stylesheets -->
+    <link href="../../css/style.min.css" rel="stylesheet">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-49460505-1', 'elizabethylin.com');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+
+    <div id="wrapper">
+      
+      <nav class="general-navigation">
+        <ul>
+          <li id="logo" class="open">
+            <a href="#"></a>
+          </li>
+          <li class="general-navigation-item first">
+            <a href="../../">Home</a>
+          </li>
+          <li class="general-navigation-item">
+            <a href="../../about">About</a>
+          </li>
+          <li class="general-navigation-item active">
+            <a href="../">Serious</a> 
+          </li>
+          <li class="general-navigation-item">
+            <a href="../../whimsical">Whimsical</a>
+          </li>
+          <li class="general-navigation-item">
+            <a href="../../talks">Talks</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="progress-intro" class="intro-module">
+        <div class="xlarge-module-text gray">
+          <h3>Khan Academy</h3>
+          <h1>Student Progress</h1>
+        </div>
+      </div>
+
+      <div class="text-module">
+        <p>This was a 6 month-long project where we rearchitected the teacher dashboard based upon a pilot program. The team consisted of myself, a product manager, and 3 engineers. We shipped the features in Fall 2018 for Back-to-School</p>
+
+        <h2 class="heading">The Problem</h2>
+        <p style="margin-bottom: 0;">In 2017, we introduced an assignments feature to help teachers target individualized content at their students. Teachers can assign any item of content (exercises, videos, articles, quizzes) to a group of students. There was no easy way for teachers to view individual student progress over time or find trends in their learning. Student progress also only existed for math and computer science classrooms.</p>
+        <div class="display-image">
+          <img src="../../images/progress/old.gif">
+          <figcaption>The only way for teachers to see student assignment progress was by clicking X / Y.</figcaption>
+        </div>
+        <p>Our goal was to give all teachers a way to view their students’ progress that fits into their current workflow and surfaces patterns in student understanding.</p>
+
+        <h2 class="heading">Initial Explorations &amp; Research</h2>
+        <p>We had a month to explore and research different directions we could display student progress. We started by interviewing 10 non-math teachers to understand how they track student progress and learning. These are some of our high level findings:</p>
+        <ul>
+          <li style="margin-bottom: 12px;"><strong>Teachers want to see individual student effort.</strong> If they did poorly on an exercise, did they watch a related video or read a related article? Did they use any hints? Have they improved since last week?</li>
+          <li style="margin-bottom: 12px;"><strong>Teachers want to identify groups of students.</strong> Which students are ahead? Which students have gaps in learning? Many teachers pull small groups aside to do a mini-lesson during class.</li>
+          <li style="margin-bottom: 32px;"><strong>Humanities teachers tended to use Khan Academy more as a textbook replacement than a tool for evaluation.</strong> We have good content, but it’s difficult to evaluate critical thinking skills without support for free response questions.</li>
+        </ul>
+        <p style="margin-bottom: 0;">Most importantly, we learned that teachers all define proficiency, competency, and mastery differently and want to be able to see student data in a way that matches their own model. They want the flexibility to be able to filter data by student, date range, unit, skill level, standard, and improvement. This is an early prototype I worked on to showcase how all these might work together:</p>
+
+        <div class="display-image">
+          <img src="../../images/progress/early-prototype.gif">
+          <figcaption>In this prototype, orange means a student has gotten less than 70% on the last 10 questions about the skill.</figcaption>
+        </div>
+
+        <p style="margin-bottom: 0;">At the same time, we explored some conceptual directions. In this one, we thought it would be fun if a classroom’s progress was displayed as a garden where each student’s learning was displayed as a plant! The bottom features a interactive timeline to view change over time.</p>
+        <div class="display-image">
+          <img src="../../images/progress/plants.gif">
+        </div>
+        <p style="margin-bottom: 0;">We also brought together the entire team to brainstorm different visuals and forms of displaying student progress.</p>
+        <div class="display-image">
+          <img src="../../images/progress/brainstorming.png">
+          <figcaption>This was done over Google Slides to be remote friendly!</figcaption>
+        </div>
+
+
+        <h2 class="heading">Narrowing the Scope</h2>
+        <p style="margin-bottom: 0;">After this first round of exploration and research, we wanted to hone in on a direction to tackle first. Progress is complicated and we had so many features we wanted to implement. To help us decide, we showed a series of wireframes to 5 teachers and had them rank the effectiveness of each one.</p>
+        <div class="display-image">
+          <img src="../../images/progress/iterations.gif">
+        </div>
+        <p>In each of these examples, we used orange to indicate students with under 70% and green to indicate students with 100%. Based on our conversations, the teachers liked...</p>
+        <ul>
+          <li style="margin-bottom: 12px;">Being able to see individual student performance</li>
+          <li style="margin-bottom: 32px;">Being able to quickly scan how their entire class is doing</li>
+        </ul>
+        <p style="margin-bottom: 0;">We decided that "Progress by Student" would be the most beneficial to more teachers because it allows for teachers to quickly see individual student performance at a glance. It also felt familiar to teachers because it looks like a grade book.</p>
+
+        <div class="display-image">
+          <img src="../../images/progress/odyssey/2-Student progress.png">
+        </div>        
+
+        <h2 class="heading">Iterating</h2>
+        <p style="margin-bottom: 0;">At this point, we pulled in the engineers and started building. We recruited an initial pilot group of 30 teachers. Each week, we sent out a survey asking teachers to reflect on the new Progress feature and conducted short interviews with 2-3 teachers to get their reflections. This is where we started:</p>
+
+        <div class="display-image">
+          <img src="../../images/progress/v1.png">
+          <figcaption>This is pretty similar to the original wireframe, but just visually redesigned to fit our style guide</figcaption>
+        </div>   
+
+        <div class="display-image">
+          <img src="../../images/progress/survey-1.png">
+          <figcaption>We sent a Google forms survey on a weekly basis to collect feedback</figcaption>
+        </div>   
+
+        <p>17 teachers responded out of the 30 pilot teachers. In general, they loved this new feature because they could see all the information at once. One teacher said:</p>
+        <p style="margin-left: 64px; margin-right: 64px;">“I loved that it gave a quick overview of who is doing what work, and the %. This is SO HELPFUL for me as a teacher in many ways. I can see the progress of individual students, determine how to group students/differentiate quickly. This can also make it simpler for me when it comes to putting work in the grade book. It's amazing!”</p>
+        <p>Here's a summary of the rest of their feedback:</p>
+        <ul>
+          <li style="margin-bottom: 12px;">I like that I can see how my class is doing at-a-glance! 7 teachers mentioned their love for the color-coding.</li>
+          <li style="margin-bottom: 12px;">I like that I can easily find struggling students</li>
+          <li style="margin-bottom: 12px;">I like that I can use it for grading.</li>
+          <li style="margin-bottom: 12px;">I wish I could filter by date.</li>
+          <li style="margin-bottom: 32px;">I wish I could see a single student’s progress</li>
+        </ul>
+
+        <p style="margin-bottom: 0;">Based on the feedback from round 1, we decided to implement a date filter and content type filter to help teachers identify gaps easier. Some teachers assign videos, articles, and exercises, so they want to be able to filter to see only exercises for a week at a time.</p>
+
+        <div class="display-image">
+          <img src="../../images/progress/v2.png">
+        </div>   
+
+        <p>In this week's survey, we asked teachers: <strong>"How might you use the Progress page to inform your instruction?"</strong> Here are some of their responses:</p>
+
+        <p style="margin-left: 64px; margin-right: 64px;">“It allows me to notice larger patterns of content that I need to reteach and fill in gaps. I also like that I can track how much of the AP Calculus curriculum that my students have practiced."</p>
+
+        <p style="margin-left: 64px; margin-right: 64px;">“I can use it to quickly check how a student is doing, if they are completing their work or struggling. It is extremely handy, as today I had a parent ask if her son had completed all of his missing work that I haven't graded yet, and I was able to quickly check which had been completed.”</p>        
+
+        <p style="margin-left: 64px; margin-right: 64px;">“Next year, I might use the Progress page to guide small groups and reteaching within the class and RtI [Response to Intervention]. I might also use the Progress page to check for Mastery and readiness for tests.”</p>
+
+        <p style="margin-bottom: 0;">We also wanted to drill into when teachers use the progress page. We discovered that their preferences for the date filter were pretty varied validating the need for the Date filter.</p>
+
+        <div class="display-image">
+          <img src="../../images/progress/date-filter.png">
+        </div>   
+
+        <p style="margin-bottom: 0;">The most popular request we had was an individual student report. We reprioritized our timeline to accomodate for this feature because we felt it was crucial to a teacher's workflow. Many teachers wanted to discuss scores with individual students or their parents without compromising other students' private information.</p>    
+
+        <div class="display-image">
+          <img src="../../images/progress/individual.jpeg">
+        </div>       
+
+        <h2 class="heading">What We Shipped</h2>
+        <p style="margin-bottom: 0;">After conducting many user interviews and surveys, we felt really confident about launching this to 100% of our users across the world for Back To School 2018! This was our final design.</p>
+        <div class="display-image">
+          <img src="../../images/progress/shipped/1.jpeg">
+        </div>   
+
+        <div class="display-image">
+          <img src="../../images/progress/shipped/2.jpeg">
+        </div>  
+
+        <div class="display-image">
+          <img src="../../images/progress/shipped/3.jpeg">
+        </div>  
+
+        <p>We changed a few small things before launching including adding icons for easier readability, pagination for faster loads, and vertical student names.</p>
+
+        <h2 class="heading">What's next?</h2>
+        <p>This feature was very successful and has an NPS of +51%! We want to continue exploring ways to make progress better for non-math classes, but this would involve a major strategy shift on many teams. In the future, we're going to explore more ways of incorporating classroom activity and trajectory into our progress tracking.</p>
+      </div>
+
+
+      <div class="footer">
+        <a class="previous" href="../review-game">Previous<em>In-Class Review Game</em></a>
+        <a class="next" href="../../khan">Next<em>Internship</em></a>
+      </div>
+
+
+    </div>
+    
+    <!-- Scripts -->
+    <script src="../../scripts/jquery-1.7.1.min.js"></script>
+    <script src="../../scripts/scripts.js"></script>
+  </body>
+</html>
