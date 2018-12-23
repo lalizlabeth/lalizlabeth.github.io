@@ -107,6 +107,7 @@ body {
         color: #ee478d;
         cursor: default; }
     .general-navigation .general-navigation-item a {
+      box-sizing: border-box;
       display: block;
       width: 100%;
       height: 100%;
@@ -1528,7 +1529,7 @@ figcaption {
 
 /* Text Module */
 .text-module {
-  padding: 25px 20%;
+  padding: 25px 18%;
   height: auto; }
   .text-module h2, .text-module .headline a, .headline .text-module a, .text-module .footer a em, .footer a .text-module em {
     margin-bottom: 16px; }
@@ -1551,8 +1552,7 @@ figcaption {
     .text-module a:hover {
       opacity: 0.8; }
   .text-module p {
-    text-align: justify;
-    margin-bottom: 20px; }
+    margin-bottom: 32px; }
     .text-module p.first-paragraph {
       text-indent: 0; }
     .text-module p:last-child {
@@ -1985,7 +1985,7 @@ figcaption {
     width: 70%; }
 
   #progress {
-    width: 100%; } }
+    width: 60%; } }
 @media screen and (max-width: 900px) {
   #skills {
     width: 100%;
@@ -1993,7 +1993,10 @@ figcaption {
 
   .large-text-only-module {
     width: 100%;
-    height: auto; } }
+    height: auto; }
+
+  #progress {
+    width: 100%; } }
 @media screen and (max-width: 750px) {
   .text-module {
     padding: 25px 16px; }
