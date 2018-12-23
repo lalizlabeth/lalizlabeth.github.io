@@ -83,7 +83,7 @@ body {
   .general-navigation #logo {
     position: fixed;
     width: 65px;
-    background: #ee478d;
+    background: #fa50ae;
     background-size: contain;
     z-index: 2; }
     .general-navigation #logo a {
@@ -104,7 +104,7 @@ body {
       cursor: default;
       background: #fff; }
       .general-navigation .general-navigation-item#home:hover a {
-        color: #ee478d;
+        color: #fa50ae;
         cursor: default; }
     .general-navigation .general-navigation-item a {
       box-sizing: border-box;
@@ -113,11 +113,11 @@ body {
       height: 100%;
       padding: 22px 50px 0 50px;
       font: 700 18px/20px "Alegreya Sans", "Helvetica", "Arial", sans-serif;
-      color: #ee478d;
+      color: #fa50ae;
       text-decoration: none; }
     .general-navigation .general-navigation-item.active, .general-navigation .general-navigation-item:hover {
       cursor: pointer;
-      background: #ee478d; }
+      background: #fa50ae; }
       .general-navigation .general-navigation-item.active a, .general-navigation .general-navigation-item:hover a {
         color: #fff; }
     .general-navigation .general-navigation-item.active:hover {
@@ -808,7 +808,7 @@ figcaption {
   .pink.medium-module-tall, .pink.large-module, .pink.large-text-only-module,
   .pink.large-module-tall, .pink.xlarge-module, .pink.headline, .pink.intro-module, .pink.video-module, .pink.xlarge-text-only-module, .pink.page-header, .pink.text-module,
   .pink.xlarge-module-tall {
-    background: #ee478d; }
+    background: #fa50ae; }
     .module.pink h1, .pink.xxsmall-module h1,
     .pink.xxsmall-module-tall h1, .pink.xsmall-module h1,
     .pink.xsmall-module-tall h1, .pink.small-module h1, .pink.small-text-only-module h1,
@@ -1088,7 +1088,7 @@ figcaption {
   display: inline-block;
   text-decoration: none;
   padding: 20px;
-  background: #ee478d; }
+  background: #fa50ae; }
   .footer a:hover {
     opacity: 0.85; }
   .footer a em {
@@ -1324,7 +1324,7 @@ figcaption {
   .pink.large-module-text h6,
   .pink.medium-module-text h6,
   .pink.small-module-text h6 {
-    background: #ee478d;
+    background: #fa50ae;
     color: #fff; }
   .module-text.gray h1, .gray.xlarge-module-text h1,
   .gray.large-module-text h1,
@@ -1520,7 +1520,7 @@ figcaption {
   .text-only-module .solo-text h1, .small-text-only-module .solo-text h1, .large-text-only-module .solo-text h1, .xlarge-text-only-module .solo-text h1, .page-header .solo-text h1, .text-only-module .solo-text h5, .small-text-only-module .solo-text h5, .large-text-only-module .solo-text h5, .xlarge-text-only-module .solo-text h5, .page-header .solo-text h5 {
     color: #fff; }
 .text-only-module.white .solo-text h5, .white.small-text-only-module .solo-text h5, .white.large-text-only-module .solo-text h5, .white.xlarge-text-only-module .solo-text h5, .white.page-header .solo-text h5 {
-  color: #ee478d;
+  color: #fa50ae;
   font-weight: 400; }
 
 .page-header {
@@ -1571,7 +1571,7 @@ figcaption {
 .footer-buttons li:last-child {
   border: none; }
 .footer-buttons li:hover {
-  background: #ee478d; }
+  background: #fa50ae; }
   .footer-buttons li:hover a {
     color: #fff; }
 .footer-buttons li a {
@@ -1584,7 +1584,7 @@ figcaption {
   text-decoration: none;
   width: 100%;
   height: 100%;
-  color: #ee478d; }
+  color: #fa50ae; }
 
 /* Special Styles */
 #bio,
