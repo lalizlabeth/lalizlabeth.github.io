@@ -95,6 +95,7 @@ body {
 /* Navigation */
 $navigation_height: 65px;
 .general-navigation {
+  background: white;
   position: fixed;
   z-index: 3;
   ul {
@@ -386,6 +387,7 @@ $tall_box_height: 550px;
 
 .display-image-vertical {
   @extend .display-image;
+  text-align: center;
   img {
     width: 45%;
     display: inline-block;
@@ -753,10 +755,26 @@ $tall_box_height: 550px;
 
 // Updated
 
+#beauty {
+  background: url("../images/home/beauty.jpg");
+  background-size: cover;
+  background-position: center 0;
+  &:hover {
+    background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
+      ),
+      url("../images/home/beauty.jpg");
+    background-size: cover;
+    background-position: center 0;
+  }
+}
+
 #cuteness {
   background: url("../images/home/cuteness.gif");
   background-size: cover;
-  background-position: center -10px;
+  background-position: center;
   &:hover {
     background: 
      linear-gradient(
@@ -765,7 +783,7 @@ $tall_box_height: 550px;
       ),
       url("../images/home/cuteness.gif");
     background-size: cover;
-    background-position: center -10px;
+    background-position: center;
   }
 }
 
@@ -1143,6 +1161,20 @@ $tall_box_height: 550px;
   }
 }
 
+#fashion-averages {
+  background: url("../images/home/fashion-averages.jpg") center;
+  background-size: cover;
+  &:hover {
+     background: 
+     linear-gradient(
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
+      ),
+      url("../images/home/fashion-averages.jpg") center;
+    background-size: cover;
+  }
+}
+
 #leviosa-intro,
 #leviosa {
   background: url("../images/home/leviosa.png") center $white no-repeat;
@@ -1171,6 +1203,11 @@ $tall_box_height: 550px;
       url("../images/home/leviosa.png") center $white no-repeat;
     background-size: 50%;
   }
+}
+
+#beauty-intro {
+  background: url("../images/beauty/cover.jpg") center;
+  background-size: cover;
 }
 
 #charmbits-intro {
@@ -1307,6 +1344,11 @@ $tall_box_height: 550px;
   background-size: cover;
 }
 
+#fashion-averages-intro {
+  background: url("../images/fashion-averages/cover.jpg") center;
+  background-size: cover;
+}
+
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
   #wrapper {
@@ -1333,9 +1375,6 @@ $tall_box_height: 550px;
     &:hover {
       background-size: cover;
     }
-  }
-  #review-game {
-    width: 60%;
   }
   #tracks {
     width: 20%;
@@ -1373,7 +1412,14 @@ $tall_box_height: 550px;
   }
 
   #progress {
-    width: 60%;
+    width: 40%;
+  }
+  #fashion-averages {
+    width: 20%;
+  }
+
+  .small-group {
+    width: 40%;
   }
 }
 
@@ -1387,6 +1433,21 @@ $tall_box_height: 550px;
     height: auto;
   }
   #progress {
+    width: 60%;
+  }
+  .small-group {
+    width: 40%;
+  }
+  #beauty {
+    width: 80%;
+  }
+  #fashion-averages {
+    width: 20%;
+  }
+  #about-me,
+  .xsmall-group,
+  #review-game,
+  .medium-group {
     width: 100%;
   }
 }
@@ -1398,13 +1459,13 @@ $tall_box_height: 550px;
       text-align: left;
     }
   }
+  #fashion-averages,
+  #beauty,
+  #progress,
   #review-game {
     width: 100%;
   }
   #wrapper {
-    width: 100%;
-  }
-  #tracks {
     width: 100%;
   }
 

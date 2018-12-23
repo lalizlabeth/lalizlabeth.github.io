@@ -74,6 +74,7 @@ body {
 
 /* Navigation */
 .general-navigation {
+  background: white;
   position: fixed;
   z-index: 3; }
   .general-navigation ul {
@@ -1060,13 +1061,15 @@ figcaption {
     .display-image img.no-shadow, .display-image-vertical img.no-shadow {
       box-shadow: 0 0 0 0; }
 
-.display-image-vertical img {
-  width: 45%;
-  display: inline-block; }
-  .display-image-vertical img.left {
-    margin-right: 10px; }
-  .display-image-vertical img.right {
-    margin-left: 10px; }
+.display-image-vertical {
+  text-align: center; }
+  .display-image-vertical img {
+    width: 45%;
+    display: inline-block; }
+    .display-image-vertical img.left {
+      margin-right: 10px; }
+    .display-image-vertical img.right {
+      margin-left: 10px; }
 
 .headline {
   height: auto;
@@ -1597,14 +1600,23 @@ figcaption {
   background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/portrait.jpg");
   background-size: cover; }
 
+#beauty {
+  background: url("../images/home/beauty.jpg");
+  background-size: cover;
+  background-position: center 0; }
+  #beauty:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/beauty.jpg");
+    background-size: cover;
+    background-position: center 0; }
+
 #cuteness {
   background: url("../images/home/cuteness.gif");
   background-size: cover;
-  background-position: center -10px; }
+  background-position: center; }
   #cuteness:hover {
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/cuteness.gif");
     background-size: cover;
-    background-position: center -10px; }
+    background-position: center; }
 
 #dottie {
   background: url("../images/home/dottie.png");
@@ -1809,6 +1821,13 @@ figcaption {
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/fungi.jpg") center;
     background-size: cover; }
 
+#fashion-averages {
+  background: url("../images/home/fashion-averages.jpg") center;
+  background-size: cover; }
+  #fashion-averages:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/fashion-averages.jpg") center;
+    background-size: cover; }
+
 #leviosa-intro,
 #leviosa {
   background: url("../images/home/leviosa.png") center #fff no-repeat;
@@ -1822,6 +1841,10 @@ figcaption {
 #leviosa:hover {
   background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home/leviosa.png") center #fff no-repeat;
   background-size: 50%; }
+
+#beauty-intro {
+  background: url("../images/beauty/cover.jpg") center;
+  background-size: cover; }
 
 #charmbits-intro {
   background: url("../images/charmbits/cover.jpg") center;
@@ -1929,6 +1952,10 @@ figcaption {
   background: url("../images/project-tater/cover.png") center;
   background-size: cover; }
 
+#fashion-averages-intro {
+  background: url("../images/fashion-averages/cover.jpg") center;
+  background-size: cover; }
+
 /* Screen Compatibility */
 @media screen and (max-width: 1200px) {
   #wrapper {
@@ -1954,9 +1981,6 @@ figcaption {
     background-size: cover; }
     #posters:hover {
       background-size: cover; }
-
-  #review-game {
-    width: 60%; }
 
   #tracks {
     width: 20%; }
@@ -1985,7 +2009,13 @@ figcaption {
     width: 70%; }
 
   #progress {
-    width: 60%; } }
+    width: 40%; }
+
+  #fashion-averages {
+    width: 20%; }
+
+  .small-group {
+    width: 40%; } }
 @media screen and (max-width: 900px) {
   #skills {
     width: 100%;
@@ -1996,6 +2026,21 @@ figcaption {
     height: auto; }
 
   #progress {
+    width: 60%; }
+
+  .small-group {
+    width: 40%; }
+
+  #beauty {
+    width: 80%; }
+
+  #fashion-averages {
+    width: 20%; }
+
+  #about-me,
+  .xsmall-group,
+  #review-game,
+  .medium-group {
     width: 100%; } }
 @media screen and (max-width: 750px) {
   .text-module {
@@ -2003,13 +2048,13 @@ figcaption {
     .text-module p {
       text-align: left; }
 
+  #fashion-averages,
+  #beauty,
+  #progress,
   #review-game {
     width: 100%; }
 
   #wrapper {
-    width: 100%; }
-
-  #tracks {
     width: 100%; }
 
   .module.xsmall-module, .xsmall-module, .module.small-module, .small-module, .small-text-only-module, .module.medium-module, .medium-module, .module.large-module, .large-module, .large-text-only-module, .module.xlarge-module, .module.headline, .headline.xxsmall-module,
