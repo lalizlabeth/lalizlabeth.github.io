@@ -1,15 +1,17 @@
 $(document).ready(function() {
-  var firstScroll = false;
+
+  $(".general-navigation-item").each(function(index) {
+    var width = Math.round($(this).width());
+    $(this).css("width", width);
+  });
 
   function toggleNavigation(navigationState) {
     var width;
     $(".general-navigation-item").each(function(index) {
       if (navigationState === true) {
-        console.log('nav close');
         width = -$(this).width()-$("#logo").width();
         $("#logo").removeClass("open");
       } else {
-        console.log('nav open');
         width = 0;
         if (index === 0) {
           width = $("#logo").width();
