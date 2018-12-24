@@ -74,7 +74,6 @@ body {
 
 /* Navigation */
 .general-navigation {
-  background: white;
   position: fixed;
   z-index: 3; }
   .general-navigation ul {
