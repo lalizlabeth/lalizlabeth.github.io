@@ -5,9 +5,11 @@ $(document).ready(function() {
     var width;
     $(".general-navigation-item").each(function(index) {
       if (navigationState === true) {
+        console.log('nav close');
         width = -$(this).width()-$("#logo").width();
         $("#logo").removeClass("open");
       } else {
+        console.log('nav open');
         width = 0;
         if (index === 0) {
           width = $("#logo").width();
@@ -27,16 +29,14 @@ $(document).ready(function() {
     }
   });
 
-  $(window).scroll(function() {
-    var scrollHeight = $(document).scrollTop();
-    if (scrollHeight === 0) {
+  window.onscroll = function(e) {
+    // print "false" if direction is down and "true" if up
+    var scroll = this.oldScroll > this.scrollY;
+    if (scroll === true) {
       toggleNavigation(false);
-      firstScroll = false;
     } else {
-      if (firstScroll === false) {
-        toggleNavigation(true);
-        firstScroll = true;
-      }
+      toggleNavigation(true);
     }
-  });
+    this.oldScroll = this.scrollY;
+  }
 });
