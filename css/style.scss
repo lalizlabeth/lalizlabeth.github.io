@@ -120,7 +120,6 @@ $navigation_height: 65px;
     float: left;
     position: relative;
     background: $white;
-    margin-left: -1px;
 
     -moz-transition: margin-left 0.5s;
     -webkit-transition: margin-left 0.5s;
@@ -686,9 +685,7 @@ $tall_box_height: 550px;
     }
   }
   p {
-    // text-align: justify;
     margin-bottom: 32px;
-    // text-indent: 20px;
     &.first-paragraph {
       text-indent: 0;
     }
@@ -1456,6 +1453,14 @@ $tall_box_height: 550px;
     padding: 25px 16px;
     p {
       text-align: left;
+    }
+  }
+  .module .module-text {
+    display: block;
+    h2,
+    h4 {
+      background: $gray;
+      color: $white
     }
   }
   #fashion-averages,
