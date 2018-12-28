@@ -1,9 +1,11 @@
 $(document).ready(function() {
 
-  // $(".general-navigation-item").each(function(index) {
-  //   var width = Math.round($(this).width());
-  //   $(this).css("width", width);
-  // });
+  if($(window).width() >= 1024) {
+    $(".general-navigation-item").each(function(index) {
+      var width = Math.round($(this).width());
+      $(this).css("width", width);
+    });
+  }
 
   function toggleNavigation(navigationState) {
     var width;
