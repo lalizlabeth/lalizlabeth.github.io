@@ -36,7 +36,7 @@ class About extends Component {
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Anything fashion-related</span></h2>
-                <p>I love everything fashion from history to styling, and especially Alexander McQueen. My latest mission is learning how to sew.</p>
+                <p className="about-description">I love everything fashion from history to styling, and especially Alexander McQueen. You can find some of my musings <a href="https://medium.com/52-weeks-of-fashion">on Medium</a>.</p>
               </div>
             </li>
 
@@ -46,7 +46,7 @@ class About extends Component {
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Teaching design</span></h2>
-                <p>I'm passionate about design education and mentorship. Reach out to me if you're looking for someone to teach a workshop or give a talk!</p>
+                <p className="about-description">I'm passionate about design education and mentorship. Reach out to me if you're looking for someone to teach a workshop or give a talk!</p>
               </div>
             </li>
 
@@ -56,7 +56,7 @@ class About extends Component {
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Classifying music</span></h2>
-                <p>I've been separating my playlists into bops, bangers, &amp; jams. Lately, I've been listening to Solange &amp; Ari.</p>
+                <p className="about-description">I've been separating my playlists into <a href="https://open.spotify.com/user/lalizlabeth/playlist/6PoziqidZhUKeaz1dCC8Ep?si=BVbZjevaQfSmt6kNr2O3yA">bops</a>, <a href="https://open.spotify.com/user/lalizlabeth/playlist/76PE9EsOxWFeSmhnx8YKI9?si=InwbWM8wTY6xqHIErwd36Q">bangers</a>, &amp; <a href="https://open.spotify.com/user/lalizlabeth/playlist/0FL6oYFk7kbsA6TzZnm6l4?si=Ux1OSX5iTrayKbUvGKDUQQ">jams</a>. Lately, I've been jamming to Solange &amp; bopping to Ari.</p>
               </div>
             </li>
 
@@ -66,7 +66,7 @@ class About extends Component {
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Books</span></h2>
-                <p>My favorite book recently was the Fifth Season by N.K. Jemisin!</p>
+                <p className="about-description">I obsessively track my book reading in <a href="https://airtable.com/shrQXfTwETdlkJbJ0">this Airtable</a>. I started a few years ago because I realized most of my books were written by white men. Most recently, my favorite read was The Fifth Season by N.K. Jemisin.</p>
               </div>
             </li>
 

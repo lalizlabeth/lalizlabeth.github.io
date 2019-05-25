@@ -21,19 +21,19 @@
 }
 
 .large-spacer-top {
-  margin-top: 48px;
+  margin-top: $large-spacer;
 }
 
 .medium-spacer-bottom {
-  margin-bottom: 32px;
+  margin-bottom: $medium-spacer;
 }
 
 .medium-spacer-top {
-  margin-top: 32px;
+  margin-top: $medium-spacer;
 }
 
 .small-spacer-bottom {
-  margin-bottom: 20px;
+  margin-bottom: $small-spacer;
 }
 
 .project-image {
@@ -138,7 +138,53 @@ ul.text-list {
   }
 }
 
+@media screen and (max-width: 768px) {
+  #project-area {
+    .col-7 {
+      width: 100vw;
+    }
+    .col-5 {
+      width: 80vw;
+    }
+    .col-2 {
+      width: 20vw;
+    }
+  }
+  .next-shelf {
+    align-items: flex-start;
+    flex-direction: row;
+    .prev-project {
+      text-align: left;
+    }
+    .next-project {
+      .project-link {
+        flex-direction: column-reverse;
+      }
+      text-align: right;
+    }
+    .project,
+    .project-link {
+      align-items: flex-start;
+      width: 50vw;
+      .col-1, .col-3 {
+        width: 50vw;
+      }
+      h2 {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
+  #project-area {
+    .col-5 {
+      width: 100vw;
+    }
+    .col-2 {
+      width: 20vw;
+    }
+  }
   .project-header
   .project-image {
     border-radius: 0;
@@ -146,6 +192,9 @@ ul.text-list {
   }
   .project-header {
     margin-top: $medium-spacer;
+  }
+  .project-description {
+
   }
   .project-header,
   .project-image {
@@ -159,10 +208,12 @@ ul.text-list {
   .reflections {
     display: none;
   }
-  p.large-paragraph {
+  p.large-paragraph,
+  p.large-paragraph.quote {
     font-size: 17px;
   }
   ul.text-list {
+    li { font-size: 17px; }
     padding: 0 32px;
   }
 }

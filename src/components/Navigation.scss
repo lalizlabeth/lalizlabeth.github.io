@@ -19,6 +19,7 @@
 // Media Queries
 @media screen and (max-width: 768px) {
   .navigation {
+    z-index: 100;
     &.col-2 {
       flex-direction: row;
       padding: 0;

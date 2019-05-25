@@ -7,10 +7,10 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <header className="header" style={{ padding: "48px 0" }}>
+        <header className="header" style={{padding: "2vw 0"}}>
           <div className="header-text-wrapper nested">
             <h1 className="header-text col-4"><strong>Elizabeth Lin</strong> is a product designer &amp; aspiring princess.</h1>
-            <p className="title-caption col-3">This site is still under construction, so pls send bugs my way <span role="img" aria-label="kissy emoji">😘!</span></p>
+            <p className="title-caption col-3"><span role="img" aria-label="construction-sign">🚧</span> This site is still under construction!</p>
           </div>
           <div className="header-image-wrapper">
             <div className="header-image">

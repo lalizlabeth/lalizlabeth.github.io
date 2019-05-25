@@ -43,7 +43,11 @@ class ProjectContainer extends Component {
           title="What do we perceive as beautiful?"
           header={beautyHeader}
           description="An interactive installation questioning our assumptions about beauty standards."
-          body=<Beauty/>/>)
+          body=<Beauty/>
+          next_title="Math review game"
+          next_link="/design/project/math-review-game/"
+          prev_title="Fashion averages"
+          prev_link="/experiments/project/fashion-avgs/"/>)
         break;
       case "cultural-values":
         project =
@@ -51,7 +55,11 @@ class ProjectContainer extends Component {
           title="Cultural values"
           header={culturalValuesHeader}
           description="Designing Khan Academy's new cultural values."
-          body=<CulturalValues/>/>)
+          body=<CulturalValues/>
+          next_title="Math review game"
+          next_link="/design/project/math-review-game/"
+          prev_title="Fashion averages"
+          prev_link="/experiments/project/fashion-avgs/"/>)
         break;
       case "design-systems":
         project =
@@ -59,7 +67,11 @@ class ProjectContainer extends Component {
           title="Design systems"
           header={designSystemsHeader}
           description="This case study is an overview of the different components I worked on at Khan Academy."
-          body=<DesignSystems/>/>)
+          body=<DesignSystems/>
+          next_title="Math review game"
+          next_link="/design/project/math-review-game/"
+          prev_title="Fashion averages"
+          prev_link="/experiments/project/fashion-avgs/"/>)
         break;
       case "dottie":
         project =
@@ -67,7 +79,11 @@ class ProjectContainer extends Component {
           title="Have you seen my glasses?"
           header={dottieHeader}
           description="Children's Book thing"
-          body=<Dottie/>/>)
+          body=<Dottie/>
+          next_title="Math review game"
+          next_link="/design/project/math-review-game/"
+          prev_title="Fashion averages"
+          prev_link="/experiments/project/fashion-avgs/"/>)
         break;
       case "exercises":
         project =
@@ -75,7 +91,11 @@ class ProjectContainer extends Component {
           title="Exercise mechanics"
           header={exercisesHeader}
           description="Motivating students to learn by creating "
-          body=<Exercises/>/>)
+          body=<Exercises/>
+          next_title="Math review game"
+          next_link="/design/project/math-review-game/"
+          prev_title="Fashion averages"
+          prev_link="/experiments/project/fashion-avgs/"/>)
         break;
       case "fashion-avgs":
         project =
@@ -83,7 +103,11 @@ class ProjectContainer extends Component {
           title="Fashion averages"
           header={fashionAveragesHeader}
           description="Who is the average of fashion week?"
-          body=<FashionAverages/>/>)
+          body=<FashionAverages/>
+          next_title="The undiversity of makeup"
+          next_link="/design/project/sephora/"
+          prev_title="What do we perceive as beautiful?"
+          prev_link="/experiments/project/beauty/"/>)
         break;
       case "hogwarts":
         project =
@@ -91,7 +115,11 @@ class ProjectContainer extends Component {
           title="Harry Potter Hackaweek"
           header={hogwartsHeader}
           description="Branding for Khan Academy's yearly Harry Potter hackathon."
-          body=<Hogwarts/>/>)
+          body=<Hogwarts/>
+          next_title="Math review game"
+          next_link="/design/project/math-review-game/"
+          prev_title="Fashion averages"
+          prev_link="/experiments/project/fashion-avgs/"/>)
         break;
       case "review-game":
         project =
@@ -99,7 +127,11 @@ class ProjectContainer extends Component {
           title="In-class review game"
           header={reviewGameHeader}
           description="How can we help teachers identify and fill student gaps in learning?"
-          body=<ReviewGame/>/>)
+          body=<ReviewGame/>
+          next_title="Math review game"
+          next_link="/design/project/math-review-game/"
+          prev_title="Fashion averages"
+          prev_link="/experiments/project/fashion-avgs/"/>)
         break;
       case "sephora":
         project =
@@ -107,7 +139,11 @@ class ProjectContainer extends Component {
           title="The undiversity of makeup"
           header={sephoraHeader}
           description="Surfacing the lack of diversity in Sephora's make up aisle."
-          body=<SephoraSorting/>/>)
+          body=<SephoraSorting/>
+          next_title="Math review game"
+          next_link="/design/project/math-review-game/"
+          prev_title="Fashion averages"
+          prev_link="/experiments/project/fashion-avgs/"/>)
         break;
       case "student-progress":
         project =
@@ -115,7 +151,11 @@ class ProjectContainer extends Component {
           title="Defining student progress"
           header={studentProgressHeader}
           description="How might we enable teachers to identify &amp; fill student gaps in learning?"
-          body=<StudentProgress/>/>)
+          body=<StudentProgress/>
+          next_title="Math review game"
+          next_link="/design/project/math-review-game/"
+          prev_title="Fashion averages"
+          prev_link="/experiments/project/fashion-avgs/"/>)
         break;
       default:
     }
@@ -132,7 +172,7 @@ class ProjectContainer extends Component {
 class Project extends Component {
   render() {
     return (
-      <div>
+      <div id="project-area">
         <header className="col-7 nested">
           <div className="col-7">
             <img className="image project-header" alt={this.props.title} src={this.props.header}></img>
@@ -142,20 +182,20 @@ class Project extends Component {
         </header>
         {this.props.body}
         <section className="col-8 nested offset-neg-1 next-shelf">
-          <li className="project col-4 nested" to="/design/project/review-game/">
-            <Link className="project-link" to="/design/project/review-game/">
-              <div className="right-text col-1">
+          <li className="project col-4 nested prev-project">
+            <Link className="project-link" to={this.props.next_link}>
+              <div className="col-1">
                 <h6 className="active">Previous</h6>
               </div>
               <div className="col-3">
-                <h2>Math review game</h2>
+                <h2>{this.props.next_title}</h2>
               </div>
             </Link>
           </li>
-          <li className="project col-4 nested" to="/design/project/review-game/">
-            <Link className="project-link" to="/design/project/review-game/">
+          <li className="project col-4 nested next-project"s>
+            <Link className="project-link" to={this.props.prev_link}>
               <div className="right-text col-3">
-                <h2>Another project title</h2>
+                <h2>{this.props.prev_title}</h2>
               </div>
               <div className="next-shelf-label col-1">
                 <h6 className="active">Next</h6>

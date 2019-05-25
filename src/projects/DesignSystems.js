@@ -19,7 +19,7 @@ class DesignSystems extends Component {
         </div>
         <p className="large-paragraph medium-spacer-bottom col-5">I developed a system to name each asset to make it easy for people to search through.</p>
 
-        <p className="large-paragraph medium-spacer-bottom col-5">I also added a section for easter eggs <span role="img" alt="egg">🥚</span>!</p>
+        <p className="large-paragraph medium-spacer-bottom col-5">I also added a section for easter eggs <span role="img" aria-label="egg">🥚</span>!</p>
 
         <h2 className="large-spacer-top col-5">Iconography</h2>
         <div className="text-group">
