@@ -1,0 +1,271 @@
+@import "styles/_base";
+
+.header {
+  @extend .col-9;
+  @extend .offset-3;
+  @extend .nested;
+  z-index: 3;
+}
+
+.header-image-wrapper {
+  @extend .col-4;
+  @extend .offset-neg-1;
+}
+
+.header-text-wrapper {
+  @extend .col-4;
+  z-index: 4;
+}
+
+.header-image {
+  background-image: url("/images/elizabeth-portrait.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: $border-radius;
+  height: 550px;
+}
+
+.header-text {
+  // @extend .col-4;
+  z-index: 4;
+  margin-bottom: $small-spacer;
+}
+
+.title-caption {
+  color: $dark-gray;
+}
+
+.pink-area {
+  background: $light-pink;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: fixed;
+  width: 100vw;
+  z-index: -1;
+}
+
+.projects-wrapper {
+  background: $light-pink;
+  display: flex;
+  margin-top: -120px;
+  margin-bottom: 90px;
+  padding: 90px 0;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.project-number {
+  text-align: right;
+}
+
+.project {
+  box-sizing: border-box;
+  display: flex;
+  p {
+    color: $gray;
+  }
+  .project-thumb {
+    // border: 4px solid transparent;
+    background: $white;
+    border-radius: $border-radius;
+    height: auto;
+    margin-bottom: $small-spacer;
+    width: 100%;
+  }
+  .image {
+    background-color: $white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    // border: 4px solid $light-pink;
+    border-radius: $border-radius;
+    height: 200px;
+    margin-bottom: $small-spacer;
+  }
+  .project-link {
+    display: flex;
+    &:hover {
+      cursor: default;
+      h2 {
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-color: $pink;
+        span.highlight {
+          background-color: $pink;
+          color: $light-pink;
+        }
+      }
+      .project-thumb {
+        cursor: pointer;
+        opacity: 0.8;
+        // border: 4px solid $white;
+      }
+    }
+  }
+}
+
+#project-2 {
+  flex-direction: column;
+  margin-top: $xxlarge-spacer;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: -4px;
+  .project-number {
+    text-align: left;
+    margin-bottom: $small-spacer;
+  }
+  .image {
+    height: 275px;
+  }
+}
+
+#project-3 {
+  flex-direction: column;
+  .project-link {
+    display: block;
+  }
+  .project-number {
+    text-align: left;
+    margin-bottom: $small-spacer;
+  }
+  .image {
+    height: 280px;
+  }
+  margin-top: -$medium-spacer;
+}
+
+#project-4 {
+  margin-top: 200px;
+  .project-link {
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .project-number {
+    text-align: left;
+  }
+  .image {
+    height: 360px;
+    margin-bottom: 0;
+  }
+}
+
+#project-5 {
+  margin-top: -60px;
+}
+
+#project-6 {
+  flex-direction: column;
+  .project-link {
+    display: block;
+  }
+  .project-number {
+    text-align: left;
+    margin-bottom: $small-spacer;
+  }
+  .image {
+    height: 280px;
+  }
+  margin-top: $xxlarge-spacer;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100vw;
+  }
+  .header-image-wrapper {
+    width: 50vw;
+  }
+  .header-image {
+    height: 400px;
+  }
+  .header-text {
+    width: 50vw;
+  }
+  #project-1 {
+    width: 100vw;
+    .col-3 {
+      .image {
+        height: 300px;
+      }
+      width: 90vw;
+    }
+  }
+  #project-2 {
+    .project-link { display: flex !important; }
+    width: 100vw;
+    .col-4 {
+      .image {
+        height: 300px;
+      }
+      width: 90vw;
+    }
+    .project-number {
+      width: 10vw;
+    }
+  }
+  #project-3 {
+    .project-link { display: flex !important; }
+    width: 100vw;
+    .col-4 {
+      .image {
+        height: 300px;
+      }
+      width: 90vw;
+    }
+    .project-number {
+      width: 10vw;
+    }
+    margin-top: 72px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column-reverse;
+  }
+  .header-image {
+    height: 400px;
+  }
+  .header-image-wrapper {
+    width: 100vw;
+  }
+  .header-text {
+    margin-top: $medium-spacer;
+    text-align: left;
+    width: 100vw;
+  }
+
+  .project .project-link {
+    flex-direction: column;
+  }
+  .project-number {
+    text-align: left;
+    margin-bottom: $xsmall-spacer;
+  }
+  #project-1,
+  #project-2,
+  #project-3,
+  #project-4,
+  .project {
+    margin: 32px 0;
+    .col-3,
+    .col-4 {
+      width: 100vw;
+      .image {
+        height: 200px;
+      }
+    }
+  }
+  .projects-wrapper {
+    border-radius: 0;
+    margin-top: -300px;
+    padding: 300px 0 60px 0;
+  }
+}

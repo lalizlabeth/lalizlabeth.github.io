@@ -1,0 +1,18 @@
+@import "styles/_base";
+
+.header {
+  margin-bottom: $medium-spacer;
+}
+
+.header-image.experiments {
+  background-image: url("assets/images/headers/experiments-2.jpg");
+}
+
+.project-thumb-fixed {
+  height: 250px;
+  margin-bottom: $small-spacer;
+  .project-thumb {
+    height: 250px;
+    object-fit: cover;
+  }
+}

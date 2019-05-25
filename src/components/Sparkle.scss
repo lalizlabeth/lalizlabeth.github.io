@@ -1,0 +1,13 @@
+.sparkle {
+  position: relative;
+  right: -80%;
+  top: -32px;
+  width: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  .sparkle {
+    width: 100px;
+    z-index: 200;
+  }
+}

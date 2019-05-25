@@ -1,0 +1,125 @@
+// Grid
+// $column-width: 8vw;
+// $gutter: 2vw;
+
+$column-width: 128px;
+$gutter: 32px;
+
+$xsmall-spacer: 8px;
+$small-spacer: 16px;
+$medium-spacer: 32px;
+$large-spacer: 48px;
+$xlarge-spacer: 64px;
+$xxlarge-spacer: 72px;
+
+$max-width: $column-width * 12;
+
+.page-wrapper {
+  max-width: $max-width;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+// Defining columns
+.column {
+  box-sizing: border-box;
+  padding: 0 ($gutter/2);
+  &.nested {
+    padding: 0;
+  }
+}
+
+// Defining offsets
+@for $i from 1 to 12 {
+  .col-#{$i} {
+    @extend .column;
+    width: $column-width * $i;
+  }
+  .offset-#{$i} {
+    margin-left: $column-width * $i;
+  }
+  .offset-neg-#{$i} {
+    margin-left: - $column-width * $i;
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  $column-width: 108px;
+  @for $i from 1 to 12 {
+    .col-#{$i} {
+      width: $column-width * $i;
+      padding: 0 ($gutter/2);
+    }
+    .offset-#{$i} {
+      margin-left: $column-width * $i;
+    }
+
+    .offset-neg-#{$i} {
+      margin-left: - $column-width * $i;
+    }
+  }
+  .page-wrapper {
+    max-width: $column-width * 12;
+  }
+}
+
+@media screen and (max-width: 1296px) {
+  $column-width: 10vw;
+  @for $i from 1 to 10 {
+    .col-#{$i} {
+      width: $column-width * $i;
+      padding: 0 ($gutter/2);
+    }
+    .offset-#{$i} {
+      margin-left: $column-width * $i;
+    }
+
+    .offset-neg-#{$i} {
+      margin-left: - $column-width * $i;
+    }
+  }
+  .page-wrapper {
+    max-width: $column-width * 12;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  $column-width: 10vw;
+  @for $i from 1 to 10 {
+    .col-#{$i} {
+      width: $column-width * $i;
+      padding: 0 ($gutter/2);
+    }
+    .offset-#{$i} {
+      margin-left: $column-width * $i;
+      margin-left: 0;
+    }
+    .offset-neg-#{$i} {
+      margin-left: - $column-width * $i;
+    }
+  }
+  .page-wrapper {
+    max-width: $column-width * 12;
+  }
+}
+
+
+// Mobile screens
+
+@media screen and (max-width: 600px) {
+  @for $i from 1 to 12 {
+    .col-#{$i} {
+      flex-direction: column;
+      width: 100vw;
+    }
+  }
+  @for $i from 1 to 12 {
+    .offset-#{$i} {
+      margin-left: 0;
+    }
+    .offset-neg-#{$i} {
+      margin-left: 0;
+    }
+  }
+}

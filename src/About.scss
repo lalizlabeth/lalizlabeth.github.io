@@ -1,0 +1,65 @@
+@import "styles/_base";
+
+.header {
+  margin-bottom: $medium-spacer;
+}
+
+.header-image.about {
+  background-image: url("/images/elizabeth-horizontal.jpg");
+}
+
+.bio-text h1 {
+  color: $off-black;
+}
+
+.about-group {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media-link {
+  color: $pink;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.about-module {
+  @extend .nested;
+  @extend .col-6;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  margin-top: $large-spacer;
+  .project-number {
+
+  }
+  h2 {
+    span.about-module-text {
+      text-decoration: underline;
+      text-decoration-color: $pink;
+    }
+  }
+  p {
+    color: $gray;
+  }
+}
+
+// Mobile screens
+@media screen and (max-width: 768px) {
+  .about-group.col-8.nested {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .social-media.col-1 {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+  }
+  .bio-text,
+  .social-media {
+    margin-top: $small-spacer;
+  }
+}
