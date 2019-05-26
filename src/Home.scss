@@ -49,7 +49,7 @@
 .projects-wrapper {
   background: $light-pink;
   display: flex;
-  margin-top: -120px;
+  margin-top: -115px;
   margin-bottom: 90px;
   padding: 90px 0;
 }
@@ -224,6 +224,13 @@
     }
     margin-top: 72px;
   }
+}
+
+@media screen and (max-width: 1536px) {
+  .projects-wrapper {
+    margin-top: -130px;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
