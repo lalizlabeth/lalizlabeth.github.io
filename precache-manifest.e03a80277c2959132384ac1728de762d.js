@@ -380,7 +380,7 @@ self.__precacheManifest = [
     "url": "/static/media/2.cbe3435e.jpeg"
   },
   {
-    "revision": "ef7ed2e655e1b06ceb5dc73b28a82736",
+    "revision": "14071b55eff2b0724614a93d1b84e6dc",
     "url": "/index.html"
   }
 ];
