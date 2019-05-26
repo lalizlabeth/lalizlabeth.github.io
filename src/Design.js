@@ -18,7 +18,7 @@ class Design extends Component {
         <section className="projects-wrapper">
           <ul className="projects col-10 offset-2 nested">
             <li className="project col-8 nested">
-              <Link className="project-link" to="/design/project/student-progress/">
+              <Link className="project-link fixed" to="/design/project/student-progress/">
                 <div className="project-number col-1">
                   <h3>01</h3>
                 </div>
@@ -33,7 +33,7 @@ class Design extends Component {
               </Link>
             </li>
             <li className="project col-8 nested">
-              <Link className="project-link" to="/design/project/review-game/">
+              <Link className="project-link fixed" to="/design/project/review-game/">
                 <div className="project-number col-1">
                   <h3>02</h3>
                 </div>
@@ -49,7 +49,7 @@ class Design extends Component {
             </li>
 
             <li className="project col-8 nested">
-              <Link className="project-link" to="/design/project/design-systems/">
+              <Link className="project-link fixed" to="/design/project/design-systems/">
                 <div className="project-number col-1">
                   <h3>03</h3>
                 </div>
@@ -65,7 +65,7 @@ class Design extends Component {
             </li>
 
             <li className="project col-8 nested">
-              <Link className="project-link" to="/design/project/exercises/">
+              <Link className="project-link fixed" to="/design/project/exercises/">
                 <div className="project-number col-1">
                   <h3>04</h3>
                 </div>
@@ -81,7 +81,7 @@ class Design extends Component {
             </li>
 
             <li className="project col-8 nested">
-              <Link className="project-link" to="/design/project/monsterz/">
+              <Link className="project-link fixed" to="/design/project/monsterz/">
                 <div className="project-number col-1">
                   <h3>05</h3>
                 </div>

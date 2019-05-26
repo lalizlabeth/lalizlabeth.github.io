@@ -19,7 +19,7 @@ class Illustration extends Component {
         <section className="projects-wrapper">
           <ul className="projects col-10 offset-2 nested">
             <li className="project col-8 nested" id="project-1">
-              <Link className="project-link" to="/illustrations/project/cultural-values/">
+              <Link className="project-link fixed" to="/illustrations/project/cultural-values/">
                 <div className="project-number col-1">
                   <h3>01</h3>
                 </div>
@@ -35,7 +35,7 @@ class Illustration extends Component {
             </li>
 
             <li className="project col-8 nested" id="project-1">
-              <Link className="project-link" to="/illustrations/project/hogwarts/">
+              <Link className="project-link fixed" to="/illustrations/project/hogwarts/">
                 <div className="project-number col-1">
                   <h3>02</h3>
                 </div>
@@ -51,7 +51,7 @@ class Illustration extends Component {
             </li>
 
             <li className="project col-8 nested" id="project-1">
-              <Link className="project-link" to="/illustrations/project/dottie/">
+              <Link className="project-link fixed" to="/illustrations/project/dottie/">
                 <div className="project-number col-1">
                   <h3>03</h3>
                 </div>
@@ -67,7 +67,7 @@ class Illustration extends Component {
             </li>
 
             <li className="project col-8 nested" id="project-1">
-              <Link className="project-link" to="/illustrations/project/avatars/">
+              <Link className="project-link fixed" to="/illustrations/project/avatars/">
                 <div className="project-number col-1">
                   <h3>04</h3>
                 </div>
@@ -83,7 +83,7 @@ class Illustration extends Component {
             </li>
 
             <li className="project col-8 nested" id="project-1">
-              <Link className="project-link" to="/illustrations/project/avatars/">
+              <Link className="project-link fixed" to="/illustrations/project/avatars/">
                 <div className="project-number col-1">
                   <h3>05</h3>
                 </div>

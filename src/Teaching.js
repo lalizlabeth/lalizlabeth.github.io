@@ -18,7 +18,7 @@ class Teaching extends Component {
         <section className="projects-wrapper">
           <ul className="projects col-10 offset-2 nested">
             <li className="project col-8 nested" id="project-1">
-              <Link className="project-link" to="/teaching/project/design-to-learn/">
+              <Link className="project-link fixed" to="/teaching/project/design-to-learn/">
                 <div className="project-number col-1">
                   <h3>01</h3>
                 </div>
@@ -33,7 +33,7 @@ class Teaching extends Component {
               </Link>
             </li>
             <li className="project col-8 nested" id="project-1">
-              <Link className="project-link" to="/teaching/project/graphic-design/">
+              <Link className="project-link fixed" to="/teaching/project/graphic-design/">
                 <div className="project-number col-1">
                   <h3>02</h3>
                 </div>
@@ -48,7 +48,7 @@ class Teaching extends Component {
               </Link>
             </li>
             <li className="project col-8 nested" id="project-1">
-              <Link className="project-link" to="/teaching/project/illustrator/">
+              <Link className="project-link fixed" to="/teaching/project/illustrator/">
                 <div className="project-number col-1">
                   <h3>03</h3>
                 </div>
