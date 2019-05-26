@@ -92,7 +92,7 @@ class Home extends Component {
             </Link>
           </li>
 
-          <li className="project offset-1 col-3 nested" id="project-6">
+          <li className="project col-3 nested" id="project-6">
             <Link className="project-link" to="/design/project/design-systems/">
               <div className="project-number col-4">
                 <h3>06</h3>
