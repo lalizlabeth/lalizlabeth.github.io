@@ -231,13 +231,20 @@
     flex-direction: column-reverse;
   }
   .header-image {
-    height: 400px;
+    border-radius: 0;
+    height: 450px;
+    margin-left: -16px;
+    margin-top: 36px;
+    margin-bottom: $medium-spacer;
+    width: 100vw;
   }
   .header-image-wrapper {
     width: 100vw;
   }
+  .header-text-wrapper {
+    margin-bottom: $medium-spacer;
+  }
   .header-text {
-    margin-top: $medium-spacer;
     text-align: left;
     width: 100vw;
   }
@@ -245,16 +252,23 @@
   .project .project-link {
     flex-direction: column;
   }
-  .project-number {
+  .project-number,
+  #project-2 .project-number,
+  #project-3 .project-number,
+  #project-4 .project-number,
+  #project-5 .project-number,
+  #project-6 .project-number {
     text-align: left;
-    margin-bottom: $xsmall-spacer;
+    margin-bottom: $xxsmall-spacer;
   }
   #project-1,
   #project-2,
   #project-3,
   #project-4,
+  #project-5,
+  #project-6,
   .project {
-    margin: 32px 0;
+    margin: $small-spacer 0;
     .col-3,
     .col-4 {
       width: 100vw;
@@ -265,7 +279,8 @@
   }
   .projects-wrapper {
     border-radius: 0;
-    margin-top: -300px;
-    padding: 300px 0 60px 0;
+    margin-bottom: 0;
+    margin-top: -400px;
+    padding: 350px 0 60px 0;
   }
 }
