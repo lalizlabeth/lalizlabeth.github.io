@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/coreloop.689dca44.png"
   },
   {
-    "revision": "3669201027a26d9aaaf4",
-    "url": "/static/css/main.2affec0e.chunk.css"
+    "revision": "da830736b4c878f76f2d",
+    "url": "/static/css/main.267c59c3.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -56,20 +56,20 @@ self.__precacheManifest = [
     "url": "/static/media/thumb-student-progress.b27071aa.png"
   },
   {
-    "revision": "2b9202cf0b707d51d325ce311cea32a9",
-    "url": "/static/media/design.2b9202cf.jpg"
+    "revision": "5bbabeb8791268a02fc7e26433002861",
+    "url": "/static/media/design.5bbabeb8.jpg"
   },
   {
-    "revision": "7b38bf75415048e1e845a769cc7a84be",
-    "url": "/static/media/illustration.7b38bf75.png"
+    "revision": "4be7b5978f3d0c01d45746312d6d5ffe",
+    "url": "/static/media/illustration-2.4be7b597.png"
   },
   {
-    "revision": "64d2cf5ccdc43c79e4fd80235c135460",
-    "url": "/static/media/experiments-2.64d2cf5c.jpg"
+    "revision": "8e293fbb3438d807d1a7eb61b86b8f12",
+    "url": "/static/media/experiments-2.8e293fbb.jpg"
   },
   {
-    "revision": "07f1a26095e1e31a1f4f9213efc1cdd7",
-    "url": "/static/media/teaching-3.07f1a260.jpeg"
+    "revision": "10452d7280b0c9e2e5496eb33edb2344",
+    "url": "/static/media/teaching-3.10452d72.jpeg"
   },
   {
     "revision": "319b5285f16c88060614c11e585eb168",
@@ -192,8 +192,8 @@ self.__precacheManifest = [
     "url": "/static/media/competitors.968cb18f.png"
   },
   {
-    "revision": "3669201027a26d9aaaf4",
-    "url": "/static/js/main.8ef8d0a0.chunk.js"
+    "revision": "da830736b4c878f76f2d",
+    "url": "/static/js/main.8173f08f.chunk.js"
   },
   {
     "revision": "80750ec48195d3ae221efdddba8bb1c8",
@@ -380,7 +380,7 @@ self.__precacheManifest = [
     "url": "/static/media/2.cbe3435e.jpeg"
   },
   {
-    "revision": "bb921a276fa4f049b0bd3b472e74111a",
+    "revision": "5c343b62fb7cd2d72b61482d443f8423",
     "url": "/index.html"
   }
 ];

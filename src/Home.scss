@@ -23,6 +23,9 @@
   background-size: cover;
   border-radius: $border-radius;
   height: 550px;
+  &:hover {
+    background-image: url("/images/elizabeth-horizontal-hover.jpg");
+  }
 }
 
 .header-text {
