@@ -110,13 +110,16 @@ ul.text-list {
   .right-text {
     text-align: right;
   }
-  .project-link {
+  .shelf-project-link {
     align-items: center;
-  }
-  h2:hover {
-    h2 {
-      text-decoration: underline;
-      text-decoration-color: $pink;
+    display: flex;
+    &:hover {
+      cursor: pointer;
+      h2 {
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-color: $pink;
+      }
     }
   }
 }
@@ -157,13 +160,13 @@ ul.text-list {
       text-align: left;
     }
     .next-project {
-      .project-link {
+      .shelf-project-link {
         flex-direction: column-reverse;
       }
       text-align: right;
     }
     .project,
-    .next-shelf .project-link {
+    .next-shelf .shelf-project-link {
       align-items: flex-start;
       width: 50vw;
       .col-1, .col-3 {

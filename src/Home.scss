@@ -207,64 +207,12 @@
     display: block;
   }
   .project-number {
-    text-align: right;
     margin-bottom: $small-spacer;
   }
   .image {
     height: 280px;
   }
   margin-top: $xxlarge-spacer;
-}
-
-@media screen and (max-width: 768px) {
-  .header {
-    width: 100vw;
-  }
-  .header-image-wrapper {
-    width: 50vw;
-  }
-  .header-image {
-    height: 400px;
-  }
-  .header-text {
-    width: 50vw;
-  }
-  #project-1 {
-    width: 100vw;
-    .col-3 {
-      .image {
-        height: 300px;
-      }
-      width: 90vw;
-    }
-  }
-  #project-2 {
-    .project-link { display: flex !important; }
-    width: 100vw;
-    .col-4 {
-      .image {
-        height: 300px;
-      }
-      width: 90vw;
-    }
-    .project-number {
-      width: 10vw;
-    }
-  }
-  #project-3 {
-    .project-link { display: flex !important; }
-    width: 100vw;
-    .col-4 {
-      .image {
-        height: 300px;
-      }
-      width: 90vw;
-    }
-    .project-number {
-      width: 10vw;
-    }
-    margin-top: 72px;
-  }
 }
 
 @media screen and (max-width: 1536px) {
@@ -276,9 +224,46 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .header-image {
     height: 450px;
+  }
+  #project-4 {
+    margin-left: 10vw;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    align-items: center;
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+    width: 100vw;
+    // h1,
+    // h1 strong {
+    //   font-size: 32px;
+    //   line-height: 1.0;
+    // }
+  }
+  .header-image-wrapper {
+    width: 60vw;
+  }
+  .header-image {
+    height: 400px;
+  }
+  .col-3.title-caption {
+    font-size: 15px;
+    width: 40vw;
+  }
+  .col-4.header-text {
+    width: 60vw;
+  }
+  .projects {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -286,6 +271,7 @@
 @media screen and (max-width: 600px) {
   .header {
     flex-direction: column-reverse;
+    margin-top: 0;
   }
   .header-image {
     border-radius: 0;
@@ -304,6 +290,11 @@
   .header-text {
     text-align: left;
     width: 100vw;
+  }
+
+  .header-text,
+  .title-caption {
+    width: 100vw !important;
   }
 
   .project .project-link {

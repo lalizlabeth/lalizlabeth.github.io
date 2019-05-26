@@ -82,7 +82,7 @@ class Home extends Component {
             <div className="project-number col-1">
               <h3>05</h3>
             </div>
-            <div className="col-4">
+            <div className="col-3">
               <Link className="project-link" to="/illustrations/project/design-system/">
                 <img className="project-thumb" alt="Design systems thumbnail with icons inside" src="images/thumbs/thumb-design-systems.png" />
                 <h6 className="active">Design</h6>
@@ -91,7 +91,6 @@ class Home extends Component {
               </Link>
             </div>
           </li>
-
 
           <li className="project col-4 nested" id="project-6">
             <div className="project-number col-4">

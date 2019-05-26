@@ -197,7 +197,7 @@ class Project extends Component {
         {this.props.body}
         <section className="col-8 nested offset-neg-1 next-shelf">
           <li className="project col-4 nested prev-project">
-            <Link className="project-link" to={this.props.next_link}>
+            <Link className="shelf-project-link" to={this.props.next_link}>
               <div className="col-1">
                 <h6 className="active">Previous</h6>
               </div>
@@ -207,7 +207,7 @@ class Project extends Component {
             </Link>
           </li>
           <li className="project col-4 nested next-project"s>
-            <Link className="project-link" to={this.props.prev_link}>
+            <Link className="shelf-project-link" to={this.props.prev_link}>
               <div className="right-text col-3">
                 <h2>{this.props.prev_title}</h2>
               </div>
