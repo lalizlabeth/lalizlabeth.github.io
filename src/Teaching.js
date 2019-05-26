@@ -22,7 +22,7 @@ class Teaching extends Component {
                 <div className="project-number col-1">
                   <h3>01</h3>
                 </div>
-                <div className="col-3">
+                <div className="col-3 project-thumb-fixed">
                   <img className="project-thumb" alt="Teaching design, design to learn talk" src="images/thumbs/thumb-design-talk.png" />
                 </div>
                 <div className="col-3 project-title">
@@ -37,8 +37,8 @@ class Teaching extends Component {
                 <div className="project-number col-1">
                   <h3>02</h3>
                 </div>
-                <div className="col-3">
-                  <img className="project-thumb" alt="Graphic design thumbnail" src="images/thumbs/thumb-graphic-design.png" />
+                <div className="col-3 project-thumb-fixed">
+                  <img className="project-thumb" alt="Graphic design thumbnail" src="images/thumbs/thumb-graphic-design.gif" />
                 </div>
                 <div className="col-3 project-title">
                   <h6 className="active">Teaching</h6>
@@ -52,7 +52,7 @@ class Teaching extends Component {
                 <div className="project-number col-1">
                   <h3>03</h3>
                 </div>
-                <div className="col-3">
+                <div className="col-3 project-thumb-fixed">
                   <img className="project-thumb" alt="Illustrator thumbnail" src="images/thumbs/thumb-illustrator.png" />
                 </div>
                 <div className="col-3 project-title">
