@@ -50,11 +50,11 @@ class Home extends Component {
                 </div>
             </li>
 
-            <li className="project col-3 offset-2 nested" id="project-3">
+            <li className="project col-4 offset-1 nested" id="project-3">
                 <div className="project-number col-4">
                   <h3>03</h3>
                 </div>
-                <div className="col-3">
+                <div className="col-4">
                   <Link className="project-link" to="/experiments/project/beauty/">
                     <img className="project-thumb" alt="What is beauty thumbnail" src="images/thumbs/thumb-beautiful.jpg" />
                     <h6 className="active">Experiments</h6>
@@ -92,11 +92,11 @@ class Home extends Component {
             </div>
           </li>
 
-          <li className="project col-3 nested" id="project-6">
+          <li className="project col-4 nested" id="project-6">
             <div className="project-number col-4">
               <h3>06</h3>
             </div>
-            <div className="col-3">
+            <div className="col-4">
               <Link className="project-link" to="/design/project/design-systems/">
                 <img className="project-thumb" alt="Design systems thumbnail" src="images/thumbs/thumb-design-systems.png" />
                 <h6 className="active">Design</h6>
