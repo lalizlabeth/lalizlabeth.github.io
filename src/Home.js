@@ -78,12 +78,12 @@ class Home extends Component {
             </Link>
           </li>
 
-          <li className="project col-5 nested" id="project-5">
+          <li className="project col-4 nested" id="project-5">
             <Link className="project-link" to="/illustrations/project/cultural-values/">
               <div className="project-number col-1">
                 <h3>05</h3>
               </div>
-              <div className="col-4">
+              <div className="col-3">
                 <img className="project-thumb" alt="Cultural values thumbnail" src="images/thumbs/thumb-cultural-values.png" />
                 <h6 className="active">Illustrations</h6>
                 <h2>Cultural values</h2>
@@ -92,7 +92,7 @@ class Home extends Component {
             </Link>
           </li>
 
-          <li className="project col-3 nested" id="project-6">
+          <li className="project offset-1 col-3 nested" id="project-6">
             <Link className="project-link" to="/design/project/design-systems/">
               <div className="project-number col-4">
                 <h3>06</h3>
