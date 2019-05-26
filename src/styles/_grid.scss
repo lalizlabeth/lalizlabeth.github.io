@@ -5,6 +5,7 @@
 $column-width: 128px;
 $gutter: 32px;
 
+$xxsmall-spacer: 4px;
 $xsmall-spacer: 8px;
 $small-spacer: 16px;
 $medium-spacer: 32px;
@@ -92,7 +93,7 @@ $max-width: $column-width * 12;
       padding: 0 ($gutter/2);
     }
     .offset-#{$i} {
-      margin-left: $column-width * $i;
+      // margin-left: $column-width * $i;
       margin-left: 0;
     }
     .offset-neg-#{$i} {

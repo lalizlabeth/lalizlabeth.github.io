@@ -18,7 +18,7 @@ class ReviewGame extends Component {
           <div className="col-5 medium-spacer-bottom">
             <img className="project-image" alt="User research illustration" src={require("../assets/images/review-game/user-research-1.png")}/>
           </div>
-          <p className="reflections col-2">Teachers have to juggle so many things at the same time. It's definitely one of the most underappreciated professions out there 😭</p>
+          <p className="reflections col-2">Teachers have to juggle so many things at the same time. It's definitely one of the most underappreciated professions out there <span role="img" aria-label="sob">😭</span></p>
         </div>
 
         <div className="text-group">
@@ -96,11 +96,11 @@ class ReviewGame extends Component {
         <p className="large-paragraph medium-spacer-bottom col-5">Once we had the basic game mechanics outlined, we started to prototoype the game. Each week, we did the following:</p>
 
         <ul className="text-list medium-spacer-bottom col-5">
-          <li>🤔 Hypothesis</li>
-          <li>💻 Prototype</li>
-          <li>👩🏽‍🏫 Playtest in a classroom</li>
-          <li>👨🏻‍🏫 Debrief with the teacher</li>
-          <li>🔁 Iterate</li>
+          <li><span role="img" aria-label="thinking">🤔</span> Hypothesis</li>
+          <li><span role="img" aria-label="laptop">💻</span> Prototype</li>
+          <li><span role="img" aria-label="teacher">👩🏽‍🏫</span> Playtest in a classroom</li>
+          <li><span role="img" aria-label="teacher">👨🏻‍🏫</span> Debrief with the teacher</li>
+          <li><span role="img" aria-label="refresh">🔁</span> Iterate</li>
         </ul>
 
         <h3 className="project-subheading large-spacer-top col-5"><strong><span role="img" aria-label="sparkle">✨</span> Round 1.</strong> The suspense of waiting for the right answer will be engaging for students.</h3>
