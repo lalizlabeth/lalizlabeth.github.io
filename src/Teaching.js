@@ -23,42 +23,42 @@ class Teaching extends Component {
                   <h3>01</h3>
                 </div>
                 <div className="col-3">
-                  <img className="project-thumb" alt="Teaching design" src="" />
+                  <img className="project-thumb" alt="Teaching design, design to learn talk" src="images/thumbs/thumb-design-talk.png" />
                 </div>
                 <div className="col-3 project-title">
                   <h6 className="active">Teaching</h6>
-                  <h2>Design to Learn; Learn to Design</h2>
-                  <p>Description here</p>
+                  <h2>Design to learn, learn to design</h2>
+                  <p>A talk I gave in 2019 about my journey from learning to unlearning design.</p>
                 </div>
               </Link>
             </li>
             <li className="project col-8 nested" id="project-1">
               <Link className="project-link" to="/teaching/project/graphic-design/">
                 <div className="project-number col-1">
-                  <h3>01</h3>
+                  <h3>02</h3>
                 </div>
                 <div className="col-3">
-                  <img className="project-thumb" alt="Teaching design" src="" />
+                  <img className="project-thumb" alt="Graphic design thumbnail" src="images/thumbs/thumb-graphic-design.png" />
                 </div>
                 <div className="col-3 project-title">
                   <h6 className="active">Teaching</h6>
                   <h2>Intro to graphic design</h2>
-                  <p>Description here</p>
+                  <p>My favorite classes to teach are intro to visual design classes because they're a great way for people to get interested in design!</p>
                 </div>
               </Link>
             </li>
             <li className="project col-8 nested" id="project-1">
               <Link className="project-link" to="/teaching/project/illustrator/">
                 <div className="project-number col-1">
-                  <h3>01</h3>
+                  <h3>03</h3>
                 </div>
                 <div className="col-3">
-                  <img className="project-thumb" alt="Teaching design" src="" />
+                  <img className="project-thumb" alt="Illustrator thumbnail" src="images/thumbs/thumb-illustrator.png" />
                 </div>
                 <div className="col-3 project-title">
                   <h6 className="active">Teaching</h6>
                   <h2>Illustrator &amp; Photoshop</h2>
-                  <p>Description here</p>
+                  <p>In college, I developed an introduction to illustrator &amp; photoshop DeCal, courses that students can take for 1-2 units.</p>
                 </div>
               </Link>
             </li>

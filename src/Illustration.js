@@ -72,7 +72,7 @@ class Illustration extends Component {
                   <h3>04</h3>
                 </div>
                 <div className="col-3 project-thumb-fixed">
-                  <img className="project-thumb" alt="Avatars" src="images/thumbs/thumb-dottie.png" />
+                  <img className="project-thumb" alt="Avatars" src="images/thumbs/thumb-avatar.png" />
                 </div>
                 <div className="col-3 project-title">
                   <h6 className="active">Illustrations</h6>
@@ -88,7 +88,7 @@ class Illustration extends Component {
                   <h3>05</h3>
                 </div>
                 <div className="col-3 project-thumb-fixed">
-                  <img className="project-thumb" alt="Avatars" src="images/thumbs/thumb-dottie.png" />
+                  <img className="project-thumb" alt="Doodles" src="images/thumbs/thumb-doodles.png" />
                 </div>
                 <div className="col-3 project-title">
                   <h6 className="active">Illustrations</h6>

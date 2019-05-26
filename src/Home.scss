@@ -111,6 +111,15 @@
   }
 }
 
+.project-thumb-fixed {
+  height: 210px;
+  margin-bottom: $small-spacer;
+  .project-thumb {
+    height: 210px;
+    object-fit: cover;
+  }
+}
+
 #project-2 {
   flex-direction: column;
   margin-top: $xxlarge-spacer;

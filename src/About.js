@@ -18,7 +18,8 @@ class About extends Component {
           <ul className="about-modules col-8 offset-2 nested">
             <div className="about-group col-8 nested">
               <li className="bio-text col-6 offset-1">
-                <h1><span role="img" aria-label="wave">👋🏼</span> I'm currently a product designer at <a href="https://www.khanacademy.org"><strong>Khan Academy</strong></a>. Chat with me about:</h1>
+                <h1><span role="img" aria-label="wave">👋🏼</span> I'm currently a product designer at <a href="https://www.khanacademy.org"><strong>Khan Academy</strong></a>.</h1>
+                <h1>Chat with me about:</h1>
               </li>
 
               <ul className="social-media col-1">
@@ -76,7 +77,7 @@ class About extends Component {
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Folding paper</span></h2>
-                <p className="about-description">Ok, so it's AMAZING what paper can do. Thanks for my time at SFPC, I was inspired to start learning origami. I've been making my way through a bunch of books with the goal of eventually combining origami with fashion (like Issey Miyake!)</p>
+                <p className="about-description">Ok, so it's AMAZING what paper can do. Thanks to my time at SFPC, I was inspired to start learning origami. I've been <a href="https://www.instagram.com/p/BvvaovGhHwx/">making my way</a> through a bunch of books with the goal of eventually combining origami with fashion (like Issey Miyake!)</p>
               </div>
             </li>
 
@@ -106,7 +107,17 @@ class About extends Component {
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Making things at SFPC</span></h2>
-                <p className="about-description">In Fall 2018, I started to feel constrained by the design industry. There are so many boundaries and I wanted to explore the line between design and art.</p>
+                <p className="about-description">In Fall 2018, I started to feel constrained by the design industry and I wanted to explore the line between design and art. You can find my journal at the School for Poetic Computation <a href="https://instagram.com/lalizlapoet">on Instagram</a>.</p>
+              </div>
+            </li>
+
+            <li className="about-module col-6 nested">
+              <div className="project-number col-1">
+                <h2><span role="img" aria-label="artwork">🖼</span></h2>
+              </div>
+              <div className="col-5">
+                <h2><span className="about-module-text">Giving unofficial art tours</span></h2>
+                <p className="about-description">One of my fav pastimes is giving friends unofficial tours of art museums by making them more relatable. I used to run a yearly Snapchat Scavenger Hunt at the SFMOMA.</p>
               </div>
             </li>
         </ul>

@@ -45,7 +45,7 @@ class Home extends Component {
                   <img className="project-thumb" alt="Review game thumbnail" src="images/thumbs/thumb-review-game.png" />
                   <h6 className="active">Design</h6>
                   <h2>Math review game</h2>
-                  <p>How can we help teachers to identify and fill student gaps in learning?</p>
+                  <p>How can we make an engagine in-class review game for classrooms?</p>
                 </div>
               </Link>
             </li>

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import beautyHeader from '../assets/images/beauty/cover.jpg';
 import culturalValuesHeader from '../assets/images/cultural-values/cover.png';
 import designSystemsHeader from '../assets/images/design-systems/cover.png';
+import designToLearnHeader from '../assets/images/design-to-learn/cover.png';
 import dottieHeader from '../assets/images/dottie/cover.png';
 import exercisesHeader from '../assets/images/exercises/cover.png';
 import fashionAveragesHeader from '../assets/images/fashion-avgs/cover.jpg';
@@ -16,6 +17,7 @@ import studentProgressHeader from '../assets/images/thumbs/thumb-student-progres
 import Beauty from '../projects/Beauty';
 import CulturalValues from '../projects/CulturalValues';
 import DesignSystems from '../projects/DesignSystems';
+import DesignToLearn from '../projects/DesignToLearn';
 import Dottie from '../projects/Dottie';
 import Exercises from '../projects/Exercises';
 import FashionAverages from '../projects/FashionAverages';
@@ -71,6 +73,18 @@ class ProjectContainer extends Component {
           next_title="Math review game"
           next_link="/design/project/math-review-game/"
           prev_title="Fashion averages"
+          prev_link="/experiments/project/fashion-avgs/"/>)
+        break;
+      case "design-to-learn":
+        project =
+        (<Project
+          title="Design to learn, learn to design"
+          header={designToLearnHeader}
+          description="A talk I gave in 2019 about my journey from learning to unlearning design."
+          body=<DesignToLearn/>
+          next_title="To CHANGE"
+          next_link="/design/project/math-review-game/"
+          prev_title="TO CHANGE"
           prev_link="/experiments/project/fashion-avgs/"/>)
         break;
       case "dottie":

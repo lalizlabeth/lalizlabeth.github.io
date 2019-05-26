@@ -17,7 +17,7 @@ class Design extends Component {
 
         <section className="projects-wrapper">
           <ul className="projects col-10 offset-2 nested">
-            <li className="project col-8 nested" id="project-1">
+            <li className="project col-8 nested">
               <Link className="project-link" to="/design/project/student-progress/">
                 <div className="project-number col-1">
                   <h3>01</h3>
@@ -32,7 +32,7 @@ class Design extends Component {
                 </div>
               </Link>
             </li>
-            <li className="project col-8 nested" id="project-1">
+            <li className="project col-8 nested">
               <Link className="project-link" to="/design/project/review-game/">
                 <div className="project-number col-1">
                   <h3>02</h3>
@@ -43,12 +43,12 @@ class Design extends Component {
                 <div className="col-3 project-title">
                   <h6 className="active">Design</h6>
                   <h2>Math review game</h2>
-                  <p>How can we help teachers to identify and fill student gaps in learning?</p>
+                  <p>How can we make an engagine in-class review game for classrooms?</p>
                 </div>
               </Link>
             </li>
 
-            <li className="project col-8 nested" id="project-1">
+            <li className="project col-8 nested">
               <Link className="project-link" to="/design/project/design-systems/">
                 <div className="project-number col-1">
                   <h3>03</h3>
