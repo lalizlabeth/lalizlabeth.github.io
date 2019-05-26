@@ -103,6 +103,23 @@ $max-width: $column-width * 12;
   .page-wrapper {
     max-width: $column-width * 12;
   }
+  // @for $i from 1 to 12 {
+  //   .col-#{$i} {
+  //     flex-direction: column;
+  //     width: 100vw;
+  //   }
+  // }
+  // @for $i from 1 to 12 {
+  //   .offset-#{$i} {
+  //     margin-left: 0;
+  //   }
+  //   .offset-neg-#{$i} {
+  //     margin-left: 0;
+  //   }
+  // }
+  // .page-wrapper {
+  //   padding: 0 60px;
+  // }
 }
 
 

@@ -163,7 +163,7 @@ ul.text-list {
       text-align: right;
     }
     .project,
-    .project-link {
+    .next-shelf .project-link {
       align-items: flex-start;
       width: 50vw;
       .col-1, .col-3 {
@@ -185,16 +185,13 @@ ul.text-list {
       width: 20vw;
     }
   }
-  .project-header
+  .project-header,
   .project-image {
     border-radius: 0;
     padding: 0;
   }
   .project-header {
     margin-top: $medium-spacer;
-  }
-  .project-description {
-
   }
   .project-header,
   .project-image {

@@ -19,12 +19,14 @@
 
 .header-image {
   background-image: url("/images/elizabeth-portrait.jpeg");
+  background-color: $white;
   background-position: center;
   background-size: cover;
   border-radius: $border-radius;
   height: 550px;
   &:hover {
-    background-image: url("/images/elizabeth-horizontal-hover.jpg");
+    // background-image: url("/images/elizabeth-horizontal-hover.jpg");
+    cursor: url("assets/crown-cursor.png"), pointer;
   }
 }
 
@@ -33,7 +35,7 @@
   z-index: 4;
   margin-bottom: $small-spacer;
   .highlighter {
-      // background: $pink;
+      // background: $off-white;
   }
 }
 
