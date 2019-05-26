@@ -27,7 +27,7 @@ class Illustration extends Component {
                   <img className="project-thumb" alt="Cultural values thumbnail" src="images/thumbs/thumb-cultural-values.png" />
                 </div>
                 <div className="col-3 project-title">
-                  <h6 className="active">Illustrations</h6>
+                  <h6 className="active">Illustration</h6>
                   <h2>Cultural values</h2>
                   <p>In 2019, I was a part of the team at Khan Academy that redefined our company values. To celebrate the new values, I created a series of illustrations to represent each value.</p>
                 </div>
@@ -43,7 +43,7 @@ class Illustration extends Component {
                   <img className="project-thumb" alt="Hogwarts houses" src="images/thumbs/thumb-hogwarts.gif" />
                 </div>
                 <div className="col-3 project-title">
-                  <h6 className="active">Illustrations</h6>
+                  <h6 className="active">Illustration</h6>
                   <h2>Harry Potter Hackweek</h2>
                   <p>Illustrations for our yearly Harry Potter hackathon.</p>
                 </div>
@@ -59,7 +59,7 @@ class Illustration extends Component {
                   <img className="project-thumb" alt="Dottie illustration" src="images/thumbs/thumb-dottie.png" />
                 </div>
                 <div className="col-3 project-title">
-                  <h6 className="active">Illustrations</h6>
+                  <h6 className="active">Illustration</h6>
                   <h2>Have you seen my glasses?</h2>
                   <p>Children's book</p>
                 </div>
@@ -75,7 +75,7 @@ class Illustration extends Component {
                   <img className="project-thumb" alt="Avatars" src="images/thumbs/thumb-avatar.png" />
                 </div>
                 <div className="col-3 project-title">
-                  <h6 className="active">Illustrations</h6>
+                  <h6 className="active">Illustration</h6>
                   <h2>Avatar redesign</h2>
                   <p>Explorations for revamping Khan Academy's avatar system.</p>
                 </div>
@@ -91,7 +91,7 @@ class Illustration extends Component {
                   <img className="project-thumb" alt="Doodles" src="images/thumbs/thumb-doodles.png" />
                 </div>
                 <div className="col-3 project-title">
-                  <h6 className="active">Illustrations</h6>
+                  <h6 className="active">Illustration</h6>
                   <h2>Doodles</h2>
                   <p>Some doodles that don't fit into any category</p>
                 </div>

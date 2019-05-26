@@ -59,7 +59,7 @@ class Design extends Component {
                 <div className="col-3 project-title">
                   <h6 className="active">Design</h6>
                   <h2>Design systems</h2>
-                  <p>This case study is an overview of the different components I worked on at Khan Academy.</p>
+                  <p>A overview of the different components I worked on at Khan Academy.</p>
                 </div>
               </Link>
             </li>

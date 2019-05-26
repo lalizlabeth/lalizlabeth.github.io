@@ -29,6 +29,9 @@
   // @extend .col-4;
   z-index: 4;
   margin-bottom: $small-spacer;
+  .highlighter {
+      // background: $pink;
+  }
 }
 
 .title-caption {
@@ -190,6 +193,7 @@
 }
 
 #project-5 {
+  margin-top: $medium-spacer;
 }
 
 #project-6 {
@@ -259,11 +263,20 @@
 }
 
 @media screen and (max-width: 1536px) {
+  .header-image {
+    height: 500px;
+  }
   .projects-wrapper {
     margin-top: -130px;
   }
-
 }
+
+@media screen and (max-width: 1000px) {
+  .header-image {
+    height: 450px;
+  }
+}
+
 
 @media screen and (max-width: 600px) {
   .header {
@@ -290,6 +303,9 @@
 
   .project .project-link {
     flex-direction: column;
+    &.fixed {
+      flex-direction: column;
+    }
   }
   .project-number,
   #project-2 .project-number,

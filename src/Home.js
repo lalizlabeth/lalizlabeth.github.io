@@ -9,7 +9,7 @@ class Home extends Component {
       <div>
         <header className="header" style={{padding: "2vw 0"}}>
           <div className="header-text-wrapper nested">
-            <h1 className="header-text col-4"><strong>Elizabeth Lin</strong> is a product designer &amp; aspiring princess.</h1>
+            <h1 className="header-text col-4"><span class="highlighter"><strong>Elizabeth Lin</strong> is a product designer &amp; aspiring princess.</span></h1>
             <p className="title-caption col-3"><span role="img" aria-label="construction-sign">🚧</span> This site is still under construction! Not everything is aligned quite right yet <span role="img" aria-label="grimacing">😬</span></p>
           </div>
           <div className="header-image-wrapper">
@@ -82,26 +82,27 @@ class Home extends Component {
             <div className="project-number col-1">
               <h3>05</h3>
             </div>
-            <div className="col-3">
-              <Link className="project-link" to="/illustrations/project/cultural-values/">
-                <img className="project-thumb" alt="Cultural values thumbnail" src="images/thumbs/thumb-cultural-values.png" />
-                <h6 className="active">Illustrations</h6>
-                <h2>Cultural values</h2>
-                <p>Illustrations for our new values!</p>
+            <div className="col-4">
+              <Link className="project-link" to="/illustrations/project/design-system/">
+                <img className="project-thumb" alt="Design systems thumbnail with icons inside" src="images/thumbs/thumb-design-systems.png" />
+                <h6 className="active">Design</h6>
+                <h2>Design systems</h2>
+                <p>An overview of the different components I worked on at Khan Academy.</p>
               </Link>
             </div>
           </li>
+
 
           <li className="project col-4 nested" id="project-6">
             <div className="project-number col-4">
               <h3>06</h3>
             </div>
             <div className="col-4">
-              <Link className="project-link" to="/design/project/design-systems/">
-                <img className="project-thumb" alt="Design systems thumbnail" src="images/thumbs/thumb-design-systems.png" />
-                <h6 className="active">Design</h6>
-                <h2>Design systems</h2>
-                <p>Hi</p>
+              <Link className="project-link" to="/design/project/cultural-values/">
+                <img className="project-thumb" alt="Cultural values thumbnail" src="images/thumbs/thumb-cultural-values.png" />
+                <h6 className="active">Illustrations</h6>
+                <h2>Cultural values</h2>
+                <p>In 2019, I was a part of the team at Khan Academy that redefined our company values. To celebrate the new values, I created a series of illustrations to represent each value.</p>
               </Link>
             </div>
           </li>

@@ -46,7 +46,7 @@ $max-width: $column-width * 12;
 }
 
 @media screen and (max-width: 1536px) {
-  $column-width: 108px;
+  $column-width: 112px;
   @for $i from 1 to 12 {
     .col-#{$i} {
       width: $column-width * $i;
