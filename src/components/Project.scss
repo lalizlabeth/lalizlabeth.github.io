@@ -88,11 +88,11 @@ p.reflections {
   line-height: 1.4;
 }
 
+ol.text-list,
 ul.text-list {
   li {
     color: $dark-gray;
     font-size: 20px;
-    list-style: square;
     margin-bottom: $small-spacer;
     strong {
       font-weight: 600;
@@ -101,6 +101,14 @@ ul.text-list {
       margin-bottom: 0;
     }
   }
+}
+
+ul.text-list {
+  list-style: square;
+}
+
+ol.text-list {
+  list-style: decimal;
 }
 
 .next-shelf {

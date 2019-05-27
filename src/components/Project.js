@@ -108,10 +108,10 @@ class ProjectContainer extends Component {
           header={exercisesHeader}
           description="Rethinking Khan Academy's exercise mechanics to be more motivating and rewarding for students."
           body=<Exercises/>
-          prev_title="Math review game"
-          prev_link="/design/project/review-game/"
-          next_title="Fashion averages"
-          next_link="/experiments/project/fashion-avgs/"/>)
+          prev_title="Design systems"
+          prev_link="/design/project/design-systems/"
+          next_title="Monsterz"
+          next_link="/design/project/monsterz/"/>)
         break;
       case "fashion-avgs":
         project =

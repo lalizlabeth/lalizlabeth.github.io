@@ -53,7 +53,7 @@ class Beauty extends Component {
           I still need to analyze all the creations, but in general, people tended to want to get rid of the shapes that felt constraining: the large rectangle and the lopsided blob. I also created a process zine to showcase how my time at SFPC led me to create this project:</p>
         </div>
         <div className="col-5 medium-spacer-bottom">
-          <video className="project-image" alt="Process book" src={require("../assets/images/beauty/process-book.mov")} muted loop/>
+          <video className="project-image" alt="Process book" src={require("../assets/images/beauty/process-book.mov")} muted autoPlay loop/>
         </div>
         <div className="text-group">
           <p className="large-paragraph medium-spacer-bottom col-5">In the future, I hope to expand on this idea more to be about actual faces! I also hope to put the game online, so that people can interact with it outside of the showcase.</p>
