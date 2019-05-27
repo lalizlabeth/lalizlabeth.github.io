@@ -1,19 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "5f5834746e34b65222db496b029a93c1",
-    "url": "/static/media/exercise.5f583474.gif"
+    "revision": "ae3d452853e68ed0770f514c9abf7e9a",
+    "url": "/static/media/sparkles.ae3d4528.mov"
   },
   {
-    "revision": "fd0efd5da8b0dba8cd20",
-    "url": "/static/css/main.c3bfaae5.chunk.css"
+    "revision": "1650f12517006bf7309c",
+    "url": "/static/css/main.63cba64c.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "03bd8726d6f2dc626335",
-    "url": "/static/js/2.dbc437f0.chunk.js"
+    "revision": "3d78ad799898d9bf55ae",
+    "url": "/static/js/2.660966ca.chunk.js"
+  },
+  {
+    "revision": "83169e0aec2af97bfe3c369bcd1e152a",
+    "url": "/static/media/cover.83169e0a.png"
   },
   {
     "revision": "64d2cf5ccdc43c79e4fd80235c135460",
@@ -296,8 +300,8 @@ self.__precacheManifest = [
     "url": "/static/media/dots.9f894b48.gif"
   },
   {
-    "revision": "fd0efd5da8b0dba8cd20",
-    "url": "/static/js/main.578b61ef.chunk.js"
+    "revision": "5f5834746e34b65222db496b029a93c1",
+    "url": "/static/media/exercise.5f583474.gif"
   },
   {
     "revision": "51a40268c22b111aa5f0ca1700fc3f50",
@@ -308,8 +312,8 @@ self.__precacheManifest = [
     "url": "/static/media/vroom-vroom.f2e3bb18.mov"
   },
   {
-    "revision": "ae3d452853e68ed0770f514c9abf7e9a",
-    "url": "/static/media/sparkles.ae3d4528.mov"
+    "revision": "1650f12517006bf7309c",
+    "url": "/static/js/main.c80eb5c1.chunk.js"
   },
   {
     "revision": "6526013c08a75015416cb8f55c1bfaf6",
@@ -382,6 +386,34 @@ self.__precacheManifest = [
   {
     "revision": "0bc0ff267db11fb0a2d679b889679987",
     "url": "/static/media/whomping-willow.0bc0ff26.jpg"
+  },
+  {
+    "revision": "8cded05629de6305b430afcd1a5a8228",
+    "url": "/static/media/set.8cded056.png"
+  },
+  {
+    "revision": "e46c5dcab1a542ce1fea9af915b0fab3",
+    "url": "/static/media/paper-prototyping.e46c5dca.jpeg"
+  },
+  {
+    "revision": "aca794c04da26451546b2cabb38b83ff",
+    "url": "/static/media/1.aca794c0.png"
+  },
+  {
+    "revision": "997cb72c983a592f1c1bdee18516700e",
+    "url": "/static/media/2.997cb72c.png"
+  },
+  {
+    "revision": "86d3005880c28c3874064d8849cc3b42",
+    "url": "/static/media/3.86d30058.png"
+  },
+  {
+    "revision": "7ac2d98c008a28bc3dc33cc96528a1c0",
+    "url": "/static/media/monsters-inc.7ac2d98c.jpg"
+  },
+  {
+    "revision": "0ae7283088fd393fd299eb98b39838c0",
+    "url": "/static/media/all.0ae72830.png"
   },
   {
     "revision": "390034ac254fc7ecb394d86902d27553",
@@ -592,7 +624,7 @@ self.__precacheManifest = [
     "url": "/static/media/2.cbe3435e.jpeg"
   },
   {
-    "revision": "4cedb3b464a68eb302d8ea76a1eb45fd",
+    "revision": "142011b1bef9c18182122ea3ed742dec",
     "url": "/index.html"
   }
 ];
