@@ -48,10 +48,10 @@ class ProjectContainer extends Component {
           header={beautyHeader}
           description="An interactive installation questioning our assumptions about beauty standards."
           body=<Beauty/>
-          next_title="Math review game"
-          next_link="/design/project/math-review-game/"
-          prev_title="Fashion averages"
-          prev_link="/experiments/project/fashion-avgs/"/>)
+          prev_title="Math review game"
+          prev_link="/design/project/review-game/"
+          next_title="Fashion averages"
+          next_link="/experiments/project/fashion-avgs/"/>)
         break;
       case "cultural-values":
         project =
@@ -60,10 +60,10 @@ class ProjectContainer extends Component {
           header={culturalValuesHeader}
           description="Designing Khan Academy's new cultural values."
           body=<CulturalValues/>
-          next_title="Math review game"
-          next_link="/design/project/math-review-game/"
-          prev_title="Fashion averages"
-          prev_link="/experiments/project/fashion-avgs/"/>)
+          prev_title="Design systems"
+          prev_link="/design/project/design-systems/"
+          next_title="Defining student progress"
+          next_link="/design/project/student-progress/"/>)
         break;
       case "design-systems":
         project =
@@ -72,10 +72,10 @@ class ProjectContainer extends Component {
           header={designSystemsHeader}
           description="This case study is an overview of the different components I worked on at Khan Academy."
           body=<DesignSystems/>
-          next_title="Math review game"
-          next_link="/design/project/math-review-game/"
           prev_title="Fashion averages"
-          prev_link="/experiments/project/fashion-avgs/"/>)
+          prev_link="/experiments/project/fashion-avgs/"
+          next_title="Cultural values"
+          next_link="/illustration/project/cultural-values"/>)
         break;
       case "design-to-learn":
         project =
@@ -84,10 +84,10 @@ class ProjectContainer extends Component {
           header={designToLearnHeader}
           description="A talk I gave in 2019 about my journey from learning to unlearning design."
           body=<DesignToLearn/>
-          next_title="To CHANGE"
-          next_link="/design/project/math-review-game/"
-          prev_title="TO CHANGE"
-          prev_link="/experiments/project/fashion-avgs/"/>)
+          prev_title="To CHANGE"
+          prev_link="/design/project/math-review-game/"
+          next_title="TO CHANGE"
+          next_link="/experiments/project/fashion-avgs/"/>)
         break;
       case "dottie":
         project =
@@ -96,10 +96,10 @@ class ProjectContainer extends Component {
           header={dottieHeader}
           description="Children's Book thing"
           body=<Dottie/>
-          next_title="Math review game"
-          next_link="/design/project/math-review-game/"
-          prev_title="Fashion averages"
-          prev_link="/experiments/project/fashion-avgs/"/>)
+          prev_title="Math review game"
+          prev_link="/design/project/math-review-game/"
+          next_title="Fashion averages"
+          next_link="/experiments/project/fashion-avgs/"/>)
         break;
       case "exercises":
         project =
@@ -108,10 +108,10 @@ class ProjectContainer extends Component {
           header={exercisesHeader}
           description="Rethinking Khan Academy's exercise mechanics to be more motivating and rewarding for students."
           body=<Exercises/>
-          next_title="Math review game"
-          next_link="/design/project/math-review-game/"
-          prev_title="Fashion averages"
-          prev_link="/experiments/project/fashion-avgs/"/>)
+          prev_title="Math review game"
+          prev_link="/design/project/review-game/"
+          next_title="Fashion averages"
+          next_link="/experiments/project/fashion-avgs/"/>)
         break;
       case "fashion-avgs":
         project =
@@ -120,10 +120,10 @@ class ProjectContainer extends Component {
           header={fashionAveragesHeader}
           description="Who is the average of fashion week?"
           body=<FashionAverages/>
-          next_title="The undiversity of makeup"
-          next_link="/design/project/sephora/"
           prev_title="What do we perceive as beautiful?"
-          prev_link="/experiments/project/beauty/"/>)
+          prev_link="/experiments/project/beauty/"
+          next_title="Design systems"
+          next_link="/design/project/design-systems/"/>)
         break;
       case "hogwarts":
         project =
@@ -132,10 +132,10 @@ class ProjectContainer extends Component {
           header={hogwartsHeader}
           description="Branding for Khan Academy's yearly Harry Potter hackathon."
           body=<Hogwarts/>
-          next_title="Math review game"
-          next_link="/design/project/math-review-game/"
-          prev_title="Fashion averages"
-          prev_link="/experiments/project/fashion-avgs/"/>)
+          prev_title="Math review game"
+          prev_link="/design/project/math-review-game/"
+          next_title="Fashion averages"
+          next_link="/experiments/project/fashion-avgs/"/>)
         break;
       case "monsterz":
         project =
@@ -144,10 +144,10 @@ class ProjectContainer extends Component {
           header={monsterzHeader}
           description="A puzzle game for iOS inspired by Set."
           body=<Monsterz/>
-          next_title="Math review game"
-          next_link="/design/project/math-review-game/"
-          prev_title="Fashion averages"
-          prev_link="/experiments/project/fashion-avgs/"/>)
+          prev_title="Math review game"
+          prev_link="/design/project/math-review-game/"
+          next_title="Fashion averages"
+          next_link="/experiments/project/fashion-avgs/"/>)
         break;
       case "review-game":
         project =
@@ -156,10 +156,10 @@ class ProjectContainer extends Component {
           header={reviewGameHeader}
           description="How can we help teachers identify and fill student gaps in learning?"
           body=<ReviewGame/>
-          next_title="Math review game"
-          next_link="/design/project/math-review-game/"
-          prev_title="Fashion averages"
-          prev_link="/experiments/project/fashion-avgs/"/>)
+          prev_title="Defining student progress"
+          prev_link="/design/project/student-progress/"
+          next_title="What do we perceive as beautiful?"
+          next_link="/experiments/project/beauty/"/>)
         break;
       case "sephora":
         project =
@@ -168,10 +168,10 @@ class ProjectContainer extends Component {
           header={sephoraHeader}
           description="Surfacing the lack of diversity in Sephora's make up aisle."
           body=<SephoraSorting/>
-          next_title="Math review game"
-          next_link="/design/project/math-review-game/"
           prev_title="Fashion averages"
-          prev_link="/experiments/project/fashion-avgs/"/>)
+          prev_link="/experiments/project/fashion-avgs"
+          next_title="Design to learn, learn to design"
+          next_link="/teaching/project/design-to-learn/"/>)
         break;
       case "student-progress":
         project =
@@ -180,10 +180,10 @@ class ProjectContainer extends Component {
           header={studentProgressHeader}
           description="How might we enable teachers to identify &amp; fill student gaps in learning?"
           body=<StudentProgress/>
+          prev_title="Cultural values"
+          prev_link="/illustration/project/cultural-values/"
           next_title="Math review game"
-          next_link="/design/project/math-review-game/"
-          prev_title="Fashion averages"
-          prev_link="/experiments/project/fashion-avgs/"/>)
+          next_link="/design/project/review-game/"/>)
         break;
       default:
     }
@@ -211,19 +211,19 @@ class Project extends Component {
         {this.props.body}
         <section className="col-8 nested offset-neg-1 next-shelf">
           <li className="project col-4 nested prev-project">
-            <Link className="shelf-project-link" to={this.props.next_link}>
+            <Link className="shelf-project-link" to={this.props.prev_link}>
               <div className="col-1">
                 <h6 className="active">Previous</h6>
               </div>
               <div className="col-3">
-                <h2>{this.props.next_title}</h2>
+                <h2>{this.props.prev_title}</h2>
               </div>
             </Link>
           </li>
           <li className="project col-4 nested next-project"s>
-            <Link className="shelf-project-link" to={this.props.prev_link}>
+            <Link className="shelf-project-link" to={this.props.next_link}>
               <div className="right-text col-3">
-                <h2>{this.props.prev_title}</h2>
+                <h2>{this.props.next_title}</h2>
               </div>
               <div className="next-shelf-label col-1">
                 <h6 className="active">Next</h6>
