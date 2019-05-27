@@ -28,8 +28,7 @@ class AppRouter extends Component {
               <Route exact path="/experiments/" component={Experiments} />
               <Route exact path="/teaching/" component={Teaching} />
               <Route path="*/project/:id" component={ProjectContainer} />
-              <Route path="/404" component={DoesNotExist} />
-              <Redirect from='*' to='/404' />
+              <Route path="/404" exact={true} component={DoesNotExist} />
             </div>
           </ScrollToTop>
         </Router>
