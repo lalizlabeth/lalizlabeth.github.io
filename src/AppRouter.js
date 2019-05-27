@@ -8,7 +8,7 @@ import Experiments from './Experiments';
 import Teaching from './Teaching';
 import ProjectContainer from './components/Project'
 import Navigation from './components/Navigation';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 import ScrollToTop from './ScrollToTop';
 
 class AppRouter extends Component {
@@ -28,7 +28,8 @@ class AppRouter extends Component {
               <Route exact path="/experiments/" component={Experiments} />
               <Route exact path="/teaching/" component={Teaching} />
               <Route path="*/project/:id" component={ProjectContainer} />
-              <Route component={DoesNotExist} />
+              <Route path="/404" component={DoesNotExist} />
+              <Redirect from='*' to='/404' />
             </div>
           </ScrollToTop>
         </Router>
