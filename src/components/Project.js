@@ -10,6 +10,7 @@ import dottieHeader from '../assets/images/dottie/cover.png';
 import exercisesHeader from '../assets/images/exercises/cover.png';
 import fashionAveragesHeader from '../assets/images/fashion-avgs/cover.jpg';
 import hogwartsHeader from '../assets/images/hogwarts/cover.gif';
+import monsterzHeader from '../assets/images/monsterz/cover.jpg';
 import reviewGameHeader from '../assets/images/thumbs/thumb-review-game.png';
 import sephoraHeader from '../assets/images/sephora/cover.jpg';
 import studentProgressHeader from '../assets/images/thumbs/thumb-student-progress.png';
@@ -22,6 +23,7 @@ import Dottie from '../projects/Dottie';
 import Exercises from '../projects/Exercises';
 import FashionAverages from '../projects/FashionAverages';
 import Hogwarts from '../projects/Hogwarts';
+import Monsterz from '../projects/Monsterz';
 import ReviewGame from '../projects/ReviewGame';
 import SephoraSorting from '../projects/SephoraSorting';
 import StudentProgress from '../projects/StudentProgress';
@@ -102,9 +104,9 @@ class ProjectContainer extends Component {
       case "exercises":
         project =
         (<Project
-          title="Exercise mechanics"
+          title="Exercise redesign"
           header={exercisesHeader}
-          description="Motivating students to learn by creating "
+          description="Rethinking Khan Academy's exercise mechanics to be more motivating and rewarding for students."
           body=<Exercises/>
           next_title="Math review game"
           next_link="/design/project/math-review-game/"
@@ -130,6 +132,18 @@ class ProjectContainer extends Component {
           header={hogwartsHeader}
           description="Branding for Khan Academy's yearly Harry Potter hackathon."
           body=<Hogwarts/>
+          next_title="Math review game"
+          next_link="/design/project/math-review-game/"
+          prev_title="Fashion averages"
+          prev_link="/experiments/project/fashion-avgs/"/>)
+        break;
+      case "monsterz":
+        project =
+        (<Project
+          title="Monsterz"
+          header={monsterzHeader}
+          description="A puzzle game for iOS inspired by Set."
+          body=<Monsterz/>
           next_title="Math review game"
           next_link="/design/project/math-review-game/"
           prev_title="Fashion averages"

@@ -45,7 +45,7 @@ class Home extends Component {
                     <img className="project-thumb" alt="Review game thumbnail" src="images/thumbs/thumb-review-game.png" />
                     <h6 className="active">Design</h6>
                     <h2>Math review game</h2>
-                    <p>How can we make an engagine in-class review game for classrooms?</p>
+                    <p>How can we make an engaging in-class review game for classrooms?</p>
                   </Link>
                 </div>
             </li>
@@ -83,7 +83,7 @@ class Home extends Component {
               <h3>05</h3>
             </div>
             <div className="col-3">
-              <Link className="project-link" to="/illustrations/project/design-system/">
+              <Link className="project-link" to="/design/project/design-systems/">
                 <img className="project-thumb" alt="Design systems thumbnail with icons inside" src="images/thumbs/thumb-design-systems.png" />
                 <h6 className="active">Design</h6>
                 <h2>Design systems</h2>
