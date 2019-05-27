@@ -59,7 +59,7 @@ class Home extends Component {
                     <img className="project-thumb" alt="What is beauty thumbnail" src="images/thumbs/thumb-beautiful.jpg" />
                     <h6 className="active">Experiments</h6>
                     <h2>What do we perceive as beautiful?</h2>
-                    <p>My final showcase project at the School for Poetic Computation</p>
+                    <p>My final showcase project at the School for Poetic Computation.</p>
                   </Link>
                 </div>
             </li>

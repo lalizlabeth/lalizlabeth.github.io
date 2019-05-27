@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import beautyHeader from '../assets/images/beauty/cover.jpg';
 import culturalValuesHeader from '../assets/images/cultural-values/cover.png';
-import designSystemsHeader from '../assets/images/design-systems/cover.png';
+import designSystemsHeader from '../assets/images/design-systems/cover-2.png';
 import designToLearnHeader from '../assets/images/design-to-learn/cover.png';
 import dottieHeader from '../assets/images/dottie/cover.png';
 import exercisesHeader from '../assets/images/exercises/cover.png';

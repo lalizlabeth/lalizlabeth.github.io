@@ -24,6 +24,12 @@ class DesignSystems extends Component {
         <div className="col-7 medium-spacer-bottom">
           <img className="project-image" alt="Global nav iterations" src={require("../assets/images/design-systems/global-nav-v1.gif")}/>
         </div>
+        <div className="col-7 medium-spacer-bottom">
+          <img className="project-image" alt="Global nav iterations" src={require("../assets/images/design-systems/global-nav-v2.gif")}/>
+        </div>
+        <div className="col-7 medium-spacer-bottom">
+          <img className="project-image" alt="Global nav iterations" src={require("../assets/images/design-systems/global-nav-v3.gif")}/>
+        </div>
 
         <h2 className="large-spacer-top col-5">Brand library</h2>
         <div className="text-group">
@@ -47,7 +53,10 @@ class DesignSystems extends Component {
           <img className="project-image" alt="Brand library textures" src={require("../assets/images/design-systems/brand-5.png")}/>
         </div>
 
-        <p className="large-paragraph medium-spacer-bottom col-5">I developed a system to name each asset to make it easy for people to search through. I also added a section for easter eggs <span role="img" aria-label="egg">🥚</span>. See it in action below:</p>
+        <div class="text-group">
+          <p className="large-paragraph medium-spacer-bottom col-5">I developed a system to name each asset to make it easy for people to search through. I also added a section for easter eggs <span role="img" aria-label="egg">🥚</span>. See it in action below:</p>
+          <p className="reflections col-2">The dog is one of my favorite office dogs, Pistachio <span role="img" aria-label="heart eyes">😍</span>! She's @heyitspistachio on Instagram.</p>
+        </div>
 
         <div className="col-7 medium-spacer-bottom">
           <img className="project-image" alt="Brand library textures" src={require("../assets/images/design-systems/brand-library-demo.gif")}/>
@@ -84,6 +93,12 @@ class DesignSystems extends Component {
           <li><strong>Blue</strong> was reserved for all things actionable: links and buttons. We wanted blue to be used very minimally on each page to draw attention to the most importnat CTA. Previously, blue was the primary  color for the Math domain.</li>
           <li><strong>Purple</strong> was a new color we introduced for the concept of Mastery. Mastery is calculated differently from raw correctness, so we wanted to choose a color that differeniated it from Green. Purple was the only color remaining that reached accessiblity guidelines and wasn't close to the rest of the core colors.</li>
         </ul>
+        <div className="text-group">
+          <p className="large-paragraph small-spacer-bottom col-5">We also created a new vibrant illustration palette to add more visual interest to the product.</p>
+        </div>
+        <div className="col-7 medium-spacer-bottom">
+          <img className="project-image" alt="Illustration palette" src={require("../assets/images/design-systems/illustration-palette.png")}/>
+        </div>
     </section>
     );
   }
