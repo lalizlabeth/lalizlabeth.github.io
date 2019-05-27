@@ -118,7 +118,7 @@ class StudentProgress extends Component {
 
         <div className="text-group">
           <p className="large-paragraph quote medium-spacer-bottom col-5">“I loved that it gave a quick overview of who is doing what work, and the %. This is SO HELPFUL for me as a teacher in many ways. I can see the progress of individual students, determine how to group students/differentiate quickly. This can also make it simpler for me when it comes to putting work in the grade book. It's amazing!”</p>
-          <p className="reflections col-2">Notes</p>
+          <p className="reflections col-2">I promise we didn't plant this quote <span role="img" aria-label="see no evil monkey">🙈</span></p>
         </div>
 
         <p className="large-paragraph medium-spacer-bottom col-5">Here's a summary of the rest of their feedback:</p>
@@ -137,7 +137,7 @@ class StudentProgress extends Component {
           <div className="col-5 medium-spacer-bottom">
             <img className="project-image" alt="Survey week 1" src={require("../assets/images/student-progress/v2.png")}/>
           </div>
-          <p className="reflections col-2">Filters</p>
+          <p className="reflections col-2">The squares were designed specifically for the teacher dashboard because we don't show red to students.</p>
         </div>
 
         <p className="large-paragraph medium-spacer-bottom col-5">These are the options within each filter:</p>
@@ -146,10 +146,12 @@ class StudentProgress extends Component {
           <div className="col-5 medium-spacer-bottom">
             <img className="project-image" alt="Survey week 1" src={require("../assets/images/student-progress/filters.png")}/>
           </div>
-          <p className="reflections col-2">Filters</p>
         </div>
 
-        <p className="large-paragraph medium-spacer-bottom col-5">In this week's survey, we asked teachers: <strong>"How might you use the Progress page to inform your instruction?"</strong> Here are some of their responses:</p>
+        <div className="text-group">
+          <p className="large-paragraph medium-spacer-bottom col-5">In this week's survey, we asked teachers: <strong>"How might you use the Progress page to inform your instruction?"</strong> Here are some of their responses:</p>
+          <p className="reflections col-2">It was cool seeing how differently teachers would use this dashboard view.</p>
+        </div>
 
         <p className="large-paragraph quote medium-spacer-bottom col-5">“It allows me to notice larger patterns of content that I need to reteach and fill in gaps. I also like that I can track how much of the AP Calculus curriculum that my students have practiced."</p>
 
@@ -167,7 +169,10 @@ class StudentProgress extends Component {
 
         <p className="large-paragraph quote medium-spacer-bottom col-5">“I want to see what my students are <strong>currently</strong> working on and who needs assistance.”</p>
 
-        <p className="large-paragraph medium-spacer-bottom col-5">The most popular request we had was an individual student report. We reprioritized our timeline to accomodate for this feature because we felt it was crucial to a teacher's workflow. Many teachers wanted to discuss scores with individual students or their parents without compromising other students' private information.</p>
+        <div className="text-group">
+          <p className="large-paragraph medium-spacer-bottom col-5">The most popular request we had was an individual student report. We reprioritized our timeline to accomodate for this feature because we felt it was crucial to a teacher's workflow. Many teachers wanted to discuss scores with individual students or their parents without compromising other students' private information.</p>
+          <p className="reflections col-2">Some teachers would print out the entire grade book and post it for the entire class to see <span role="img" aria-label="scream">😱</span></p>
+        </div>
 
         <div className="col-5 medium-spacer-bottom">
           <img className="project-image" alt="Indiviudal report page" src={require("../assets/images/student-progress/individual.jpeg")}/>

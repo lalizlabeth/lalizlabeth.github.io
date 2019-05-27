@@ -179,7 +179,7 @@ class ReviewGame extends Component {
           <img className="project-image" alt="Final prototype" src={require("../assets/images/review-game/classroom-final.gif")}/>
         </div>
 
-        <h2 className="large-spacer-top col-5">Future Explorations</h2>
+        <h2 className="large-spacer-top col-5">Future explorations</h2>
         <p className="large-paragraph medium-spacer-bottom col-5">While we were prototyping ideas in the classroom, I also drew more "far out" explorations to show how the product could look if we expanded upon the idea even further. All these explorations focus on how the class or team will collectively reach a goal. We didn't want the focus to be on an individual student.</p>
 
         <p className="large-paragraph medium-spacer-bottom col-5">In this iteration, each team is a represented by a plant. Every time a student answers a question, they get to contribute to the plant's growth! I replaced the emojis with a sun and cloud because both sunshine and rain are needed to grow a plant.</p>
@@ -218,7 +218,7 @@ class ReviewGame extends Component {
           <img className="project-image" alt="Prototype week 3" src={require("../assets/images/review-game/explore-4b.jpeg")}/>
         </div>
 
-        <h2 className="large-spacer-top col-5">What Happened?</h2>
+        <h2 className="large-spacer-top col-5">What happened?</h2>
         <p className="large-paragraph medium-spacer-bottom col-5">Although we received lots of teacher validation during the project, the leadership team decided to hold off on pursuing this idea until we had a more solid foundation for the teacher product!</p>
 
 

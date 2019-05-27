@@ -67,7 +67,7 @@ class Illustration extends Component {
             </li>
 
             <li className="project col-8 nested" id="project-1">
-              <Link className="project-link fixed" to="/illustrations/project/avatars/">
+              <Link className="project-link fixed" to="/illustrations/project/avatar-redesign/">
                 <div className="project-number col-1">
                   <h3>04</h3>
                 </div>

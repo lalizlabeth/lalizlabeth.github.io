@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Project.scss';
 import { Link } from "react-router-dom";
 
+import avatarRedesignHeader from '../assets/images/avatar-redesign/cover.png';
 import beautyHeader from '../assets/images/beauty/cover.jpg';
 import culturalValuesHeader from '../assets/images/cultural-values/cover.png';
 import designSystemsHeader from '../assets/images/design-systems/cover-2.png';
@@ -15,6 +16,7 @@ import reviewGameHeader from '../assets/images/thumbs/thumb-review-game.png';
 import sephoraHeader from '../assets/images/sephora/cover.jpg';
 import studentProgressHeader from '../assets/images/thumbs/thumb-student-progress.png';
 
+import AvatarRedesign from '../projects/AvatarRedesign';
 import Beauty from '../projects/Beauty';
 import CulturalValues from '../projects/CulturalValues';
 import DesignSystems from '../projects/DesignSystems';
@@ -41,6 +43,18 @@ class ProjectContainer extends Component {
     var project
 
     switch (projectPath) {
+      case "avatar-redesign":
+        project =
+        (<Project
+          title="Avatar redesign"
+          header={avatarRedesignHeader}
+          description="Explorations for revamping Khan Academy's avatar system."
+          body=<AvatarRedesign/>
+          prev_title="Have you seen my glasses?"
+          prev_link="/illustration/project/dottie/"
+          next_title="Doodles"
+          next_link="/illustration/project/doodles/"/>)
+        break;
       case "beauty":
         project =
         (<Project
@@ -142,12 +156,12 @@ class ProjectContainer extends Component {
         (<Project
           title="Monsterz"
           header={monsterzHeader}
-          description="A puzzle game for iOS inspired by Set."
+          description="A puzzle game for iOS inspired by Set featuring some cute monsters."
           body=<Monsterz/>
-          prev_title="Math review game"
-          prev_link="/design/project/math-review-game/"
-          next_title="Fashion averages"
-          next_link="/experiments/project/fashion-avgs/"/>)
+          prev_title="Exercise redesign"
+          prev_link="/design/project/exercises/"
+          next_title="Cultural values"
+          next_link="/illustration/project/cultural-values/"/>)
         break;
       case "review-game":
         project =

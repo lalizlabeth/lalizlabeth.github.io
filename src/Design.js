@@ -91,7 +91,7 @@ class Design extends Component {
                 <div className="col-3 project-title">
                   <h6 className="active">Design</h6>
                   <h2>Monsterz game</h2>
-                  <p>A puzzle game inspired by Set.</p>
+                  <p>A puzzle game for iOS inspired by Set featuring some cute monsters.</p>
                 </div>
               </Link>
             </li>

@@ -4,7 +4,7 @@ class Dottie extends Component {
   render() {
     return (
       <section className="col-7 nested">
-        <p className="large-paragraph medium-spacer-bottom col-5"><strong>🚧 This project is a work in progress! 🚧</strong></p>
+        <p className="large-paragraph medium-spacer-bottom col-5"><strong><span role="img" aria-label="construction sign">🚧</span> This project is a work in progress! <span role="img" aria-label="construction sign">🚧</span></strong></p>
         <p className="large-paragraph medium-spacer-bottom col-5">
           <a href="http://www.twitter.com/varunrau">@varunrau</a> and I wanted to make our own children’s book! We both wanted to create a story that teaches the reader about art history. To start, we researched various children’s books and really loved the simplicity of Jon Klassen’s "This is Not My Hat" and "I Want My Hat Back".
         </p>
