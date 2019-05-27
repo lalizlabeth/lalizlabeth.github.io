@@ -132,10 +132,10 @@ class ProjectContainer extends Component {
           header={hogwartsHeader}
           description="Branding for Khan Academy's yearly Harry Potter hackathon."
           body=<Hogwarts/>
-          prev_title="Math review game"
-          prev_link="/design/project/math-review-game/"
-          next_title="Fashion averages"
-          next_link="/experiments/project/fashion-avgs/"/>)
+          prev_title="Cultural values"
+          prev_link="/illustration/project/cultural-values/"
+          next_title="Avatar redesign"
+          next_link="/illustration/avatar-redesign/"/>)
         break;
       case "monsterz":
         project =
