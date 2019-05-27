@@ -21,14 +21,18 @@ class AppRouter extends Component {
                 <Route path="/:id*" component={Navigation} />
                 <Route component={Navigation} />
               </Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/about/" component={About} />
-              <Route exact path="/design/" component={Design} />
-              <Route exact path="/illustration/" component={Illustration} />
-              <Route exact path="/experiments/" component={Experiments} />
-              <Route exact path="/teaching/" component={Teaching} />
-              <Route path="*/project/:id" component={ProjectContainer} />
-              <Route path="/404" exact={true} component={DoesNotExist} />
+
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/about/" component={About} />
+                <Route exact path="/design/" component={Design} />
+                <Route exact path="/illustration/" component={Illustration} />
+                <Route exact path="/experiments/" component={Experiments} />
+                <Route exact path="/teaching/" component={Teaching} />
+                <Route path="*/project/:id" component={ProjectContainer} />
+                <Route path="/404" component={DoesNotExist} />
+                <Redirect from='*' to='/404' />
+              </Switch>
             </div>
           </ScrollToTop>
         </Router>
