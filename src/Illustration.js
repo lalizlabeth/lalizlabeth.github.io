@@ -44,7 +44,7 @@ class Illustration extends Component {
                 </div>
                 <div className="col-3 project-title">
                   <h6 className="active">Illustration</h6>
-                  <h2>Harry Potter Hackweek</h2>
+                  <h2>Harry Potter hackweek</h2>
                   <p>Illustrations for our yearly Harry Potter hackathon.</p>
                 </div>
               </Link>
@@ -61,7 +61,7 @@ class Illustration extends Component {
                 <div className="col-3 project-title">
                   <h6 className="active">Illustration</h6>
                   <h2>Have you seen my glasses?</h2>
-                  <p>Children's book</p>
+                  <p>A children's book that teaches kids a bout art history.</p>
                 </div>
               </Link>
             </li>

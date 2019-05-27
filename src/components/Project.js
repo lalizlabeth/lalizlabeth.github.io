@@ -94,12 +94,12 @@ class ProjectContainer extends Component {
         (<Project
           title="Have you seen my glasses?"
           header={dottieHeader}
-          description="Children's Book thing"
+          description="A children's book that teaches kids a bout art history."
           body=<Dottie/>
-          prev_title="Math review game"
-          prev_link="/design/project/math-review-game/"
-          next_title="Fashion averages"
-          next_link="/experiments/project/fashion-avgs/"/>)
+          prev_title="Harry Potter hackweek"
+          prev_link="/illustration/project/hogwarts"
+          next_title="Avatar redesign"
+          next_link="/illustration/project/avatar-redesign/"/>)
         break;
       case "exercises":
         project =
@@ -128,14 +128,14 @@ class ProjectContainer extends Component {
       case "hogwarts":
         project =
         (<Project
-          title="Harry Potter Hackaweek"
+          title="Harry Potter hackweek"
           header={hogwartsHeader}
           description="Branding for Khan Academy's yearly Harry Potter hackathon."
           body=<Hogwarts/>
           prev_title="Cultural values"
           prev_link="/illustration/project/cultural-values/"
-          next_title="Avatar redesign"
-          next_link="/illustration/avatar-redesign/"/>)
+          next_title="Have you seen my glasses?"
+          next_link="/illustration/dottie/"/>)
         break;
       case "monsterz":
         project =
