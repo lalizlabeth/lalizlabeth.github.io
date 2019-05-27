@@ -102,6 +102,11 @@
     &.fixed  {
       flex-direction: row;
       display: flex;
+      &:hover {
+        &::after {
+          content: "";
+        }
+      }
     }
     &.flipped:hover {
       &::after {
@@ -232,6 +237,9 @@
     margin-left: 10vw;
     margin-top: 60px;
   }
+  .projects-wrapper {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -241,11 +249,6 @@
     margin-top: 80px;
     justify-content: center;
     width: 100vw;
-    // h1,
-    // h1 strong {
-    //   font-size: 32px;
-    //   line-height: 1.0;
-    // }
   }
   .header-image-wrapper {
     width: 60vw;

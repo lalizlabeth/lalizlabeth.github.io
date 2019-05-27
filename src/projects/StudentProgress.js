@@ -35,7 +35,10 @@ class StudentProgress extends Component {
         <p className="large-paragraph medium-spacer-bottom col-5">We hoped to address this question: How might we make it easier for teachers to diagnose patterns and fill student gaps in knowledge?</p>
 
         <h2 className="large-spacer-top col-5">Initial explorations & research</h2>
-        <p className="large-paragraph medium-spacer-bottom col-5">We had a month to explore and research different directions to display student progress. We started by interviewing 10 non-math teachers to understand how they track student progress and growth. We asked questions like: What do you look for in order to know if students understand the material? How do you assess for student mastery? These are some of our high level findings:</p>
+        <div class="text-group">
+          <p className="large-paragraph medium-spacer-bottom col-5">We had a month to explore and research different directions to display student progress. We started by interviewing 10 non-math teachers to understand how they track student progress and growth. We asked questions like: What do you look for in order to know if students understand the material? How do you assess for student mastery? These are some of our high level findings:</p>
+          <p className="reflections col-2">We conducted these interviews over Google Hangouts and chatted with both KA and non-KA teachers.</p>
+        </div>
 
         <ul className="text-list medium-spacer-bottom col-5">
           <li><strong>Teachers want to see individual student effort.</strong> If they did poorly on an exercise, did they watch a related video or read a related article? Did they use any hints? Have they improved since last week?</li>

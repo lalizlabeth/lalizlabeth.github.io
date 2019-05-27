@@ -93,6 +93,16 @@ class About extends Component {
 
             <li className="about-module col-6 nested">
               <div className="project-number col-1">
+                <h2><span role="img" aria-label="taiwan flag">🇹🇼</span></h2>
+              </div>
+              <div className="col-5">
+                <h2><span className="about-module-text">Eating Taiwanese food</span></h2>
+                <p className="about-description">Some people have an extra stomach for dessert, but I definitely have one for minced pork over rice and popcorn chicken.</p>
+              </div>
+            </li>
+
+            <li className="about-module col-6 nested">
+              <div className="project-number col-1">
                 <h2><span role="img" aria-label="balloon">🎈</span></h2>
               </div>
               <div className="col-5">

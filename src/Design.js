@@ -28,7 +28,7 @@ class Design extends Component {
                 <div className="col-3 project-title">
                   <h6 className="active">Design</h6>
                   <h2>Defining student progress</h2>
-                  <p>How can we help teachers to identify and fill student gaps in learning?</p>
+                  <p>How can we help teachers identify and fill student gaps in learning?</p>
                 </div>
               </Link>
             </li>

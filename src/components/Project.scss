@@ -165,6 +165,9 @@ ul.text-list {
       }
       text-align: right;
     }
+    .prev-project .shelf-project-link {
+      flex-direction: column;
+    }
     .project,
     .next-shelf .shelf-project-link {
       align-items: flex-start;
