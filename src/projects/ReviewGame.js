@@ -90,7 +90,7 @@ class ReviewGame extends Component {
           <p className="reflections col-2">C. Ms. Frizzle sees that almost half the class answered incorrectly and decides to explain the question at the board.</p>
         </div>
 
-        <h2 className="large-spacer-top col-5">Game Jam: Prototyping</h2>
+        <h2 className="large-spacer-top col-5">Game jam: prototyping</h2>
         <p className="large-paragraph medium-spacer-bottom col-5">I can't show the footage of students in my public portfolio, so these are all low-fi gifs! If you want to see the final prototype live in action, please visit <a href="http://khanacademy.org/r/classroom-teacher">khanacademy.org/r/classroom-teacher</a> and select the "Demo" game.</p>
 
         <p className="large-paragraph medium-spacer-bottom col-5">Once we had the basic game mechanics outlined, we started to prototoype the game. Each week, we did the following:</p>

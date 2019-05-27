@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Home from './Home';
 import About from './About';
 import Design from './Design';
+import DoesNotExist from './DoesNotExist';
 import Illustration from './Illustration';
 import Experiments from './Experiments';
 import Teaching from './Teaching';
@@ -27,6 +28,7 @@ class AppRouter extends Component {
               <Route exact path="/experiments/" component={Experiments} />
               <Route exact path="/teaching/" component={Teaching} />
               <Route path="*/project/:id" component={ProjectContainer} />
+              <Route component={DoesNotExist} />
             </div>
           </ScrollToTop>
         </Router>
