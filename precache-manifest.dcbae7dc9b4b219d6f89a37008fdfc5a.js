@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "f68713f3ebf1324467fe53fb0d813c4d",
-    "url": "/static/media/old-2.f68713f3.jpeg"
+    "revision": "e33d03fa25bf1f2198d7d74187eb74cb",
+    "url": "/static/media/skip-1.e33d03fa.jpeg"
   },
   {
-    "revision": "51c0f9439c3e35cc6f35",
-    "url": "/static/css/main.63cba64c.chunk.css"
+    "revision": "40affcd78fcc0286f83e",
+    "url": "/static/css/main.aeb96702.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "cc79fcd6ef976b198d18",
-    "url": "/static/js/2.3c9eba96.chunk.js"
+    "revision": "64a11171c64104965e23",
+    "url": "/static/js/2.e5e06e22.chunk.js"
   },
   {
     "revision": "83169e0aec2af97bfe3c369bcd1e152a",
@@ -48,8 +48,16 @@ self.__precacheManifest = [
     "url": "/static/media/cover.24e89a09.jpg"
   },
   {
+    "revision": "686fb606a4e0f57ee831ecc26e092e3f",
+    "url": "/static/media/cover.686fb606.gif"
+  },
+  {
     "revision": "e855c3cb8802fbc302e4812caca69a07",
     "url": "/static/media/cover.e855c3cb.gif"
+  },
+  {
+    "revision": "38bfd81d2708f2af1a4009b0313a5a4d",
+    "url": "/static/media/cover.38bfd81d.png"
   },
   {
     "revision": "7185f6250f423b00329124a214a4ab2e",
@@ -252,6 +260,26 @@ self.__precacheManifest = [
     "url": "/static/media/illustration-palette.41fe6ff8.png"
   },
   {
+    "revision": "2b36e35ee404db7bfeddaf73428fe2b2",
+    "url": "/static/media/1.2b36e35e.png"
+  },
+  {
+    "revision": "78e4bb4d34809f150bba70b7cb3d96f3",
+    "url": "/static/media/2.78e4bb4d.png"
+  },
+  {
+    "revision": "b82e32cf9a4926275d2e701609a61054",
+    "url": "/static/media/3.b82e32cf.png"
+  },
+  {
+    "revision": "17175e06c607da10ee2ce073712ba4ce",
+    "url": "/static/media/4.17175e06.png"
+  },
+  {
+    "revision": "0e88373f98af675ff06dc8113f86b3ae",
+    "url": "/static/media/5.0e88373f.png"
+  },
+  {
     "revision": "97a81f02d079095e27221c7979eabd13",
     "url": "/static/media/lalizlabeth.97a81f02.jpg"
   },
@@ -364,8 +392,8 @@ self.__precacheManifest = [
     "url": "/static/media/old-1.3d4adb08.jpeg"
   },
   {
-    "revision": "51c0f9439c3e35cc6f35",
-    "url": "/static/js/main.2e6a89ce.chunk.js"
+    "revision": "f68713f3ebf1324467fe53fb0d813c4d",
+    "url": "/static/media/old-2.f68713f3.jpeg"
   },
   {
     "revision": "4c6f224c1e6d0676f6f16ea0462a3860",
@@ -376,8 +404,8 @@ self.__precacheManifest = [
     "url": "/static/media/indicator-b.1aace6a8.jpeg"
   },
   {
-    "revision": "e33d03fa25bf1f2198d7d74187eb74cb",
-    "url": "/static/media/skip-1.e33d03fa.jpeg"
+    "revision": "40affcd78fcc0286f83e",
+    "url": "/static/js/main.e742e2cf.chunk.js"
   },
   {
     "revision": "082d5f93a1ec6d8dc557b982b956e532",
@@ -452,6 +480,42 @@ self.__precacheManifest = [
     "url": "/static/media/louis.eab912bc.jpg"
   },
   {
+    "revision": "0d654da2e430f75c0196ffdae4fc3e2d",
+    "url": "/static/media/shapes.0d654da2.jpeg"
+  },
+  {
+    "revision": "9ce26f486700e334b20ba9f4ff253465",
+    "url": "/static/media/monsters.9ce26f48.gif"
+  },
+  {
+    "revision": "a9cce8d864d96bdfdd3f150cae28215e",
+    "url": "/static/media/example.a9cce8d8.gif"
+  },
+  {
+    "revision": "411963f345a1b51317e2818e5121a21b",
+    "url": "/static/media/anger.411963f3.gif"
+  },
+  {
+    "revision": "5176d001e1e822c09e8c39af59fd5411",
+    "url": "/static/media/fear.5176d001.gif"
+  },
+  {
+    "revision": "1ad843e70f4f0809297865994d7c7650",
+    "url": "/static/media/emotions.1ad843e7.png"
+  },
+  {
+    "revision": "39bec933ed605a9ca73f8cef7f8fd6a7",
+    "url": "/static/media/walle.39bec933.png"
+  },
+  {
+    "revision": "27c7c68ba0cde3d47d7b99070c4d3826",
+    "url": "/static/media/tangled.27c7c68b.png"
+  },
+  {
+    "revision": "5d192063fbe550fc14e3fdfd26933c75",
+    "url": "/static/media/inside-out.5d192063.png"
+  },
+  {
     "revision": "e63f627289298e1ae4ff6b8628ea89bc",
     "url": "/static/media/gryffindor-2019.e63f6272.png"
   },
@@ -486,6 +550,26 @@ self.__precacheManifest = [
   {
     "revision": "0bc0ff267db11fb0a2d679b889679987",
     "url": "/static/media/whomping-willow.0bc0ff26.jpg"
+  },
+  {
+    "revision": "9df4e64c94d2ef10b41846a054c05691",
+    "url": "/static/media/3.9df4e64c.png"
+  },
+  {
+    "revision": "3c0ea5f21aca4cf14ad7d559e145ea66",
+    "url": "/static/media/4.3c0ea5f2.png"
+  },
+  {
+    "revision": "fdee25b18d84845bf4a8edc1e20f6516",
+    "url": "/static/media/5.fdee25b1.png"
+  },
+  {
+    "revision": "697c881ffe57869680911b11ae34c81e",
+    "url": "/static/media/1.697c881f.png"
+  },
+  {
+    "revision": "7631dfa08974db41672373550b18a073",
+    "url": "/static/media/2.7631dfa0.png"
   },
   {
     "revision": "8cded05629de6305b430afcd1a5a8228",
@@ -724,7 +808,7 @@ self.__precacheManifest = [
     "url": "/static/media/2.cbe3435e.jpeg"
   },
   {
-    "revision": "7cb768087e3cfed8624072201c49ee1d",
+    "revision": "c74465c0a75b906e5108be27f8dded8a",
     "url": "/index.html"
   }
 ];
