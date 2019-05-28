@@ -24,7 +24,7 @@ class Illustration extends Component {
                   <h3>01</h3>
                 </div>
                 <div className="col-3 project-thumb-fixed">
-                  <img className="project-thumb" alt="Cultural values thumbnail" src="images/thumbs/thumb-cultural-values.png" />
+                  <img className="project-thumb" alt="A column with an open book on top. The book has a pencil, mountain, and apple bursting out!" src="images/thumbs/thumb-cultural-values.png" />
                 </div>
                 <div className="col-3 project-title">
                   <h6 className="active">Illustration</h6>
@@ -40,7 +40,7 @@ class Illustration extends Component {
                   <h3>02</h3>
                 </div>
                 <div className="col-3 project-thumb-fixed">
-                  <img className="project-thumb" alt="Hogwarts houses" src="images/thumbs/thumb-hogwarts.gif" />
+                  <img className="project-thumb" alt="Rotating through Hogwarts house illustrations" src="images/thumbs/thumb-hogwarts.gif" />
                 </div>
                 <div className="col-3 project-title">
                   <h6 className="active">Illustration</h6>
@@ -56,7 +56,7 @@ class Illustration extends Component {
                   <h3>03</h3>
                 </div>
                 <div className="col-3 project-thumb-fixed">
-                  <img className="project-thumb" alt="Dottie illustration" src="images/thumbs/thumb-dottie.png" />
+                  <img className="project-thumb" alt="An illustration of a little girl with pink hair" src="images/thumbs/thumb-dottie.png"/>
                 </div>
                 <div className="col-3 project-title">
                   <h6 className="active">Illustration</h6>
@@ -72,7 +72,7 @@ class Illustration extends Component {
                   <h3>04</h3>
                 </div>
                 <div className="col-3 project-thumb-fixed">
-                  <img className="project-thumb" alt="Avatars" src="images/thumbs/thumb-avatar.png" />
+                  <img className="project-thumb" alt="6 avatar explorations each with a different personality" src="images/thumbs/thumb-avatar.png" />
                 </div>
                 <div className="col-3 project-title">
                   <h6 className="active">Illustration</h6>
@@ -88,7 +88,7 @@ class Illustration extends Component {
                   <h3>05</h3>
                 </div>
                 <div className="col-3 project-thumb-fixed">
-                  <img className="project-thumb" alt="Doodles" src="images/thumbs/thumb-doodles.png" />
+                  <img className="project-thumb" alt="Two mice riding in carrot jets" src="images/thumbs/thumb-doodles.png" />
                 </div>
                 <div className="col-3 project-title">
                   <h6 className="active">Illustration</h6>

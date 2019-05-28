@@ -21,7 +21,7 @@ class Experiments extends Component {
                   <h3>01</h3>
                 </div>
                 <div className="col-3 project-thumb-fixed">
-                  <img className="project-thumb" alt="What is beautiful thumbnail" src="images/thumbs/thumb-beautiful.jpg" />
+                  <img className="project-thumb" alt="Me, a petite asian woman wearing a crown, interacting with a large touch screen with large shapes and blobs" src="images/thumbs/thumb-beautiful.jpg" />
                 </div>
                 <div className="col-3 project-title">
                   <h6 className="active">Experiments</h6>
@@ -37,7 +37,7 @@ class Experiments extends Component {
                   <h3>02</h3>
                 </div>
                 <div className="col-3 project-thumb-fixed">
-                  <img className="project-thumb" alt="Fashion averages thumbnail" src="images/thumbs/thumb-fashion.jpg" />
+                  <img className="project-thumb" alt="An average of the spring 2019 fashion week shows. Looks like a ghostly brunette model" src="images/thumbs/thumb-fashion.jpg" />
                 </div>
                 <div className="col-3 project-title">
                   <h6 className="active">Experiments</h6>
@@ -53,7 +53,7 @@ class Experiments extends Component {
                   <h3>03</h3>
                 </div>
                 <div className="col-3 project-thumb-fixed">
-                  <img className="project-thumb" alt="Sephora thumbnail" src="images/thumbs/thumb-sephora.jpg" />
+                  <img className="project-thumb" alt="A collage of Sephora's foundations ordered from dark to light" src="images/thumbs/thumb-sephora.jpg" />
                 </div>
                 <div className="col-3 project-title">
                   <h6 className="active">Experiments</h6>

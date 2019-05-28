@@ -27,7 +27,7 @@ class Home extends Component {
               </div>
               <div className="col-3">
                 <Link className="project-link" to="/design/project/student-progress/">
-                  <img className="project-thumb" alt="Student progress thumbnail" src="./images/thumbs/thumb-student-progress.png" />
+                  <img className="project-thumb" alt="Khan Academy's teacher progress page with a grid of scores" src="./images/thumbs/thumb-student-progress.png" />
                   <h6 className="active">Design</h6>
                   <h2>Defining student progress</h2>
                   <p>How can we help teachers identify and fill student gaps in learning?</p>
@@ -41,7 +41,7 @@ class Home extends Component {
                 </div>
                 <div className="col-4">
                   <Link className="project-link" to="/design/project/review-game/" style={{display:"block"}}>
-                    <img className="project-thumb" alt="Review game thumbnail" src="images/thumbs/thumb-review-game.png" />
+                    <img className="project-thumb" alt="A review game prototype with a math problem in the center and flowers on both sides symbolizing the different teams" src="images/thumbs/thumb-review-game.png" />
                     <h6 className="active">Design</h6>
                     <h2>Math review game</h2>
                     <p>How can we make an engaging in-class review game for classrooms?</p>
@@ -55,7 +55,7 @@ class Home extends Component {
                 </div>
                 <div className="col-4">
                   <Link className="project-link" to="/experiments/project/beauty/">
-                    <img className="project-thumb" alt="What is beauty thumbnail" src="images/thumbs/thumb-beautiful.jpg" />
+                    <img className="project-thumb" alt="Me, a petite asian woman wearing a crown, interacting with a large touch screen with large shapes and blobs" src="images/thumbs/thumb-beautiful.jpg" />
                     <h6 className="active">Experiments</h6>
                     <h2>What do we perceive as beautiful?</h2>
                     <p>My final showcase project at the School for Poetic Computation.</p>
@@ -72,7 +72,7 @@ class Home extends Component {
                 <p>What's the average of fashion week?</p>
               </div>
               <div className="col-2">
-                <img className="project-thumb" alt="fashion experiments thumbnail" src="images/thumbs/thumb-fashion-avgs.jpg" />
+                <img className="project-thumb" alt="An average of the spring 2019 fashion week shows. Looks like a ghostly brunette model" src="images/thumbs/thumb-fashion-avgs.jpg" />
               </div>
             </Link>
           </li>
@@ -83,7 +83,7 @@ class Home extends Component {
             </div>
             <div className="col-3">
               <Link className="project-link" to="/design/project/design-systems/">
-                <img className="project-thumb" alt="Design systems thumbnail with icons inside" src="images/thumbs/thumb-design-systems.png" />
+                <img className="project-thumb" alt="A collage with a dog, cloud, and two party hats on a bright yellow background" src="images/thumbs/thumb-design-systems.png" />
                 <h6 className="active">Design</h6>
                 <h2>Design systems</h2>
                 <p>An overview of the different components I worked on at Khan Academy.</p>
@@ -97,7 +97,7 @@ class Home extends Component {
             </div>
             <div className="col-4">
               <Link className="project-link" to="/design/project/cultural-values/">
-                <img className="project-thumb" alt="Cultural values thumbnail" src="images/thumbs/thumb-cultural-values.png" />
+                <img className="project-thumb" alt="A column with an open book on top. The book has a pencil, mountain, and apple bursting out!" src="images/thumbs/thumb-cultural-values.png" />
                 <h6 className="active">Illustrations</h6>
                 <h2>Cultural values</h2>
                 <p>To celebrate Khan Academy's new values, I created a series of illustrations to represent each value.</p>

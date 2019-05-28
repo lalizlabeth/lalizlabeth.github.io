@@ -5,7 +5,7 @@ class Beauty extends Component {
     return (
       <section className="col-7 nested">
         <div className="text-group">
-          <p className="large-paragraph medium-spacer-bottom col-5">This was my final showcase project for the School for Poetic Computation. We only had ~1-week to do it, but my entire time at SFPC informed my project. I wanted to address the following questions with my installation:</p>
+          <p className="large-paragraph medium-spacer-bottom col-5">This was my final showcase project for the <a href="http://sfpc.io">School for Poetic Computation</a>. We only had ~1-week to do it, but my 10 weeks at SFPC informed my project. I wanted to address the following questions with my installation:</p>
           <p className="reflections col-2">My notes and reflections will go here.</p>
         </div>
         <ul className="text-list medium-spacer-bottom col-5">
@@ -21,7 +21,7 @@ class Beauty extends Component {
           <p className="reflections col-2">Some of my original ideas were too focused on actual body image and I couldn't figure out a way to do it lightly without being offensive.</p>
         </div>
         <div className="col-5 medium-spacer-bottom">
-          <img className="project-image" alt="Sagmeister" src={require("../assets/images/beauty/stef.png")}/>
+          <img className="project-image" alt="A screenshot of aagmeister's Instagram" src={require("../assets/images/beauty/stef.png")}/>
         </div>
         <div className="text-group">
           <p className="large-paragraph medium-spacer-bottom col-5">
@@ -45,15 +45,23 @@ class Beauty extends Component {
         </div>
 
         <p className="large-paragraph medium-spacer-bottom col-5">At the end of day 2, there were over 100 different beautiful things in the gallery:</p>
-        <div className="col-5 medium-spacer-bottom">
-          <img className="project-image" alt="All beautiful things" src={require("../assets/images/beauty/gallery.jpg")}/>
+
+        <div className="text-group">
+          <div className="col-5 medium-spacer-bottom">
+            <img className="project-image" alt="All beautiful things" src={require("../assets/images/beauty/gallery.jpg")}/>
+          </div>
+          <p className="reflections col-2">Also, it's very hard to place sticker film without the air bubbles <span role="img" aria-label="sob">😭</span>. I still dream about all the air bubbles.</p>
         </div>
         <div className="text-group">
           <p className="large-paragraph medium-spacer-bottom col-5">
           I still need to analyze all the creations, but in general, people tended to want to get rid of the shapes that felt constraining: the large rectangle and the lopsided blob. I also created a process zine to showcase how my time at SFPC led me to create this project:</p>
         </div>
-        <div className="col-5 medium-spacer-bottom">
-          <video className="project-image" alt="Process book" src={require("../assets/images/beauty/process-book.mov")} muted autoPlay loop/>
+
+        <div className="text-group">
+          <div className="col-5 medium-spacer-bottom">
+            <video className="project-image" alt="Flipping through a process book about how I created my final project." src={require("../assets/images/beauty/process-book.mov")} muted autoPlay loop/>
+          </div>
+          <p className="reflections col-2">I did this super last minute on the day before the showcase. In our showcase class, we learned that artists love learning about the process behind the piece!</p>
         </div>
         <div className="text-group">
           <p className="large-paragraph medium-spacer-bottom col-5">In the future, I hope to expand on this idea more to be about actual faces! I also hope to put the game online, so that people can interact with it outside of the showcase.</p>

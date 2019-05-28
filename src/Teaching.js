@@ -23,7 +23,7 @@ class Teaching extends Component {
                   <h3>01</h3>
                 </div>
                 <div className="col-3 project-thumb-fixed">
-                  <img className="project-thumb" alt="Teaching design, design to learn talk" src="images/thumbs/thumb-design-talk.png" />
+                  <img className="project-thumb" alt="Three icons: Learning design is a pink squiggle blob, designing learning is a series of blue horizontal lines, and unlearning design is a series of teal wavy lines" src="images/thumbs/thumb-design-talk.png" />
                 </div>
                 <div className="col-3 project-title">
                   <h6 className="active">Teaching</h6>
@@ -38,7 +38,7 @@ class Teaching extends Component {
                   <h3>02</h3>
                 </div>
                 <div className="col-3 project-thumb-fixed">
-                  <img className="project-thumb" alt="Graphic design thumbnail" src="images/thumbs/thumb-graphic-design.gif" />
+                  <img className="project-thumb" alt="Two triangles pointed toward each other on a red background" src="images/thumbs/thumb-graphic-design.gif" />
                 </div>
                 <div className="col-3 project-title">
                   <h6 className="active">Teaching</h6>
@@ -53,7 +53,7 @@ class Teaching extends Component {
                   <h3>03</h3>
                 </div>
                 <div className="col-3 project-thumb-fixed">
-                  <img className="project-thumb" alt="Illustrator thumbnail" src="images/thumbs/thumb-illustrator.png" />
+                  <img className="project-thumb" alt="Instructions for how to use the Pen Tool in illustrator" src="images/thumbs/thumb-illustrator.png" />
                 </div>
                 <div className="col-3 project-title">
                   <h6 className="active">Teaching</h6>
