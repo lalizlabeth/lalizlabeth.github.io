@@ -10,7 +10,6 @@ class Home extends Component {
         <header className="header" style={{padding: "2vw 0"}}>
           <div className="header-text-wrapper nested">
             <h1 className="header-text col-4"><span className="highlighter"><strong>Elizabeth Lin</strong> is a product designer &amp; aspiring princess.</span></h1>
-            <p className="title-caption col-3"><span role="img" aria-label="construction-sign">🚧</span> This site is still under construction! Not everything is aligned quite right yet <span role="img" aria-label="grimacing">😬</span></p>
           </div>
           <div className="header-image-wrapper">
             <div className="header-image">
