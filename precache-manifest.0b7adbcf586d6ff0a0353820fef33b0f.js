@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "ae3d452853e68ed0770f514c9abf7e9a",
-    "url": "/static/media/sparkles.ae3d4528.mov"
+    "revision": "f68713f3ebf1324467fe53fb0d813c4d",
+    "url": "/static/media/old-2.f68713f3.jpeg"
   },
   {
-    "revision": "1650f12517006bf7309c",
+    "revision": "51c0f9439c3e35cc6f35",
     "url": "/static/css/main.63cba64c.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "3d78ad799898d9bf55ae",
-    "url": "/static/js/2.660966ca.chunk.js"
+    "revision": "cc79fcd6ef976b198d18",
+    "url": "/static/js/2.3c9eba96.chunk.js"
   },
   {
     "revision": "83169e0aec2af97bfe3c369bcd1e152a",
@@ -34,6 +34,10 @@ self.__precacheManifest = [
   {
     "revision": "9679a16c447b3c86e17bc87fd5256ce0",
     "url": "/static/media/cover.9679a16c.png"
+  },
+  {
+    "revision": "c02f2b03b85f1c178af16caeff698f0a",
+    "url": "/static/media/cover.c02f2b03.gif"
   },
   {
     "revision": "95ca6ce8fa0e31d8b7f6c4530e2d1506",
@@ -82,6 +86,42 @@ self.__precacheManifest = [
   {
     "revision": "10452d7280b0c9e2e5496eb33edb2344",
     "url": "/static/media/teaching-3.10452d72.jpeg"
+  },
+  {
+    "revision": "4b8b5aa11b7f5746d55bc2ee5c800f56",
+    "url": "/static/media/before.4b8b5aa1.png"
+  },
+  {
+    "revision": "360bed0564cb4ac18e538969bdb6a8d5",
+    "url": "/static/media/homepage.360bed05.png"
+  },
+  {
+    "revision": "e761b52f6a5047190b6a7266903ce766",
+    "url": "/static/media/inspo.e761b52f.png"
+  },
+  {
+    "revision": "0d10ed5e4dc53a8070db317d5aed2b82",
+    "url": "/static/media/eevees.0d10ed5e.png"
+  },
+  {
+    "revision": "83169e0aec2af97bfe3c369bcd1e152a",
+    "url": "/static/media/types.83169e0a.png"
+  },
+  {
+    "revision": "7f564fec9c36b793af30e78e70a55e0c",
+    "url": "/static/media/orange.7f564fec.png"
+  },
+  {
+    "revision": "49328976453d4eaa4a7704e3d6e4c898",
+    "url": "/static/media/yellow.49328976.png"
+  },
+  {
+    "revision": "c33c681d7e3415ded84f77022831ed4b",
+    "url": "/static/media/family.c33c681d.png"
+  },
+  {
+    "revision": "025dec6696288e3310e0f379d0eb3d04",
+    "url": "/static/media/teacher-student.025dec66.png"
   },
   {
     "revision": "319b5285f16c88060614c11e585eb168",
@@ -212,6 +252,66 @@ self.__precacheManifest = [
     "url": "/static/media/illustration-palette.41fe6ff8.png"
   },
   {
+    "revision": "97a81f02d079095e27221c7979eabd13",
+    "url": "/static/media/lalizlabeth.97a81f02.jpg"
+  },
+  {
+    "revision": "512d31c338d8a3eac391e0deea23e197",
+    "url": "/static/media/world.512d31c3.png"
+  },
+  {
+    "revision": "0d03771d3ea432d8e3f2b1fb1d8f0a0f",
+    "url": "/static/media/aliens.0d03771d.png"
+  },
+  {
+    "revision": "ae7df12c5f4d4644bcb9c87a1b9ee98f",
+    "url": "/static/media/art-show-award-1.ae7df12c.png"
+  },
+  {
+    "revision": "811ad351ac5e0778812e08733c5f8985",
+    "url": "/static/media/art-show-award-2.811ad351.png"
+  },
+  {
+    "revision": "0f9a062c5efde50189cef588775b96ea",
+    "url": "/static/media/art-show.0f9a062c.png"
+  },
+  {
+    "revision": "3d5f554c359557b1029113f6c4191acc",
+    "url": "/static/media/crab.3d5f554c.jpg"
+  },
+  {
+    "revision": "4e4f8dfdc15eeffccd6cc7322986b219",
+    "url": "/static/media/schoolbusmarine.4e4f8dfd.png"
+  },
+  {
+    "revision": "10b08c37c1b10159e018ed647625a058",
+    "url": "/static/media/wizard.10b08c37.png"
+  },
+  {
+    "revision": "5640d3a073ad3a517b774c155d8998d2",
+    "url": "/static/media/vampires.5640d3a0.png"
+  },
+  {
+    "revision": "6b31d8ae8a77f307eda5ba43e972d1c9",
+    "url": "/static/media/mice.6b31d8ae.png"
+  },
+  {
+    "revision": "7b0940b590ed92aa199a3fdcc1988836",
+    "url": "/static/media/car.7b0940b5.png"
+  },
+  {
+    "revision": "86c9b9a99dd1ecf3efdd04ddb05978e1",
+    "url": "/static/media/color-study.86c9b9a9.png"
+  },
+  {
+    "revision": "2a22f0012221d842596dea7d0b9bb20b",
+    "url": "/static/media/blinky.2a22f001.png"
+  },
+  {
+    "revision": "3829d2c1539bb683dfc413dc5a00ca63",
+    "url": "/static/media/doggos.3829d2c1.png"
+  },
+  {
     "revision": "598ef41220aab7178d1c88515bc1c125",
     "url": "/static/media/klassen.598ef412.jpg"
   },
@@ -264,8 +364,8 @@ self.__precacheManifest = [
     "url": "/static/media/old-1.3d4adb08.jpeg"
   },
   {
-    "revision": "f68713f3ebf1324467fe53fb0d813c4d",
-    "url": "/static/media/old-2.f68713f3.jpeg"
+    "revision": "51c0f9439c3e35cc6f35",
+    "url": "/static/js/main.2e6a89ce.chunk.js"
   },
   {
     "revision": "4c6f224c1e6d0676f6f16ea0462a3860",
@@ -312,8 +412,8 @@ self.__precacheManifest = [
     "url": "/static/media/vroom-vroom.f2e3bb18.mov"
   },
   {
-    "revision": "1650f12517006bf7309c",
-    "url": "/static/js/main.c80eb5c1.chunk.js"
+    "revision": "ae3d452853e68ed0770f514c9abf7e9a",
+    "url": "/static/media/sparkles.ae3d4528.mov"
   },
   {
     "revision": "6526013c08a75015416cb8f55c1bfaf6",
@@ -624,7 +724,7 @@ self.__precacheManifest = [
     "url": "/static/media/2.cbe3435e.jpeg"
   },
   {
-    "revision": "142011b1bef9c18182122ea3ed742dec",
+    "revision": "7cb768087e3cfed8624072201c49ee1d",
     "url": "/index.html"
   }
 ];
