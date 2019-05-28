@@ -101,7 +101,7 @@ class Home extends Component {
                 <img className="project-thumb" alt="Cultural values thumbnail" src="images/thumbs/thumb-cultural-values.png" />
                 <h6 className="active">Illustrations</h6>
                 <h2>Cultural values</h2>
-                <p>In 2019, I was a part of the team at Khan Academy that redefined our company values. To celebrate the new values, I created a series of illustrations to represent each value.</p>
+                <p>To celebrate Khan Academy's new values, I created a series of illustrations to represent each value.</p>
               </Link>
             </div>
           </li>

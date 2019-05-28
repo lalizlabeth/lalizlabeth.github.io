@@ -11,7 +11,9 @@ import doodleDumpHeader from '../assets/images/doodle-dump/cover.gif';
 import dottieHeader from '../assets/images/dottie/cover.png';
 import exercisesHeader from '../assets/images/exercises/cover.png';
 import fashionAveragesHeader from '../assets/images/fashion-avgs/cover.jpg';
+import graphicDesignHeader from '../assets/images/graphic-design/cover.gif';
 import hogwartsHeader from '../assets/images/hogwarts/cover.gif';
+import illustratorHeader from '../assets/images/illustrator/cover.png';
 import monsterzHeader from '../assets/images/monsterz/cover.jpg';
 import reviewGameHeader from '../assets/images/thumbs/thumb-review-game.png';
 import sephoraHeader from '../assets/images/sephora/cover.jpg';
@@ -26,7 +28,9 @@ import DoodleDump from '../projects/DoodleDump';
 import Dottie from '../projects/Dottie';
 import Exercises from '../projects/Exercises';
 import FashionAverages from '../projects/FashionAverages';
+import GraphicDesign from '../projects/GraphicDesign';
 import Hogwarts from '../projects/Hogwarts';
+import Illustrator from '../projects/Illustrator';
 import Monsterz from '../projects/Monsterz';
 import ReviewGame from '../projects/ReviewGame';
 import SephoraSorting from '../projects/SephoraSorting';
@@ -100,10 +104,10 @@ class ProjectContainer extends Component {
           header={designToLearnHeader}
           description="A talk I gave in 2019 about my journey from learning to unlearning design."
           body=<DesignToLearn/>
-          prev_title="To CHANGE"
-          prev_link="/design/project/math-review-game/"
-          next_title="TO CHANGE"
-          next_link="/experiments/project/fashion-avgs/"/>)
+          prev_title="The undiversity of makeup"
+          prev_link="/experiments/project/sephora/"
+          next_title="Intro to graphic design"
+          next_link="/teaching/project/graphic-design/"/>)
         break;
       case "doodle-dump":
         project =
@@ -153,6 +157,18 @@ class ProjectContainer extends Component {
           next_title="Design systems"
           next_link="/design/project/design-systems/"/>)
         break;
+      case "graphic-design":
+        project =
+        (<Project
+          title="Intro to graphic design"
+          header={graphicDesignHeader}
+          description="An introductory class to graphic design principles"
+          body=<GraphicDesign/>
+          prev_title="Design to learn, learn to design"
+          prev_link="/teaching/project/design-to-learn/"
+          next_title="Intro to Illustrator &amp; Photoshop"
+          next_link="/teaching/project/illustrator/"/>)
+        break;
       case "hogwarts":
         project =
         (<Project
@@ -164,6 +180,18 @@ class ProjectContainer extends Component {
           prev_link="/illustration/project/cultural-values/"
           next_title="Have you seen my glasses?"
           next_link="/illustration/dottie/"/>)
+        break;
+      case "illustrator":
+        project =
+        (<Project
+          title="Intro to Illustrator &amp; Photoshop"
+          header={illustratorHeader}
+          description="An introductory class to Adobe Illustrator and Photoshop."
+          body=<Illustrator/>
+          prev_title="Intro to graphic design"
+          prev_link="/teaching/project/graphic-design/"
+          next_title="Defining student progress"
+          next_link="/design/student-progress/"/>)
         break;
       case "monsterz":
         project =
