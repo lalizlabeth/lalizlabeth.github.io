@@ -7,6 +7,7 @@ import beautyHeader from '../assets/images/beauty/cover.jpg';
 import culturalValuesHeader from '../assets/images/cultural-values/cover.png';
 import designSystemsHeader from '../assets/images/design-systems/cover-2.png';
 import designToLearnHeader from '../assets/images/design-to-learn/cover.png';
+import doodleDumpHeader from '../assets/images/doodle-dump/cover.gif';
 import dottieHeader from '../assets/images/dottie/cover.png';
 import exercisesHeader from '../assets/images/exercises/cover.png';
 import fashionAveragesHeader from '../assets/images/fashion-avgs/cover.jpg';
@@ -21,6 +22,7 @@ import Beauty from '../projects/Beauty';
 import CulturalValues from '../projects/CulturalValues';
 import DesignSystems from '../projects/DesignSystems';
 import DesignToLearn from '../projects/DesignToLearn';
+import DoodleDump from '../projects/DoodleDump';
 import Dottie from '../projects/Dottie';
 import Exercises from '../projects/Exercises';
 import FashionAverages from '../projects/FashionAverages';
@@ -102,6 +104,18 @@ class ProjectContainer extends Component {
           prev_link="/design/project/math-review-game/"
           next_title="TO CHANGE"
           next_link="/experiments/project/fashion-avgs/"/>)
+        break;
+      case "doodle-dump":
+        project =
+        (<Project
+          title="Doodle dump"
+          header={doodleDumpHeader}
+          description="Some random doodles that don't fit into any category!"
+          body=<DoodleDump/>
+          prev_title="Avatar redesign"
+          prev_link="/illustration/project/avatar-redesign/"
+          next_title="What do we perceive as beautiful?"
+          next_link="/experiments/project/beauty/"/>)
         break;
       case "dottie":
         project =

@@ -21,7 +21,7 @@ class Dottie extends Component {
         <p className="large-paragraph medium-spacer-bottom col-5">
           For the final version, I increased the brightness of the colors and increased the contrast in scale of her eyes and hair to make her appear even cuter.
         </p>
-        <div className="col-5 medium-spacer-bottom">
+        <div className="col-7 medium-spacer-bottom">
           <img className="project-image" alt="Dottie final iteration" src={require("../assets/images/dottie/dottie-final.png")}/>
         </div>
 

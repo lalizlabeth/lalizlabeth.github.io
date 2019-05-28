@@ -83,7 +83,7 @@ class Illustration extends Component {
             </li>
 
             <li className="project col-8 nested" id="project-1">
-              <Link className="project-link fixed" to="/illustrations/project/avatars/">
+              <Link className="project-link fixed" to="/illustrations/project/doodle-dump/">
                 <div className="project-number col-1">
                   <h3>05</h3>
                 </div>
@@ -92,8 +92,8 @@ class Illustration extends Component {
                 </div>
                 <div className="col-3 project-title">
                   <h6 className="active">Illustration</h6>
-                  <h2>Doodles</h2>
-                  <p>Some doodles that don't fit into any category</p>
+                  <h2>Doodle dump</h2>
+                  <p>Some random doodles that don't fit into any category!</p>
                 </div>
               </Link>
             </li>

@@ -62,23 +62,6 @@ class Experiments extends Component {
                 </div>
               </Link>
             </li>
-
-            <li className="project col-8 nested" id="project-1">
-              <Link className="project-link fixed" to="/experiments/project/sephora/">
-                <div className="project-number col-1">
-                  <h3>04</h3>
-                </div>
-                <div className="col-3 project-thumb-fixed">
-                  <img className="project-thumb" alt="Sephora thumbnail" src="images/thumbs/thumb-sephora.jpg" />
-                </div>
-                <div className="col-3 project-title">
-                  <h6 className="active">Experiments</h6>
-                  <h2>Rest of SFPC</h2>
-                  <p>An overview of my time at SFPC</p>
-                </div>
-              </Link>
-            </li>
-
           </ul>
         </section>
 

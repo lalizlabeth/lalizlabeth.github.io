@@ -80,7 +80,7 @@ class Monsterz extends Component {
           <li>Harder levels with surprise twists</li>
         </ul>
 
-        <p className="large-paragraph medium-spacer-bottom col-5">Thanks for reading and please ⭐⭐⭐⭐⭐ in <a href="https://itunes.apple.com/us/app/monsterz-game/id1231894793">the app store!</a></p>
+        <p className="large-paragraph medium-spacer-bottom col-5">Thanks for reading and please <span role="img" aria-label="stars">⭐⭐⭐⭐⭐</span> in <a href="https://itunes.apple.com/us/app/monsterz-game/id1231894793">the app store!</a></p>
 
     </section>
     );
