@@ -14,7 +14,7 @@ class SephoraSorting extends Component {
         </div>
 
         <div className="text-group">
-          <p className="large-paragraph medium-spacer-bottom col-5">I started with foundations. It was difficult to perfectly sort by value, so I tried two versions of sorting: one bye the value property and the other by grayscale.</p>
+          <p className="large-paragraph medium-spacer-bottom col-5">I started with foundations. It was difficult to perfectly sort by value, so I tried two versions of sorting: one by the value property and the other by grayscale.</p>
         </div>
 
         <div className="text-group">

@@ -43,7 +43,7 @@ class Design extends Component {
                 <div className="col-3 project-title">
                   <h6 className="active">Design</h6>
                   <h2>Math review game</h2>
-                  <p>How can we make an engagine in-class review game for classrooms?</p>
+                  <p>How can we make an engaging in-class review game for classrooms?</p>
                 </div>
               </Link>
             </li>
