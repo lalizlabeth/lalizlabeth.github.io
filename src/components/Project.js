@@ -18,6 +18,7 @@ import monsterzHeader from '../assets/images/monsterz/cover.jpg';
 import reviewGameHeader from '../assets/images/thumbs/thumb-review-game.png';
 import sephoraHeader from '../assets/images/sephora/cover.jpg';
 import studentProgressHeader from '../assets/images/thumbs/thumb-student-progress.png';
+import visualDesignClubHeader from '../assets/images/thumbs/thumb-student-progress.png';
 
 import AvatarRedesign from '../projects/AvatarRedesign';
 import Beauty from '../projects/Beauty';
@@ -35,7 +36,7 @@ import Monsterz from '../projects/Monsterz';
 import ReviewGame from '../projects/ReviewGame';
 import SephoraSorting from '../projects/SephoraSorting';
 import StudentProgress from '../projects/StudentProgress';
-
+import VisualDesignClub from '../projects/VisualDesignClub';
 
 class ProjectContainer extends Component {
 
@@ -210,7 +211,7 @@ class ProjectContainer extends Component {
         (<Project
           title="In-class review game"
           header={reviewGameHeader}
-          description="How can we help teachers identify and fill student gaps in learning?"
+          description="How can we create an engaging in-class review game?"
           body=<ReviewGame/>
           prev_title="Defining student progress"
           prev_link="/design/project/student-progress/"
@@ -241,7 +242,19 @@ class ProjectContainer extends Component {
           next_title="Math review game"
           next_link="/design/project/review-game/"/>)
         break;
-      default:
+        case "visual-design-club":
+          project =
+          (<Project
+            title="Teaching visual design"
+            header={visualDesignClubHeader}
+            description="Lessons, activities, and games for teaching visual design."
+            body=<VisualDesignClub/>
+            prev_title="Cultural values"
+            prev_link="/illustration/project/cultural-values/"
+            next_title="Math review game"
+            next_link="/design/project/review-game/"/>)
+          break;
+        default:
     }
 
     return (

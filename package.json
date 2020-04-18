@@ -5,9 +5,10 @@
   "homepage": "https://www.elizabethylin.com",
   "dependencies": {
     "bourbon-neat": "^3.0.1",
+    "create-react-app": "^3.4.1",
     "eyeglass": "^2.2.1",
     "gh-pages": "^2.0.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-flexbox-grid": "^2.1.2",

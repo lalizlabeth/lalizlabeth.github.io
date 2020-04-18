@@ -18,12 +18,12 @@ class About extends Component {
           <ul className="about-modules col-8 offset-2 nested">
             <div className="about-group col-8 nested">
               <li className="bio-text col-6 offset-1">
-                <h1><span role="img" aria-label="wave">👋🏼</span> I'm currently a product designer at <a href="https://www.khanacademy.org"><strong>Khan Academy</strong></a>.</h1>
-                <h1>Chat with me about:</h1>
+                <h1><span role="img" aria-label="wave">👋🏼</span> I'm currently lead the experiential learning design program at <a href="https://lambdaschool.com/"><strong>Lambda School</strong></a>.</h1>
+                <h2 style={{marginTop: "32px", color: "#FF5783"}}>Chat with me about...</h2>
               </li>
 
               <ul className="social-media col-1">
-                <li><a href="ElizabethLinResume-2019.pdf" className="social-media-link">Resume</a></li>
+                <li><a href="ElizabethLinResume2020.pdf" className="social-media-link">Resume</a></li>
                 <li><a href="mailto:elizabethylin@gmail.com" className="social-media-link">Email</a></li>
                 <li><a href="https://www.linkedin.com/in/elizabethylin/" className="social-media-link">LinkedIn</a></li>
                 <li><a href="https://twitter.com/lalizlabeth" className="social-media-link">Twitter</a></li>
